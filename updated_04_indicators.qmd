@@ -61,7 +61,7 @@ We sample from these lists. To make the sampled capabilities comparable across p
 
 Indicators select measurable environmental effects through which personas can express capabilities. They neither exhaust the requirements of a persona nor predict population responses. Instead, they translate evidence about nonhuman behaviours and resources into spatial quantities that allow the effects of alternative pathways to be compared. By measuring how opportunities are distributed, rather than treating species favoured by current conditions as representative of birds generally, indicators can reveal discriminatory effects hidden by aggregate measures.
 
-**Table 4. Comparable indicators**
+**Table 4. Indicators**
 
 | Persona | Capability group | Behaviour expressing the capability | Example property of physical environment supporting this behaviour | Indicator | Unit | Omission |
 |---|---|---|---|---|---|---|
@@ -86,7 +86,7 @@ Examples:
 
 We next provide further information on our relational indicators. These indicators measure relational conditions inside the habitat volume that make a subset of capabilities available. Each indicator uses a three‑part code x.y.z where x marks persona, y marks capability and z marks the specific indicator. Each indicator pairs with one effort metric. We track three effort metrics: canopy volume released from human control; the number of supporting structures deployed; or area converted for non‑human use.
 
-**Table 5. Indicators**
+**Table 5. Relational indicators**
 
 | Indicator | What it measures | Raw VTK query | Raw schema row | Reporting status | Stream share |
 |---|---|---|---|---|---|
