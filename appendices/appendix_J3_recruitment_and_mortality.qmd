@@ -17,6 +17,8 @@ We use `annual_tree_death_urban` by default and `annual_tree_death_nature-reserv
 
 In the current v4 implementation, we follow Le Roux's cohort-thinning logic, keep their standard `0.06` urban and `0.03` nature-reserve annual mortality values as anchors, and apply DBH-cohort survival curves based on their assessments of tree survival across successive cohorts.
 
+Le Roux et al. calculate annual mortality across successive 10 cm DBH cohorts as `1 - s^(1/y)`, where `s` is survival between cohorts and `y` is the number of years required to grow through that increment.[^leroux]
+
 ## Three recruitment types and their mortality mapping
 
 The v4 engine distinguishes three recruitment mechanisms via the `recruit_mechanism` column on the treeDF:
@@ -103,12 +105,11 @@ This places the model on the assertive side, but still within the same broad ran
 - `A Guide to Managing Box Gum Grassy Woodlands` illustrates box-gum woodland at `35 trees/ha`.[^boxgum]
 - `The Future of Scattered Trees in Agricultural Landscapes` uses `10-25 trees/ha` as the initial yellow-box scattered-tree density. The same paper then models a stronger regeneration response of `2 recruits per initial tree every 30 years`, so it supports low mature densities but also shows that recruit pulses can be substantially higher than the final standing structure.[^gibbons]
 - `Reversing a Tree Regeneration Crisis in an Endangered Ecoregion` is less useful as a direct density benchmark, but it is important context: the problem in these systems is not just low mature tree density but failed regeneration over time.[^fischer]
-- `The Future of Large Old Trees in Urban Landscapes` reports `11-13 seedlings/ha` in the `0-10 cm DBH` cohort over an approximately `8-year` step in urban greenspace.[^leroux_density] That is not the same thing as our planting quota, but it is the same order of magnitude. If our `50 trees/ha` setting is treated as a 30-year establishment pulse, it scales to `13.3 trees/ha` over 8 years, which is very close to Le Roux's urban cohort figure.
+- `The Future of Large Old Trees in Urban Landscapes` reports `11-13 seedlings/ha` in the `0-10 cm DBH` cohort over an approximately `8-year` step in urban greenspace.[^leroux] That is not the same thing as our planting quota, but it is the same order of magnitude. If our `50 trees/ha` setting is treated as a 30-year establishment pulse, it scales to `13.3 trees/ha` over 8 years, which is very close to Le Roux's urban cohort figure.
 
 
-[^leroux]: Le Roux et al. describe annual mortality as density-dependent across successive `10 cm DBH` cohorts, using `1 - s^(1/y)`, where `s` is survival from one cohort to the next and `y` is the years required to grow through that `10 cm` DBH increment. They also report annual mortality values of `0.06` for urban greenspace and `0.03` for nature reserves in their parameter table. Source: Le Roux et al. - 2014 - The Future of Large Old Trees in Urban Landscapes.
-[^planting]: Munro and Lindenmayer note that in pre-cleared landscapes, tree density on hilltops and plains was often low, "about 30 mature trees per hectare", with higher density along watercourses. Source: Munro and Lindenmayer - Planting for Wildlife.
-[^boxgum]: Rawlings et al. illustrate box-gum woodland at `35 trees/ha` in Figure 2.1. Source: Rawlings et al. - 2010 - A Guide to Managing Box Gum Grassy Woodlands.
-[^gibbons]: Gibbons et al. report `10-25 trees/ha` as the initial yellow-box scattered-tree density in their case study table, and model regeneration in yellow-box stands by increasing recruits to `2.0` for each initial tree every `30 years`. Source: Gibbons et al. - 2008 - The future of scattered trees in agricultural landscapes.
-[^fischer]: Fischer et al. show that many paddock systems are regeneration-limited and ageing, with young trees often missing from low-density sites. This is a regeneration-crisis argument, not a direct planting-density prescription. Source: Fischer et al. - 2009 - Reversing a Tree Regeneration Crisis in an Endangered Ecoregion.
-[^leroux_density]: Le Roux et al. report a mean of `11` and `13 seedlings/ha` in the `0-10 cm DBH` cohort for two urban species groups, with an approximately `8-year` model time step. Source: Le Roux et al. - 2014 - The Future of Large Old Trees in Urban Landscapes.
+[^leroux]: Le Roux et al. (2014), *The Future of Large Old Trees in Urban Landscapes*.
+[^planting]: Munro and Lindenmayer, *Planting for Wildlife*.
+[^boxgum]: Rawlings et al. (2010), *A Guide to Managing Box Gum Grassy Woodlands*.
+[^gibbons]: Gibbons et al. (2008), *The Future of Scattered Trees in Agricultural Landscapes*.
+[^fischer]: Fischer et al. (2009), *Reversing a Tree Regeneration Crisis in an Endangered Ecoregion*.

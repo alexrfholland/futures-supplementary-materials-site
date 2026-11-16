@@ -4,41 +4,72 @@ bibliography: [../references/site_references.bib]
 link-citations: true
 ---
 
-The main text compares how human-led and nonhuman-led conditions shape pathways from present states towards possible futures. This appendix documents the pathway simulation implemented in `_futureSim_refactored/` for run 4.12, including its entities, scheduling, decision rules and parameterisation.
+The pathway simulation supports the article’s argument about nonhuman leadership. It explores how human-led and nonhuman-led commitments to supporting proposals shape trajectories and environmental opportunities from a place’s present condition.
+
+**Contents**
+
+- **Overview:** [1. Purpose](#purpose); [2. Entities and state](#entities-and-state); [3. Time and spatial scales](#time-and-spatial-scales); [4. Process scheduling](#process-scheduling).
+- **Design concepts and run design:** [5. Proposals, negotiation, and interventions](#proposals-negotiation-and-interventions); [6. Effort thresholds and pathway settings](#effort-thresholds-and-pathway-settings); [7. Exploratory use and run design](#exploratory-use-and-run-design).
+- **Initialisation and implementation:** [8. Initialisation](#initialisation); [9. Execution and outputs](#execution-and-outputs); [10. Submodels](#submodels); [11. Code and data](#code-and-data).
 
 ## Overview
 
-### 1. Purpose
+### 1. Purpose {#purpose}
 
-The simulation runs three Melbourne places forward from 2025 to 2205 under two pathways, human-led and nonhuman-led. It records which proposals arise, how negotiation responds to them, and how the resulting interventions accumulate in space, and it saves the states that the indicators then read for each persona. The model supports the article's argument about nonhuman leadership.
+We implement the model as a time-step simulation of changes at a place. Repeated updates generate a sequence of states, and the model saves selected states for comparison. Section 3 defines the time steps and saved-state years; Section 4 gives the ordered process schedule.
 
-The model does not claim:
+The simulation compares human-led and nonhuman-led pathways at three Melbourne places from 2025 to 2205. It records which proposals arise, how negotiation responds, and how interventions accumulate in space and time. The saved states allow the indicators to measure opportunities for each persona. This comparison addresses the Methods' question of which futures within the modelled possibility space are reachable from a place's present condition.
 
-- to predict ecological outcomes
-- to represent every being and process at these places
-- to have been validated against observation
-
-### 2. Entities and state
+### 2. Entities and state {#entities-and-state}
 
 The simulation has three parts:
 
-- the `possibility-space` layer stores the site as a voxel grid and evaluates current spatial opportunity.
-- the `node layer` stores habitat features and carries state forward from pulse to pulse (a pulse is the simulation step of up to 10 years, Section 3).
-- a library of `habitat features` defines possible conditions of trees, logs, and artificial canopies.
+- `habitat_volume_grid` [`possibility_space_ds`] represents the place as a [voxel grid](appendix_G_habitat_volumes.qmd#workflow-for-initialising-habitat-volume) for assessing spatial opportunities.
+- `habitat_feature_tables` [`tree_df`, `log_df`, `pole_df`] record [trees, logs, and poles](appendix_G_habitat_volumes.qmd#workflow-for-initialising-habitat-volume) and carry their changing state forward through time.
+- A [feature-template library](appendix_F_habitat_features.qmd#sampled-habitat-opportunities) defines possible conditions of trees, logs, and artificial canopies.
 
-Pathways emerge from repeated exchange between the two layers. Node states are updated, projected into space, and used to recompute the conditions for later change.
+#### States, trajectories, and pathways
 
-**Possibility-space layer**
+Three concepts organise the simulation.
 
-A pre-baked 3D voxel grid (`possibility_space_ds`) classifies where proposals can spread, connect, or be read spatially. The engine uses it as a temporary spatial layer during a pulse (for example to compute recruitment zones) and resets it per pulse. It also broadcasts node-level decisions onto voxels at VTK generation time.
+1. States. A state describes the configuration of a place at a particular time. The model represents this configuration through the habitat features, surfaces, and other attributes of its [habitat volume](appendix_G_habitat_volumes.qmd). A state therefore includes both the conditions of individual features, such as an ageing tree, and their spatial relationships with surrounding ground, buildings, and other features.
+2. Trajectories. A trajectory is an ordered sequence of states through time. The model generates this sequence through repeated updates, and the saved outputs record selected points along it.
+3. Pathways. A pathway is a human-readable account of how leadership interactions connect the present to a future along a trajectory. The model represents these interactions through the authority to support, moderate, or refuse proposals and select interventions. Human-led and nonhuman-led pathway settings give different levels of support to nonhuman proposals, so the same starting state can develop along different trajectories.
+
+#### Updating the state
+
+Each internal time step, called a pulse, starts from the state left by the preceding update. The model connects that state to the next through the following operations.
+
+1. Apply ongoing processes. Growth, ageing, and mortality change the current conditions. These processes run in each pulse without requiring a new proposal.
+2. Detect proposal opportunities. The model detects opportunities in the resulting conditions and those inherited from earlier updates. Ongoing processes can therefore generate proposals, as can the consequences of earlier interventions.
+3. Negotiate responses. The model assesses proposals against resistance, using the effort thresholds set for the pathway. These comparisons determine support, moderation, or refusal, so the same proposal can lead to different interventions under human-led and nonhuman-led settings.
+4. Apply interventions. The selected interventions change habitat features or surfaces within the place. Their consequences enter the changed state and shape the opportunities available in subsequent updates.
+
+The detailed pulse schedule interleaves proposal assessment and interventions, allowing one change to enable another within the same pulse or in later pulses. For example, an intervention supporting `Colonise` can open space in which the model subsequently assesses `Recruit`.
+
+Repeated updates generate the trajectory. A local proposal affects a distant future through the intervening responses and states, and the pathway describes how leadership shapes this developing sequence.
+
+#### Representing the state
+
+During the simulation, the engine updates the feature records and uses their relationship with the grid to determine where further change can occur. When generating spatial outputs, it projects the recorded feature states and intervention decisions into the habitat volume.
+
+#### `habitat_volume_grid` {#habitat-volume-grid}
+
+The `habitat_volume_grid` represents ground, buildings, and other surfaces through voxels with sides of 1 m. The preparation workflows described in [Habitat volumes](appendix_G_habitat_volumes.qmd) and [Resistance](appendix_H_resistance.qmd) assign urban attributes, resistance values, and connectivity information to this grid before the pathway simulation begins. The [connectivity model](appendix_H_resistance.qmd#connectivity-resistance) uses cellular automata to expand patches from existing habitat features through a resistance field. Its prepared outputs identify connected regions through `sim_Nodes` and the number of expansion turns needed to reach each voxel through `sim_Turns`.
+
+The prepared spatial inputs in `habitat_volume_grid` provide the reference for each pulse. The engine resets a working grid for each pulse and updates temporary fields when computing spatial opportunities such as recruitment zones. At VTK generation time, it also projects feature-level decisions onto voxels. The fixed spatial reference therefore supports changes in the grid's working and output attributes.
 
 Its key fields are `analysis_combined_resistance`, `analysis_combined_resistanceNOCANOPY`, `node_CanopyID`, `sim_Nodes`, `sim_Turns`, and `sim_averageResistance`.
 
-**Node layer**
+#### `habitat_feature_tables` {#habitat-feature-tables}
 
-Trees, logs, and poles live as rows in `tree_df`, `log_df`, and `pole_df`, each row a physical habitat feature with state that persists across pulses. All information carried to the next pulse or state is recorded in the dataframes.
+The `habitat_feature_tables` hold one row per physical feature and record the information that persists across pulses. Their properties describe each feature's current condition, while records of interventions and time under support carry the consequences of earlier decisions into subsequent updates.
+
+These tables store trees from the urban forest survey, candidate logs on suitable roofs, and existing utility poles separately, with identifiers linking each feature to `habitat_volume_grid`. The [Place](appendix_C_places.qmd) and [Habitat volumes](appendix_G_habitat_volumes.qmd) pages describe the place data and their spatial preparation.
 
 ::: {.column-screen-inset}
+
+Table. Habitat feature properties and representative fields.
 
 | Group | Representative fields | Meaning |
 |---|---|---|
@@ -48,20 +79,7 @@ Trees, logs, and poles live as rows in `tree_df`, `log_df`, and `pole_df`, each 
 
 :::
 
-The node ID systems that link the two layers are:
-
-::: {.column-screen-inset}
-
-| ID field | What it links | Where it lives |
-|---|---|---|
-| `NodeID` / `analysis_nodeID` | Each node's physical voxel position | Shared across dataframes and xarray |
-| `node_CanopyID` | Under-canopy voxels to the tree they belong to | xarray — covers ~435 of 455 trees |
-| `sim_Nodes` | Ground voxels to the nearest node via growth simulation | xarray — includes trees, logs, poles |
-| `sim_Turns` | How many growth turns to reach each voxel | xarray — proxy for spatial difficulty |
-
-:::
-
-**Tree states**
+For tree records, size, lifecycle, management, and origin distinguish the variants available to the simulation. The following categories describe these properties and identify whether a record contributes canopy voxels.
 
 - **Living**: small, medium, large
 - **Lifecycle sequence**: senescing -> snag -> fallen -> decayed
@@ -70,30 +88,50 @@ The node ID systems that link the two layers are:
 - **Management** <`control`>: street-tree, park-tree, reserve-tree / improved-tree
 - **Origin**: precolonial, introduced, hybrid
 
-**Regions modified by proposals**
+Feature identifiers link each record to its position and associated regions in the `habitat_volume_grid`. The implementation uses node ID fields for these links, distinguishing canopy footprints from regions reached by the connectivity simulation.
 
-- `habitat feature` is a composite volumetric description of a tree, log, pole, or artificial structure.
-- `under canopy` is the immediate space under or around a feature.
-- `surrounding region` is the larger connected region around a feature.
-- `expanded space` is the connected space between features made available by the connectivity simulation.
+::: {.column-screen-inset}
 
-**Personas and indicators**
+Table. Identifiers linking habitat features to `habitat_volume_grid`.
 
-The [personas](appendix_D_personas_and_capabilities.qmd) do not act inside the engine. The engine decides every proposal from `CanopyResistance`, `sim_Turns`, and `sim_averageResistance` against thresholds, with no weighting towards a persona, species, or capability.
+| ID field | What it links | Storage |
+|---|---|---|
+| `NodeID` / `analysis_nodeID` | Each feature's physical voxel position | Shared across dataframes and xarray |
+| `node_CanopyID` | Under-canopy voxels to the tree they belong to | xarray, covering ~435 of 455 trees |
+| `sim_Nodes` | Ground voxels to the nearest node via growth simulation | xarray, including trees, logs, and poles |
+| `sim_Turns` | How many growth turns to reach each voxel | xarray, providing a proxy for spatial difficulty |
 
-The [indicators](appendix_E_capability_groups_and_indicators.qmd) read each saved state after the run, as voxel counts on the habitat statistics, lifecycle states, decision columns, and surface classes that the state carries. Any voxel changed by a `Colonise`, `Decay`, or `Release Control` intervention takes the surface class `low-vegetation`, including facades and roofs.
+:::
 
-### 3. Scales
+#### Feature-template library {#feature-template-library}
 
-- three places, Parade, City, and Street (`trimmed-parade`, `city`, `uni` in the code)
-- voxels of 1 m
-- years 0 to 180 (2025 to 2205)
-- nine saved states, at years 0, 1, 10, 30, 60, 90, 120, 150, and 180
-- pulses of at most 10 years between states; time-varying parameters take their value at the end year of each pulse
+The library defines possible conditions of trees, logs, and artificial canopies. As the feature tables change, the model selects the corresponding variants when constructing spatial outputs. [Habitat features](appendix_F_habitat_features.qmd) documents their construction and properties, and [Habitat volumes](appendix_G_habitat_volumes.qmd) documents their spatial representation.
 
-### 4. Process overview and scheduling
+#### Personas and indicators
 
-Each pulse runs these steps in order:
+The [personas](appendix_D_personas_and_capabilities.qmd#persona-overview) make particular ways of living visible in the construction and assessment of the model. Evidence about [their capabilities](appendix_D_personas_and_capabilities.qmd#overview-of-capabilities) informs the proposal families and indicators, while the engine represents the resulting choices through feature states, spatial conditions, and intervention rules. It does not simulate personas acting as separate agents.
+
+During a run, the engine assesses spatial support by comparing `CanopyResistance`, `sim_Turns`, and `sim_averageResistance` with thresholds. These comparisons assign no weighting to a persona, species, or capability. The proposal-specific rules in Section 10 determine the resulting changes.
+
+After the run, the [indicators](appendix_E_capability_groups_and_indicators.qmd#indicators-in-the-model) read each saved state through voxel counts based on its habitat statistics, lifecycle states, decision columns, and surface classes. Any voxel changed by a `Colonise`, `Decay`, or `Release Control` intervention takes the surface class `low-vegetation`, including façades and roofs.
+
+The indicators compare these opportunities with a reference woodland, described in [Baseline woodlands](appendix_K_baseline_woodlands.qmd).
+
+### 3. Time and spatial scales {#time-and-spatial-scales}
+
+The spatial model covers three places, Parade, City, and Street, named `trimmed-parade`, `city`, and `uni` in the code. It represents each place through voxels with sides of 1 m.
+
+The simulation spans 180 years, from 2025 to 2205. Users select the years at which it saves states through the `--years` input described in Section 9. The defaults are years 0, 1, 10, 30, 60, 90, 120, 150, and 180, giving nine saved states.
+
+Between successive saved-state years, the model divides the elapsed time into pulses of at most 10 years. For example, the gap between saved states at years 30 and 60 contains three 10-year pulses. Each pulse updates the state, while the selected output years determine which states the model saves. Time-varying parameters take their value at the end year of each pulse.
+
+### 4. Process scheduling {#process-scheduling}
+
+The sequence below implements the repeated state update described in Section 2. It shows how the engine interleaves ongoing processes, proposal assessment, and interventions within each pulse. Section 10 gives the trigger, assessment, and state-change rules for each proposal.
+
+#### Operations within each pulse
+
+Each pulse runs the following steps in order.
 
 1. grow trees (`age_trees()`)
 2. apply mortality (`apply_annual_tree_mortality()`)
@@ -109,86 +147,132 @@ Each pulse runs these steps in order:
 12. place ground deadwood (`translocate-deadwood`)
 13. refresh `Colonise` support
 
-After the last pulse of a state, the engine gates logs and poles for `Deploy-Structure`. The VTK step then assigns envelope `Colonise` interventions and `upgrade-feature` per voxel.
+#### Operations when saving a state
 
-## Design concepts
+After the final pulse leading to a saved state, the engine assesses whether logs and poles meet the thresholds for `Deploy-Structure`. During VTK generation, it then assigns envelope `Colonise` interventions and `upgrade-feature` changes to individual voxels. These operations complement the `Colonise` support updates and ground-deadwood placement within each pulse.
 
-### 5. Proposals, negotiation, and interventions
+## Design concepts and run design
 
-- A **proposal** is a directed bid for local action that a tree or population expresses through its state. A tree whose useful life has run out proposes `Decay` by that fact alone.
-- **Negotiation** compares resistance at the voxels a proposal marks with an effort threshold and returns full support, partial support, or refusal. The thresholds stand for the authority of whoever decides under each pathway.
-- An **intervention** is the selected act that changes attributes of one voxel or a group of voxels in response.
+### 5. Proposals, negotiation, and interventions {#proposals-negotiation-and-interventions}
 
-The [Proposals](appendix_I_proposals_and_interventions.qmd) page defines the five proposal families, `Decay`, `Release Control`, `Colonise`, `Recruit`, and `Deploy-Structure`, and their interventions in conceptual terms. Section 10 gives the rules.
+A **proposal** is a directed bid for local action that a tree or population expresses through its state. For example, a tree proposes `Decay` when its remaining pre-senescence duration reaches zero, as specified in Section 10.1.
 
-Each proposal has a temporal trigger and a spatial region of request. Temporal triggers:
+**Negotiation** compares resistance at the voxels associated with a proposal with an effort threshold and returns full support, partial support, or refusal. The thresholds stand for the authority of whoever decides under each pathway.
+
+An **intervention** is the selected act that changes attributes of a habitat feature, one voxel, or a group of voxels in response. Section 2 explains how these changes enter the repeated state update and affect later proposal opportunities.
+
+The [Proposals](appendix_I_proposals_and_interventions.qmd) page defines the five proposal families, `Decay`, `Release Control`, `Colonise`, `Recruit`, and `Deploy-Structure`, and their interventions in conceptual terms. The following account explains where and when these proposals enter negotiation, and Section 10 gives their detailed rules.
+
+#### Regions modified by proposals
+
+A proposal concerns a particular feature or region of the habitat volume. This location determines which resistance values the model assesses and where an intervention can change the state. The four regions below connect the proposal definitions to their spatial implementation.
+
+- `habitat feature` is a composite volumetric description of a tree, log, pole, or artificial structure.
+- `under canopy` is the immediate space under or around a feature.
+- `surrounding region` is the larger connected region around a feature.
+- `expanded space` is the connected space between features made available by the connectivity simulation.
+
+::: {.column-screen-inset}
+
+Table 1. Spatial regions of proposal request.
+
+| Level | Description | Signal source | How it is linked in the simulation | Types of states |
+|---|---|---|---|---|
+| habitat feature | Composite volumetric descriptions of trees and artificial structures | high-resolution lidar scans linked to survey data and then modified through simulation | represented as one row in the `habitat_feature_tables` [`tree_df`, `log_df`, `pole_df`] | lifecycle, management, origin |
+| under canopy | Immediate space under or around a feature | GIS canopy bounds from City of Melbourne lidar linked to each feature | linked to each feature record (`nodeDF`) via `node_CanopyID` | `exoskeleton`, `footprint-depaved`, `footprint-depaved-connected` |
+| surrounding region | Larger region around a feature | region of the connectivity simulation linked to the feature | linked to each feature record (`nodeDF`) via `sim_Nodes` | `node-rewilded` |
+| expanded space | Space that connects features | space defined by how much effort the connectivity simulation needed to reach it | `habitat_volume_grid` as a broader gate not connected to a specific feature | `otherGround`, `rewilded` |
+
+:::
+
+#### Temporal triggers
+
+Each proposal has a temporal trigger and a spatial region of request. The model checks some opportunities repeatedly and others when a particular event occurs. Accumulated time under an accepted intervention can also determine when a feature changes variant. The timing terms used in the model are listed below.
 
 - `on event`
 - `accumulated years` (a tree has spent enough years under an intervention)
 - `every pulse`
 - `every state`
 
-Table 1. Spatial regions of proposal request.
-
 ::: {.column-screen-inset}
-
-| Level | Description | Signal source | How it is linked in the simulation | Types of states |
-|---|---|---|---|---|
-| habitat feature | Composite volumetric descriptions of trees and artificial structures | high-resolution lidar scans linked to survey data and then modified through simulation | represented as a node, or row, in the node dataframes (`tree_df`, `log_df`, `pole_df`) | lifecycle, management, origin |
-| under canopy | Immediate space under or around a feature | GIS canopy bounds from City of Melbourne lidar linked to each feature | linked to each feature in the nodeDF via `node_CanopyID` | `exoskeleton`, `footprint-depaved`, `footprint-depaved-connected` |
-| surrounding region | Larger region around a feature | region of the connectivity simulation linked to the feature | linked to each feature in the nodeDF via `sim_Nodes` | `node-rewilded` |
-| expanded space | Space that connects features | space defined by how much effort the connectivity simulation needed to reach it | `possibility_space_ds` as a broader gate not connected to a specific feature | `otherGround`, `rewilded` |
-
-:::
 
 Table 2. Proposal families, triggers, and outcomes.
 
-::: {.column-screen-inset}
-
 | Proposal | Temporal trigger | Spatial region of request | Condition for consideration | Accepted outcome | Rejected outcome |
 |---|---|---|---|---|---|
-| `decay` | on event | habitat feature, under canopy | a tree reaches the end of its useful life expectancy | feature progresses through large-old, standing-dead, and fallen lifecycle variants | model replaces feature with sapling lifecycle variant |
-| `release-control` | on event | habitat feature, under canopy | a living tree has accrued enough years under reduced or eliminated pruning to develop new canopy traits | feature progresses through moderated and risk-averse human-management variants | feature maintains risk-averse human-management variant |
-| `recruit` | every pulse | under canopy, surrounding region, and in space already under consideration for `colonise` | the engine recomputes recruit zones and tests available space in each 10-year pulse | model inserts sapling features | model takes no action |
-| `colonise` | every state | expanded space | the engine checks potential zones of expansion through the connectivity submodel | model converts voxels | model takes no action |
-| `deploy-structure` | every state | habitat feature and potential habitat features now already under `colonise` | the engine checks potential logs, poles, and ground-deadwood sites each state | model converts feature into `hybrid` or `fallen` variant, or inserts artificial features into model | model takes no action |
+| `decay` | on event | habitat feature, under canopy | a tree reaches `presenscent_duration_years <= 0`, with the initial duration derived from useful life expectancy | feature enters the senescing and snag phases, with further decay depending on the support intervention | model replaces feature with sapling lifecycle variant |
+| `release-control` | every pulse | habitat feature, under canopy | a living tree in a small, medium, or large phase can receive reduced or eliminated pruning, subject to canopy resistance | feature progresses towards moderated or unmanaged variants after sufficient time under the intervention | feature maintains risk-averse human-management variant |
+| `recruit` | every pulse | under canopy, surrounding region, and in space already under consideration for `colonise` | the engine recomputes recruitment zones and tests available space in each pulse of at most 10 years | model inserts sapling features | model takes no action |
+| `colonise` | support refreshes within each pulse; envelope interventions apply when generating a saved state | expanded space | the engine checks potential zones of expansion against connectivity thresholds | model opens recruitment space and converts voxels | model takes no action |
+| `deploy-structure` | ground deadwood within pulses; logs and poles after the final pulse leading to a saved state; `upgrade-feature` during VTK generation | habitat feature and potential habitat features now already under `colonise` | the engine checks compatible locations and the conditions specific to each deployment path | model enables logs or poles, inserts fallen or decayed features, or converts introduced voxels to hybrid | model takes no action |
 
 :::
 
-Whether an intervention proceeds depends on its effort threshold. The model compares resistance at voxels marked by a proposal with the threshold and allocates an intervention when the threshold exceeds resistance.
+#### Negotiation and intervention selection
 
-Interventions use either feature or connectivity resistance depending on whether they target individual habitat features or connections. When multiple interventions fit, the model selects the highest effort option. Where Tables 3 and 4 name the evaluative community, the thresholds stand for its authority.
+Whether an intervention proceeds depends on the relevant comparison between resistance and effort. The model applies the threshold tests specified for each proposal in Section 10, including their strict or inclusive bounds.
+
+Interventions use feature or connectivity resistance according to whether they target individual habitat features or connections. When multiple interventions fit, the model selects the highest-effort option. Tables 3 and 4 describe these choices in terms of the evaluative community, whose authority the thresholds represent. Some interventions also require the average-resistance threshold described in Section 6.
+
+::: {.column-screen-inset}
 
 Table 3. Resistance groupings and effort thresholds used by the evaluative community.
 
-::: {.column-screen-inset}
-
-| Resistance grouping | Name in model | Description | Simulation layer | Effort thresholds |
+| Resistance grouping | Name in model | Description | Model component | Effort thresholds |
 |---|---|---|---|---|
-| Feature resistance | `CanopyResistance` | Aggregates values beneath habitat features using aerial canopy footprint data | `nodeDF` | `minimal-tree-support-threshold`, `moderate-tree-support-threshold`, `maximum-tree-support-threshold` |
-| Connectivity resistance | `sim_Turns` | Applies a cellular automata algorithm to ground, facade and roof surfaces | `possibility_space_ds` | `sim_TurnsThreshold` |
+| Feature resistance | `CanopyResistance` | Aggregates values beneath habitat features using aerial canopy footprint data | `habitat_feature_tables` | `minimal-tree-support-threshold`, `moderate-tree-support-threshold`, `maximum-tree-support-threshold` |
+| Connectivity resistance | `sim_Turns` | Records the expansion turns needed to reach a voxel in the prepared cellular automata connectivity model | `habitat_volume_grid` | `sim_TurnsThreshold` |
 
 :::
 
-Table 4. How the evaluative community responds to proposals.
-
 ::: {.column-screen-inset}
 
-| Proposal | Effort threshold | Full-support intervention | Partial-support intervention |
+Table 4. How the evaluative community responds to proposals.
+
+| Proposal | Effort threshold or qualifying condition | Full-support intervention | Partial-support intervention |
 |---|---|---|---|
 | `decay` | Individual tree support thresholds | `buffer-feature` | `brace-feature` |
 | `colonise` | Spread-effort threshold | `larger-patches-rewild` / `enrich-envelope` | `roughen-envelope` |
 | `release-control` | Individual tree support thresholds | `eliminate-canopy-pruning` | `reduce-canopy-pruning` |
 | `recruit` | `under canopy` and `surrounding region` from `Decay` and `Release Control`, and `expanded space` from `Colonise` | `rewild-larger-patch` | `rewild-smaller-patch` |
-| `deploy-structure` | `Colonise` | `adapt-utility-pole` / `translocate-log` / `upgrade-feature` | — |
+| `deploy-structure` | `Colonise` | `adapt-utility-pole` / `translocate-log` / `upgrade-feature` | None |
 
 :::
 
 Intervention names follow the code. The ground intervention under `colonise` is `larger-patches-rewild`, and `deploy-structure` also includes `translocate-deadwood` for ground deadwood.
 
-### 6. Pathways
+### 6. Effort thresholds and pathway settings {#effort-thresholds-and-pathway-settings}
+
+The Methods section compares leadership by varying authority over the conversion of proposals into interventions. The simulation implements this comparison through pathway settings that determine how much resistance the collective can overcome and how it supports the resulting changes. These settings affect which proposals receive support, moderation, or refusal and therefore how the trajectory develops.
 
 The two pathways share the same places, inputs, habitat feature library, growth and mortality settings, lifecycle durations, planting density, pruning timings, and random draws. They differ in the settings of Table 5. The code calls the nonhuman-led pathway `positive` and the human-led pathway `trending`.
+
+#### Resistance quantities
+
+Negotiation uses three quantities held in the feature records or grid.
+
+- **`CanopyResistance`** measures resistance associated with a tree's canopy footprint. At initialisation, the model calculates it as the mean of `analysis_combined_resistanceNOCANOPY` over the tree's `node_CanopyID` voxels. A tree without a canopy footprint takes the value at its own voxel. The tree-support thresholds compare this quantity with the limits for each intervention.
+- **`sim_Turns`** records how many cellular automata expansion turns were needed to reach a voxel in the prepared [connectivity model](appendix_H_resistance.qmd#connectivity-resistance). It measures spatial difficulty in expansion turns. These turns are distinct from the years and pulses of the pathway simulation. The pathway simulation reads the prepared field and compares it with the effort threshold for the current year.
+- **`sim_averageResistance`** supplies an additional resistance condition for envelope `Colonise`, candidate roof logs, and utility poles. The model compares the saved field value with a separate pathway threshold, also named `sim_averageResistance` in the parameter file. The [Resistance](appendix_H_resistance.qmd) page describes the resistance and connectivity preparation.
+
+#### Effort thresholds
+
+Users set thresholds for each place and pathway in `params_v3.py`. The three tree-support thresholds remain constant throughout a run and bound the interventions as follows.
+
+- **`minimal-tree-support-threshold`** is the strict upper bound for accepting `Decay`. Resistance below this threshold but above `moderate-tree-support-threshold` permits `brace-feature`.
+- **`moderate-tree-support-threshold`** is the inclusive upper bound for `buffer-feature` under `Decay` and for accepting `Release Control`. Resistance above `maximum-tree-support-threshold` and at or below this value permits `reduce-canopy-pruning` under `Release Control`. In both proposal families, the corresponding supported change opens the `under canopy` region.
+- **`maximum-tree-support-threshold`** is the inclusive upper bound for opening the wider `surrounding region` under `buffer-feature` or `eliminate-canopy-pruning`. The words minimal, moderate, and maximum refer to the extent of support. Accordingly, the maximum-support intervention has the lowest resistance limit.
+
+The two connectivity thresholds follow year-keyed schedules, interpolated between the years in Table 5. Each pulse uses the value at its end year.
+
+- **`sim_TurnsThreshold`** sets the permitted number of expansion turns. A voxel passes this test when `0 <= sim_Turns <= sim_TurnsThreshold`. This gate supplies the `expanded space` available to `Colonise` and recruitment. It also forms part of the test for enabling roof logs.
+- **The `sim_averageResistance` threshold** sets the additional resistance limit for envelope `Colonise`, logs, and poles. Envelope voxels and roof logs pass when their stored value is at or below the threshold; utility poles require a value below it. Section 10 gives the proposal-specific combinations of these conditions.
+
+Table 5 specifies each pathway's constant thresholds and schedules. Under the human-led pathway at Parade, `sim_TurnsThreshold` stays at zero, so `Colonise` opens no expanded space there. Parade has no `sim_averageResistance` schedule, so the engine uses zero in both pathways: envelope changes are confined to voxels with average resistance at or below zero, and no poles are deployed.
+
+#### Other pathway settings
+
+The recruitment multipliers and ground-deadwood switch in Table 5 also differ between pathways. **`recruit_multiplier_full`** and **`recruit_multiplier_partial`** scale the sapling quota in recruitment zones receiving the corresponding support. **`deployGroundDeadwood`** enables ground-deadwood placement, which operates only under the nonhuman-led pathway at Street. These parameters govern the amount or availability of an intervention after its spatial conditions have been assessed.
 
 ::: {.column-screen-inset}
 
@@ -206,55 +290,48 @@ The two pathways share the same places, inputs, habitat feature library, growth 
 
 :::
 
-What each setting stands for:
+### 7. Exploratory use and run design {#exploratory-use-and-run-design}
 
-- **tree support thresholds**: the bands of resistance beneath a canopy at which `Decay` and `Release Control` meet full support, partial support, or refusal. They stay constant over the 180 years within each pathway. Human-led bands sit at 4/3/1 on a scale to 100, so support reaches only trees on near-unresisting ground.
-- **`sim_TurnsThreshold`**: how far from existing trees, logs, and poles `Colonise` can reach. It rises on a schedule fixed by year, interpolated between the listed years. Under the human-led pathway at Parade it stays at zero, so `Colonise` opens no expanded space there.
-- **`sim_averageResistance`**: a second gate on roofs, facades, logs, and poles. Parade has no entry, so the engine uses zero in both pathways, which confines Parade envelopes to voxels with average resistance at or below zero and deploys no Parade poles. Street human-led sets it to zero throughout.
-- **recruit multipliers**: a higher sapling quota where larger or smaller patches have been opened.
-- **`deployGroundDeadwood`**: an intervention switch that only the nonhuman-led pathway at Street uses.
+The model supports the article’s argument about nonhuman leadership. We use it to explore how different commitments to supporting nonhuman proposals shape trajectories from the same present condition. The comparison follows the interventions and environmental opportunities produced under the human-led and nonhuman-led pathway settings.
 
-The repository note `parameters-discussion.md` records one observation from an earlier version. `Release Control` rejection rates differed between places because of where each place's input put its trees, and the note lists the thresholds as the quickest lever for changing that rate. It gives no reason for the present values.
+The model does not claim:
 
-**[Alex to confirm: the reasons for the threshold values (70/50/15 at Parade and City, 90/70/20 at Street, 4/3/1 human-led), for the recruit multipliers 1.6 and 1.2, for the `sim_TurnsThreshold` and `sim_averageResistance` schedules, and for leaving Parade without a `sim_averageResistance` entry. The commit that set the current thresholds describes them only as tuning.]**
+- to predict ecological outcomes
+- to represent every being and process at these places
+- to have been validated against observation
 
-### 7. Stochasticity and run design
+#### Stochasticity and comparison
 
-- The model is stochastic in form but seeded, so a run is deterministic.
-- One run exists per place and pathway, six in total, each saving nine states.
-- Both pathways use the same seeds and share the same random draws. Differences between the two runs at a place come from the settings in Table 5 rather than from different seeds.
-- Nothing in the run samples alternative sequences, varies the seed, or enumerates a set of futures. Each pathway yields one simulated sequence of states.
+The model includes stochastic processes but uses fixed seeds, so a run is deterministic. The comparison includes one simulation for each combination of place and pathway, giving six cases, each with nine saved states. Both pathways use the same seeds and share the same random draws, so differences between the two runs at a place arise from the settings in Table 5. Each run follows one simulated sequence of states, without sampling alternative sequences, varying the seed, or enumerating the set of possible futures.
 
-How to read the results:
+#### How to read the results
 
-- Each run shows a rule-permitted chain of intermediate states from the present to year 180, so that final state is reachable under that pathway.
-- The comparison the design supports is between the two pathways at the same place and year. Comparisons between places also carry differences in their inputs.
-- The results carry no confidence intervals, and small differences deserve little weight, because thresholds, multipliers, and schedules enter as hard cut-offs. The differences between pathways in the manuscript's indicators run to multiples of the human-led values, and the argument rests on those.
-- Three effects follow from settings rather than from the places. Parade deploys no utility poles in either pathway. Ground deadwood appears only at Street under the nonhuman-led pathway. The Lizard surface indicators count roofs and facades that `Colonise` has reached as well as ground.
+Each run shows a rule-permitted chain of intermediate states from the present to year 180. Its final state is therefore reachable under that pathway within the model. The comparison assesses the two pathways at the same place and year, while comparisons between places also carry differences in their inputs.
 
-## Details
+We did not conduct sensitivity testing. The runs compare the selected pathway settings, and the results carry no confidence intervals. They therefore show how the specified rules and settings produce different opportunities without establishing how stable those differences would be under alternative parameter values. The differences between pathways in the manuscript's indicators reach multiples of the human-led values, and the argument rests on these larger differences rather than on small numerical contrasts.
 
-### 8. Inputs and initialisation
+The settings and indicator definitions also shape particular comparisons. Parade deploys no utility poles in either pathway, and ground-deadwood placement operates only at Street under the nonhuman-led pathway. The Lizard surface indicators count roofs and façades reached by `Colonise` as well as ground. These details help connect the reported opportunities to the interventions and spatial conditions that produced them.
 
-The [Place](appendix_C_places.qmd) page describes the three places. Each place arrives as input files that the simulation reads and does not recompute:
+## Initialisation and implementation
 
-- a voxel array at 1 m with its resistance fields, `sim_Nodes`, and `sim_Turns`, produced once, offline, by the resistance grid and connectivity simulation ([Resistance](appendix_H_resistance.qmd))
-- node tables of trees from the urban forest survey, logs on roofs that can support them, and existing utility poles
-- a template library of habitat features ([Habitat features](appendix_F_habitat_features.qmd), [Habitat volumes](appendix_G_habitat_volumes.qmd))
-- the reference woodland that the indicators compare each state against ([Baseline woodlands](appendix_K_baseline_woodlands.qmd))
+### 8. Initialisation {#initialisation}
 
-At initialisation, each tree takes its `CanopyResistance` as the mean of `analysis_combined_resistanceNOCANOPY` over its `node_CanopyID` voxels. Trees without a canopy footprint take the value of their own voxel. Missing `presenscent_duration_years` are seeded as in Section 10.1.
+Initialisation loads the selected place's [`habitat_volume_grid`](#habitat-volume-grid), [`habitat_feature_tables`](#habitat-feature-tables), and [feature-template library](#feature-template-library). Section 2 describes these entities and links to their preparation workflows. The pathway simulation uses the prepared spatial inputs without recomputing the resistance field or cellular automata expansion.
 
-### 9. Running the model from the user's side
+The engine initialises `CanopyResistance` as defined in Section 6 and seeds missing `presenscent_duration_years` as described in Section 10.1. These values establish the initial conditions for assessing tree proposals.
 
-Once the model is set up, a user chooses the states, places, and pathway settings. A pathway (`positive` or `trending`) is one named set of these choices per place in `params_v3.py`.
+### 9. Execution and outputs {#execution-and-outputs}
+
+Once the model is set up, a user chooses the years at which to save states, the places, and the pathway settings. The code stores each named pathway (`positive` or `trending`) as a set of settings for a place in `params_v3.py`. The `--years` input specifies saved outputs, and the engine divides the intervening time into pulses as described in Section 3.
 
 ::: {.column-screen-inset}
+
+Table. User inputs and their effects on the simulation.
 
 | User input | How the user sets it | What the model does with it |
 |---|---|---|
 | Years to simulate | `--years`, default `0, 1, 10, 30, 60, 90, 120, 150, 180` | Saves a state at each year and splits the gaps into pulses of at most 10 years |
-| Places | `--sites`, default all three | Loads each place's voxel array, node tables, and feature templates |
+| Places | `--sites`, default all three | Loads each place's `habitat_volume_grid`, `habitat_feature_tables`, and feature templates |
 | Pathway | `--scenarios`, default `positive,trending` | Reads every setting below from the (place, pathway) entry in `params_v3.py` |
 | Interventions available | Fixed. All interventions in Table 4 are always on, and the thresholds decide where they apply. The one switch is `deployGroundDeadwood`, set per (place, pathway) in `params_v3.py` | Places ground deadwood only where the switch is on |
 | Tree support thresholds | `minimal-`, `moderate-`, and `maximum-tree-support-threshold`, per (place, pathway) | Sets the bands for `Decay` and `Release Control` support |
@@ -263,25 +340,27 @@ Once the model is set up, a user chooses the states, places, and pathway setting
 
 :::
 
-The model returns:
+#### Model outputs
+
+The model returns the following outputs for examining states, interventions, and changes in the indicators.
 
 - tree, log, and pole tables for every place, pathway, and state, with recruit telemetry
 - VTK point clouds per state carrying the proposal decisions and indicators, with bioenvelope meshes and renders
 - baseline woodland states for comparison
-- indicator tables at year 180 and across all years, and node-table summaries
+- indicator tables at year 180 and across all years, and summaries of the `habitat_feature_tables`
 - compiled statistics and stream graphs
 
-### 10. Submodels
+### 10. Submodels {#submodels}
+
+The following submodels implement the processes outlined in Section 4. Each proposal account identifies the conditions that bring an opportunity into consideration, the response selected through negotiation, and the change carried into subsequent states. Growth, lifecycle transitions, recruitment, and mortality connect these decisions through time.
 
 #### 10.1 Proposal-Decay
 
-Determines the `lifecycle` <`size`> variant for living trees once they progress beyond their `large` phase. Allows trees to enter the `senescing -> snag -> fallen -> decayed` lifecycle sequence.
+The `Decay` submodel determines the `lifecycle` variant, recorded as `size`, as living trees progress beyond their `large` phase. Support allows them to enter the `senescing -> snag -> fallen -> decayed` sequence, with the intervention determining how far they can proceed.
 
-**Proposal trigger**
+##### Proposal trigger
 
-A tree proposes `Decay` when `presenscent_duration_years <= 0`.
-
-The engine seeds `presenscent_duration_years` as `useful_life_expectancy + triangular(-10, 0, 10)`.
+A tree proposes `Decay` when `presenscent_duration_years <= 0`. The engine seeds this duration as `useful_life_expectancy + triangular(-10, 0, 10)`.
 
 Many trees use `useful_life_expectancy` from the input data. If that is missing, the engine falls back to
 
@@ -289,11 +368,11 @@ Many trees use `useful_life_expectancy` from the input data. If that is missing,
 - `medium = 50 years`
 - `large = 10 years`
 
-**Proposal assessment**
+##### Proposal assessment
 
 The engine accepts `Decay` when `CanopyResistance < minimal-tree-support-threshold`. Otherwise it rejects the proposal.
 
-**Rejected outcome**
+##### Rejected outcome
 
 The engine replaces the tree with a new precolonial sapling. It
 
@@ -303,9 +382,11 @@ The engine replaces the tree with a new precolonial sapling. It
 - resets `useful_life_expectancy` to `120 - replacement_growth_years`
 - resets `presenscent_duration_years` to `useful_life_expectancy + triangular(-10, 0, 10)`
 
-**Supported outcome**
+##### Supported outcome
 
 ::: {.column-screen-inset}
+
+Table. Decay interventions, effort thresholds, and effects.
 
 | Intervention | Full/Partial Support | What effort threshold | Changes | Effect |
 |---|---|---|---|---|
@@ -315,11 +396,9 @@ The engine replaces the tree with a new precolonial sapling. It
 
 :::
 
-**State change**
+##### State change
 
-Once `Decay` is accepted, both `brace-feature` and `buffer-feature` allow the tree to move into `senescing`, then `snag`.
-
-The senescing values are
+Once the engine accepts `Decay`, both `brace-feature` and `buffer-feature` allow the tree to move into `senescing` and then `snag`. The engine uses the following distributions for the senescing phase.
 
 - precolonial trees, `triangular(10, 90, 200)`
 - non-precolonial trees, `triangular(10, 70, 110)`
@@ -327,38 +406,38 @@ The senescing values are
 
 After that, snag duration is `triangular(0, 40, 100)`.
 
-Then the support split is
+###### Partial support
 
-- Partial support
-  - stops at `snag`
-  - when snag duration ends, the engine replaces the tree through `brace-collapse`, using the same replacement path as a rejected `Decay` proposal
-- Full support
-  - can continue to `fallen`
-  - fallen to decayed, `triangular(10, 40, 100)`
-  - decayed to gone, `triangular(30, 40, 75)`
+Partial support retains the tree through `snag`. When the snag duration ends, the engine replaces it through `brace-collapse`, using the same replacement path as a rejected `Decay` proposal.
+
+###### Full support
+
+Full support allows the tree to continue to `fallen`. The engine draws the duration from fallen to decayed as `triangular(10, 40, 100)` and from decayed to gone as `triangular(30, 40, 75)`.
 
 #### 10.2 Proposal-Release-Control
 
-Determines the `human management` <`control`> modifying factor for living trees. Allows trees to progress towards their `moderated` <`control = park-tree`> or `unmanaged` <`control = reserve-tree / improved-tree`> variant.
+The `Release Control` submodel determines the `human management` condition, recorded as `control`, for living trees. Support allows trees to progress towards their `moderated` variant (`control = park-tree`) or `unmanaged` variant (`control = reserve-tree / improved-tree`).
 
-**Proposal trigger**
+##### Proposal trigger
 
 A tree proposes `Release Control` in every pulse when its `size` is `small`, `medium`, or `large`.
 
-**Proposal assessment**
+##### Proposal assessment
 
 The engine accepts `Release Control` when a tree's `CanopyResistance` is at or below `moderate-tree-support-threshold`. Otherwise it rejects the proposal.
 
-**Rejected outcome**
+##### Rejected outcome
 
 The engine leaves the tree in its `risk-averse` variant <`control = street-tree`>. It
 
 - sets `proposal-release-control_intervention` to `none`
 - resets `proposal-release-control_years` to `0`
 
-**Supported outcome**
+##### Supported outcome
 
 ::: {.column-screen-inset}
+
+Table. Release Control interventions, effort thresholds, and effects.
 
 | Intervention | Full/Partial Support | What effort threshold | Changes | Effect |
 |---|---|---|---|---|
@@ -367,9 +446,9 @@ The engine leaves the tree in its `risk-averse` variant <`control = street-tree`
 
 :::
 
-**State change**
+##### State change
 
-Once `Release Control` is accepted, every pulse, the engine adds `step_years` (the pulse length) to a tree feature's `proposal-release-control_years`.
+Once the engine accepts `Release Control`, it adds `step_years` (the pulse length) to the tree feature's `proposal-release-control_years` in every pulse. Accumulated time under the intervention determines the subsequent change in variant.
 
 - when `proposal-release-control_years = 20`, under `reduce-canopy-pruning` or `eliminate-canopy-pruning`, the tree becomes its `moderated` variant <`control = park-tree`>
 - when `proposal-release-control_years = 40`, under `eliminate-canopy-pruning` only, the tree becomes its `unmanaged` variant <`control = reserve-tree / improved-tree`>
@@ -378,19 +457,21 @@ Trees in `senescing`, `snag`, `fallen`, or `decayed` are always under the `unman
 
 #### 10.3 Proposal-Colonise
 
-Determines where the model classifies `expanded space` as available for ground and envelope colonisation.
+The `Colonise` submodel identifies where `expanded space` becomes available for ground and envelope colonisation. It connects existing habitat features to opportunities on surrounding surfaces.
 
-**Proposal trigger and assessment**
+##### Proposal trigger and assessment
 
-The engine proposes and accepts `Colonise` where `expanded space` has been reached by the connectivity model within the current `sim_TurnsThreshold`. For roofs, facades, and other ground, the VTK step also requires `sim_averageResistance <= sim_averageResistance threshold`. The recruitment zones that `Colonise` opens for `Recruit` use the `sim_Turns` test alone.
+The engine proposes and accepts `Colonise` where the prepared [connectivity model](appendix_H_resistance.qmd#connectivity-resistance) has reached `expanded space` within the current `sim_TurnsThreshold`. For roofs, façades, and other ground, the VTK step also requires `sim_averageResistance <= sim_averageResistance threshold`. The recruitment zones that `Colonise` opens for `Recruit` use the `sim_Turns` test alone.
 
-**Rejected outcome**
+##### Rejected outcome
 
 The engine does nothing.
 
-**Supported outcome**
+##### Supported outcome
 
 ::: {.column-screen-inset}
+
+Table. Colonise interventions, effort thresholds, and effects.
 
 | Intervention | Full/Partial Support | What effort threshold | Changes | Effect |
 |---|---|---|---|---|
@@ -402,21 +483,21 @@ The engine does nothing.
 
 In the code, `potential green roof` means a roof voxel with `envelope_roofType == green roof`, and `potential brown roof` means every other roof voxel.
 
-**State change**
+##### State change
 
 `Colonise` changes attributes of voxels and triggers `Recruit`, `Release Control`, and `Deploy` proposals.
 
 #### 10.4 Proposal-Recruit
 
-Determines where the model inserts new sapling habitat features.
+The `Recruit` submodel determines where the model inserts new sapling habitat features. It uses the space made available by interventions supporting `Decay`, `Release Control`, and `Colonise`.
 
-**Proposal trigger**
+##### Proposal trigger
 
-We simulate `Recruit` as a population-level event. The engine proposes `Recruit` at every pulse where there is available space in candidate zones, but scales establishment to a `30 year` recruitment interval.
+We simulate `Recruit` as a population-level event. The engine proposes `Recruit` in every pulse with available space in candidate zones and scales establishment to a `30 year` recruitment interval. This interval determines the quota, while the engine assesses recruitment within each internal pulse.
 
-**Proposal assessment**
+##### Proposal assessment
 
-The engine assesses `Recruit` through two interlinked phases:
+The engine assesses `Recruit` through two interlinked phases.
 
 1. `under-node treatments` proposed by `Decay` and `Release Control`, together with `expanded space` unlocked by `Colonise`, determine the size and type of recruitment zones available.
 2. `quota` determines how many saplings can be inserted into each recruitment zone.
@@ -425,20 +506,22 @@ Recruitment quota this pulse = area of recruitment zone × planting density × (
 
 We define `planting density` as `50 trees/ha every 30 years` in both pathways.
 
-Support multiplier settings:
+The pathway settings specify the support multipliers.
 
 - nonhuman-led (`positive`): `rewild-larger-patch = 1.6`, `rewild-smaller-patch = 1.2`
 - human-led (`trending`): both `1.0`
 
-The engine then subtracts existing occupancy and tries to place saplings into the remaining slots. Accepted saplings must be placed at least `1.5 m` apart.
+The engine then subtracts existing occupancy and tries to place saplings into the remaining slots. It accepts placements at least `1.5 m` apart.
 
-**Rejected outcome**
+##### Rejected outcome
 
 The engine does nothing.
 
-**Supported outcome**
+##### Supported outcome
 
 ::: {.column-screen-inset}
+
+Table. Recruit interventions, qualifying conditions, and effects.
 
 | Intervention | Full/Partial Support | What effort threshold | Changes | Effect |
 |---|---|---|---|---|
@@ -447,7 +530,7 @@ The engine does nothing.
 
 :::
 
-**State change**
+##### State change
 
 Each accepted placement appends a new precolonial sapling. It
 
@@ -461,36 +544,35 @@ Each accepted placement appends a new precolonial sapling. It
 
 The engine proposes `Deploy-Structure` where a location has been reached by `Colonise` within the current thresholds, and a specific feature is present at that location, or there is potential for one.
 
-**Proposal trigger and assessment**
+##### Proposal trigger and assessment
 
-The engine assesses `Deploy-Structure` through four paths:
+The engine assesses `Deploy-Structure` through four paths.
 
-- **translocated logs on roofs**
-  - The log table holds candidate logs with their roof positions.
-  - The engine enables a log where its `sim_averageResistance` is at or below the current threshold and its `sim_Turns` is within `sim_TurnsThreshold`.
-  - **[Alex to confirm: Appendix G l.437-446 describes a roof-load allocation (green roof 50 kg/m², brown roof 100 kg/m², logs assigned large to small until the load is exhausted). We did not find this allocation in the engine, so it probably belongs to the preprocessing that builds the log table.]**
+###### Translocated logs on roofs
 
-- **fallen and decayed deadwood on colonised ground**
-  - The model identifies colonised ground and calculates how much fallen and decayed deadwood can be inserted there in the current pulse.
-  - Volume target `208.3 m³/ha` (matches the baseline woodland), `70%` fallen and `30%` decayed by volume, capped at `20%` of the target per pulse.
-  - It then adds new `fallen` and `decayed` features until that pulse budget is filled.
-  - Switched on at Street under the nonhuman-led pathway only.
+The log table holds candidate logs with their roof positions. The engine enables a log where its `sim_averageResistance` is at or below the current threshold and its `sim_Turns` is within `sim_TurnsThreshold`.
 
-- **adapted utility poles**
-  - The model enables existing `utility poles` as `artificial canopies` where `sim_averageResistance` falls below the current threshold.
+###### Fallen and decayed deadwood on colonised ground
 
-- **`upgrade-feature`**
-  - Runs per voxel at VTK time.
-  - Marks a voxel for conversion from `origin = introduced` to `origin = hybrid` where the tree is not precolonial and the voxel carries the peeling-bark indicator.
-  - Leaves voxels already occupied by poles or logs untouched.
+The model identifies colonised ground and calculates how much fallen and decayed deadwood it can insert there in the current pulse. The volume target is `208.3 m³/ha`, matching the baseline woodland, with `70%` fallen and `30%` decayed by volume. The model caps additions at `20%` of the target per pulse and adds new `fallen` and `decayed` features until it fills that pulse budget. The pathway settings enable this intervention only at Street under the nonhuman-led pathway.
 
-**Rejected outcome**
+###### Adapted utility poles
+
+The model enables existing `utility poles` as `artificial canopies` where `sim_averageResistance` falls below the current threshold.
+
+###### `upgrade-feature`
+
+The model applies `upgrade-feature` per voxel during VTK generation. It marks a voxel for conversion from `origin = introduced` to `origin = hybrid` where the tree is not precolonial and the voxel carries the peeling-bark indicator. It leaves voxels already occupied by poles or logs untouched.
+
+##### Rejected outcome
 
 The engine does nothing.
 
-**Supported outcome**
+##### Supported outcome
 
 ::: {.column-screen-inset}
+
+Table. Deploy Structure interventions and supported outcomes.
 
 | Intervention | Full/Partial Support | Supported outcome |
 |---|---|---|
@@ -501,17 +583,19 @@ The engine does nothing.
 
 :::
 
-**State change**
+##### State change
 
-Once `Deploy-Structure` is accepted, the model either enables an existing structure or inserts a new deadwood feature.
+Once the engine accepts `Deploy-Structure`, it either enables an existing structure or inserts a new deadwood feature.
 
 Accepted logs and poles remain as enabled structures. Accepted ground deadwood enters the model as new `fallen` or `decayed` habitat features.
 
 #### 10.6 Growth
 
-`age_trees()` ages trees at the start of each pulse. It uses allometric curves that map DBH to an implied age, advance it by the pulse length, and map it back to DBH, with ±15% individual variation in effective growing time. The run uses the `split` setting, which chooses the curve by the `precolonial` flag rather than by species.
+`age_trees()` ages trees at the start of each pulse. It uses allometric curves that map DBH to an implied age, advance it by the pulse length, and map it back to DBH, with ±15% individual variation in effective growing time. The simulation uses the `split` setting, which chooses the curve by the `precolonial` flag rather than by species.
 
 ::: {.column-screen-inset}
+
+Table. Growth models, applicable trees, and allometric curves.
 
 | Model | Applies to | Curve |
 |---|---|---|
@@ -525,28 +609,24 @@ See the [growth submodule](appendix_J1_tree_growth.qmd) for each curve, their ra
 #### 10.7 Lifecycle
 
 - Phases and durations are those given under `Decay` (10.1).
-- In the engine, living trees pass `small -> medium` above `30 cm` DBH and `medium -> large` above `80 cm`. The submodule page tabulates the first limit as `40 cm`.
+- Living trees pass `small -> medium` above `30 cm` DBH and `medium -> large` above `80 cm`.
 
-See the [lifecycle submodule](appendix_J2_tree_lifecycle.qmd) for the phase table.
+See the [lifecycle submodule](appendix_J2_tree_lifecycle.qmd) for phase descriptions.
 
 #### 10.8 Recruitment and mortality
 
-`apply_annual_tree_mortality()` follows growth in each pulse and applies to small, medium, and large trees. The run uses `flat` mortality anchored to two annual rates:
+`apply_annual_tree_mortality()` follows growth in each pulse and applies to small, medium, and large trees. The simulation uses `flat` mortality anchored to two annual rates:
 
 - **Urban**: `0.06` (roughly 61% of trees survive over 8 years)
 - **Nature-reserve**: `0.03` (roughly 78% of trees survive over 8 years)
 
-- Every DBH cohort takes the same annual rate. Cohorts of `80 cm` DBH and above take half that rate.
-- The engine thins each cohort to a stable surviving proportion for the pulse length rather than rolling each tree independently.
+- DBH cohorts share the relevant annual rate, with cohorts of `80 cm` DBH and above taking half that rate.
+- The engine thins each cohort to a stable surviving proportion for the pulse length. It does not roll mortality independently for each tree.
 - All trees take the urban rate by default. Only saplings recruited under `rewild-larger-patch` take the nature-reserve rate.
-- The engine also holds shaped cohort curves, which the submodule page tabulates, but run 4.12 does not use them.
+- The engine also holds shaped cohort curves, which the submodule page tabulates, but the simulation uses the flat rates above.
 
 See the [recruitment and mortality submodule](appendix_J3_recruitment_and_mortality.qmd) for the mortality anchors, planting density, and recruitment interval sources.
 
-### 11. Code and data
+### 11. Code and data {#code-and-data}
 
-- Repository `github.com/alexrfholland/urban-futures`, branch `engine-v4`, run `4.12`.
-- The engine module keeps the `v3` name (`engine_v3.py`, driven by `run_full_v3_batch.py`, with settings in `params_v3.py` and intervention names in `constants.py`). `v4` names the proposal and indicator schema and the branch.
-- **[Alex to confirm: the commit hash for run 4.12 (the engine and parameter files last changed at `b1d0886`) and the machine that produced the final 4.12 outputs.]**
-- Outputs sit under the run folder `4.12` in the repository's data tree, with node tables, VTK states, and comparison tables.
-- **[Alex to confirm: the public location of the input and output data, which the repository syncs to the University of Melbourne Mediaflux archive.]**
+The source code is held in the [urban-futures repository](https://github.com/alexrfholland/urban-futures). Model outputs comprise `habitat_feature_tables`, VTK states, and comparison tables.

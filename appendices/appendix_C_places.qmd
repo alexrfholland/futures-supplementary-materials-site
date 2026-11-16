@@ -6,7 +6,7 @@ link-citations: true
 
 The main text compares human-led and nonhuman-led pathways at three Melbourne places. This appendix describes their locations, model boundaries, pre-colonial settings and relationships to wider urban patterns.
 
-A place is a situated and evolving configuration of geographical conditions, cultural meanings and ecological relationships. We sample three Melbourne places to compare contrasting starting conditions: buildings dominate City, young native trees characterise Street, and ageing introduced elms structure Parade. Their different constraints connect the research question about nonhuman leadership with spatial opportunities for intervention.
+We sample three Melbourne places to compare contrasting starting conditions: buildings dominate City, young native trees characterise Street, and ageing introduced elms structure Parade. Their different constraints connect the research question about nonhuman leadership with spatial opportunities for intervention.
 
 ## Places and model boundaries
 

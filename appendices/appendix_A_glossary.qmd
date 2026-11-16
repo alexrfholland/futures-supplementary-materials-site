@@ -8,6 +8,8 @@ The main text reframes several concepts to support the study of nonhuman leaders
 
   - **Community**: In more-than-human terms, drawing on community ecology and political studies, a community consists of practised relationships at a location. These relationships create fuzzy, emergent groups of humans and nonhumans [^1].
 
+  - **Place**: A situated and evolving configuration of geographical conditions, cultural meanings and ecological relationships.
+
   - **Path**: A depiction of a process that shows changes to a community over time.
 
   - **Possibility space**: The search space that describes all possible paths.

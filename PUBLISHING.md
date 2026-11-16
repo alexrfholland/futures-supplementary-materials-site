@@ -4,6 +4,8 @@ This public repository is the canonical source for the Quarto supplementary site
 
 ## Current source
 
+Edit `appendices/` in this main checkout. Treat proposal worktrees and preview copies as superseded reference material. Commit and push this repository to publish the current files.
+
 `index.qmd` is the contents homepage. The live demonstration link opens the full-size simulation directly. `appendices/` contains Appendices A–K and the three pathway simulation submodules. `_quarto.yml` explicitly lists these 15 pages and defines their reading order.
 
 `_superseded/` retains the original appendices, persona background pages and earlier updated drafts. These files are excluded from the published site, navigation and search. Shared media and references remain in `media/` and `references/`.
