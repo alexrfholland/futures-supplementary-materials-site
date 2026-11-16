@@ -117,15 +117,15 @@ We next provide further information on our relational indicators. These indicato
 
 ## Indicator walkthrough
 
-We next provide an example of how the model tracks indicators within the habitat volume (Figure 4).
+We next provide an example of how the model tracks indicators within the habitat volume (Figure 1).
 
 
 ![The habitat volume for the Boulevard site across three different states. Voxels that do not contain indicators for lizard capabilities have been hidden. **Top:** **Current state**. Some voxels contain explore indicators (pink), but few voxels contain other indicators. **Middle:** **Trending pathway, 60 years**. The habitat volume after 60 years of current management shows similar indicators to existing conditions. **Bottom:** **Positive pathway, 60 years**. The habitat volume contains explore indicators plus significant grasslands related to lizard foraging (orange) and fallen logs and trees related to lizard shelter (green).](./media/image4.png)
 
 
-The area of grassland (`Lizard.acquire.grass`) as well as the volume of dead branches (`Lizard.acquire.dead-branch`) and epiphytes (`Lizard.acquire.epiphyte`) in tree canopies relate to the lizard's Acquire Resource capability (Figure 4, orange). Humans can enable opportunities for lizards to express this capability by converting ground surfaces to grasslands (`Lizard.acquire.grass`), releasing tree canopies from human control to allow dead branches to develop (`Lizard.acquire.dead-branch`), and installing native mistletoe in tree canopies (`Lizard.acquire.epiphyte`).
+The area of grassland (`Lizard.acquire.grass`) as well as the volume of dead branches (`Lizard.acquire.dead-branch`) and epiphytes (`Lizard.acquire.epiphyte`) in tree canopies relate to the lizard's Acquire Resource capability (Figure 1, orange). Humans can enable opportunities for lizards to express this capability by converting ground surfaces to grasslands (`Lizard.acquire.grass`), releasing tree canopies from human control to allow dead branches to develop (`Lizard.acquire.dead-branch`), and installing native mistletoe in tree canopies (`Lizard.acquire.epiphyte`).
 
-The area of unpaved ground relates to the lizard's Communicate capability (`Lizard.communicate.not-paved`) (Figure 4, pink). Humans can provide opportunities for exploration through removing hard surfaces. Sheltered sites including fallen nurse logs (`Lizard.reproduce.nurse-log`) and fallen trees (`Lizard.reproduce.fallen-tree`) relate to the lizard's Reproduce capability (Figure 4, green). Humans can support this capability through retaining fallen branches (`Lizard.reproduce.nurse-log`) and trees (`Lizard.reproduce.fallen-tree`) in situ.
+The area of unpaved ground relates to the lizard's Communicate capability (`Lizard.communicate.not-paved`) (Figure 1, pink). Humans can provide opportunities for exploration through removing hard surfaces. Sheltered sites including fallen nurse logs (`Lizard.reproduce.nurse-log`) and fallen trees (`Lizard.reproduce.fallen-tree`) relate to the lizard's Reproduce capability (Figure 1, green). Humans can support this capability through retaining fallen branches (`Lizard.reproduce.nurse-log`) and trees (`Lizard.reproduce.fallen-tree`) in situ.
 
 [^8]: José Tomás Ibarra, Kristina Cockle, Tomás Altamirano, Yntze Hoek, Suzanne Simard, Cristián Bonacic, and Kathy Martin. (2020). Nurturing Resilient Forest Biodiversity: Nest Webs as Complex Adaptive Systems. Ecology and Society 25(2). https://doi.org/10/gnb4g8
 
