@@ -4,19 +4,11 @@ subtitle: "Evidence-based modelling for nonhuman leadership: can trees, birds, a
 toc: false
 ---
 
-## Live model demonstration
-
-::: {.column-screen-inset}
-
-<iframe class="model-demo" src="https://arboreal-futures-live.gigglycarp1.chatgpt.site/" title="Interactive Arboreal Futures model" loading="lazy" allowfullscreen></iframe>
-
-:::
-
-[Open the demonstration full size](https://arboreal-futures-live.gigglycarp1.chatgpt.site/){target="_blank"}
-
 These supplementary materials provide ecological evidence and methodological details supporting the main article.
 
 *Authors: Alexander Holland, Stanislav Roudavski, Jason Thompson and Philip Gibbons*
+
+[Live demonstration](live-demonstration.qmd)
 
 ## Appendices
 

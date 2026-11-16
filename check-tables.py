@@ -108,14 +108,14 @@ class RenderedParagraphs(HTMLParser):
             self.current.append(data)
 
 
-sources = [ROOT / "index.qmd", *sorted((ROOT / "appendices").glob("*.qmd"))]
+sources = [ROOT / "index.qmd", ROOT / "live-demonstration.qmd", *sorted((ROOT / "appendices").glob("*.qmd"))]
 if not sources[0].is_file():
     raise SystemExit("Missing index.qmd")
 missing_sources = [source.name for source in sources if not source.is_file()]
 if missing_sources:
     raise SystemExit(f"Missing expected source pages: {', '.join(missing_sources)}")
-if len(sources) != 15:
-    raise SystemExit(f"Expected index.qmd, 11 appendices and 3 pathway submodules, found {len(sources)} files.")
+if len(sources) != 16:
+    raise SystemExit(f"Expected index.qmd, live-demonstration.qmd, 11 appendices and 3 pathway submodules, found {len(sources)} files.")
 
 total = 0
 for source in sources:

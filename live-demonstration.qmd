@@ -1,0 +1,14 @@
+---
+title: "Live demonstration"
+toc: false
+---
+
+[Back to the supplementary contents](index.qmd)
+
+::: {.column-screen-inset}
+
+<iframe class="model-demo" src="https://arboreal-futures-live.gigglycarp1.chatgpt.site/" title="Interactive Arboreal Futures model" loading="lazy" allowfullscreen></iframe>
+
+:::
+
+[Open the demonstration full size](https://arboreal-futures-live.gigglycarp1.chatgpt.site/){target="_blank"}

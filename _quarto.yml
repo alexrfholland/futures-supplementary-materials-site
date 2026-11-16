@@ -5,6 +5,7 @@ project:
   output-dir: _site
   render:
     - index.qmd
+    - live-demonstration.qmd
     - appendices/appendix_A_glossary.qmd
     - appendices/appendix_B_vignette_evidence.qmd
     - appendices/appendix_C_places.qmd
@@ -33,12 +34,16 @@ website:
     left:
       - text: "Supplementary materials"
         href: index.qmd
+      - text: "Live demonstration"
+        href: live-demonstration.qmd
   sidebar:
     style: "docked"
     search: true
     contents:
       - text: "Overview"
         href: index.qmd
+      - text: "Live demonstration"
+        href: live-demonstration.qmd
       - text: "Appendix A: Glossary"
         href: appendices/appendix_A_glossary.qmd
       - text: "Appendix B: Supporting evidence for the vignettes"
