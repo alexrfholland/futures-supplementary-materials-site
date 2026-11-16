@@ -91,3 +91,13 @@ Old appendix:
 - [Small, medium and large](appendix_H_baseline_woodlands.qmd#small-medium-and-large)
 - [Senescing and snag](appendix_H_baseline_woodlands.qmd#senescing-and-snag)
 - [Fallen and decayed](appendix_H_baseline_woodlands.qmd#fallen-and-decayed)
+
+## Updated appendices
+
+- [Supporting evidence for the vignettes](updated_01_vignette_evidence.qmd)
+- [Place](updated_02_place.qmd)
+- [Personas](updated_03_personas.qmd)
+- [Indicators](updated_04_indicators.qmd)
+- [Proposals](updated_05_proposals.qmd)
+- [Pathways](updated_06_pathways.qmd)
+- [Details on expansion and reachability](updated_07_expansion_reachability.qmd)

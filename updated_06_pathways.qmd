@@ -1,0 +1,18 @@
+---
+pagetitle: "Pathways"
+bibliography: [references/site_references.bib]
+link-citations: true
+---
+
+# Pathways
+
+We consider a future reachable when the model can specify plausible intermediate actions from present conditions towards it. We therefore show how the model constrains the actions available to the evaluative community and how the effects of its decisions accumulate over time. We call the aggregate pattern formed by these events a pathway.
+
+Under human-led and nonhuman-led conditions, the model constrains the available actions and responses. Their unfolding effects produce sequences of change, which we describe and compare as pathways.
+
+Note: the simulation material (Appendix G and its submodules) is proposed to sit under this heading.
+
+- [Appendix G: Pathway simulation](appendix_G_pathway_simulation.qmd)
+- [Pathway simulation submodule A: Tree growth](appendix_G_pathway_simulation_growth-submodule.qmd)
+- [Pathway simulation submodule B: Tree lifecycle phase](appendix_G_pathway_simulation_lifecycle-submodule.qmd)
+- [Pathway simulation submodule C: Recruit and mortality dynamics](appendix_G_pathway_simulation_recruit-mortality-submodule.qmd)

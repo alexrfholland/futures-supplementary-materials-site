@@ -1,0 +1,46 @@
+---
+title: "Details on expansion and reachability"
+bibliography: [references/site_references.bib]
+link-citations: true
+---
+
+#### How proposals by nonhuman beings expand the set of futures
+
+Compared with this pre-urban woodland, urbanisation has closed many possibilities by removing organisms, relations and niches. Human activities such as construction, species introductions, technological and institutional change, and new management routines have also created conditions in which different relations, niches and ways of living can emerge. 
+
+Human activities produce around a narrow range of priorities, assumptions, institutional time horizons and judgements about political feasibility. This produces two related mismatches: change can occur faster than organisms and ecological collectives can explore, adapt to or stabilise the possibilities it creates, and consequences such as extinction debts, blah, can exceed humans’ capacity to anticipate or manage them.
+
+In such conditions, nonhuman leadership can help collectives expand the set of possibile futures but requires some protection and support. [It is impossible to be comprehensive, but you can mention some different ways of expanding futures and connect those dimensions to a couple of examples.]
+
+| Expansion observed in the model | Relation to nonhuman leadership | Example |
+|---|---|---|
+| Measured opportunities to express capabilities increase | Allow beings to express contributions that otherwise remain dormant | |
+| Novel spatial and material configurations increase these opportunities | Allow beings to innovate through their plasticity | |
+| Existing activity becomes a recognised and supportable option | Allow existing but unrecognised activity to become supported and included among politically protected possibilities | |
+| Contributions combine in new working configurations | Allow more substantial or combinatorial innovation across beings | |
+
+All proposals combine different aspects of the above table, but can also highlight those.
+
+## Pathway dynamics in relation to reachability
+
+Reachability as the collective capacity and process of attaining destinations under uncertainty, with proposing and negotiation, local-optimum escape, retrofit, satisficing, pulse events, redundancy and landscape reshaping as different contributing operations or dynamics.
+
+We can express it as a capability, expertise, or intelligence of the system. If you understand intelligence as the ability to reach the desired destination through multiple alternative ways, that is what the system becomes more capable of. The way to reach an uncertain future is uncertain. We want to make the paths more walkable and better definable, but we also want more paths because a particular path might fail.
+
+Example ways nonhuman leadership helps a collective move from present conditions towards a possible future from the expanded set.
+
+| What the collective does | How this makes the destination reachable | Example |
+|---|---|---|
+| Accepts a slower or initially more costly pathway | Looks beyond immediate performance and crosses a region of lower performance when the longer-term benefit or option value justifies the immediate cost | Allows ageing trees to persist through initial risk-management, maintenance and road-space costs so that later decay, habitat formation and recruitment remain possible |
+| Propagates useful discoveries and combines the work of different agents | Makes one agent's contribution available for other agents to use, extend or combine with their own work | Allowing trees to age and decay provides canopies, hollows and deadwood that fungi, birds, lizards and later human interventions can use |
+| Retains discoveries long enough to alter later decisions | Slow-changing materials and arrangements persist across faster cycles and influence what subsequently reassembles | Old trees, deadwood, soils and converted structures carry the effects of earlier decisions into later proposals |
+| Explores and compares alternative ways forward | Tests, negotiates, supports, moderates or rejects different proposals rather than repeatedly applying the currently successful solution | At City, the collective compares planted load-bearing roofs, roughened lightweight surfaces and ground depaving rather than choosing between complete reconstruction and no change |
+| Maintains parallel and redundant ways of proceeding | Redundancy names a family of overlapping strategies that keep functions viable under disturbance, uncertainty and change. These strategies work through substitutable parts, partial overlap, response diversity, slack, memory, exaptation, bricolage and protected room for experimentation. Partial redundancy, where structurally different components perform similar functions in some contexts while keeping distinct roles in others. | Retained natural cavities, braced branches, installed hollows and artificial canopies provide different ways of supporting Bird Reproduce |
+| Protects pathways from closure | Prevents an irreversible present action from eliminating options that the collective may need later | Retaining an ageing tree preserves later possibilities for decay, colonisation and habitat formation that felling would close for decades |
+| Repurposes existing conditions and structures | Uses retrofit, co-option and bricolage to turn inherited materials and infrastructures into steps towards the destination | Roofs and facades become traversable surfaces, utility poles support artificial canopies, and introduced elms become habitat scaffolds |
+| Combines search and change [maybe this can be better named like offloading descisions and cognition to structures etc, ie. inhereitence, etc, ]| Alters the landscape while moving through it, changing the conditions that determine what becomes reachable next | Buffers and braces retain ageing elms, which later provide standing and fallen structures that support further habitat and recruitment proposals |
+| Rewrites setpoints | A brief intervention changes the target the collective works towards, after which the collective uses its own competency to build and maintain the new configuration | Stable recruitment and bioenvelopes are candidate examples |
+| Uses keystone agents or structures | Protects or adds an influential node that supports many downstream relationships and interventions | Large old trees and hollow-bearing structures |
+| Uses pulse disturbances | Accommodates or works with a short, concentrated event that resets succession or reopens the state space | The synchronised senescence and treefall of the Parade elms |
+| Intervenes at leverage points | Changes goals, rules or organising relationships that shape many later actions rather than adjusting isolated parameters | Reframes a road reserve as habitat rather than only as transport space |
+

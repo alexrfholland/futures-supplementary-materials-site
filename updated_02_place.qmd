@@ -1,0 +1,38 @@
+---
+pagetitle: "Place"
+bibliography: [references/site_references.bib]
+link-citations: true
+---
+
+# Place
+
+A place is a situated and evolving configuration of geographical conditions, cultural meanings and ecological relationships. We use Melbourne to compare the ways of living that its changing conditions can support.
+
+Inner Melbourne once had a diverse structure of:
+
+- grassy woodland across higher ground and much of Royal Park;
+- creekline and riparian woodland through the CBD and along the Yarra;
+- wetlands, floodplain and swamp;
+- estuarine wetland and saltmarsh around present-day Docklands.
+
+The descriptions below draw on the [pre-colonial plant list for the City of Melbourne](https://royalpark.org.au/wp-content/uploads/2023/11/Pre-colonial_plant_list_for_the_City_of_Melbourne.pdf) (Table 2, pp. 9--12) and the [Royal Park Master Plan Biodiversity and Ecology Report](https://participate.melbourne.vic.gov.au/download_file/18165/6262) (pp. 9--11). Neither report maps pre-colonial vegetation boundaries at parcel scale, so the table distinguishes directly supported ecosystem descriptions from spatial inference.
+
+All three places formed part of a broader open-canopied landscape, with eucalypts and/or she-oaks above native grasses and herbs. They differed mainly in substrate and water: City was a basalt--creek--river mosaic; Street occupied well-drained sedimentary slopes; and Parade lay at the edge of Royal Park's open grassy woodland.
+
+| Place | Present-day location | Best-supported pre-colonial ecosystem | Structure shared with the other places | Distinctive local character | Evidence boundary | Reference |
+|---|---|---|---|---|---|---|
+| **Parade** | Royal Parade beside Royal Park, Parkville | Open Yellow Box--Drooping She-oak--River Red Gum grassy woodland (EVC 175 and/or EVC 55), probably grading into Valley Grassy Forest (EVC 47) to the east | An open tree layer above a species-rich native grass and herb layer, with River Red Gum. | The more open, sunlit park-edge setting: widely spaced Yellow Box, Drooping She-oak and River Red Gum on gentle rises. | The Royal Park report directly supports the open grassy-woodland structure. The ecosystem beneath Royal Parade and its probable eastward gradient are inferred. | [Royal Park Master Plan Biodiversity and Ecology Report](https://participate.melbourne.vic.gov.au/download_file/18165/6262), pp. 9--11; [pre-colonial plant list](https://royalpark.org.au/wp-content/uploads/2023/11/Pre-colonial_plant_list_for_the_City_of_Melbourne.pdf), Table 2, pp. 9--12. |
+| **City** | Melbourne CBD and the Hoddle Grid | River Red Gum grassy woodland on basalt (EVC 55), crossed by creekline woodland and grassland and becoming riparian toward the Yarra | An open tree layer above a species-rich native grass and herb layer, with River Red Gum. | The most internally varied and water-shaped setting: higher grassy ground was crossed by former Bouverie Creek, became wetter toward the Yarra and graded westward into the estuarine wetlands and saltmarsh of present-day Docklands. | The component ecosystems and principal locations are supported by the vegetation report, but their exact boundaries within the Hoddle Grid are not mapped. | [Pre-colonial plant list for the City of Melbourne](https://royalpark.org.au/wp-content/uploads/2023/11/Pre-colonial_plant_list_for_the_City_of_Melbourne.pdf), Table 2, pp. 9--12. |
+| **Street** | Carlton and Parkville around the University of Melbourne | Yellow Box--River Red Gum Valley Grassy Forest (EVC 47) on well-drained sedimentary slopes | An open tree layer above a species-rich native grass and herb layer, with River Red Gum. | The taller, well-drained forest setting: Yellow Box and River Red Gum grew on fertile slopes and gentle valleys, with possible creekline vegetation in shallow drainage depressions. | The vegetation report describes Valley Grassy Forest as certain and extensive from Parkville through Carlton. The exact street parcel and any local creekline variation are inferred. | [Pre-colonial plant list for the City of Melbourne](https://royalpark.org.au/wp-content/uploads/2023/11/Pre-colonial_plant_list_for_the_City_of_Melbourne.pdf), Table 2, p. 12. |
+
+The current state of Melbourne is severely degraded, but the city is also more biodiverse than commonly thought [@kirk2018LinkingNatureIn; @soanes2019WhenCitiesAre].
+
+Compared with cities globally, Australian cities support high bird species richness, particularly in areas of intermediate urbanisation such as suburbs, due to their typically sprawling form and many areas of retained vegetation [@campbellBirdsUrbanisingAustralia2023].
+
+Although overwhelming evidence suggests that urbanisation is a net negative for biodiversity, there are also many informative examples of species that are either neutrally affected or doing well in cities. Unique urban features may support particular species or life-history needs, buffer populations from the surrounding countryside, and provide refuge from threats in surrounding landscapes [@campbellBigChangesBackyard2022; @soanes2019WhenCitiesAre]. For example, the planting of Moreton Bay figs outside their natural range in Melbourne and other cities have resulted in the colonisation of these places by flying foxes.
+
+Cities can also function as threatened-species hotspots and may serve as the last refuge for some species in the future [@soanes2019WhenCitiesAre]. For example, some spider-orchid species now occur only in metropolitan Melbourne. These species were present before Melbourne expanded and were inadvertently protected in scattered urban remnants such as railway verges and other undeveloped parcels, while being eradicated from the surrounding countryside [@soanes2019WhenCitiesAre]. Across Australia, cities may provide the last refuge for 39 species in the future [@soanes2019WhenCitiesAre].
+
+TODO: Jot down some key locations / tensions to focus on relevant to our Places.
+
+See also [Appendix B: Places](appendix_B_places.qmd).
