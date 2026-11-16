@@ -2,13 +2,9 @@
 title: "Appendix L: Extended results"
 ---
 
-This appendix provides indicator quantities and tree population quantities for Parade, City and Street under the nonhuman-led and human-led pathways. The tables reproduce simulation run `4.12` from the earlier supplementary materials.
+These tables provide additional results from version 4.12 of the simulation.
 
 ## Year-180 indicator quantities
-
-The endpoint tables show baseline quantities, raw indicator counts at year 180, weighted percentages of baseline and ratios between pathways. Percentages follow the stream graphs: each raw count is divided by its baseline and multiplied by its stream share. For example, a stream share of `1/3` gives a retained sub-indicator one third of its capability group's weight. Composite rows and indicators excluded from the stream graphs are omitted. Indicator identifiers and definitions follow [Appendix E](appendix_E_capability_groups_and_indicators.qmd).
-
-`INF` denotes a positive nonhuman-led quantity divided by a zero human-led quantity. The raw quantities appear in parentheses.
 
 ### Parade
 
@@ -69,13 +65,9 @@ The endpoint tables show baseline quantities, raw indicator counts at year 180, 
 
 ## All-years comparison
 
-These tables compare assessed years 0, 1, 10, 30, 60, 90, 120, 150 and 180. Each place includes an indicator table followed by proposal and intervention quantities. Indicator percentages use the same stream-share weighting as the year-180 tables. Proposal tables specify their units separately, including tree records and voxels.
-
 ### Parade
 
 #### Indicators
-
-Cells show stream-graph weighted `% of baseline nonhuman-led vs human-led`. Raw composite rows and stream-graph exclusions are omitted. Each retained sub-indicator contributes `1/n` of its persona/capability composite.
 
 | indicator | composite | stream share | what it measures | baseline | yr 0 | yr 1 | yr 10 | yr 30 | yr 60 | yr 90 | yr 120 | yr 150 | yr 180 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -95,8 +87,6 @@ Cells show stream-graph weighted `% of baseline nonhuman-led vs human-led`. Raw 
 | Tree.reproduce.larger-patches-rewild | Tree.reproduce | 1 | Larger-patch rewilding support | 141,574 | 0.0% nonhuman-led vs 0.0% human-led | 2.3% nonhuman-led vs <0.1% human-led | 2.3% nonhuman-led vs <0.1% human-led | 23.0% nonhuman-led vs <0.1% human-led | 32.9% nonhuman-led vs <0.1% human-led | 34.8% nonhuman-led vs <0.1% human-led | 37.1% nonhuman-led vs <0.1% human-led | 40.6% nonhuman-led vs <0.1% human-led | 61.4% nonhuman-led vs <0.1% human-led |
 
 #### Proposals and interventions
-
-Cells show raw counts by pathway. Rows follow the proposal pie-chart logic exactly: rejected rows come from `v4_decisions`, recruit/colonise/deploy rows use `v4_decision_subgroups`, and decay/release-control accepted rows use the accepted full/partial decision channels.
 
 | proposal | data | unit | what the pie-chart family measures |
 |---|---|---|---|
@@ -129,8 +119,6 @@ Cells show raw counts by pathway. Rows follow the proposal pie-chart logic exact
 
 #### Indicators
 
-Cells show stream-graph weighted `% of baseline nonhuman-led vs human-led`. Raw composite rows and stream-graph exclusions are omitted. Each retained sub-indicator contributes `1/n` of its persona/capability composite.
-
 | indicator | composite | stream share | what it measures | baseline | yr 0 | yr 1 | yr 10 | yr 30 | yr 60 | yr 90 | yr 120 | yr 150 | yr 180 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Bird.acquire.peeling-bark | Bird.acquire | 1 | Peeling bark volume | 80,911 | 0.0% nonhuman-led vs 0.0% human-led | 0.6% nonhuman-led vs <0.1% human-led | 5.9% nonhuman-led vs 0.4% human-led | 17.2% nonhuman-led vs 4.9% human-led | 22.9% nonhuman-led vs 6.9% human-led | 21.7% nonhuman-led vs 6.6% human-led | 20.7% nonhuman-led vs 7.0% human-led | 22.1% nonhuman-led vs 7.5% human-led | 21.8% nonhuman-led vs 7.0% human-led |
@@ -149,8 +137,6 @@ Cells show stream-graph weighted `% of baseline nonhuman-led vs human-led`. Raw 
 | Tree.reproduce.larger-patches-rewild | Tree.reproduce | 1 | Larger-patch rewilding support | 150,696 | <0.1% nonhuman-led vs <0.1% human-led | 15.4% nonhuman-led vs <0.1% human-led | 17.5% nonhuman-led vs 0.2% human-led | 12.6% nonhuman-led vs 0.6% human-led | 19.1% nonhuman-led vs 1.3% human-led | 20.7% nonhuman-led vs 1.5% human-led | 21.2% nonhuman-led vs 2.0% human-led | 22.0% nonhuman-led vs 2.3% human-led | 23.9% nonhuman-led vs 2.6% human-led |
 
 #### Proposals and interventions
-
-Cells show raw counts by pathway. Rows follow the proposal pie-chart logic exactly: rejected rows come from `v4_decisions`, recruit/colonise/deploy rows use `v4_decision_subgroups`, and decay/release-control accepted rows use the accepted full/partial decision channels.
 
 | proposal | data | unit | what the pie-chart family measures |
 |---|---|---|---|
@@ -187,8 +173,6 @@ Cells show raw counts by pathway. Rows follow the proposal pie-chart logic exact
 
 #### Indicators
 
-Cells show stream-graph weighted `% of baseline nonhuman-led vs human-led`. Raw composite rows and stream-graph exclusions are omitted. Each retained sub-indicator contributes `1/n` of its persona/capability composite.
-
 | indicator | composite | stream share | what it measures | baseline | yr 0 | yr 1 | yr 10 | yr 30 | yr 60 | yr 90 | yr 120 | yr 150 | yr 180 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Bird.acquire.peeling-bark | Bird.acquire | 1 | Peeling bark volume | 80,077 | 0.0% nonhuman-led vs 0.0% human-led | 4.0% nonhuman-led vs <0.1% human-led | 11.3% nonhuman-led vs 0.3% human-led | 18.8% nonhuman-led vs 3.5% human-led | 24.3% nonhuman-led vs 4.7% human-led | 23.4% nonhuman-led vs 4.9% human-led | 22.6% nonhuman-led vs 4.9% human-led | 24.1% nonhuman-led vs 5.7% human-led | 24.9% nonhuman-led vs 5.1% human-led |
@@ -207,8 +191,6 @@ Cells show stream-graph weighted `% of baseline nonhuman-led vs human-led`. Raw 
 | Tree.reproduce.larger-patches-rewild | Tree.reproduce | 1 | Larger-patch rewilding support | 146,926 | <0.1% nonhuman-led vs <0.1% human-led | 0.4% nonhuman-led vs 0.1% human-led | 4.7% nonhuman-led vs 0.4% human-led | 13.2% nonhuman-led vs 0.8% human-led | 19.1% nonhuman-led vs 1.6% human-led | 20.0% nonhuman-led vs 1.9% human-led | 21.7% nonhuman-led vs 2.4% human-led | 23.7% nonhuman-led vs 2.7% human-led | 31.0% nonhuman-led vs 3.0% human-led |
 
 #### Proposals and interventions
-
-Cells show raw counts by pathway. Rows follow the proposal pie-chart logic exactly: rejected rows come from `v4_decisions`, recruit/colonise/deploy rows use `v4_decision_subgroups`, and decay/release-control accepted rows use the accepted full/partial decision channels.
 
 | proposal | data | unit | what the pie-chart family measures |
 |---|---|---|---|
@@ -243,8 +225,6 @@ Cells show raw counts by pathway. Rows follow the proposal pie-chart logic exact
 | deploy-structure | VTK point data | full | upgrade | Accepted deploy-structure proposals using feature upgrades | 1,268 nonhuman-led; 4 human-led | 4,144 nonhuman-led; 5 human-led | 6,413 nonhuman-led; 29 human-led | 6,471 nonhuman-led; 449 human-led | 5,339 nonhuman-led; 383 human-led | 3,306 nonhuman-led; 400 human-led | 1,788 nonhuman-led; 360 human-led | 914 nonhuman-led; 225 human-led |
 
 ## Tree population quantities
-
-These tables count modelled tree records by size and lifecycle category: `small`, `medium`, `large`, `senescing`, `snag`, `fallen` and `decayed`. Each cell shows the count followed by its signed difference from the woodland baseline in parentheses. The baseline column gives the reference count. [Appendix K](appendix_K_baseline_woodlands.qmd) explains the woodland reference categories.
 
 ### Parade nonhuman-led
 
