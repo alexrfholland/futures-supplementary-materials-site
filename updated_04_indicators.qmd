@@ -75,14 +75,56 @@ Indicators select measurable environmental effects through which personas can ex
 |  | **Acquire Resource** | English Elms extend broad, leaf-bearing branches into canopy gaps to capture sunlight. | In streets and parks, perceived branch-fall risk and infrastructure clearances drive heavy pruning [@saeboSelectionPlantMaterials2005; @le2014TheFutureOf]. | Unpruned canopy | Volume | It does not measure leaf area, actual light interception, photosynthesis, water stress or pruning history. |
 |  | **Reproduce** | Yellow Box seeds germinate in open loamy gaps and establish as saplings that can replace ageing trees. | Nutritious soil built by decades of retained litter and fallen biomass provides a seedbed in which Yellow Box saplings can mature [@banksTreeAgesAgeing1997; @mallenCooper2026PlantAndSoilFunction]. | Nutritious soil | Area | It does not measure seed arrival, germination, seedling survival or later recruitment. |
 
-Potential writeup:
+Examples:
 
 > For example, magpies roost overnight on elevated branches near other group members. Shared roosts repeatedly bring the group together, reinforcing social bonds and shaping local dialects through which they maintain and distinguish their territories [@kaplanAustralianMagpieBiology2019]. The volume and spatial distribution of perchable branches can provide one indicator of whether a pathway creates physical opportunities for place-based practices such as learned songs and dialects [@parker2025LearningWithOwls; @kaplanAustralianMagpieBiology2019].
 
 > For example, current urban vegetation and planting strategies can favour large, aggressive nectar-feeding generalists while small forest insectivores remain poorly represented [@campbellBigChangesBackyard2022; @humphreyNoisyNeighborConundrum2024]. The volume of peeling bark can therefore indicate whether a pathway creates canopy opportunities for birds disadvantaged by existing urban conditions [@humphreyNoisyNeighborConundrum2024; @le2018TheValueOf].
 
 
-See also the model indicator table: [Appendix C, Table 4. Indicators](appendix_C_personas_capabilities_and_relational_indicators.qmd#relational-indicators).
+## Relational indicators
+
+We next provide further information on our relational indicators. These indicators measure relational conditions inside the habitat volume that make a subset of capabilities available. Each indicator uses a three‑part code x.y.z where x marks persona, y marks capability and z marks the specific indicator. Each indicator pairs with one effort metric. We track three effort metrics: canopy volume released from human control; the number of supporting structures deployed; or area converted for non‑human use.
+
+**Table 4. Indicators**
+
+| Indicator | What it measures | Raw VTK query | Raw schema row | Reporting status | Stream share |
+|---|---|---|---|---|---|
+| `Bird.acquire.peeling-bark` | Peeling bark volume | `stat_peeling bark > 0` | sub-indicator | kept | 100% of `Bird.acquire` |
+| `Bird.communicate.perch-branch` | Perchable branch volume in senescing, snag, or artificial canopy | `stat_perch branch > 0 AND forest_size in senescing\|snag\|artificial` | sub-indicator | kept | 100% of `Bird.communicate` |
+| `Bird.reproduce.hollow` | Hollow volume | `stat_hollow > 0` | sub-indicator | kept | 100% of `Bird.reproduce` |
+| `Lizard.acquire.grass` | Low vegetation ground | `search_bioavailable == low-vegetation` | sub-indicator | kept | 33.3% of `Lizard.acquire` |
+| `Lizard.acquire.dead-branch` | Dead branch volume | `stat_dead branch > 0` | sub-indicator | kept | 33.3% of `Lizard.acquire` |
+| `Lizard.acquire.epiphyte` | Epiphyte volume | `stat_epiphyte > 0` | sub-indicator | kept | 33.3% of `Lizard.acquire` |
+| `Lizard.acquire` | Combined acquire habitat | union of `grass`, `dead-branch`, and `epiphyte` | composite union | dropped | rebuilt from retained sub-indicators |
+| `Lizard.communicate.not-paved` | Ground or open space that is not roadway, busy roadway, or parking | `(search_bioavailable in low-vegetation\|open space) AND NOT(search_urban_elements in roadway\|busy roadway\|parking)` | sub-indicator | kept | 100% of `Lizard.communicate` |
+| `Lizard.reproduce.nurse-log` | Fallen log volume | `stat_fallen log > 0` | sub-indicator | kept | 50% of `Lizard.reproduce` |
+| `Lizard.reproduce.fallen-tree` | Fallen or decayed tree volume | `forest_size in fallen\|decayed` | sub-indicator | kept | 50% of `Lizard.reproduce` |
+| `Lizard.reproduce` | Combined reproduce habitat | union of `nurse-log` and `fallen-tree` | composite union | dropped | rebuilt from retained sub-indicators |
+| `Tree.acquire.moderated` | Reduced pruning support | `proposal_release_control_intervention == reduce-canopy-pruning` | sub-indicator | dropped | excluded from stream graph |
+| `Tree.acquire.autonomous` | Eliminated pruning support | `proposal_release_control_intervention == eliminate-canopy-pruning` | sub-indicator | kept | 100% of `Tree.acquire` after exclusions |
+| `Tree.acquire` | Combined acquire habitat | union of `moderated` and `autonomous` | composite union | dropped | rebuilt from retained sub-indicators |
+| `Tree.communicate.snag` | Snag volume | `forest_size == snag` | sub-indicator | kept | 33.3% of `Tree.communicate` |
+| `Tree.communicate.fallen` | Fallen tree volume | `forest_size == fallen` | sub-indicator | kept | 33.3% of `Tree.communicate` |
+| `Tree.communicate.decayed` | Decayed tree volume | `forest_size == decayed` | sub-indicator | kept | 33.3% of `Tree.communicate` |
+| `Tree.communicate` | Combined communicate habitat | union of `snag`, `fallen`, and `decayed` | composite union | dropped | rebuilt from retained sub-indicators |
+| `Tree.reproduce.smaller-patches-rewild` | Partial recruit intervention | `proposal_recruit_intervention == rewild-smaller-patch` | sub-indicator | dropped | excluded from stream graph |
+| `Tree.reproduce.larger-patches-rewild` | Full recruit intervention | `proposal_recruit_intervention == rewild-larger-patch` | sub-indicator | kept | 100% of `Tree.reproduce` after exclusions |
+| `Tree.reproduce` | Combined reproduce habitat | union of `smaller-patches-rewild` and `larger-patches-rewild` | composite union | dropped | rebuilt from retained sub-indicators |
+
+
+## Indicator walkthrough
+TODO: update with final indicators
+
+We next provide an example of how the model tracks indicators within the habitat volume (Figure 4).
+
+
+![The habitat volume for the Boulevard site across three different states. Voxels that do not contain indicators for lizard capabilities have been hidden. **Top:** **Current state**. Some voxels contain explore indicators (pink), but few voxels contain other indicators. **Middle:** **Trending pathway, 60 years**. The habitat volume after 60 years of current management shows similar indicators to existing conditions. **Bottom:** **Positive pathway, 60 years**. The habitat volume contains explore indicators plus significant grasslands related to lizard foraging (orange) and fallen logs and trees related to lizard shelter (green).](./media/image4.png)
+
+
+The area of grassland (2.1.1) as well as the volume of dead branches (2.1.2) and epiphytes (2.1.3) in tree canopies relate to the lizard's capability to forage (Figure 4, orange). Humans can enable opportunities for lizards to express this capability by converting ground surfaces to grasslands (2.1.1), releasing tree canopies from human control to allow dead branches to develop (2.1.2), and installing native mistletoe in tree canopies (2.1.3).
+
+The area of unpaved ground relates to the lizard's capability to explore (2.2.1) (Figure 4, pink). Humans can provide opportunities for exploration through removing hard surfaces. Sheltered sites including fallen nurse logs (2.3.1) and fallen trees (2.3.2) relate to the lizard's capability to shelter (Figure 4, green). Humans can support this capability through retaining fallen branches (2.3.1) and trees (2.3.2) in situ.
 
 [^8]: José Tomás Ibarra, Kristina Cockle, Tomás Altamirano, Yntze Hoek, Suzanne Simard, Cristián Bonacic, and Kathy Martin. (2020). Nurturing Resilient Forest Biodiversity: Nest Webs as Complex Adaptive Systems. Ecology and Society 25(2). https://doi.org/10/gnb4g8
 
