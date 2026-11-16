@@ -15,13 +15,13 @@ These supplementary materials provide ecological evidence and methodological det
 | Appendix | Contents |
 |---|---|
 | [Appendix A: Glossary](appendices/appendix_A_glossary.qmd) | Defines the shared conceptual vocabulary. |
-| [Appendix B: Supporting evidence for the vignettes](appendices/appendix_B_vignette_evidence.qmd) | Provides ecological evidence for the vignettes. |
+| [Appendix B: Supporting evidence for the vignettes](appendices/appendix_B_vignette_evidence.qmd) | Provides background evidence for the vignettes. |
 | [Appendix C: Places](appendices/appendix_C_places.qmd) | Describes the places, locations and model boundaries. |
 | [Appendix D: Personas and capabilities](appendices/appendix_D_personas_and_capabilities.qmd) | Documents personas, species and sampled capabilities. |
-| [Appendix E: Capability groups and indicators](appendices/appendix_E_capability_groups_and_indicators.qmd) | Explains capability groups, indicators and their implementation. |
-| [Appendix F: Habitat features](appendices/appendix_F_habitat_features.qmd) | Documents scan-derived features, calibration and variants. |
-| [Appendix G: Habitat volumes](appendices/appendix_G_habitat_volumes.qmd) | Documents spatial inputs and voxel construction. |
-| [Appendix H: Resistance](appendices/appendix_H_resistance.qmd) | Describes resistance and cellular automata connectivity. |
+| [Appendix E: Capability groups and indicators](appendices/appendix_E_capability_groups_and_indicators.qmd) | Explains the capability groups related to the personas and how we define the indicators the model uses to measure them. |
+| [Appendix F: Habitat features](appendices/appendix_F_habitat_features.qmd) | Documents the workflow for deriving habitat features from laser scans, including their calibration and variants. |
+| [Appendix G: Habitat volumes](appendices/appendix_G_habitat_volumes.qmd) | Documents the data inputs and construction of the voxel grid. |
+| [Appendix H: Resistance](appendices/appendix_H_resistance.qmd) | Describes the resistance parameters and the cellular automata calculation for connectivity. |
 | [Appendix I: Proposals and interventions](appendices/appendix_I_proposals_and_interventions.qmd) | Describes proposal families and community responses. |
 | [Appendix J: Pathway simulation](appendices/appendix_J_pathway_simulation.qmd) | Documents the pathway simulation and its implementation. |
 | [Appendix K: Baseline woodlands](appendices/appendix_K_baseline_woodlands.qmd) | Documents the evidence and calculations for the woodland reference state. |
