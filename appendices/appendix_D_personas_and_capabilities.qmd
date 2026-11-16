@@ -18,8 +18,6 @@ The Lizard persona gathers the Common Garden Skink, Southern Marbled Gecko, East
 
 The Tree persona gathers the English Elm, River Red Gum and Yellow Box, with a focus on large old trees. Their growth, renewal and fungal relationships connect individual trees with wider ecological processes. Urban pruning and soil disturbance constrain these relationships.
 
-The species accounts describe ecological requirements and possible responses to change. Their placement along a gradient of transformation is an interpretation of this evidence. Modelled indicator gains show opportunities for these ways of living; establishing occupancy, survival or population recovery would require further evidence. Blank cells in the detailed tables indicate aspects for which this compilation provides no account.
-
 ::: {.column-screen-inset}
 
 **Table 1. Persona overview**
