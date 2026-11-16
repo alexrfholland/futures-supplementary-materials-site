@@ -4,7 +4,7 @@ subtitle: "Evidence-based modelling for nonhuman leadership: can trees, birds, a
 toc: false
 ---
 
-These supplementary materials provide ecological evidence and methodological details supporting the main article.
+These supplementary materials provide evidence and methodological details supporting the main article.
 
 *Authors: Alexander Holland, Stanislav Roudavski, Jason Thompson and Philip Gibbons*
 
