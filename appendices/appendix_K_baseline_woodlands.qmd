@@ -38,11 +38,15 @@ The `Flat` values are treated as densities per 0.1 ha and scaled to the site are
 
 These DBH rows are grouped into the model size classes as follows:
 
+::: {.column-screen-inset}
+
 | model category | model definition | DBH rows included | density per 0.1 ha | density per ha |
 |---|---|---|---:|---:|
 | `small` | DBH `< 50 cm` | 5, 21, 31, 41 | 12.8 | 128.0 |
 | `medium` | DBH `>= 50 cm` and `< 80 cm` | 51, 61, 71 | 1.625 | 16.25 |
 | `large` | DBH `>= 80 cm` | 80 | 1.02 | 10.2 |
+
+:::
 
 In the model, these live trees are treated as pre-colonial reserve trees and represented with pre-colonial tree templates for the corresponding size class.
 
@@ -76,6 +80,8 @@ We estimate ground-deadwood biovolume from the literature, allocate it between `
 
 The evidence base for the ground-deadwood target and split is:
 
+::: {.column-screen-inset}
+
 | measure | quantity | type of estimate | ref | note |
 |---|---|---|---|---|
 | total coarse woody debris | 125 t/ha, approximately 208.3 m3/ha using 0.6 t/m3 | baseline estimate | Mac Nally et al. 2002[^macnally2002] | unmanaged Millewa reference |
@@ -83,6 +89,8 @@ The evidence base for the ground-deadwood target and split is:
 | total coarse woody debris | 19.3 m3/ha median, 34.0 m3/ha mean, range 3.0-247.2 m3/ha | condition estimate | Manning et al. 2007[^manning2007] | box-gum grassy woodland reserves |
 | forest-floor coarse woody debris | 18.9 t/ha in woodland, 50.4 t/ha in open forest | condition estimate | Woldendorp and Keenan 2005[^woldendorp2005] | broader Australian woodland/open-forest context |
 | total coarse woody debris | 114-166 m3/ha | baseline estimate | Threlfall et al. 2019[^threlfall2019] | eastern Australian native forests |
+
+:::
 
 
 For the total ground-deadwood target, we use Mac Nally et al.'s unmanaged Millewa reference of `125 t/ha`.[^macnally2002] This is converted to volume with the model wood density of `0.6 t/m3`:
@@ -105,10 +113,14 @@ fallen trunks = total fallen deadwood - smaller fallen branch debris
 
 This gives:
 
+::: {.column-screen-inset}
+
 | case | total fallen deadwood | smaller fallen branch debris | calculated fallen trunks | fallen trunk share | smaller debris share |
 |---|---:|---:|---:|---:|---:|
 | lower woodland case | 19.3 m3/ha | 9.5 m3/ha | 9.8 m3/ha | 51% | 49% |
 | upper woodland case | 34.0 m3/ha | 11.9 m3/ha | 22.1 m3/ha | 65% | 35% |
+
+:::
 
 The baseline adopts a trunk-weighted `70% / 30%` split. This slightly emphasises fallen trunks while still retaining a substantial smaller-debris class:
 

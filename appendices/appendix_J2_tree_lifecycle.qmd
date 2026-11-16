@@ -6,6 +6,8 @@ The main text follows trees through growth, senescence, death and decomposition.
 
 TODO: update
 
+::: {.column-screen-inset}
+
 | Life cycle phase | Precolonial value | Introduced value | Evidence |
 |---|---|---|---|
 | Sprout | `<40 cm` trunk diameter at breast height (DBH) | `<40 cm DBH` | Standard classification for eucalyptus growth phases.[^1] |
@@ -15,6 +17,8 @@ TODO: update
 | Standing snag | Up to 50 years | Up to 50 years | Le Roux et al. (2014) conservatively estimate that dead trees could remain standing for at least 50 years after initial mortality, based on observations of the standing life of dead trees in *Eucalyptus* forests. |
 | Fallen | `50-100 years` | `50-100 years` | Woldendorp and Keenan note that “CWD can persist for longer than these general estimates” and that decomposition depends on “wood durability, size”.[^2] `95%` decomposition for Australian eucalypt wood ranges from `7 years` for *E. regnans* to `375 years` for *E. camaldulensis* and *E. tereticornis*.[^2] Researchers note that decomposition can take several hundred years.[^3] Matthew J. Pringle et al. model a slow pathway and estimate `68 years` for `95%` of CWD to disappear.[^4] We therefore define whole fallen trees as lasting `50-100 years` and smaller decayed pieces as lasting `50-100 years`. |
 | Decomposed | `50-100 years` | `50-100 years` | As above. |
+
+:::
 
 [^1]: Holland, 2024.
 [^2]: Woldendorp, G., and Keenan, R. J. (2005). Coarse woody debris in Australian forest ecosystems: A review. *Austral Ecology*, 30(8), 834-843.

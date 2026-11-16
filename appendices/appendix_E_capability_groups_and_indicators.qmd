@@ -10,6 +10,8 @@ The main text assesses opportunities for thriving through persona-specific envir
 
 To make the sampled capabilities comparable across personas, we aggregate them into three groups: Communicate, Acquire Resource and Reproduce. We then use relational indicators to quantify selected environmental conditions that support these capability groups. The indicators translate evidence about nonhuman behaviours and resources into spatial quantities through which we compare pathways. Table 1 explains their ecological basis and identifies further conditions that influence actual behaviour, interactions and population responses.
 
+::: {.column-screen-inset}
+
 **Table 1. Ecological examples informing indicator selection**
 
 | Persona | Capability group | Behaviour expressing the capability | Example property of physical environment supporting this behaviour | Indicator | Unit | Omission |
@@ -18,17 +20,21 @@ To make the sampled capabilities comparable across personas, we aggregate them i
 |  | **Acquire Resource** | After eating mistletoe fruit, Mistletoebirds deposit most seeds in the same infected stands, concentrating future food in a defensible location. | Mistletoe already established within infected trees or stands [@watsonMistletoeSpecialistFrugivores2013]. | Mistletoe epiphytes in tree crowns | Count | It does not measure mistletoe survival or removal by possums. |
 |  | **Reproduce** | Red-rumped Parrots nest in tree hollows to shelter eggs and raise young. | Accessible hollows in mature trees near open feeding grounds [@connorLongtermChanges402026]. | Tree hollows | Count | It does not measure hollow dimensions, microclimate, competition or which species obtains access. |
 | **Lizard** | **Communicate** | Male Blue-tongued Lizards explore home ranges averaging 12,700 m² to find mates. By tongue-sampling scent trails and revisiting familiar ground, they learn where females are likely to be found. | Unpaved ground and dense vegetation connect the 2–7 shelters used as core sites. Repeated access to the same surfaces supports scent sampling and spatial familiarity; roads and exposed paving interrupt cover, increase vulnerability and destroy scent cues [@gravesDiscriminationSelfConspecific1991; @koenigEcologyAustralianReptile2001]. | Unpaved ground | Area | It does not measure the persistence of particular chemical cues, mate presence, actual movement or mortality while crossing. |
-|  | **Acquire Resource** | Common Garden Skinks hunt small invertebrates as they forage through leaf litter and loose organic matter. | Grassland beneath large old trees receives litter from epiphytes, while fallen dead branches create moist debris that shelters insect prey [@lunneyDietsScincidLizards1989; @gardenHabitatStructureMore2007; @le2014TheFutureOf]. | Grasslands, dead branches, epiphytes | Area, volume, count | It does not measure prey abundance, pesticide exposure, thermal access or predation risk. |
+|  | **Acquire Resource** | Common Garden Skinks hunt small invertebrates as they forage through leaf litter and loose organic matter. | Grassland beneath large old trees receives litter from epiphytes, while fallen dead branches create moist debris that shelters insect prey [@lunneyDietsScincidLizards1989; @gardenHabitatStructureMore2007; @lerouxFutureLargeOld2014]. | Grasslands, dead branches, epiphytes | Area, volume, count | It does not measure prey abundance, pesticide exposure, thermal access or predation risk. |
 |  | **Reproduce** | Common Garden Skinks lay eggs in ground refugia. | Loose, moist soil or decaying wood beneath nurse logs and fallen trees provides sheltered incubation sites [@jossReproductiveCyclesLampropholis1985; @duInfluenceHydricEnvironments2008]. | Nurse logs, fallen trees | Area | It does not measure substrate temperature or moisture, egg laying, hatching or juvenile survival. |
-| **Tree** | **Communicate** | Eucalypt roots can partner with both co-evolved and introduced mycorrhizal fungi. In exchange for carbon, these fungi help roots obtain water and nutrients; some also connect compatible trees and carry chemical signals [@adamsArbuscularMycorrhizasEctomycorrhizas2006; @vlk_alien_2020; @hardenDesigningFungalCity2026]. | Decaying eucalypt wood and litter remain within connected, uncompacted root zones, supporting fungal and soil communities [@mallenCooper2026PlantAndSoilFunction]. | Decaying wood | Volume | It does not establish which fungi colonise roots, which trees they connect or what materials move between them. |
-|  | **Acquire Resource** | English Elms extend broad, leaf-bearing branches into canopy gaps to capture sunlight. | In streets and parks, perceived branch-fall risk and infrastructure clearances drive heavy pruning [@saeboSelectionPlantMaterials2005; @le2014TheFutureOf]. | Unpruned canopy | Volume | It does not measure leaf area, actual light interception, photosynthesis, water stress or pruning history. |
-|  | **Reproduce** | Yellow Box seeds germinate in open loamy gaps and establish as saplings that can replace ageing trees. | Nutritious soil built by decades of retained litter and fallen biomass provides a seedbed in which Yellow Box saplings can mature [@banksTreeAgesAgeing1997; @mallenCooper2026PlantAndSoilFunction]. | Nutritious soil | Area | It does not measure seed arrival, germination, seedling survival or later recruitment. |
+| **Tree** | **Communicate** | Eucalypt roots can partner with both co-evolved and introduced mycorrhizal fungi. In exchange for carbon, these fungi help roots obtain water and nutrients; some also connect compatible trees and carry chemical signals [@adamsArbuscularMycorrhizasEctomycorrhizas2006; @vlkAlienEctomycorrhizalPlants2020; @hardenDesigningFungalCity2026]. | Decaying eucalypt wood and litter remain within connected, uncompacted root zones, supporting fungal and soil communities [@mallen-cooperPlantSoilFunction2026]. | Decaying wood | Volume | It does not establish which fungi colonise roots, which trees they connect or what materials move between them. |
+|  | **Acquire Resource** | English Elms extend broad, leaf-bearing branches into canopy gaps to capture sunlight. | In streets and parks, perceived branch-fall risk and infrastructure clearances drive heavy pruning [@saeboSelectionPlantMaterials2005; @lerouxFutureLargeOld2014]. | Unpruned canopy | Volume | It does not measure leaf area, actual light interception, photosynthesis, water stress or pruning history. |
+|  | **Reproduce** | Yellow Box seeds germinate in open loamy gaps and establish as saplings that can replace ageing trees. | Nutritious soil built by decades of retained litter and fallen biomass provides a seedbed in which Yellow Box saplings can mature [@banksTreeAgesAgeing1997; @mallen-cooperPlantSoilFunction2026]. | Nutritious soil | Area | It does not measure seed arrival, germination, seedling survival or later recruitment. |
+
+:::
 
 ## Indicators in the model
 
 Table 2 documents the reporting schema used to read selected conditions from saved habitat volumes. Specific indicators use a three-part code, `x.y.z`, where `x` identifies the persona, `y` the capability group and `z` the indicator. Composite rows use the first two parts. Associated intervention measures track canopy volume released from human control, the number of supporting structures deployed and area converted for nonhuman use.
 
 The two tables serve complementary purposes. Table 1 explains the ecological reasoning behind indicator selection; Table 2 records the queries, retained sub-indicators and shares used in reporting. The saved-state calculations are described further in [Pathways](appendix_J_pathway_simulation.qmd).
+
+::: {.column-screen-inset}
 
 **Table 2. Indicators in the model**
 
@@ -56,14 +62,16 @@ The two tables serve complementary purposes. Table 1 explains the ecological rea
 | `Tree.reproduce.larger-patches-rewild` | Full recruit intervention | `proposal_recruit_intervention == rewild-larger-patch` | sub-indicator | kept | 100% of `Tree.reproduce` after exclusions |
 | `Tree.reproduce` | Combined reproduce habitat | union of `smaller-patches-rewild` and `larger-patches-rewild` | composite union | dropped | rebuilt from retained sub-indicators |
 
+:::
+
 
 ## Indicator walkthrough
 
 TODO: Update this walkthrough to include the two Bird examples below.
 
-Two examples show how this translation works. Magpies roost overnight on elevated branches near other group members. Shared roosts repeatedly bring the group together, reinforcing social bonds and shaping local dialects through which they maintain and distinguish their territories [@kaplanAustralianMagpieBiology2019]. The volume and spatial distribution of perchable branches can provide one indicator of whether a pathway creates physical opportunities for place-based practices such as learned songs and dialects [@parker2025LearningWithOwls; @kaplanAustralianMagpieBiology2019].
+Two examples show how this translation works. Magpies roost overnight on elevated branches near other group members. Shared roosts repeatedly bring the group together, reinforcing social bonds and shaping local dialects through which they maintain and distinguish their territories [@kaplanAustralianMagpieBiology2019]. The volume and spatial distribution of perchable branches can provide one indicator of whether a pathway creates physical opportunities for place-based practices such as learned songs and dialects [@parkerLearningOwlsHuman2025; @kaplanAustralianMagpieBiology2019].
 
-Current urban vegetation and planting strategies can favour large, aggressive nectar-feeding generalists while small forest insectivores remain poorly represented [@campbellBigChangesBackyard2022; @humphreyNoisyNeighborConundrum2024]. The volume of peeling bark can therefore indicate whether a pathway creates canopy opportunities for birds disadvantaged by existing urban conditions [@humphreyNoisyNeighborConundrum2024; @le2018TheValueOf].
+Current urban vegetation and planting strategies can favour large, aggressive nectar-feeding generalists while small forest insectivores remain poorly represented [@campbellBigChangesBackyard2022; @humphreyNoisyNeighborConundrum2024]. The volume of peeling bark can therefore indicate whether a pathway creates canopy opportunities for birds disadvantaged by existing urban conditions [@humphreyNoisyNeighborConundrum2024; @lerouxValueScatteredTrees2018].
 
 ### Existing Lizard walkthrough
 

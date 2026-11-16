@@ -57,6 +57,8 @@ Definitions for the current implementation:
 
 Urban cohorts, anchored to `0.06`
 
+::: {.column-screen-inset}
+
 | DBH cohort | Raw mortality | Shaped mortality | `s` over 8 years | Annual mortality |
 | --- | ---: | ---: | ---: | ---: |
 | `0-10` | `0.1067` | `1.0000` | `0.6096` | `0.060` |
@@ -68,7 +70,11 @@ Urban cohorts, anchored to `0.06`
 | `60-70` | `0.0173` | `0.2500` | `0.8861` | `0.015` |
 | `70-80` | `0.0950` | `0.1667` | `0.9227` | `0.010` |
 
+:::
+
 Nature-reserve cohorts, anchored to `0.03`
+
+::: {.column-screen-inset}
 
 | DBH cohort | Raw mortality | Shaped mortality | `s` over 8 years | Annual mortality |
 | --- | ---: | ---: | ---: | ---: |
@@ -80,6 +86,8 @@ Nature-reserve cohorts, anchored to `0.03`
 | `50-60` | `0.0745` | `0.3000` | `0.9302` | `0.009` |
 | `60-70` | `0.0261` | `0.2333` | `0.9454` | `0.007` |
 | `70-80` | `0.0000` | `0.1667` | `0.9607` | `0.005` |
+
+:::
 
 ## Recruit density values
 

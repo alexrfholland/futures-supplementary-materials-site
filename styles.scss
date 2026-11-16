@@ -52,6 +52,7 @@ th, td {
 
 .table-scroll table {
   display: table;
+  table-layout: auto;
   min-width: calc(var(--table-columns) * 10rem);
   margin-bottom: 0;
 }
@@ -64,6 +65,11 @@ th, td {
 }
 
 .table-scroll code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+:not(pre) > code {
   white-space: normal;
   overflow-wrap: anywhere;
 }
@@ -84,5 +90,6 @@ blockquote {
 @media (max-width: 768px) {
   body { line-height: 1.62; }
   main.content { padding-inline: 1.1rem; }
+  main.content.page-full { padding-inline: 0; }
   table { font-size: 0.88em; }
 }

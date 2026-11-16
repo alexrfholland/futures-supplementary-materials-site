@@ -18,6 +18,8 @@ We derived habitat features from field scans of existing trees and modified them
 
 Table 1 shows the initial habitat features sorted by origin.
 
+::: {.column-screen-inset}
+
 **Table 1. Initial habitat features sorted by origin**
 
 | Scan | Species/Genera | Origin | Trunk size | Landscape context | Source |
@@ -80,6 +82,8 @@ Table 1 shows the initial habitat features sorted by origin.
 | A-6 | \- | Artificial | \- | \- | Adapted from scan E-15 |
 | A-7 | \- | Artificial | \- | \- | Adapted from scan E-16 |
 
+:::
+
 
 ## Calibration
 
@@ -88,6 +92,8 @@ Voxels in habitat features have attributes linked to arboreal resources. We cali
 ### Rules for eucalyptus habitat features
 
 Field observations of eucalyptus at different ages and sizes across urban, parkland, and woodland contexts provide these data[^5]. Table 2 shows the amounts.
+
+::: {.column-screen-inset}
 
 **Table 2. Calibration of arboreal resources in features**
 
@@ -102,6 +108,8 @@ Field observations of eucalyptus at different ages and sizes across urban, parkl
 | Large | Baseline (Reserve) | ~15 | ~20 | ~3 | ~25 | ~3 | ~3 |
 | Large | Moderated (Park) | ~10 | ~15 | ~2 | ~20 | ~2 | ~2 |
 | Large | Risk-adverse (Street) | ~5 | ~10 | ~1 | ~10 | ~1 | ~1 |
+
+:::
 
 We use these data to estimate resources in other habitat features through the following rules.
 
@@ -196,6 +204,8 @@ We assign field data to voxels using two allocation methods.
 
 This process assigns dead branches, peeling bark, hollows, epiphytes, perch branches, and fallen logs as attributes of voxels to each habitat feature variant to match the calibration targets specified in the calibration section above. Table 3 shows the selection logic.
 
+::: {.column-screen-inset}
+
 **Table 3. Allocation rules per resource**
 
 | Resource Type | Allocation Method | Resolution | Implementation |
@@ -206,6 +216,8 @@ This process assigns dead branches, peeling bark, hollows, epiphytes, perch bran
 | Epiphytes | Count-based | Branch-group level | Selects specified number of branch groups using same filters as hollows; maintains 2m minimum separation between selections |
 | Perch Branches | Geometry-based | Branch-group level | Selects terminal branch groups marked as dead with angle \<20° relative to the horizontal plane and radius \<0.15m |
 | Fallen Logs | Count-based | New voxels added | Places specified number of pre-generated logs sized by tree size and control type; positions randomly on ground layer within 10m radius with random orientation |
+
+:::
 
 ### Simulate temporal changes
 
@@ -268,6 +280,8 @@ Below, we describe the steps to create the “decay” phases.
 Trunk diameter at breast height provides the basis for sorting scanned features into Sprout, Mid-phase and Large growth phases.[^5] Decay phases also use age-related transition probabilities. Table 4 records the properties used in this feature-construction account; [Pathways](appendix_J_pathway_simulation.qmd) specifies the simulation's lifecycle rules.
 
 
+::: {.column-screen-inset}
+
 **Table 4. Life cycle phase definitions**
 
 | Origin | Lifecycle phase | Value |
@@ -279,6 +293,8 @@ Trunk diameter at breast height provides the basis for sorting scanned features 
 | Introduced | Large, Old | ‘Useful life expectancy’ from Melbourne Urban Forest Data[^8] or 138.55 years of age as an onset of senescence.;  ;  We follow the same approach outlined by Croesser[^9] who use allometric equations provided by the US Forestry Database[^10] and treat the maximum age of these equations as maximum age is treated as the point of "likely senescence. We use the allometric equation for *Ulmus americana* in the Pacific Northwest, USA, a related species of Elm and a similar climate to Melbourne. |
 | Introduced | Standing snag | Species-specific lifespan rule remains to be confirmed. |
 | Introduced | Fallen | Snags approaching +50 year threshold increase chance of transitioning to “fallen” as per Le Roux’s observation that snags can stand for at least 50 years[^11] |
+
+:::
 
 
 ### Standardise features for comparison
