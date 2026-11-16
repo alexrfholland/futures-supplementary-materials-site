@@ -1,24 +1,34 @@
 # Publishing the supplementary materials
 
-This public repository is the canonical source for the Quarto supplementary site. The manuscript and its administrative material remain in the separate private manuscript repository.
+This public repository is the canonical source for the Quarto supplementary site. The manuscript remains in its separate repository.
 
-## Preview and render
+## Current source
 
-Install Quarto 1.10.19, then preview the site from the repository root:
+`index.qmd` is the homepage. `appendices/` contains Appendices A–K and the three pathway simulation submodules. `_quarto.yml` explicitly lists these 15 pages and defines their reading order.
+
+`_superseded/` retains the original appendices, persona background pages and earlier updated drafts. These files are excluded from the published site, navigation and search. Shared media and references remain in `media/` and `references/`.
+
+## Preview and check
+
+Use Quarto 1.10.19:
 
 ```sh
 quarto preview .
 ```
 
-Render and check the site locally with:
+Render and check all source tables with:
 
 ```sh
 quarto render .
-python3 check-tables.py
+uv run --no-project python check-tables.py
 ```
 
-Quarto writes the 16-page website to `_site/`: the homepage, 11 appendices and four provisional persona background pages. The table check compares each source pipe table with its rendered HTML row and column structure across all 16 pages.
+The site is generated in `_site/`. The checks require exactly the 15 current pages, preserve table rows and columns, and reject local workstation paths in published HTML.
 
-## Deploy
+## Publish
 
-A push to `main` builds and deploys the website to GitHub Pages. Pull requests build and validate the site, then stop before deployment. A workflow dispatch can build any selected branch; deployment runs only from `main`.
+Commit and push source changes to `main`. The existing GitHub Actions workflow builds, checks and deploys the public site to:
+
+https://alexrfholland.github.io/futures-supplementary-materials-site/
+
+Pull requests build and validate without deployment. Workflow dispatch deploys only when run from `main`.

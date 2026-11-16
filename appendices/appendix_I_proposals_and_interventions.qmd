@@ -1,0 +1,36 @@
+---
+title: "Appendix I: Proposals and interventions"
+bibliography: [../references/site_references.bib]
+link-citations: true
+---
+
+The main text models how nonhuman proposals become interventions through negotiation. This appendix describes the five proposal families and illustrates how a collective can support, moderate or refuse them.
+
+## Implemented proposals
+
+The model groups these possibilities into five proposal families. Each family makes a direction of change available for negotiation. Interventions determine how much of that change proceeds. [Pathways](appendix_J_pathway_simulation.qmd) specifies the triggers, spatial conditions and decision rules that implement this distinction.
+
+**Decay** describes how parts and whole bodies of trees move through death, standing retention, collapse and decomposition, producing hollows, deadwood, soil, substrates and other resources. The model presents a choice between removing ageing trees and allowing this sequence to continue.
+
+**Colonise** describes how beings expand through movement, seed dispersal, territory-making, clonal reproduction and other forms of outward spread. By exploiting cracks, surfaces and other affordances, they can occupy, modify and repurpose human infrastructure. The model presents a choice between opening connected ground, roofs and façades to this expansion and leaving them unavailable.
+
+**Deploy Structure** describes how beings can adapt to novel structures supplied by humans, such as artificial hollows, canopies or translocated microhabitats. The model presents a choice between providing these structures in locations connected to existing habitat through earlier Colonise proposals and retaining the existing material configuration.
+
+**Release Control** describes how the growth and interactions of many beings progressively form complex canopies and supply varied resources. Across years, decades and centuries, trees extend branches into gaps; ageing produces peeling bark, dead limbs and wounds; Mistletoebirds transport mistletoe seeds; mistletoes add fruit and litter; and fungi, insects and other decomposers turn damaged wood into hollows and substrates. Humans can interrupt this supply through pruning and clearing, or give the beings involved time and space to continue it.
+
+**Recruit** describes how the combined activities of many beings and conditions inherited from earlier changes allow seedlings to establish. Parent trees supply seeds and shade; animals, wind or water disperse propagules; deadwood and decomposers alter soils; fungi support roots; and reduced clearing allows seedlings to persist. In the model, spaces opened by Decay, Release Control and Colonise combine to support a pulse of recruitment. The size of each pulse depends on the available suitable space and the density at which saplings can establish. The model presents a choice between enabling a new cohort in that space and leaving it without recruitment.
+
+These families capture pressures with different spatial and temporal patterns. Release Control represents diffuse, cumulative activity within and around living canopies. Decay combines gradual change with concentrated events such as death and collapse. Recruit depends especially on the combination of conditions assembled through earlier and concurrent contributions.
+
+## From proposals to interventions
+
+A proposal suggests a possible environmental configuration. A Magpie group's pattern of roosting near one another, for example, suggests a canopy with elevated, perchable branches distributed so that several group members can use them. Several interventions could support that configuration.
+
+The evaluative community can support, moderate or refuse a proposal through interventions, changing which later configurations become reachable. In the model, negotiation compares resistance with effort thresholds and applies the corresponding intervention. The four Bird examples below connect ecological evidence with proposal families and possible community responses. References to observing use, breeding or avoidance describe how people could assess interventions in practice. The simulation assesses selected environmental indicators.
+
+| Featured species | Real-world behaviour | How the behaviour expresses a proposal in the model | Possible community response |
+|---|---|---|---|
+| **Australian Magpie** | Magpies roost overnight on elevated branches near group members. Repeated gathering supports social bonds and territorial vocalisation [@kaplanAustralianMagpieBiology2019]. | This pattern suggests a canopy with several elevated, perchable branches. Where pruning suppresses their development, the model expresses the alternative configuration as **Release Control**. | The community can support the proposal through **Eliminate Pruning**, or moderate it through **Reduce Pruning** [@lerouxReducedAvailabilityHabitat2014]. |
+| **Superb Fairy-wren** | Fairy-wrens use dense understorey as refuge from Noisy Miner aggression and now persist mainly in the most heavily wooded parts of Birrarung Park [@humphreyNoisyNeighborConundrum2024; @connorLongtermChanges402026]. | This use pattern suggests a habitat island where understorey, leaf litter and fallen trees can accumulate. The model expresses this configuration as **Decay**, allowing an ageing tree to progress into fallen and decomposing states. | The community can support **Decay** through **Buffer**, converting the area beneath the tree into a habitat island where shrubs, litter and fallen material can remain, then assess it through bird use or avoidance. |
+| **Red-rumped Parrot** | Red-rumped Parrots feed on open ground and nest in nearby tree hollows; access can be lost through hollow scarcity and competition [@connorLongtermChanges402026]. | This behaviour suggests a configuration that joins feeding ground to an accessible cavity. The model expresses sites for artificial or hybrid cavities as **Deploy Structure**. | The community can support the proposal through **Upgrade Feature**, fitting a species-calibrated hollow to a tree or utility-pole canopy and assessing subsequent use, breeding or avoidance [@holland2024ParticipatoryDesignFor; @le2018TheValueOf]. |
+| **Mistletoebird** | Mistletoebirds consume mistletoe fruit and deposit sticky seeds on host branches, but mainly reinforce existing patches rather than establish new ones [@watsonMistletoeSpecialistFrugivores2013]. | This behaviour suggests a canopy in which a host tree supports mistletoe. The model represents the tree–mistletoe association as a hybrid feature and expresses the opportunity to create one as **Deploy Structure**. | Where birds are unlikely to establish a new patch, the community can support the proposal through **Upgrade Feature**, inoculating an established tree with indigenous mistletoe [@watsonReturningMistletoeUrban2023]. |

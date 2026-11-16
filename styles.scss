@@ -10,14 +10,6 @@ body {
   line-height: 1.72;
 }
 
-#quarto-content {
-  max-width: 1500px;
-}
-
-main.content {
-  max-width: 920px;
-}
-
 h1, h2, h3, h4 {
   line-height: 1.3;
   letter-spacing: -0.015em;
@@ -95,3 +87,11 @@ blockquote {
   table { font-size: 0.88em; }
 }
 
+
+.model-demo {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  min-height: 36rem;
+  border: 1px solid $border-color;
+}

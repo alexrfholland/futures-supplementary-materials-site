@@ -40,39 +40,26 @@ jobs:
           test -s _site/index.html
 
           expected_html=$(cat <<'HTML'
-          appendix_A_glossary.html
-          appendix_B_places.html
-          appendix_C_personas_capabilities_and_relational_indicators.html
-          appendix_D_habitat_features.html
-          appendix_E_habitat_volumes.html
-          appendix_F_resistance.html
-          appendix_G_pathway_simulation.html
-          appendix_G_pathway_simulation_growth-submodule.html
-          appendix_G_pathway_simulation_lifecycle-submodule.html
-          appendix_G_pathway_simulation_recruit-mortality-submodule.html
-          appendix_H_baseline_woodlands.html
+          appendices/appendix_A_glossary.html
+          appendices/appendix_B_vignette_evidence.html
+          appendices/appendix_C_places.html
+          appendices/appendix_D_personas_and_capabilities.html
+          appendices/appendix_E_capability_groups_and_indicators.html
+          appendices/appendix_F_habitat_features.html
+          appendices/appendix_G_habitat_volumes.html
+          appendices/appendix_H_resistance.html
+          appendices/appendix_I_proposals_and_interventions.html
+          appendices/appendix_J1_tree_growth.html
+          appendices/appendix_J2_tree_lifecycle.html
+          appendices/appendix_J3_recruitment_and_mortality.html
+          appendices/appendix_J_pathway_simulation.html
+          appendices/appendix_K_baseline_woodlands.html
           index.html
-          persona_bird.html
-          persona_lizard.html
-          persona_tree.html
-          persona_tree_fungal-research.html
-          updated_appendices/updated_00_glossary.html
-          updated_appendices/updated_01_vignette_evidence.html
-          updated_appendices/updated_02_place.html
-          updated_appendices/updated_03_personas.html
-          updated_appendices/updated_04_indicators.html
-          updated_appendices/updated_05_proposals.html
-          updated_appendices/updated_06_pathways.html
-          updated_appendices/updated_07_expansion_reachability.html
-          updated_appendices/updated_08_habitat_features.html
-          updated_appendices/updated_09_habitat_volumes.html
-          updated_appendices/updated_10_resistance.html
-          updated_appendices/updated_11_baseline_woodlands.html
           HTML
           )
           actual_html=$(find _site -type f -name '*.html' -printf '%P\n' | sort)
           if [ "$actual_html" != "$expected_html" ]; then
-            echo 'Rendered HTML files do not match the 28-page site allowlist.' >&2
+            echo 'Rendered HTML files do not match the 15-page site allowlist.' >&2
             printf 'Expected:\n%s\nActual:\n%s\n' "$expected_html" "$actual_html" >&2
             exit 1
           fi

@@ -108,28 +108,18 @@ class RenderedParagraphs(HTMLParser):
             self.current.append(data)
 
 
-persona_pages = (
-    "persona_bird.qmd",
-    "persona_lizard.qmd",
-    "persona_tree.qmd",
-    "persona_tree_fungal-research.qmd",
-)
-sources = [
-    ROOT / "index.qmd",
-    *sorted(ROOT.glob("appendix_*.qmd")),
-    *(ROOT / name for name in persona_pages),
-]
+sources = [ROOT / "index.qmd", *sorted((ROOT / "appendices").glob("*.qmd"))]
 if not sources[0].is_file():
     raise SystemExit("Missing index.qmd")
 missing_sources = [source.name for source in sources if not source.is_file()]
 if missing_sources:
     raise SystemExit(f"Missing expected source pages: {', '.join(missing_sources)}")
-if len(sources) != 16:
-    raise SystemExit(f"Expected index.qmd, 11 appendices and 4 persona background pages, found {len(sources)} files.")
+if len(sources) != 15:
+    raise SystemExit(f"Expected index.qmd, 11 appendices and 3 pathway submodules, found {len(sources)} files.")
 
 total = 0
 for source in sources:
-    rendered_path = SITE / source.with_suffix(".html").name
+    rendered_path = SITE / source.relative_to(ROOT).with_suffix(".html")
     if not rendered_path.is_file():
         raise SystemExit(f"Missing rendered page: {rendered_path.relative_to(ROOT)}")
     expected = source_tables(source.read_text(encoding="utf-8"))

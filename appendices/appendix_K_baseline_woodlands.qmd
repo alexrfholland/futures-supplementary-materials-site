@@ -1,0 +1,141 @@
+---
+title: "Appendix K: Baseline woodlands"
+---
+
+The main text compares the modelled pathways against a woodland reference state. This appendix documents the baseline categories `small`, `medium`, `large`, `senescing`, `snag`, `fallen`, and `decayed` for a pre-colonial south-eastern Australian eucalypt woodland baseline.
+
+## Overview
+
+The baseline provides a common reference for comparing the [relational indicators](appendix_E_capability_groups_and_indicators.qmd) across places and pathways. The model classes draw on the following evidence:
+
+| model category | baseline interpretation | main data source |
+|---|---|---|
+| `small`, `medium`, `large` | live trees, grouped by DBH class | Gibbons et al. `Flat` stem-density predictions[^gibbons2010] |
+| `senescing` | live `large` trees in declining crown condition | Killey et al. crown-condition scenarios[^killey2010] |
+| `snag` | additional standing dead stems | Killey et al. dead-stem estimates[^killey2010] |
+| `fallen` | fallen trunks / large fallen tree sections | calculated from total deadwood minus smaller fallen branch debris, using Manning et al. and Killey et al.[^manning2007][^killey2010] |
+| `decayed` | smaller fallen branch fragments and advanced-decay ground debris | Killey et al. fallen branch debris estimates, scaled within the total deadwood target[^killey2010] |
+
+The total ground-deadwood target is set from Mac Nally et al.'s unmanaged Millewa reference and converted from mass to volume using `0.6 t/m3`.[^macnally2002]
+
+
+## Small, Medium and Large
+
+Our estimate for `small`, `medium`, and `large` comes from the `Flat` predictions in Gibbons et al. for stands under relatively little modification by humans since European settlement.[^gibbons2010] These predictions provide a reference for reconstructing earlier conditions, with the limits that this indirect estimate entails.
+
+The `Flat` values are treated as densities per 0.1 ha and scaled to the site area. The values used for the baseline are:
+
+| DBH row | `Flat` density per 0.1 ha | density per ha |
+|---:|---:|---:|
+| 5 cm | 6.2 | 62.0 |
+| 21 cm | 3.4 | 34.0 |
+| 31 cm | 2.6 | 26.0 |
+| 41 cm | 0.6 | 6.0 |
+| 51 cm | 0.7 | 7.0 |
+| 61 cm | 0.365 | 3.65 |
+| 71 cm | 0.56 | 5.6 |
+| 80 cm | 1.02 | 10.2 |
+
+These DBH rows are grouped into the model size classes as follows:
+
+| model category | model definition | DBH rows included | density per 0.1 ha | density per ha |
+|---|---|---|---:|---:|
+| `small` | DBH `< 50 cm` | 5, 21, 31, 41 | 12.8 | 128.0 |
+| `medium` | DBH `>= 50 cm` and `< 80 cm` | 51, 61, 71 | 1.625 | 16.25 |
+| `large` | DBH `>= 80 cm` | 80 | 1.02 | 10.2 |
+
+In the model, these live trees are treated as pre-colonial reserve trees and represented with pre-colonial tree templates for the corresponding size class.
+
+## Senescing and Snag
+
+For `senescing` and `snag`, we use Killey et al. Table 7. This lets us define `senescing` as a portion of the live large-tree class, and `snag` as additional standing dead stems.[^killey2010]
+
+Killey et al. estimate `15 live stems/ha` for trees with trunk size `>60 cm`. These `>60 cm` stems are split into crown-condition classes:
+
+- `11-12 of 15 live stems/ha` are below `70%` crown, which we treat as the broad `senescing` reference range.
+- `4-6 of 15 live stems/ha` are below `30%` crown, which we treat as the severe `senescing` reference range.
+- `3-6 dead stems/ha` are present as standing dead trees, which we use as the `snag` reference range.
+
+
+We define `senescing` as 65% of the live `large` cohort. This modelling value lies between two Killey-derived condition ranges: the broad `73-80%` share of live `>60 cm` stems below `70%` crown in Scenarios 1-2, and the narrower `27-40%` share below `30%` crown. We do this because our `large` class is stricter than Killey et al.'s `>60 cm` class and so we use a conservative partition of the current live `large` cohort rather than adopting Killey's `15 live stems/ha` directly.
+
+Using the live large density of `10.2 stems/ha`, this gives:
+
+| class | relation to live large cohort | stems/ha before site-level rounding |
+|---|---:|---:|
+| retained healthy `large` | 35% of live large | 3.57 |
+| `senescing` | 65% of live large | 6.63 |
+
+`snag` is defined as additional standing dead stems equal to 30% of the live `large` cohort. This proportion is the midpoint of Killey et al.'s estimates for Scenarios 1-2, expressed as additional trees: `3-6 dead stems` per `15 live >60 cm stems`, or `20-40%` of the live large-stem cohort.
+
+Using the live large density of `10.2 stems/ha`, this gives `3.06 snags/ha`.
+
+## Fallen and Decayed
+
+We estimate ground-deadwood biovolume from the literature, allocate it between `fallen` and `decayed`, and add features from each class until their target volumes are reached.
+
+The evidence base for the ground-deadwood target and split is:
+
+| measure | quantity | type of estimate | ref | note |
+|---|---|---|---|---|
+| total coarse woody debris | 125 t/ha, approximately 208.3 m3/ha using 0.6 t/m3 | baseline estimate | Mac Nally et al. 2002[^macnally2002] | unmanaged Millewa reference |
+| fallen branch debris | 7.0-11.9 m3/ha | baseline estimate | Killey et al. 2010[^killey2010] | yellow box-red gum woodland fallen branch debris |
+| total coarse woody debris | 19.3 m3/ha median, 34.0 m3/ha mean, range 3.0-247.2 m3/ha | condition estimate | Manning et al. 2007[^manning2007] | box-gum grassy woodland reserves |
+| forest-floor coarse woody debris | 18.9 t/ha in woodland, 50.4 t/ha in open forest | condition estimate | Woldendorp and Keenan 2005[^woldendorp2005] | broader Australian woodland/open-forest context |
+| total coarse woody debris | 114-166 m3/ha | baseline estimate | Threlfall et al. 2019[^threlfall2019] | eastern Australian native forests |
+
+
+For the total ground-deadwood target, we use Mac Nally et al.'s unmanaged Millewa reference of `125 t/ha`.[^macnally2002] This is converted to volume with the model wood density of `0.6 t/m3`:
+
+```text
+volume (m3/ha) = mass (t/ha) / 0.6 (t/m3)
+125 t/ha / 0.6 t/m3 = 208.3 m3/ha
+```
+
+For the split between `fallen` and `decayed`, we use two quantities:
+
+- Manning et al. provide total fallen deadwood volumes for box-gum grassy woodland reserves: `19.3 m3/ha` median and `34.0 m3/ha` mean.[^manning2007]
+- Killey et al. provide smaller fallen branch debris volumes, excluding fallen tree trunks or boles: `7.0-11.9 m3/ha`.[^killey2010]
+
+We then calculate the fallen trunk component as:
+
+```text
+fallen trunks = total fallen deadwood - smaller fallen branch debris
+```
+
+This gives:
+
+| case | total fallen deadwood | smaller fallen branch debris | calculated fallen trunks | fallen trunk share | smaller debris share |
+|---|---:|---:|---:|---:|---:|
+| lower woodland case | 19.3 m3/ha | 9.5 m3/ha | 9.8 m3/ha | 51% | 49% |
+| upper woodland case | 34.0 m3/ha | 11.9 m3/ha | 22.1 m3/ha | 65% | 35% |
+
+The baseline adopts a trunk-weighted `70% / 30%` split. This slightly emphasises fallen trunks while still retaining a substantial smaller-debris class:
+
+| model category | share of total ground deadwood | target volume from 208.3 m3/ha |
+|---|---:|---:|
+| `fallen` | 70% | 145.81 m3/ha |
+| `decayed` | 30% | 62.49 m3/ha |
+
+The model has explicit object volumes for tree, bole, and debris templates. It therefore adds `fallen` and `decayed` template objects progressively until each target volume is met or slightly exceeded.
+
+The accumulation logic is:
+
+1. Set the total ground-deadwood volume target.
+2. Allocate 70% of that target to `fallen`.
+3. Allocate 30% of that target to `decayed`.
+4. Add template objects until the `fallen` and `decayed` targets are reached.
+
+## Footnotes
+
+[^macnally2002]: Mac Nally, R., Parkinson, A., Horrocks, G., & Young, M. (2002). *Current Loads of Coarse Woody Debris on Southeastern Australian Floodplains: Evaluation of Change and Implications for Restoration*. Restoration Ecology, 10(4), 627-635. The paper states an area-weighted mean of about 19 t/ha, uses an unmanaged Millewa reference of 125 t/ha, gives the restoration target of 27,635,000 t across 221,080 ha, and suggests a more tractable biodiversity target of 40-50 t/ha with high patchiness.
+
+[^gibbons2010]: Gibbons, P., Briggs, S. V., Murphy, D. Y., Lindenmayer, D. B., McElhinny, C., & Brookhouse, M. (2010). *Benchmark stem densities for forests and woodlands in south-eastern Australia under conditions of relatively little modification by humans since European settlement*. Forest Ecology and Management, 260(12), 2125-2133. https://doi.org/10.1016/j.foreco.2010.09.003
+
+[^killey2010]: Killey, P., McElhinny, C., Rayner, I., & Wood, J. (2010). *Modelling fallen branch volumes in a temperate eucalypt woodland: implications for large senescent trees and benchmark loads of coarse woody debris*. Austral Ecology, 35(8), 956-968. https://doi.org/10.1111/j.1442-9993.2010.02107.x
+
+[^manning2007]: Manning, A. D., Lindenmayer, D. B., & Cunningham, R. B. (2007). *A study of coarse woody debris volumes in two box-gum grassy woodland reserves in the Australian Capital Territory*. Ecological Management & Restoration, 8(3), 221-224. https://doi.org/10.1111/j.1442-8903.2007.00371.x
+
+[^threlfall2019]: Threlfall, C. G., Law, B. S., & Peacock, R. J. (2019). *Benchmarks and predictors of coarse woody debris in native forests of eastern Australia*. Austral Ecology, 44(1), 138-150. https://doi.org/10.1111/aec.12661
+
+[^woldendorp2005]: Woldendorp, G., & Keenan, R. J. (2005). *Coarse woody debris in Australian forest ecosystems: A review*. Austral Ecology, 30(8), 834-843. https://doi.org/10.1111/j.1442-9993.2005.01526.x

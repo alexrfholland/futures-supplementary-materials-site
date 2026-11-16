@@ -5,33 +5,20 @@ project:
   output-dir: _site
   render:
     - index.qmd
-    - appendix_A_glossary.qmd
-    - appendix_B_places.qmd
-    - appendix_C_personas_capabilities_and_relational_indicators.qmd
-    - appendix_D_habitat_features.qmd
-    - appendix_E_habitat_volumes.qmd
-    - appendix_F_resistance.qmd
-    - appendix_G_pathway_simulation.qmd
-    - appendix_G_pathway_simulation_growth-submodule.qmd
-    - appendix_G_pathway_simulation_lifecycle-submodule.qmd
-    - appendix_G_pathway_simulation_recruit-mortality-submodule.qmd
-    - appendix_H_baseline_woodlands.qmd
-    - persona_bird.qmd
-    - persona_tree.qmd
-    - persona_tree_fungal-research.qmd
-    - persona_lizard.qmd
-    - updated_appendices/updated_01_vignette_evidence.qmd
-    - updated_appendices/updated_02_place.qmd
-    - updated_appendices/updated_03_personas.qmd
-    - updated_appendices/updated_04_indicators.qmd
-    - updated_appendices/updated_05_proposals.qmd
-    - updated_appendices/updated_06_pathways.qmd
-    - updated_appendices/updated_07_expansion_reachability.qmd
-    - updated_appendices/updated_00_glossary.qmd
-    - updated_appendices/updated_08_habitat_features.qmd
-    - updated_appendices/updated_09_habitat_volumes.qmd
-    - updated_appendices/updated_10_resistance.qmd
-    - updated_appendices/updated_11_baseline_woodlands.qmd
+    - appendices/appendix_A_glossary.qmd
+    - appendices/appendix_B_vignette_evidence.qmd
+    - appendices/appendix_C_places.qmd
+    - appendices/appendix_D_personas_and_capabilities.qmd
+    - appendices/appendix_E_capability_groups_and_indicators.qmd
+    - appendices/appendix_F_habitat_features.qmd
+    - appendices/appendix_G_habitat_volumes.qmd
+    - appendices/appendix_H_resistance.qmd
+    - appendices/appendix_I_proposals_and_interventions.qmd
+    - appendices/appendix_J_pathway_simulation.qmd
+    - appendices/appendix_K_baseline_woodlands.qmd
+    - appendices/appendix_J1_tree_growth.qmd
+    - appendices/appendix_J2_tree_lifecycle.qmd
+    - appendices/appendix_J3_recruitment_and_mortality.qmd
   resources:
     - media/**
 
@@ -52,58 +39,36 @@ website:
     contents:
       - text: "Overview"
         href: index.qmd
-      - section: "Updated appendices"
+      - text: "Appendix A: Glossary"
+        href: appendices/appendix_A_glossary.qmd
+      - text: "Appendix B: Supporting evidence for the vignettes"
+        href: appendices/appendix_B_vignette_evidence.qmd
+      - text: "Appendix C: Places"
+        href: appendices/appendix_C_places.qmd
+      - text: "Appendix D: Personas and capabilities"
+        href: appendices/appendix_D_personas_and_capabilities.qmd
+      - text: "Appendix E: Capability groups and indicators"
+        href: appendices/appendix_E_capability_groups_and_indicators.qmd
+      - text: "Appendix F: Habitat features"
+        href: appendices/appendix_F_habitat_features.qmd
+      - text: "Appendix G: Habitat volumes"
+        href: appendices/appendix_G_habitat_volumes.qmd
+      - text: "Appendix H: Resistance"
+        href: appendices/appendix_H_resistance.qmd
+      - text: "Appendix I: Proposals and interventions"
+        href: appendices/appendix_I_proposals_and_interventions.qmd
+      - text: "Appendix J: Pathway simulation"
+        href: appendices/appendix_J_pathway_simulation.qmd
+      - section: "Pathway simulation submodules"
         contents:
-          - text: "Glossary"
-            href: updated_appendices/updated_00_glossary.qmd
-          - text: "Supporting evidence for the vignettes"
-            href: updated_appendices/updated_01_vignette_evidence.qmd
-          - text: "Place"
-            href: updated_appendices/updated_02_place.qmd
-          - text: "Personas"
-            href: updated_appendices/updated_03_personas.qmd
-          - text: "Capabilities and indicators"
-            href: updated_appendices/updated_04_indicators.qmd
-          - text: "Proposals"
-            href: updated_appendices/updated_05_proposals.qmd
-          - text: "Pathways"
-            href: updated_appendices/updated_06_pathways.qmd
-          - text: "Details on expansion and reachability"
-            href: updated_appendices/updated_07_expansion_reachability.qmd
-          - text: "Habitat features"
-            href: updated_appendices/updated_08_habitat_features.qmd
-          - text: "Habitat volumes"
-            href: updated_appendices/updated_09_habitat_volumes.qmd
-          - text: "Resistance"
-            href: updated_appendices/updated_10_resistance.qmd
-          - text: "Baseline woodlands"
-            href: updated_appendices/updated_11_baseline_woodlands.qmd
-      - section: "Appendices"
-        contents:
-          - appendix_A_glossary.qmd
-          - appendix_B_places.qmd
-          - appendix_C_personas_capabilities_and_relational_indicators.qmd
-          - section: "Provisional persona backgrounds"
-            contents:
-              - text: "Bird (provisional)"
-                href: persona_bird.qmd
-              - text: "Tree (provisional)"
-                href: persona_tree.qmd
-              - text: "Tree fungal research (provisional)"
-                href: persona_tree_fungal-research.qmd
-              - text: "Lizard (provisional)"
-                href: persona_lizard.qmd
-          - appendix_D_habitat_features.qmd
-          - appendix_E_habitat_volumes.qmd
-          - appendix_F_resistance.qmd
-          - text: "Appendix G: Pathway simulation"
-            href: appendix_G_pathway_simulation.qmd
-          - section: "Pathway simulation submodules"
-            contents:
-              - appendix_G_pathway_simulation_growth-submodule.qmd
-              - appendix_G_pathway_simulation_lifecycle-submodule.qmd
-              - appendix_G_pathway_simulation_recruit-mortality-submodule.qmd
-          - appendix_H_baseline_woodlands.qmd
+          - text: "J.1: Tree growth submodule"
+            href: appendices/appendix_J1_tree_growth.qmd
+          - text: "J.2: Tree lifecycle submodule"
+            href: appendices/appendix_J2_tree_lifecycle.qmd
+          - text: "J.3: Recruitment and mortality submodule"
+            href: appendices/appendix_J3_recruitment_and_mortality.qmd
+      - text: "Appendix K: Baseline woodlands"
+        href: appendices/appendix_K_baseline_woodlands.qmd
 
 format:
   html:

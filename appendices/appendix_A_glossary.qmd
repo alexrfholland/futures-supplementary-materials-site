@@ -1,0 +1,67 @@
+---
+title: "Appendix A: Glossary"
+---
+
+The main text reframes several concepts to support the study of nonhuman leadership. This appendix defines the terms used throughout the article and supplementary materials.
+
+## Processes
+
+  - **Community**: In more-than-human terms, drawing on community ecology and political studies, a community consists of practised relationships at a location. These relationships create fuzzy, emergent groups of humans and nonhumans [^1].
+
+  - **Path**: A depiction of a process that shows changes to a community over time.
+
+  - **Possibility space**: The search space that describes all possible paths.
+
+  - **Resistance**: Multiple interacting constraints that make a path through the possibility space more or less likely. This includes functional, developmental, historical, genetic, political constraints and rigidity traps (i.e. regulatory frameworks, time, and institutional capacity that lock managers into practices that appear safe but prevent adaptation). We implement resistance as a score from 0 to 100, where 0 indicates no resistance to change.
+
+  - **Destination**: A potential (i.e. probable, plausible, implausible, preferable) region of the possibility space.
+
+  - **Trend**: The most likely path, i.e. the path of least resistance.
+
+  - **Transformation**: A fundamental shift away from the trend.
+
+  - **Pathway**: An intentionally manipulated path created through a series of interconnected interventions aimed at reaching better destinations.
+
+## States
+
+  - **State**: An observable instance along a path at a point in time.
+
+  - **Habitat volume**: A way of representing a state as a three-dimensional grid of 25 × 25 × 25 cm cells, or "voxels", each containing multiple attributes, an extension of prior work[^2]. Habitat volumes are macroscale urban spatial units that include neighbourhoods or districts. Attributes express dynamic relationships defined by the participatory pipeline that include perching, sheltering and ageing in place. Our model assigns indicators to all habitat volumes deemed potentially "liveable" for the selected personas.
+
+  - **Habitat features**: A way of differentiating the habitat volume. These aggregate habitat opportunities and represent vegetation, soil, water or artificial structures. Our current implementation focuses on trees.
+
+  - **Canopy footprint and patch resistance**: The model aggregates resistance values to calculate "canopy footprint resistance" beneath habitat features and a "patch resistance" across building and ground surfaces. These metrics assess the effort required to create connections between features and support nonhuman proposals.
+
+## Leadership
+
+  - **Design**: The collective creation of conditions that support life in response to novelty.
+
+  - **Thriving**: The measure we use to evaluate preferability along a path.
+
+  - **Intervention**: Interventions are actions or strategies implemented to protect, restore, enhance, or manage biodiversity. They might include habitat restoration, species reintroduction, grazing management, or creation of artificial structures (e.g., nest boxes, deadwood habitats, green roofs) [^3] as well as wildlife-friendly building standards, and biodiversity-inclusive approaches to urban planning, interventions into human behaviours or cultures such as through education or incentives.
+
+  - **Proposal**: A way to sample the possibility space through possible ways of living expressed by individuals or groups of community members. Through proposals, nonhuman beings indicate ways of changing the habitat volume. These may arise from individual organisms, such as an elm whose ageing presents the possibility of completing its lifecycle, or from relations among beings represented by the Bird and Lizard personas. Interventions such as depaving or deploying artificial trees can support these proposals.
+
+  - **Effort**: The degree of freedom interventions have to overcome resistance. We implement effort as thresholds (0-100) per intervention type, which determine a community's capacity to consider and implement proposals. At each location, if resistance is less than or equal to the effort threshold, the community enables proposals through compatible interventions; if resistance exceeds the threshold, the community constrains proposals. Changes in effort thresholds over time reflect shifts in technology, understanding, costs, labour, or community perceptions. We vary effort at discrete points in time to define the conditions of a pathway. The model then calculates actualised interventions and the resulting pressure put on the path.
+
+  - **Leadership**: An increase in the probability of thriving. We implement "leadership" as the likelihood that nonhuman proposals influence or redirect a pathway.
+
+## Inclusion
+
+  - **Place**: A way to sample a community. Places are assemblages of abiotic and biotic interactions at a location.
+
+  - **Persona**: A fictional representation of a community member based on quantitative data. We select "birds", "lizards" and "trees" as urban taxa that persist at the case places and qualify as "ambassadors". We treat nonhuman personas as co-designers, referred to as "designer personas".
+
+  - **Capabilities**: A way to assess thriving. Capabilities are conditions that enable a persona to lead a good life.
+
+  - **Relational indicators**: A way to track capabilities using measurable "indicators" that reflect liveable conditions for personas. We draw on ecological assessments of woodlands to define indicators as numerical expressions of relational capabilities. For example, the volume of dead branches may indicate birds' capacity for perching and social interaction.
+
+  - **Experiences**: Pathway states as encountered by personas. They concretise what it would be like for different community members (birds, lizards, trees, humans) to live in the modelled futures.
+
+## References
+
+[^1]: Alexander Holland and Stanislav Roudavski. (2024). Participatory design for multispecies cohabitation: by trees, for birds, with humans. In Designing more-than-human smart cities: beyond sustainability, towards cohabitation, edited by Sara Heitlinger, Marcus Foth, and Rachel Clarke, 93-128. Oxford, Oxford University Press.
+
+[^2]: Julian Rutten, Alexander Holland, and Stanislav Roudavski. (2024). Plants as designers of better futures: can humans let them lead?. Plant Perspectives 2(1), 92-139. https://doi.org/10.3197/whppp.63845494909729
+
+[^3]: Jessica C. Walsh, Michelle R. Gibson, Jeremy S. Simmonds, Helen J. Mayfield, Clare Bracey, Courtney B. Melton, April E. Reside, and Martine Maron. (2023). Effectiveness of Conservation Interventions for Australian Woodland Birds: A Systematic Review. Biological Conservation 282, 110030. https://doi.org/10/j7h2
