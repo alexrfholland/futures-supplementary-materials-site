@@ -1,0 +1,24 @@
+---
+title: "Supplementary materials"
+subtitle: "Evidence-based modelling for nonhuman leadership"
+---
+
+These appendices accompany the study *Evidence-based modelling for nonhuman leadership: can trees, birds, and lizards shape pathways to better futures?* They document the concepts, places, personas, habitat data, resistance measures and pathway simulation used in the study.
+
+## Appendices
+
+| Appendix | Subject |
+|:--|:--|
+| [A. Glossary](appendix_A_glossary.qmd) | Terms used in the study |
+| [B. Places](appendix_B_places.qmd) | Case places and their urban context |
+| [C. Personas, capabilities and relational indicators](appendix_C_personas_capabilities_and_relational_indicators.qmd) | Persona characteristics and capability measures |
+| [D. Habitat features](appendix_D_habitat_features.qmd) | Feature origins, calibration and workflow |
+| [E. Habitat volumes](appendix_E_habitat_volumes.qmd) | Spatial representation and processing |
+| [F. Resistance](appendix_F_resistance.qmd) | Resistance measures and connectivity |
+| [G. Pathway simulation](appendix_G_pathway_simulation.qmd) | Proposals, interventions and model operation |
+| [G.1 Tree growth](appendix_G_pathway_simulation_growth-submodule.qmd) | Growth model details |
+| [G.2 Tree lifecycle phase](appendix_G_pathway_simulation_lifecycle-submodule.qmd) | Lifecycle categories and evidence |
+| [G.3 Recruit and mortality dynamics](appendix_G_pathway_simulation_recruit-mortality-submodule.qmd) | Recruitment and mortality parameters |
+| [H. Baseline woodlands](appendix_H_baseline_woodlands.qmd) | Woodland baseline categories and estimates |
+
+Use the contents panel to move between appendices. Each page includes a page contents list for navigation within longer sections.

@@ -1,0 +1,68 @@
+lang: en-GB
+
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - appendix_A_glossary.qmd
+    - appendix_B_places.qmd
+    - appendix_C_personas_capabilities_and_relational_indicators.qmd
+    - appendix_D_habitat_features.qmd
+    - appendix_E_habitat_volumes.qmd
+    - appendix_F_resistance.qmd
+    - appendix_G_pathway_simulation.qmd
+    - appendix_G_pathway_simulation_growth-submodule.qmd
+    - appendix_G_pathway_simulation_lifecycle-submodule.qmd
+    - appendix_G_pathway_simulation_recruit-mortality-submodule.qmd
+    - appendix_H_baseline_woodlands.qmd
+  resources:
+    - media/**
+
+website:
+  title: "Nonhuman leadership: supplementary materials"
+  site-url: "https://alexrfholland.github.io/futures-supplementary-materials-site/"
+  page-navigation: true
+  reader-mode: true
+  search: true
+  navbar:
+    title: "Nonhuman leadership"
+    left:
+      - text: "Supplementary materials"
+        href: index.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Overview"
+        href: index.qmd
+      - section: "Appendices"
+        contents:
+          - appendix_A_glossary.qmd
+          - appendix_B_places.qmd
+          - appendix_C_personas_capabilities_and_relational_indicators.qmd
+          - appendix_D_habitat_features.qmd
+          - appendix_E_habitat_volumes.qmd
+          - appendix_F_resistance.qmd
+          - text: "Appendix G: Pathway simulation"
+            href: appendix_G_pathway_simulation.qmd
+          - section: "Pathway simulation submodules"
+            contents:
+              - appendix_G_pathway_simulation_growth-submodule.qmd
+              - appendix_G_pathway_simulation_lifecycle-submodule.qmd
+              - appendix_G_pathway_simulation_recruit-mortality-submodule.qmd
+          - appendix_H_baseline_woodlands.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    filters:
+      - tables.lua

@@ -1,0 +1,34 @@
+---
+title: "Appendix B: Places"
+---
+
+The main text models pathways for three places. This appendix provides additional information about these places and how their sampling represents broader challenges and opportunities in Melbourne.
+
+## Place description
+
+Figure 1 and Table 1 characterise the places.
+
+![](./media/image1.png)
+
+**FIgure 1. Places. Top shows City place. Middle shows Street place. Bottom shows Boulevard place. All places are novel ecologies with high degrees of human control. Left images from nearmaps. Right images by authors.**
+
+**Table. 1 Place boundaries and key challenges and opportunities.**
+
+| Place | Rectangle boundary coordinates | Composition reference | Human control | Challenges | Opportunities |
+| --- | --- | --- | --- | --- | --- |
+| *City* | 37.807625,144.969310; 37.812841,144.972270 | Extremely novel | Fully managed | Minimal ground space constrains planned greening | Upgrade building surfaces |
+| *Street* | 37.785801,144.957592; 37.791017,144.960550 | Highly novel | Fully managed | Young native street trees lack senescent features | Create artificial canopies |
+| *Boulevard* | 37.797253,144.962603; 37.802469,144.965563 | Highly novel | Highly managed | Senescent but exotic elms face removal | Retain and upgrade elm canopies |
+
+
+## Places in context
+
+Figures 2 and 3 provide evidence showing how these places fit into larger patterns and trends.
+
+![Figure 2](./media/image2.png)
+
+**Figure 2. Places in context with colours indicating different urban typologies and trends. Yellow callouts show how our typology of three places applies to broader conditions in the City. Dots show trees highlighted in different colours to indicate different circumstances. Green shows existing forest canopy. Dark red or brown shows barriers (buildings over 10m tall, roads over 15m wide). Top image shows current eucalyptus trees. Light blue dots show future large old trees (eucalyptus between 50cm–80cm DBH). Dark blue dots show existing large old trees (historically dominant species over 80cm DBH). Bottom image shows planned tree removal. Red and orange dots show large trees predicted for removal within 10 years.**
+
+![Figure 3](./media/image3.png)
+
+**Figure 3. Distribution of trees in City of Melbourne across genus over trunk sizes, a simple proxy for age. This graph uses urban forest data to show that Ulmus (red) and Platanus dominate large old trees (trunk sizes over 80cm)**

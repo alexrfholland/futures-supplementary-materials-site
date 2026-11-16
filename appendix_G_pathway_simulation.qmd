@@ -1,0 +1,488 @@
+---
+title: "Appendix G - Pathway Simulation"
+---
+
+This appendix describes the simulation as implemented in `_futureSim_refactored/`.
+
+This approach involves three key elements:
+
+- **propositional community**: generates proposals
+- **evaluative community**: negotiates differences and decides with mandate
+- **pathways**: show the visible consequences of these interactions over time
+
+## SUMMARY
+
+### Regions Modified By Proposals
+
+- `habitat feature` is a composite volumetric description of a tree, log, pole, or artificial structure.
+- `under canopy` is the immediate space under or around a feature.
+- `surrounding region` is the larger connected region around a feature. [in the manuscript, drop this one]
+- `expanded space` is the connected space between features made available by the connectivity simulation.
+
+### Proposals
+
+- Proposals can request:
+  - modifications to existing `habitat features` that change their variant, such as `Decay` requesting a `large` feature continue to their `senescing`, `snag` and `fallen` lifecycle varient.
+  - insertion of new `habitat features` such as `sapling` features under `Recruit` or `artificial` features under `Deploy Structure`.
+  - modification to the `expanded space` that connects features, such as under `Colonise`.
+
+Proposals are triggered by:
+
+- events (such as `Decay`)
+- latent changes (such as under `Release Control`)
+- respond to opportunities in environment (such as under `Colonise` responding to connectivity potential of the growth simulation)
+- or are enabled by previous proposals (such as `Recruit` and `Deploy-Structure` requesting insertion of new habitat features in areas unlocked by a previous `Colonise` proposal.
+
+We model five proposals:
+
+- Individual tree features propose `Decay` when `useful_life_expectancy` reaches `0`, requesting changes to the habitat feature, `under canopy`, and `surrounding region` that support progression through the lifecycle phases of `senescing`, `snag`, `fallen`, and `decayed`, or replacement.
+- Individual tree features propose `Release Control` at each pulse, requesting `under canopy` changes that support progression towards their `moderated` variant, and `surrounding region` changes that support progression towards their `unmanaged` variant.
+- Populations propose `Colonise` wherever the connectivity simulation makes `expanded space` available, requesting changes to ground, roof, and facade surfaces.
+- Populations propose `Recruit` at each pulse wherever `Decay`, `Release Control`, and `Colonise` have made `under canopy`, `surrounding region`, or `expanded space` available for new saplings.
+- Populations propose `Deploy-Structure` at compatible locations reached by `Colonise`, requesting changes that support `artificial`, `hybrid`, or `fallen` features.
+
+### Interventions
+Communities can fully or partially support proposals through Interventions. Interventions allow proposals to proceed (or modify them) through changes made to:
+
+- habitat features, such as `brace` partially supporting a `Decay` proposal.
+- the area immediatly under or around a habitat feature, such as `buffer`  fully supporting a `Decay` proposal by converting this area into a habitat island
+- the area connecting features, such as modifications ground, roof, and facade surfaces in response to `Colonise` proposals.
+
+The interventions we model are (broken down by their proposal family):
+
+`Decay`
+- `brace-feature` provides partial support by retaining tree features through `senescing` and `snag`, but not collapse.
+- `buffer-feature` provides full support by modifying `under canopy` and `surrounding region` to support progression through `fallen` and `decayed`.
+
+`Release Control`
+- `reduce-canopy-pruning` provides partial support by modifying `under canopy` to support progression towards a `moderated` variant.
+- `eliminate-canopy-pruning` provides full support by modifying the `surrounding region` to support progression towards an `unmanaged` variant.
+
+`Colonise`
+- `roughen-envelope` provides partial support by converting facades in `expanded space` into `biofacades`, and rooftops into `brown roofs`.
+- `enrich-ground` provides full support by converting ground in `expanded space` into `habitat ground`.
+- `enrich-envelope` provides full support by converting load-bearing roofs in `expanded space` into `green-roofs`.
+
+`Recruit`
+- `rewild-smaller-patch` provides partial support by inserting saplings in `under canopy` zones.
+- `rewild-larger-patch` provides full support by inserting saplings in `under canopy linked`, `surrounding region`, or `expanded space`.
+
+`Deploy-Structure`
+- `translocate-log` provides full support by inserting `fallen`, or `fallen` and `decayed`, features.
+- `adapt-utility-pole` provides full support by inserting an `artificial canopy` feature.
+- `upgrade-feature` provides full support by converting an `introduced` tree to its `hybrid` variant.
+
+**Table 1. Old design support table [todo: integrate properly]**
+
+| **Group** | **Design Support** | **Implementation Criteria** | **Model action** |
+|----|----|----|----|
+| ***Minimise branch fall under canopies*** | Under canopy depaving[^6]. | Low canopy footprint resistance | Mark as 'age-in-place'; enable ground-dwelling movement |
+|  | Bracing exoskeletons[^7] | High canopy footprint resistance | Mark as 'age-in-place'; support senescence without collapse |
+| ***Deploy artificial habitat structures*** | 3D printed hollow[^8] | Trees marked age-in-place (quantities depend on age/precolonial status) | Install 3D printed hollow |
+|  | Artificial bark sleeve |  | Increase peeling bark |
+|  | Artificial tree[^9] structure | Utility poles | Replace with artificial habitat structures (50% resources of baseline old tree) |
+| ***Reduce management intensity*** | Reduce canopy management[^6]. | Trees marked age-in-place | Increase dead branches, perch availability, hollows, epiphytes, peeling bark |
+|  | Reduce understorey management[^6]. |  | Allow accumulation of fallen nurse logs |
+|  | Install mistletoe[^10] |  | Increase epiphytes |
+| ***Recycle existing structures*** | Translocation of snags[^11] | Available snags and depaved areas | Relocate snags |
+|  | Translocation of fallen trees | Open spaces/rooftops with heavy load capacity | Relocate fallen trees |
+| ***Enhance urban surfaces*** | Rewilding[^12] | Low resistance under-canopy ground voxels | Outward expansion of depaving triggering tree recruitment |
+|  | Bio-envelopes (Green roofs)[^13] | Low resistance roofs | Enable ground-dwelling movement, midstory vegetation layer |
+|  | Bio-envelopes (Brown roofs)[^14] | High resistance roofs | Enable ground-dwelling movement, increase nurse logs |
+|  | Bio-envelopes (Facades)[^15] | Low resistance facades | Enable ground-dwelling movement |
+
+
+## Overall Model
+The simulation has:
+- the `node layer` stores habitat features and carries state forward from pulse to pulse.
+- the `possibility-space` layer stores the site as a voxel grid and evaluates current spatial opportunity.
+- a library of  `habitat features` that define possible conditions of trees, logs and artificia; canopies.
+
+Pathways emerges from repeated exchange between the two: node states are updated, projected into space, and used to recompute the conditions for later change.
+
+### Possibility-space layer
+
+A pre-baked 3D voxel grid (`possibility_space_ds`) classifies where proposals can spread, connect, or be read spatially.The dataset can be used as a temporary spatial layer during a pulse (e.g. for computing recruitment zones) and is reset per pulse. It is also used at VTK generation time to broadcast node-level decisions onto voxels.
+
+Its key fields are `analysis_combined_resistance`, `analysis_combined_resistanceNOCANOPY`, `node_CanopyID`, `sim_Nodes`, `sim_Turns`, and `sim_averageResistance`.
+
+#TODO: brief description of key steps: urban elements considered, parameterisation of resistance grid, opportunitie [ie. weightings of roofs], growth based simulation linked to 'expanded space' connectivity.
+
+### Node layer
+
+Trees, logs, and poles live as rows in `tree_df`, `log_df`, and `pole_df`, each row a physical habitat feature with state that persists across pulses. hese change which habitat features exist, how they are modified by proposal and intervention decisions, and how these changes carry through time. All information carried to the next pulse or state is recorded in the dataframes.
+
+| Group | Representative fields | Meaning |
+|---|---|---|
+| Identify | `nodeType`, `NodeID`, `structureID`, `tree_id`, `tree_number`, `log_number`, `pole_number` | What the habitat feature is and how it is tracked |
+| Link to voxel grid | `voxel_index`, `voxelID`, `x`, `y`, `z`, `CanopyArea`, `sim_NodesArea`, `sim_NodesVoxels` | Where it sits and how it links to canopy-owned and ground-connected voxels |
+| Properties | `size`, `lifecycle_state`, `diameter_breast_height`, `useful_life_expectancy`, `presenscent_duration_years`, `control` | Its current biological and management state |
+
+The node ID systems that link these two layers:
+
+| ID field | What it links | Where it lives |
+|---|---|---|
+| `NodeID` / `analysis_nodeID` | Each node's physical voxel position | Shared across dataframes and xarray |
+| `node_CanopyID` | Under-canopy voxels to the tree they belong to | xarray — covers ~435 of 455 trees |
+| `sim_Nodes` | Ground voxels to the nearest node via growth simulation | xarray — includes trees, logs, poles |
+| `sim_Turns` | How many growth turns to reach each voxel | xarray — proxy for spatial difficulty |
+
+
+#TODO: brief description of locations of nodes: ie, trees (urban forest data), logs (rooftops that can support them), poles (existing utility poles). Maybe mention that additional logs and trees also use the regions defined by the connectivity simulation.
+
+## Proposals and Interventions
+
+### Propositional Community
+
+The propositional community generates proposals. Each proposal has a temporal trigger and a spatial region of request.
+
+#### Temporal and Spatial Triggers
+
+Temporal triggers:
+
+- `on event`
+- `on latent` #TODO: think of a better name for what happens with release control proposals, ie. they need to exidst for a certain time at this level
+- `every pulse`
+- `every state`
+
+Table 1. Spatial regions of proposal request.
+
+| Level | Description | Signal source | How it is linked in the simulation | Types of states |
+|---|---|---|---|---|
+| habitat feature | Composite volumetric descriptions of trees and artificial structures | high-resolution lidar scans linked to survey data and then modified through simulation | represented as a node, or row, in the node dataframes (`tree_df`, `log_df`, `pole_df`) | lifecycle, management, origin |
+| under canopy | Immediate space under or around a feature | GIS canopy bounds from City of Melbourne lidar linked to each feature | linked to each feature in the nodeDF via `node_CanopyID` | `exoskeleton`, `footprint-depaved`, `footprint-depaved-connected` |
+| surrounding region | Larger region around a feature | region of the connectivity simulation linked to the feature | linked to each feature in the nodeDF via `sim_Nodes` | `node-rewilded` |
+| expanded space | Space that connects features | space defined by how much effort the connectivity simulation needed to reach it | `possibility_space_ds` as a broader gate not connected to a specific feature | `otherGround`, `rewilded` |
+
+#### Proposals
+
+Table 2. Proposal families, triggers, and outcomes.
+
+| Proposal | Temporal trigger | Spatial region of request | Condition for consideration | Accepted outcome | Rejected outcome |
+|---|---|---|---|---|---|
+| `decay` | on event | habitat feature, under canopy | a tree reaches the end of its useful life expectancy | feature progresses through large-old, standing-dead, and fallen lifecycle variants | model replaces feature with sapling lifecycle variant |
+| `release-control` | on event [TODO: define as a latent proposal] | habitat feature, under canopy | a living tree has accrued enough years under reduced or eliminated pruning to develop new canopy traits | feature progresses through moderated and risk-averse human-management variants | feature maintains risk-averse human-management variant |
+| `recruit` | every pulse | under canopy, surrounding region, and in space already under consideration for `colonise` | the engine recomputes recruit zones and tests available space in each 10-year pulse | model inserts sapling features | model takes no action |
+| `colonise` | every state | expanded space | the engine checks potential zones of expansion through the connectivity submodel | model converts voxels | model takes no action |
+| `deploy-structure` | every state | habitat feature and potential habitat features now already under `colonise` | the engine checks potential logs, poles, and ground-deadwood sites each state | model converts feature into `hybrid` or `fallen` variant, or inserts artificial features into model | model takes no action |
+
+### Evaluative Community
+
+The evaluative community negotiates differences and decides with mandate. Interventions represent how the evaluative community responds to proposals. An intervention changes attributes of one voxel or a group of voxels in response to a proposal. The model applies interventions where voxel affordances match intervention requirements.
+
+Whether an intervention proceeds depends on its effort threshold. The model compares resistance at voxels marked by a proposal with the threshold and allocates an intervention when the threshold exceeds resistance. Interventions use either feature or connectivity resistance depending on whether they target individual habitat features or connections. When multiple interventions fit, the model selects the highest effort option.
+
+Table 3. Resistance groupings and effort thresholds used by the evaluative community.
+
+| Resistance grouping | Name in model | Description | Simulation layer | Effort thresholds |
+|---|---|---|---|---|
+| Feature resistance | `CanopyResistance` | Aggregates values beneath habitat features using aerial canopy footprint data | `nodeDF` | `minimal-tree-support-threshold`, `moderate-tree-support-threshold`, `maximum-tree-support-threshold` |
+| Connectivity resistance | `sim_Turns` | Applies a cellular automata algorithm to ground, facade and roof surfaces | `possibility_space_ds` | `sim_TurnsThreshold` |
+
+Table 4. How the evaluative community responds to proposals.
+
+| Proposal | Effort threshold | Full-support intervention | Partial-support intervention |
+|---|---|---|---|
+| `decay` | Individual tree support thresholds | `buffer-feature` | `brace-feature` |
+| `colonise` | Spread-effort threshold | `larger-patches-rewild` / `enrich-envelope` | `roughen-envelope` |
+| `release-control` | Individual tree support thresholds | `eliminate-canopy-pruning` | `reduce-canopy-pruning` |
+| `recruit` | `under canopy` and `surrounding region` from `Decay` and `Release Control`, and `expanded space` from `Colonise` | `rewild-larger-patch` | `rewild-smaller-patch` |
+| `deploy-structure` | `Colonise` | `adapt-utility-pole` / `translocate-log` / `upgrade-feature` | — |
+
+## Simulated state
+
+### Tree Size Categories
+
+- **Living**: small, medium, large
+- **Senescing pathway**: senescing -> snag -> fallen -> decayed
+- **Absent**: gone, early-tree-death
+- **Non-occupying** (no canopy voxels): snag, fallen, decayed, plus absent
+
+### Pulse-Based Execution
+
+#one sentence about pathways split into states of maximum length 30 years. Splits states into 10-year pulses
+**INITIAL SET UP PROCESS:**
+
+1. **Growth** — `age_trees()`: ages trees using species-specific allometric curves with +/-15% individual variation in effective growing time
+
+### Growth Model
+
+| Model | Applies to | Curve |
+|---|---|---|
+| `fischer` | Precolonial trees (pre-European species) | Fischer allometric DBH-to-height |
+| `ulmus` | Colonial trees (European species) | Ulmus-calibrated allometric curve |
+TODO: properly reference these as footnotes
+
+2. **Mortality** — `apply_annual_tree_mortality()`: stochastic Le Roux cohort-based mortality applied to small, medium, and large trees
+
+### Mortality
+TODO: properly reference these as footnotes
+
+Small, medium and large trees have mortality uses Le Roux cohort-thinning curves anchored to two annual rates:
+
+- **Urban**: `0.06` (roughly 61% of trees survive over 8 years)
+- **Nature-reserve**: `0.03` (roughly 78% of trees survive over 8 years)
+
+All trees by default have the urban rate. The rate assignment follows the proposal support schema:
+
+
+Full mortality derivation: `_documentation-refactored/appendix/appendix-g/recruit and mortality notes.md`
+
+#### 1. Proposal-Decay
+
+Determines the `lifecycle` <`size`> variant for living trees once they progress beyond their `large` phase. Allows trees to enter the `senescing -> snag -> fallen -> decayed` pathway.
+
+**1.1 Proposal trigger**
+
+A tree proposes `Decay` when `presenscent_duration_years <= 0`.
+
+The engine seeds `presenscent_duration_years` as:
+
+`useful_life_expectancy + triangular(-10, 0, 10)`
+
+Many trees use `useful_life_expectancy` from the input data.
+If that is missing, the engine falls back to:
+
+- `small = 80 years`
+- `medium = 50 years`
+- `large = 10 years`
+
+**1.2 Proposal assessment**
+
+The engine accepts `Decay` when:
+
+`CanopyResistance < minimal-tree-support-threshold`
+
+Otherwise it rejects the proposal.
+
+**1.3 Rejected outcome**
+
+The engine replaces the tree with a new precolonial sapling.
+It:
+
+- first defines `replacement_growth_years`
+- sets this as the number of years `useful_life_expectancy` has dropped below zero, capped at the pulse length
+- reseeds DBH from a `2 cm` starting size, then grows it forward for between `replacement_growth_years` and the full pulse length
+- resets `useful_life_expectancy` to `120 - replacement_growth_years`
+- resets `presenscent_duration_years` to:
+  `useful_life_expectancy + triangular(-10, 0, 10)`
+
+**1.4 Supported outcome**
+
+| Intervention | Full/Partial Support | What effort threshold | Changes | Effect |
+|---|---|---|---|---|
+| `brace-feature` | partial | `moderate-tree-support-threshold < CanopyResistance < minimal-tree-support-threshold` | `under canopy` becomes `exoskeleton` | retains the tree through `senescing` and `snag`, but does not allow full collapse in place |
+| `buffer-feature` | full | `maximum-tree-support-threshold < CanopyResistance <= moderate-tree-support-threshold` | `under canopy` becomes `footprint-depaved` | opens the `under canopy` region and allows full decay in place |
+| `buffer-feature` | full | `CanopyResistance <= maximum-tree-support-threshold` | `surrounding region` becomes `node-rewilded` | opens the `surrounding region` and allows full decay in place |
+
+**1.5 State change**
+
+Once `Decay` is accepted, both `brace-feature` and `buffer-feature` allow the tree to move into `senescing`, then `snag`.
+
+The senescing values are:
+
+- precolonial trees:
+  `triangular(10, 90, 200)`
+- non-precolonial trees: `@TODO` link to royal-parade-elm-lifespan-appendix.md and briefly explain the elm useful-life framing
+  `triangular(10, 70, 110)`
+- and for non-precolonial trees, 30% also get a sudden-death track:
+  `triangular(0, 25, 40)`
+
+After that:
+
+- snag duration:
+  `triangular(0, 40, 100)`
+
+Then the support split is:
+
+- Partial support
+  - stops at `snag`
+  - when snag duration ends, the engine replaces the tree through `brace-collapse`, using the same replacement path as a rejected `Decay` proposal
+- Full support
+  - can continue to `fallen`
+  - fallen to decayed:
+    `triangular(10, 40, 100)`
+  - decayed to gone:
+    `triangular(30, 40, 75)`
+
+#### 2. Proposal-Release-Control
+Determines the `human management` <`control`> modifying factor for living trees. Allows trees to progress towards their `moderated` <`control = park-tree`> or `unmanaged` <`control = reserve-tree / improved-tree`> variant.
+
+
+**2.1 Proposal trigger**
+
+A tree proposes `Release Control` in every pulse when its `size` is `small`, `medium`, or `large`.
+
+**2.2 Proposal assessment**
+
+The engine accepts `Release Control` when a tree’s `CanopyResistance` is below `moderate-tree-support-threshold`.
+
+Otherwise it rejects the proposal.
+
+**2.3 Rejected outcome**
+
+The engine leaves the tree in its `risk-averse` variant <`control = street-tree`>.
+
+It:
+- sets `proposal-release-control_intervention` to `none`
+- resets `proposal-release-control_years` to `0`
+
+**2.4 Supported outcome**
+
+| Intervention | Full/Partial Support | What effort threshold | Changes | Effect |
+|---|---|---|---|---|
+| `reduce-canopy-pruning` | partial | `maximum-tree-support-threshold < CanopyResistance <= moderate-tree-support-threshold` | `under canopy` becomes `footprint-depaved` | allows the tree to move towards its `moderated` variant |
+| `eliminate-canopy-pruning` | full | `CanopyResistance <= maximum-tree-support-threshold` | `surrounding region` becomes `node-rewilded` | allows the tree to move towards its `unmanaged` variant |
+
+**2.5 State change**
+Once `Release Control` is accepted, every pulse, the engine adds `step_years` (the pulse length) to a tree features' `proposal-release-control_years`.
+
+- when `proposal-release-control_years = 20`, under `reduce-canopy-pruning` or `eliminate-canopy-pruning`, the tree becomes its `moderated` variant <`control = park-tree`>
+- when `proposal-release-control_years = 40`, under `eliminate-canopy-pruning` only, the tree becomes its `unmanaged` variant <`control = reserve-tree / improved-tree`>
+
+Trees in `senescing`, `snag`, `fallen`, or `decayed` are always under the `unmanaged` variant <`control = improved-tree`>.
+#### 3. Proposal-Colonise
+
+Determines where the model classifies `expanded space` as available for ground and envelope colonisation.
+
+**3.1 Proposal trigger and assessment**
+
+The engine proposes and accepts `Colonise` where `expanded space` has been reached by the connectivity model within the current `sim_TurnsThreshold`.
+
+**3.2 Rejected outcome**
+
+The engine does nothing.
+
+**3.3 Supported outcome**
+
+| Intervention | Full/Partial Support | What effort threshold | Changes | Effect |
+|---|---|---|---|---|
+| `larger-patches-rewild` | full | `sim_Turns <= sim_TurnsThreshold` and `urban element` is `ground` | sets `scenario_bioEnvelope` to `otherGround` or `rewilded` | changes persona indicators and triggers `Recruit` and `Deploy` proposals |
+| `enrich-envelope` | full | `sim_Turns <= sim_TurnsThreshold` and `urban element` is classified as `potential green roof` | sets `scenario_bioEnvelope` to `greenRoof` | changes persona indicators |
+| `roughen-envelope` | partial | `sim_Turns <= sim_TurnsThreshold` and `urban element` is classified as `potential brown roof` or `facade` | sets `scenario_bioEnvelope` to `brownRoof` or `livingFacade` | changes persona indicators and triggers `Deploy` proposals |
+
+**3.4 State change**
+
+`Colonise` changes attributes of voxels and triggers `Recruit`, `Release Control`, and `Deploy` proposals.
+#### 4. Proposal-Recruit
+Determines where the model inserts new sapling habitat features.
+
+**4.1 Proposal trigger**
+
+We simulate `Recruit` as a population-level event. The engine proposes `Recruit` at every pulse where there is available space in candidate zones, but scales establishment to a `30 year` recruitment interval following other ecological tree models.[^recruit-interval]
+
+**4.2 Proposal assessment**
+
+The engine assesses `Recruit` through two interlinked phases:
+
+1. `under-node treatments` proposed by `Decay` and `Release Control`, together with `expanded space` unlocked by `Colonise`, determine the size and type of recruitment zones available.
+2. `quota` determines how many saplings can be inserted into each recruitment zone.
+
+Recruitment quota this pulse = area of recruitment zone × planting density × recruitment interval × support multiplier.
+
+We define `planting density` as `50 trees/ha every 30 years`, following established woodland and urban tree recruitment densities.[^recruit-density]
+
+Support multiplier settings:
+
+- `positive`: `rewild-larger-patch = 1.6`, `rewild-smaller-patch = 1.2`
+- `trending`: both `1.0`
+
+The engine then subtracts existing occupancy and tries to place saplings into the remaining slots.
+
+Accepted saplings must be placed at least `1.5 m` apart.
+
+**4.3 Rejected outcome**
+
+The engine does nothing.
+
+**4.4 Supported outcome**
+
+| Intervention | Full/Partial Support | What effort threshold | Changes | Effect |
+|---|---|---|---|---|
+| `rewild-smaller-patch` | partial | the `under canopy` area of a feature has been set to `footprint-depaved` | sets `recruit_multiplier_partial` and `annual_tree_death_urban` | inserts a quota of saplings in `under canopy` zones |
+| `rewild-larger-patch` | full | more than 50% of `under canopy` area overlaps ground voxels already activated by `Colonise`<br>or the `surrounding region` of a feature has been set to `node-rewilded`<br>or ground voxels have already been activated by `Colonise` | sets `recruit_multiplier_full` and `annual_tree_death_nature-reserves` | inserts a quota of saplings in `under canopy linked`, `surrounding region`, or `expanded space` |
+
+**4.5 State change**
+
+Each accepted placement appends a new precolonial sapling.
+
+It:
+
+- reseeds DBH from a `2 cm` starting size, then grows it forward within the same pulse
+- sets `useful_life_expectancy` to `120`
+- sets `presenscent_duration_years` to `120 + triangular(-10, 0, 10)`
+- marks the new row as `proposal-recruit_accepted`
+- assigns low-control management <`control = reserve-tree`, `control_reached = low-control`>
+
+#### 5. Proposal-Deploy-Structure
+
+The engine proposes `Deploy-Structure` where a location has been reached by Colonise within the current sim_TurnsThreshold, and a specific feature is present at that location, or there is potential for one.
+
+**5.1 Proposal trigger and assessment**
+
+The engine assesses `Deploy-Structure` through four paths:
+
+- **translocated fallen trees on rooftops**
+  - The model first calculates roof area, then how much additional log weight that roof can support per square metre.
+  - `green roof = 50 kg/m²`; `brown roof = 100 kg/m²`
+  - It multiplies that value by roof area to get the total log load the roof can carry.
+  - It then assigns logs from the log library.
+  - It tries `large`, then `medium`, then `small`.
+  - It checks whether each log’s `Biomass_kg` fits within the remaining roof load.
+  - If it fits, it accepts it and places it on a randomly chosen eligible roof voxel.
+  - It continues until the remaining roof load is exhausted, or no more logs of that size can fit.
+
+- **fallen and decayed trees on colonised ground**
+  - The model identifies colonised ground and calculates how much fallen and decayed deadwood can be inserted there in the current pulse.
+  - It then adds new `fallen` and `decayed` features until that pulse budget is filled.
+  - `@TODO` link to baseline note reference on deadwood amounts.
+
+- **adapted utility poles**
+  - The model identifies existing `utility poles` at locations reached by `Colonise` as candidates for `artificial canopies`.
+
+- **`upgrade-feature`**
+  - The model identifies `size = medium` and `size = large`, `precolonial = false` tree features reached by `Colonise` as candidates for conversion from `origin = introduced` to `origin = hybrid`.
+
+**5.2 Rejected outcome**
+
+The engine does nothing.
+
+**5.3 Supported outcome**
+
+| Intervention | Full/Partial Support | Supported outcome |
+|---|---|---|
+| `translocate-log` | full | inserts a `fallen` feature on roofs, or inserts `fallen` and `decayed` features on colonised ground |
+| `adapt-utility-pole` | full | inserts an `artificial canopy` feature |
+| `upgrade-feature` | full | converts an existing `introduced` tree to its `hybrid` variant |
+
+**5.4 State change**
+
+Once `Deploy-Structure` is accepted, the model either enables an existing structure or inserts a new deadwood feature.
+
+Accepted logs and poles remain as enabled structures.
+
+Accepted ground deadwood enters the model as new `fallen` or `decayed` habitat features.
+## References
+
+[^recruit-density]: The live model uses `plantingDensity = 50 trees/ha` as a pulse-scaled establishment value. This sits within the broader density range discussed in Munro and Lindenmayer, *Planting for Wildlife*; Rawlings et al. (2010), *A Guide to Managing Box Gum Grassy Woodlands*; Gibbons et al. (2008), *The Future of Scattered Trees in Agricultural Landscapes*; and Le Roux et al. (2014), *The Future of Large Old Trees in Urban Landscapes*. See also [recruit and mortality notes](appendix_G_pathway_simulation_recruit-mortality-submodule.qmd).
+[^recruit-interval]: The `30 year` recruitment interval follows Gibbons et al. (2008), which models regeneration as `2.0` recruits per initial tree every `30 years`. See also [recruit and mortality notes](appendix_G_pathway_simulation_recruit-mortality-submodule.qmd).
+
+[^6]: Karen Ikin, Darren S. Le Roux, Laura Rayner, Nelida R. Villaseñor, Kathy Eyles, Philip Gibbons, Adrian D. Manning, and David B. Lindenmayer. (2015). Key lessons for achieving biodiversity‐sensitive cities and towns. Ecological management & restoration 16(3), 206–214. https://doi.org/10.1111/emr.12180
+
+[^7]: E. Thomas Smiley. (2011). Dead-end Stop Terminated Tree Support Cable Systems. Arboriculture & Urban Forestry 37(2), 67-73. https://doi.org/10/grsjn2
+
+[^8]: Dan Parker, Stanislav Roudavski, Therésa M. Jones, Nick Bradsworth, Bronwyn Isaac, Martin T. Lockett, and Kylie Soanes. (2022). A framework for computer-aided design and manufacturing of habitat structures for cavity-dependent animals. Methods in Ecology and Evolution 13(4), 826-841. https://doi.org/10/gpggfj
+
+[^9]: Alexander Holland and Stanislav Roudavski. (2024). Participatory design for multispecies cohabitation: by trees, for birds, with humans. In Designing more-than-human smart cities: beyond sustainability, towards cohabitation, edited by Sara Heitlinger, Marcus Foth, and Rachel Clarke, 93-128. Oxford, Oxford University Press.
+
+[^10]: David M. Watson, Melinda Cook, Rodney Van der Ree, and Lee Harrison. (2023). Returning Mistletoe to an Urban Forest: A Restoration Success Story. Botany. https://doi.org/10/gtmdd9
+
+[^11]: Lucy Hannan, Darren S. Le Roux, Richard N. C. Milner, and Philip Gibbons. (2019). Erecting dead trees and utility poles to offset the loss of mature trees. Biological Conservation 236, 340-346. https://doi.org/10/ggbjtk
+
+[^12]: City of Melbourne's Greening Your Laneways
+
+[^13]: City of Melbourne assessment
+
+[^14]: City of Melbourne assessment
+
+[^15]: Maria Canepa, Francesca Mosca, Shany Barath, Alexandre Changenet, Thomas E. Hauck, Ferdinand Ludwig, Enrica Roccotiello, Marta Pianta, Surayyn Uthaya Selvan, Verena Vogler, and Katia Perini. (2022). Ecolopes, beyond greening. A multi-species approach for urban design. AGATHÓN | International Journal of Architecture, Art and Design 11, 238-245. https://doi.org/10.19229/2464-9309/11212022

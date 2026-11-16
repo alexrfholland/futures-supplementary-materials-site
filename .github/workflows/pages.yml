@@ -1,0 +1,91 @@
+name: Build and deploy supplementary site
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: supplementary-pages-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v6
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: '1.10.19'
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Render site
+        run: quarto render .
+
+      - name: Check published files
+        run: |
+          test -s _site/index.html
+
+          expected_html=$(cat <<'HTML'
+          appendix_A_glossary.html
+          appendix_B_places.html
+          appendix_C_personas_capabilities_and_relational_indicators.html
+          appendix_D_habitat_features.html
+          appendix_E_habitat_volumes.html
+          appendix_F_resistance.html
+          appendix_G_pathway_simulation.html
+          appendix_G_pathway_simulation_growth-submodule.html
+          appendix_G_pathway_simulation_lifecycle-submodule.html
+          appendix_G_pathway_simulation_recruit-mortality-submodule.html
+          appendix_H_baseline_woodlands.html
+          index.html
+          HTML
+          )
+          actual_html=$(find _site -type f -name '*.html' -printf '%P\n' | sort)
+          if [ "$actual_html" != "$expected_html" ]; then
+            echo 'Rendered HTML files do not match the 12-page site allowlist.' >&2
+            printf 'Expected:\n%s\nActual:\n%s\n' "$expected_html" "$actual_html" >&2
+            exit 1
+          fi
+
+          if grep -RInE 'file:///|/(Users|home)/[[:alnum:]_.-]+/' _site --include='*.html'; then
+            echo 'Rendered HTML contains a local workstation path.' >&2
+            exit 1
+          fi
+
+      - name: Check rendered tables
+        run: python3 check-tables.py
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
