@@ -14,7 +14,7 @@ body.personas-and-capabilities .table-scroll {
 
 /* Size tables for their content rather than allocating 10rem to every column. */
 body.personas-and-capabilities .table-scroll table {
-  min-width: 56rem;
+  min-width: 68rem;
 }
 
 body.personas-and-capabilities .table-scroll th,
@@ -29,8 +29,8 @@ body.personas-and-capabilities .table-scroll th {
 
 body.personas-and-capabilities .table-scroll th:first-child,
 body.personas-and-capabilities .table-scroll td:first-child {
-  width: 12rem;
-  min-width: 12rem;
+  width: 10.5rem;
+  min-width: 10.5rem;
   position: sticky;
   left: 0;
   z-index: 1;
@@ -44,11 +44,22 @@ body.personas-and-capabilities .table-scroll thead th {
 
 /* Eight descriptive columns need room to read their paragraphs. */
 body.personas-and-capabilities .table-scroll:has(th:nth-child(8)) table {
-  min-width: 112rem;
+  min-width: 128rem;
 }
 
 body.personas-and-capabilities .table-scroll:has(th:nth-child(6)):not(:has(th:nth-child(8))) table {
-  min-width: 72rem;
+  min-width: 84rem;
+}
+
+/* Give habitat descriptions and populated year-by-year accounts longer lines. */
+body.personas-and-capabilities section[id^="evolved-habitat-and-melbourne-presence"] th:nth-child(2),
+body.personas-and-capabilities section[id^="evolved-habitat-and-melbourne-presence"] td:nth-child(2) {
+  width: 18rem;
+  min-width: 18rem;
+}
+
+body.personas-and-capabilities section[id^="cyclical-patterns-and-lifecycle"] td:nth-child(4):not(:empty) {
+  min-width: 22rem;
 }
 
 /* The overview has one compact category column and four descriptive columns. */
