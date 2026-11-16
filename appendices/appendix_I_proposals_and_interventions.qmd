@@ -24,9 +24,7 @@ These families capture pressures with different spatial and temporal patterns. R
 
 ## From proposals to interventions
 
-A proposal suggests a possible environmental configuration. A Magpie group's pattern of roosting near one another, for example, suggests a canopy with elevated, perchable branches distributed so that several group members can use them. Several interventions could support that configuration.
-
-The evaluative community can support, moderate or refuse a proposal through interventions, changing which later configurations become reachable. In the model, negotiation compares resistance with effort thresholds and applies the corresponding intervention. The four Bird examples below connect ecological evidence with proposal families and possible community responses. References to observing use, breeding or avoidance describe how people could assess interventions in practice. The simulation assesses selected environmental indicators.
+A proposal suggests a possible environmental configuration. To illustrate how proposals can suggest interventions, we provide examples for the bird persona drawn from supporting evidence. We use these examples as a basis for considering the set of interventions we implement in the model. For technical details of this implementation, see [Appendix J: Pathway simulation](appendix_J_pathway_simulation.qmd).
 
 ::: {.column-screen-inset}
 
