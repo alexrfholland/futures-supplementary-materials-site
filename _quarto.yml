@@ -16,6 +16,7 @@ project:
     - appendices/appendix_I_proposals_and_interventions.qmd
     - appendices/appendix_J_pathway_simulation.qmd
     - appendices/appendix_K_baseline_woodlands.qmd
+    - appendices/appendix_L_extended_results.qmd
     - appendices/appendix_J1_tree_growth.qmd
     - appendices/appendix_J2_tree_lifecycle.qmd
     - appendices/appendix_J3_recruitment_and_mortality.qmd
@@ -63,6 +64,17 @@ website:
         href: appendices/appendix_I_proposals_and_interventions.qmd
       - text: "Appendix J: Pathway simulation"
         href: appendices/appendix_J_pathway_simulation.qmd
+      - text: "Appendix K: Baseline woodlands"
+        href: appendices/appendix_K_baseline_woodlands.qmd
+      - section: "Appendix L: Extended results"
+        href: appendices/appendix_L_extended_results.qmd
+        contents:
+          - text: "Year-180 indicator quantities"
+            href: appendices/appendix_L_extended_results.qmd#year-180-indicator-quantities
+          - text: "All-years comparison"
+            href: appendices/appendix_L_extended_results.qmd#all-years-comparison
+          - text: "Tree population quantities"
+            href: appendices/appendix_L_extended_results.qmd#tree-population-quantities
       - section: "Pathway simulation submodules"
         contents:
           - text: "J.1: Tree growth submodule"
@@ -71,8 +83,6 @@ website:
             href: appendices/appendix_J2_tree_lifecycle.qmd
           - text: "J.3: Recruitment and mortality submodule"
             href: appendices/appendix_J3_recruitment_and_mortality.qmd
-      - text: "Appendix K: Baseline woodlands"
-        href: appendices/appendix_K_baseline_woodlands.qmd
 
 format:
   html:

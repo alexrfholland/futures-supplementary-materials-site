@@ -114,8 +114,8 @@ if not sources[0].is_file():
 missing_sources = [source.name for source in sources if not source.is_file()]
 if missing_sources:
     raise SystemExit(f"Missing expected source pages: {', '.join(missing_sources)}")
-if len(sources) != 15:
-    raise SystemExit(f"Expected index.qmd, 11 appendices and 3 pathway submodules, found {len(sources)} files.")
+if len(sources) != 16:
+    raise SystemExit(f"Expected index.qmd, 12 appendices and 3 pathway submodules, found {len(sources)} files.")
 
 total = 0
 for source in sources:

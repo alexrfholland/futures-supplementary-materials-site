@@ -54,12 +54,13 @@ jobs:
           appendices/appendix_J3_recruitment_and_mortality.html
           appendices/appendix_J_pathway_simulation.html
           appendices/appendix_K_baseline_woodlands.html
+          appendices/appendix_L_extended_results.html
           index.html
           HTML
           )
           actual_html=$(find _site -type f -name '*.html' -printf '%P\n' | sort)
           if [ "$actual_html" != "$expected_html" ]; then
-            echo 'Rendered HTML files do not match the 15-page site allowlist.' >&2
+            echo 'Rendered HTML files do not match the 16-page site allowlist.' >&2
             printf 'Expected:\n%s\nActual:\n%s\n' "$expected_html" "$actual_html" >&2
             exit 1
           fi

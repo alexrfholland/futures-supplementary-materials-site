@@ -25,6 +25,13 @@ These supplementary materials provide ecological evidence and methodological det
 | [Appendix I: Proposals and interventions](appendices/appendix_I_proposals_and_interventions.qmd) | Describes proposal families and community responses. |
 | [Appendix J: Pathway simulation](appendices/appendix_J_pathway_simulation.qmd) | Documents the pathway simulation and its implementation. |
 | [Appendix K: Baseline woodlands](appendices/appendix_K_baseline_woodlands.qmd) | Documents the evidence and calculations for the woodland reference state. |
+| [Appendix L: Extended results](appendices/appendix_L_extended_results.qmd) | Provides year-180 indicator quantities, all-years comparisons and tree population quantities. |
+
+### Extended results
+
+- [Year-180 indicator quantities](appendices/appendix_L_extended_results.qmd#year-180-indicator-quantities)
+- [All-years comparison](appendices/appendix_L_extended_results.qmd#all-years-comparison)
+- [Tree population quantities](appendices/appendix_L_extended_results.qmd#tree-population-quantities)
 
 ### Pathway simulation submodules
 
