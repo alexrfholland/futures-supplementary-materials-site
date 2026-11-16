@@ -1,0 +1,110 @@
+/*-- scss:rules --*/
+/* Keep the personas tables in Quarto's body column, between the menus. */
+body.personas-and-capabilities main.content,
+body.personas-and-capabilities .personas-table,
+body.personas-and-capabilities .table-scroll {
+  min-width: 0;
+}
+
+body.personas-and-capabilities .table-scroll {
+  max-width: 100%;
+  border: 1px solid #d9e1db;
+  border-radius: 0.25rem;
+}
+
+/* Size tables for their content rather than allocating 10rem to every column. */
+body.personas-and-capabilities .table-scroll table {
+  min-width: 56rem;
+}
+
+body.personas-and-capabilities .table-scroll th,
+body.personas-and-capabilities .table-scroll td {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+body.personas-and-capabilities .table-scroll th {
+  font-weight: 600;
+}
+
+body.personas-and-capabilities .table-scroll th:first-child,
+body.personas-and-capabilities .table-scroll td:first-child {
+  width: 12rem;
+  min-width: 12rem;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: var(--bs-body-bg, #fff);
+  border-right: 1px solid #d9e1db;
+}
+
+body.personas-and-capabilities .table-scroll thead th {
+  background-color: #f1f5f1;
+}
+
+/* Eight descriptive columns need room to read their paragraphs. */
+body.personas-and-capabilities .table-scroll:has(th:nth-child(8)) table {
+  min-width: 112rem;
+}
+
+body.personas-and-capabilities .table-scroll:has(th:nth-child(6)):not(:has(th:nth-child(8))) table {
+  min-width: 72rem;
+}
+
+/* The overview has one compact category column and four descriptive columns. */
+body.personas-and-capabilities #persona-overview .table-scroll table {
+  min-width: 56rem;
+}
+
+body.personas-and-capabilities #persona-overview th:first-child,
+body.personas-and-capabilities #persona-overview td:first-child {
+  position: static;
+  width: 4.75rem;
+  min-width: 4.75rem;
+}
+
+body.personas-and-capabilities #persona-overview th:nth-child(2) {
+  width: 20%;
+}
+
+body.personas-and-capabilities #persona-overview th:nth-child(3) {
+  width: 19%;
+}
+
+body.personas-and-capabilities #persona-overview th:nth-child(4) {
+  width: 28%;
+}
+
+/* Capability labels, domains and scales stay smaller than the service columns. */
+body.personas-and-capabilities #overview-of-capabilities .table-scroll table {
+  min-width: 56rem;
+}
+
+body.personas-and-capabilities #overview-of-capabilities th:first-child,
+body.personas-and-capabilities #overview-of-capabilities td:first-child {
+  width: 9rem;
+  min-width: 9rem;
+}
+
+body.personas-and-capabilities #overview-of-capabilities th:nth-child(2),
+body.personas-and-capabilities #overview-of-capabilities th:nth-child(3),
+body.personas-and-capabilities #overview-of-capabilities th:nth-child(4) {
+  width: 22%;
+}
+
+body.personas-and-capabilities .citation {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767.98px) {
+  /* Quarto already provides the page gutters on phones. */
+  body.personas-and-capabilities main.content {
+    padding-inline: 0;
+  }
+
+  /* Keep the full phone width available when reading descriptive columns. */
+  body.personas-and-capabilities .table-scroll th:first-child,
+  body.personas-and-capabilities .table-scroll td:first-child {
+    position: static;
+  }
+}
