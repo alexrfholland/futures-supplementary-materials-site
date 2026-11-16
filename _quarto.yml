@@ -27,6 +27,11 @@ project:
     - updated_appendices/updated_05_proposals.qmd
     - updated_appendices/updated_06_pathways.qmd
     - updated_appendices/updated_07_expansion_reachability.qmd
+    - updated_appendices/updated_00_glossary.qmd
+    - updated_appendices/updated_08_habitat_features.qmd
+    - updated_appendices/updated_09_habitat_volumes.qmd
+    - updated_appendices/updated_10_resistance.qmd
+    - updated_appendices/updated_11_baseline_woodlands.qmd
   resources:
     - media/**
 
@@ -49,6 +54,8 @@ website:
         href: index.qmd
       - section: "Updated appendices"
         contents:
+          - text: "Glossary"
+            href: updated_appendices/updated_00_glossary.qmd
           - text: "Supporting evidence for the vignettes"
             href: updated_appendices/updated_01_vignette_evidence.qmd
           - text: "Place"
@@ -63,6 +70,14 @@ website:
             href: updated_appendices/updated_06_pathways.qmd
           - text: "Details on expansion and reachability"
             href: updated_appendices/updated_07_expansion_reachability.qmd
+          - text: "Habitat features"
+            href: updated_appendices/updated_08_habitat_features.qmd
+          - text: "Habitat volumes"
+            href: updated_appendices/updated_09_habitat_volumes.qmd
+          - text: "Resistance"
+            href: updated_appendices/updated_10_resistance.qmd
+          - text: "Baseline woodlands"
+            href: updated_appendices/updated_11_baseline_woodlands.qmd
       - section: "Appendices"
         contents:
           - appendix_A_glossary.qmd

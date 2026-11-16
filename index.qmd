@@ -94,6 +94,7 @@ Old appendix:
 
 ## Updated appendices
 
+- [Glossary](updated_appendices/updated_00_glossary.qmd)
 - [Supporting evidence for the vignettes](updated_appendices/updated_01_vignette_evidence.qmd)
 - [Place](updated_appendices/updated_02_place.qmd)
 - [Personas](updated_appendices/updated_03_personas.qmd)
@@ -101,3 +102,7 @@ Old appendix:
 - [Proposals](updated_appendices/updated_05_proposals.qmd)
 - [Pathways](updated_appendices/updated_06_pathways.qmd)
 - [Details on expansion and reachability](updated_appendices/updated_07_expansion_reachability.qmd)
+- [Habitat features](updated_appendices/updated_08_habitat_features.qmd)
+- [Habitat volumes](updated_appendices/updated_09_habitat_volumes.qmd)
+- [Resistance](updated_appendices/updated_10_resistance.qmd)
+- [Baseline woodlands](updated_appendices/updated_11_baseline_woodlands.qmd)
