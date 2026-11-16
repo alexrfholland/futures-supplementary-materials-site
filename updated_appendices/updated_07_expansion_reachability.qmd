@@ -1,6 +1,6 @@
 ---
 title: "Details on expansion and reachability"
-bibliography: [references/site_references.bib]
+bibliography: [../references/site_references.bib]
 link-citations: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 pagetitle: "Place"
-bibliography: [references/site_references.bib]
+bibliography: [../references/site_references.bib]
 link-citations: true
 ---
 
@@ -35,4 +35,4 @@ Cities can also function as threatened-species hotspots and may serve as the las
 
 TODO: Jot down some key locations / tensions to focus on relevant to our Places.
 
-See also [Appendix B: Places](appendix_B_places.qmd).
+See also [Appendix B: Places](../appendix_B_places.qmd).

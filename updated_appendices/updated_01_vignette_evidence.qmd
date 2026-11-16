@@ -1,6 +1,6 @@
 ---
 pagetitle: "Supporting evidence for the vignettes"
-bibliography: [references/site_references.bib]
+bibliography: [../references/site_references.bib]
 link-citations: true
 ---
 

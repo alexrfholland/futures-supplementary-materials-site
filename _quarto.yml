@@ -20,13 +20,13 @@ project:
     - persona_tree.qmd
     - persona_tree_fungal-research.qmd
     - persona_lizard.qmd
-    - updated_01_vignette_evidence.qmd
-    - updated_02_place.qmd
-    - updated_03_personas.qmd
-    - updated_04_indicators.qmd
-    - updated_05_proposals.qmd
-    - updated_06_pathways.qmd
-    - updated_07_expansion_reachability.qmd
+    - updated_appendices/updated_01_vignette_evidence.qmd
+    - updated_appendices/updated_02_place.qmd
+    - updated_appendices/updated_03_personas.qmd
+    - updated_appendices/updated_04_indicators.qmd
+    - updated_appendices/updated_05_proposals.qmd
+    - updated_appendices/updated_06_pathways.qmd
+    - updated_appendices/updated_07_expansion_reachability.qmd
   resources:
     - media/**
 
@@ -50,19 +50,19 @@ website:
       - section: "Updated appendices"
         contents:
           - text: "Supporting evidence for the vignettes"
-            href: updated_01_vignette_evidence.qmd
+            href: updated_appendices/updated_01_vignette_evidence.qmd
           - text: "Place"
-            href: updated_02_place.qmd
+            href: updated_appendices/updated_02_place.qmd
           - text: "Personas"
-            href: updated_03_personas.qmd
+            href: updated_appendices/updated_03_personas.qmd
           - text: "Capabilities and indicators"
-            href: updated_04_indicators.qmd
+            href: updated_appendices/updated_04_indicators.qmd
           - text: "Proposals"
-            href: updated_05_proposals.qmd
+            href: updated_appendices/updated_05_proposals.qmd
           - text: "Pathways"
-            href: updated_06_pathways.qmd
+            href: updated_appendices/updated_06_pathways.qmd
           - text: "Details on expansion and reachability"
-            href: updated_07_expansion_reachability.qmd
+            href: updated_appendices/updated_07_expansion_reachability.qmd
       - section: "Appendices"
         contents:
           - appendix_A_glossary.qmd
