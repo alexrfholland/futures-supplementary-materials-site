@@ -8,7 +8,7 @@ These supplementary materials provide ecological evidence and methodological det
 
 *Authors: Alexander Holland, Stanislav Roudavski, Jason Thompson and Philip Gibbons*
 
-[click here for a live version of the simulation](live-demonstration.qmd)
+[click here for a live version of the simulation](https://arboreal-futures-live.gigglycarp1.chatgpt.site/)
 
 ## Appendices
 

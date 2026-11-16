@@ -5,7 +5,6 @@ project:
   output-dir: _site
   render:
     - index.qmd
-    - live-demonstration.qmd
     - appendices/appendix_A_glossary.qmd
     - appendices/appendix_B_vignette_evidence.qmd
     - appendices/appendix_C_places.qmd
@@ -35,7 +34,7 @@ website:
       - text: "Supplementary materials"
         href: index.qmd
       - text: "Live demonstration"
-        href: live-demonstration.qmd
+        href: https://arboreal-futures-live.gigglycarp1.chatgpt.site/
   sidebar:
     style: "docked"
     search: true
@@ -43,7 +42,7 @@ website:
       - text: "Overview"
         href: index.qmd
       - text: "Live demonstration"
-        href: live-demonstration.qmd
+        href: https://arboreal-futures-live.gigglycarp1.chatgpt.site/
       - text: "Appendix A: Glossary"
         href: appendices/appendix_A_glossary.qmd
       - text: "Appendix B: Supporting evidence for the vignettes"
