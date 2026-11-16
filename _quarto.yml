@@ -66,15 +66,8 @@ website:
         href: appendices/appendix_J_pathway_simulation.qmd
       - text: "Appendix K: Baseline woodlands"
         href: appendices/appendix_K_baseline_woodlands.qmd
-      - section: "Appendix L: Extended results"
+      - text: "Appendix L: Extended results"
         href: appendices/appendix_L_extended_results.qmd
-        contents:
-          - text: "Year-180 indicator quantities"
-            href: appendices/appendix_L_extended_results.qmd#year-180-indicator-quantities
-          - text: "All-years comparison"
-            href: appendices/appendix_L_extended_results.qmd#all-years-comparison
-          - text: "Tree population quantities"
-            href: appendices/appendix_L_extended_results.qmd#tree-population-quantities
       - section: "Pathway simulation submodules"
         contents:
           - text: "J.1: Tree growth submodule"

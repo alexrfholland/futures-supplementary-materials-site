@@ -2,7 +2,7 @@
 title: "Appendix L: Extended results"
 ---
 
-These tables provide additional results from version 4.12 of the simulation.
+This appendix presents extended results from version 4.12 of the simulation, including year-180 indicator quantities, comparisons across modelled years and tree population quantities.
 
 ## Year-180 indicator quantities
 

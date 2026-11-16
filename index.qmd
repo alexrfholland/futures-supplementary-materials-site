@@ -27,12 +27,6 @@ These supplementary materials provide evidence and methodological details suppor
 | [Appendix K: Baseline woodlands](appendices/appendix_K_baseline_woodlands.qmd) | Documents the evidence and calculations for the woodland reference state. |
 | [Appendix L: Extended results](appendices/appendix_L_extended_results.qmd) | Provides year-180 indicator quantities, all-years comparisons and tree population quantities. |
 
-### Extended results
-
-- [Year-180 indicator quantities](appendices/appendix_L_extended_results.qmd#year-180-indicator-quantities)
-- [All-years comparison](appendices/appendix_L_extended_results.qmd#all-years-comparison)
-- [Tree population quantities](appendices/appendix_L_extended_results.qmd#tree-population-quantities)
-
 ### Pathway simulation submodules
 
 - [Appendix J.1: Tree growth submodule](appendices/appendix_J1_tree_growth.qmd)
