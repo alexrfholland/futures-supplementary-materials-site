@@ -1,0 +1,265 @@
+---
+title: "Working notes on common mycorrhizal networks, urbanisation, and Melbourne boulevard trees (provisional)"
+---
+
+::: {.callout-info appearance="simple"}
+**Provisional background.** This working material supports the persona appendices and may change as the research develops.
+:::
+
+## 1. Are those systems still in place in urbanised areas?
+
+Usually: **not intact, but not absent**.
+
+Urbanisation tends to break fungal continuity through soil excavation, imported soil, compaction, paving, trenching, drainage changes, high nutrients, pollution, irrigation, mowing, leaf-litter removal, herbicide/fungicide use and repeated tree replacement.[^bainard2011MycorrhizalStatus][^authier2022EctomycorrhizalNetworks][^verbeek2025ArbuscularMycorrhizaUrban] Studies repeatedly find that urban tree roots can still be mycorrhizal, but colonisation and community structure often differ from rural or forest settings. One urban/rural tree study assessed 26 tree species and found that all were colonised by arbuscular mycorrhizal fungi, while seven had both AM and ECM colonisation; overall AM and ECM colonisation were lower in urban than rural trees.[^bainard2011MycorrhizalStatus]
+
+But **“urban = dead soil”** is too simple. A 2025 Amsterdam study of Dutch elm roots found distinct, diverse and heterogeneous AM fungal communities across an urbanisation gradient; unexpectedly, AM fungal diversity increased with urbanisation, suggesting not simply loss but a shift in mycorrhizal partners.[^verbeek2025ArbuscularMycorrhizaUrban] Studies of urban parks also show that park age, vegetation type and host-tree composition can shape soil fungal and ectomycorrhizal communities, with some urban parks resembling natural forests more than expected.[^hui2017EctomycorrhizalFungalCommunities][^yan2017SoilMicrobialCommunities]
+
+So the better formulation is: **urbanisation fragments and filters common mycorrhizal networks; it often favours generalists and disturbance-tolerant fungi; but old, unsealed, vegetated urban soils can still sustain meaningful fungal networks**.[^authier2022EctomycorrhizalNetworks][^verbeek2025ArbuscularMycorrhizaUrban]
+
+## 2. Royal Parade / inner Melbourne: what probably happened?
+
+Pre-colonial inner Melbourne was not empty parkland. City of Melbourne’s pre-colonial plant list documents plant species considered likely, unlikely or known to have occurred within the municipality before 1835.[^melbourne2024PreColonialPlantList] For the Royal Parade thought experiment, it is safer to describe the original vegetation as a local grassy woodland / grassland mosaic including eucalypts, grasses, herbs and other native plants, rather than to imply that the exact pre-colonial species mix beneath Royal Parade is known in detail.
+
+Royal Parade itself has been radically remade: road formation, boulevard works, repeated plantings, imported materials, drainage changes and paving. The current elm avenue is listed by the National Trust as an avenue of English elms at Royal Parade, Parkville, approximately 120 years old, planted just after 1900, with some *Ulmus × hollandica* also present.[^nationalTrustsAustralia2015EnglishElm]
+
+So for the thought experiment:
+
+**The original pre-colonial eucalypt woodland common mycorrhizal network is almost certainly not sitting there intact under Royal Parade.** The living network would mostly be a post-colonial urban network built around the current trees, lawns, weeds, garden beds, remnant soil pockets and whatever native, cosmopolitan or introduced fungi have persisted or arrived.[^authier2022EctomycorrhizalNetworks][^karst2023PositiveCitationBias]
+
+But it is also too stark to say **“there is none.”** Some fungal spores, resistant propagules and soil lineages could persist in less-disturbed pockets. More importantly, 100–150 years of continuous tree roots can create a new kind of long-lived urban fungal infrastructure. Not the same network, but not nothing.[^verbeek2025ArbuscularMycorrhizaUrban][^hui2017EctomycorrhizalFungalCommunities][^nationalTrustsAustralia2015EnglishElm]
+
+## 3. Can elms, planes, oaks and eucalypts “plug into” the same network?
+
+Partly, but it is important to separate **AM networks** from **ECM networks**. A common mycorrhizal network is formed when fungal hyphae connect the roots of more than one plant, but AM and ECM fungi are different guilds and do not fuse into a single universal network.[^karst2023PositiveCitationBias][^brundrett2020ResolvingMycorrhizalStatus]
+
+| Tree / plant type | Likely mycorrhizal role | What that means for CMNs |
+|---|---|---|
+| Elms | Mainly AM. *Ulmus* is commonly treated as AM in urban-tree mycorrhizal literature; the Amsterdam study specifically examined AM fungi in Dutch elm roots.[^verbeek2025ArbuscularMycorrhizaUrban][^brundrett2020ResolvingMycorrhizalStatus] | Elms can support AM fungal networks linking them with grasses, herbs, many shrubs, some young trees and possibly AM-colonised eucalypt roots. |
+| London planes | Generally treated as an AM broadleaf tree in broad mycorrhizal-status work, though local colonisation depends on soil and tree condition.[^brundrett2020ResolvingMycorrhizalStatus][^bainard2011MycorrhizalStatus] | Planes may support AM fungal infrastructure, but they are not classic ECM “mushroom-tree” anchors like oaks, pines or many mature eucalypts. |
+| Oaks | Strong ECM hosts. *Quercus* is a classic ECM genus, though some records can show dual or mixed colonisation depending on context.[^brundrett2020ResolvingMycorrhizalStatus] | Old oaks can support ECM networks, but in Melbourne many associated fungi may be cosmopolitan or introduced rather than native eucalypt woodland fungi. |
+| Eucalypts | Often dual mycorrhizal: AM can occur, especially in seedlings and some fine roots, while ECM is often important in mature trees.[^brundrett2008MycorrhizalAssociations][^brundrett2020ResolvingMycorrhizalStatus] | Eucalypts are plausible “bridge” trees at the ecosystem level because they can host both guilds, but AM and ECM fungi do not merge into one continuous fungal network. |
+| Native grasses, herbs, many shrubs | Mostly AM.[^brundrett2008MycorrhizalAssociations] | Very important for AM continuity. A treed lawn with a diverse understorey likely supports richer AM life than bare compacted turf alone. |
+
+## 4. Do Melbourne-area eucalypts form both AM and ECM?
+
+Yes, the safest answer is: **many eucalypts can form both, but adult eucalypts are often ECM-dominant**.[^brundrett2008MycorrhizalAssociations][^brundrett2020ResolvingMycorrhizalStatus]
+
+For river red gum, yellow box, yellow gum and related Melbourne-area eucalypts, I would not write **“they do not form AM.”** I would write something like:
+
+> Many eucalypts are dual mycorrhizal. Seedlings and young fine roots can form arbuscular mycorrhizal associations, while mature trees often become more strongly ectomycorrhizal. In an urban woodland remnant or mixed park, a eucalypt may therefore interact with both AM and ECM fungal communities, depending on soil conditions, age, season, nearby hosts and available fungal inoculum.[^brundrett2008MycorrhizalAssociations][^brundrett2020ResolvingMycorrhizalStatus]
+
+That is evidence-informed and avoids overclaiming.
+
+## 5. Would an old elm grove / boulevard sustain a better CMN than constantly replaced young trees?
+
+Very plausibly, yes.
+
+A 110–120-year-old elm avenue in open parkland has several advantages over a small, hostile tree pit: long-term carbon flow from roots to fungi; overlapping root zones; more continuous soil; more moisture buffering; less total excavation; accumulated organic matter; and time for fungal communities to assemble.[^nationalTrustsAustralia2015EnglishElm][^hui2017EctomycorrhizalFungalCommunities][^yan2017SoilMicrobialCommunities] Urban park studies support the idea that vegetation type and park age matter for soil fungi and ectomycorrhizal communities.[^hui2017EctomycorrhizalFungalCommunities][^yan2017SoilMicrobialCommunities]
+
+But an old elm grove would mainly strengthen the **AM side** of the system. It would not by itself recreate the **ECM-rich eucalypt woodland network** that may have existed before colonisation. For that, nearby mature eucalypts, oaks, poplars, willows or other ECM/dual hosts could matter, but the fungi involved may differ depending on host compatibility and whether native ECM fungi are present.[^authier2022EctomycorrhizalNetworks][^brundrett2020ResolvingMycorrhizalStatus]
+
+So the working sentence could be:
+
+> A historic elm avenue is unlikely to preserve the original eucalypt woodland fungal network intact, but its century of continuous roots may have allowed a substantial urban AM network to persist, adapt and reassemble — a different, hybrid, post-colonial underground ecology rather than a blank or sterile one.
+
+## 6. Could eucalypts planted among elms “plug in”?
+
+Yes, but with qualifications.
+
+A young eucalypt planted among elms could probably encounter **AM fungi** already supported by elms, planes, grasses and herbaceous plants. That might help establishment, especially early on.[^verbeek2025ArbuscularMycorrhizaUrban][^brundrett2008MycorrhizalAssociations] As it matures, the eucalypt may increasingly rely on **ECM fungi**. Whether it gets a rich ECM community depends on what inoculum is nearby: mature eucalypts are ideal; oaks may provide some generalist ECM possibilities; but host specificity matters, and exotic ECM communities do not automatically substitute for native eucalypt-associated fungi.[^authier2022EctomycorrhizalNetworks][^brundrett2020ResolvingMycorrhizalStatus]
+
+So:
+
+- **Elm → eucalypt via AM:** plausible, especially for seedlings/young roots.
+- **Oak → eucalypt via ECM:** possible for some generalist fungi, but not guaranteed.
+- **Eucalypt → eucalypt via ECM:** most plausible, especially where mature eucalypts and native soil continuity exist.
+- **Elm → eucalypt via ECM:** unlikely, because elm is not really an ECM anchor.
+
+## 7. What Australian / Melbourne-specific literature is there?
+
+There is adjacent work. University of Melbourne researchers have looked at mycorrhizal communities in restoration contexts near Melbourne, including Cardinia Creek, comparing nursery-grown plants with plants established from seed and asking whether nursery-sourced fungal communities may be less adapted to local site conditions.[^ecologicalSocietyAustralia2018CanFungiHelp] The University of Melbourne urban forest literature is relevant to tree establishment and urban soils more broadly, but I have not found a direct study of old Melbourne boulevards as common mycorrhizal network reservoirs.
+
+Internationally, the most relevant analogues are the Amsterdam elm AMF study; Finnish urban-park ECM studies showing effects of vegetation and park age; broader urban tree studies showing mycorrhizal colonisation can be reduced or altered; and urban-forest/Anthropocene work showing that urban ECM networks are under-studied and shaped by disturbance, host availability, soil volume and conflict with infrastructure.[^verbeek2025ArbuscularMycorrhizaUrban][^hui2017EctomycorrhizalFungalCommunities][^bainard2011MycorrhizalStatus][^authier2022EctomycorrhizalNetworks]
+
+
+# Further information
+
+Old trees and less-disturbed soils can preserve belowground continuity across several levels at once. Living roots remain in place for decades or centuries. Soil chemistry, organic matter, litter, deadwood, moisture, and propagule banks accumulate. Some fungal genetic individuals and spore banks can persist for years or decades, while fine hyphae and active root interfaces are rebuilt continually.[^dahlberg1994SizeDistributionBiomass][^glassman2016EctomycorrhizalSporeBank][^staddon2003RapidTurnoverHyphae][^nguyen2012StayinAlive] The interesting point is a set of living conditions that can hold memory, interruption, adaptation, and renewal in the same soil volume.
+
+This makes an old park or boulevard very different from a repeatedly replaced street-tree pit. A 110-year-old elm avenue in open parkland is likely to sustain more continuous fungal and microbial associations than a young tree in a compacted, sealed, frequently excavated pit. This claim is strongest as a comparison between old, large, stable root zones and small, disturbed root zones, not as proof that a particular Melbourne boulevard has been sampled and shown to have higher fungal richness.[^moser-reischl2020ComplexIssueUrbanTrees][^layman2016BelowGroundMatters][^mullaney2015ReviewBenefitsChallenges][^vanGeel2019SoilOrganicMatter] Those old root zones can become urban reservoirs: altered places where soil life has had time to gather, adjust, and keep working.
+
+A pre-colonial River Red Gum and Yellow Box woodland would have had living soil, mixed host plants, deadwood, litter, animal dispersers, and disturbance regimes that supported arbuscular mycorrhizal fungi, ectomycorrhizal fungi, saprotrophs, and other soil organisms.[^departmentNaturalResourcesEnvironment2002EvcMapping][^royalBotanicGardensVictoriaEucalyptusMelliodora][^newbound2012SoilChemicalProperties][^brundrett2020ResolvingMycorrhizalStatus] Royal Parade now has old introduced elms, sealed and managed ground, altered hydrology, different litter, different host identity, and frequent human maintenance.[^melbourne2012UrbanForestStrategy][^melbourne2011UrbanForestDiversity][^kendal2016CityMelbournesFutureUrban] That makes it an altered belowground system with its own forms of persistence, loss, and possibility.
+
+## Networks as Relationship-Making
+
+The manuscript frames nonhuman leadership as repeated proposals, appraisals, support, moderation, refusal, and readjustment. Fungal networks can use the same logic without implying intention.[^roudavski2026AreYouBlocking][^roudavskiLadderMorethanhumanParticipation2024][^parker2025LearningWithOwls][^arborealFutures2026MeetingMethods] Roots, fungi, trees, deadwood, microbes, animals, water, and soil chemistry keep testing one another. Some contacts become durable relationships. Some fail because the host is incompatible, the soil is compacted, the root dries, the trench cuts the pathway, phosphorus is too high, or the fungus is outcompeted.[^brundrett2020ResolvingMycorrhizalStatus][^staddon2003RapidTurnoverHyphae][^ekblad2013ProductionTurnoverExtramatrical]
+
+This means the baseline is not only a map of existing fungi. It is the capacity of a woodland to keep producing support relationships.[^parker2022InterspeciesCulturesAnd][^rutten2024PlantsAsDesigners][^arborealFutures2026PersonaTree] Roots explore cracks, oxygen, water, and nutrient patches. They release carbon compounds, shed fine roots, host symbionts, and leave organic matter behind. Fungi colonise roots, decompose litter and wood, move through soil pores, fruit after rain, persist as spores, and die back when conditions turn hostile.[^brundrett2020ResolvingMycorrhizalStatus][^staddon2003RapidTurnoverHyphae][^nguyen2012StayinAlive] Trees shade soil, slow evaporation, drop litter, form deadwood, and keep living roots in place long enough for partners to accumulate.[^le2014TheFutureOf][^layman2016BelowGroundMatters][^mullaney2015ReviewBenefitsChallenges] Animals and invertebrates can move spores, disturb soil, consume fruiting bodies, and help redistribute organic matter.[^hopkins2021UrbanRemnantSizeFungalGroups]
+
+The innovations are the support systems that emerge from these trials: compatible host patches, inoculum reservoirs, loamy soils, seedling recruitment niches, shaded moist refuges, decaying wood as substrate, and mixed fungal neighbourhoods where different plants and fungal guilds can coexist.[^arborealFutures2026PersonaTree][^harden2026DesigningFungalCity][^stevenson2020StateUrbanEcosystems] These are not simply background ecological processes. They are the relationships through which the Tree persona's Communicate, Acquire Resource, and Reproduce capabilities become possible, and through which Decay and Recruit proposals become materially plausible.[^parker2022InterspeciesCulturesAnd][^rutten2024PlantsAsDesigners][^roudavskiAnimalLedPlantLed]
+
+In current conditions, the elms help sustain part of this relational work. They are introduced, their fungal partnerships are likely mostly arbuscular mycorrhizal, and the surrounding ground has been heavily simplified.[^verbeek2025ArbuscularMycorrhizaUrban][^brundrett2020ResolvingMycorrhizalStatus] Even so, old elms hold living roots in place, shade and cool soil, feed saprotrophs through litter, support arbuscular mycorrhizal fungal neighbourhoods, maintain microbial activity, and keep some belowground processes from being completely reset.[^melbourne2012UrbanForestStrategy][^layman2016BelowGroundMatters][^mullaney2015ReviewBenefitsChallenges][^vanGeel2019SoilOrganicMatter] The result is diminished and redirected, but still active. Old urban trees may carry more ongoing relational infrastructure than the city usually recognises.[^parker2025LearningWithOwls]
+
+## Arbuscular And Ectomycorrhizal Relations
+
+Elms and London planes should be treated mainly as arbuscular mycorrhizal hosts.[^verbeek2025ArbuscularMycorrhizaUrban][^tisserant1996RelationshipsLateralRoot][^brundrett2020ResolvingMycorrhizalStatus] This makes them important as arbuscular-mycorrhizal urban elders: trees that can support roots, litter, shade, organic matter, saprotrophs, microbial activity, and generalist fungal life in places where soil has often been simplified.[^harden2026DesigningFungalCity][^stevenson2020StateUrbanEcosystems][^layman2016BelowGroundMatters][^mullaney2015ReviewBenefitsChallenges]
+
+Eucalypts are more flexible. River Red Gum has direct evidence for both arbuscular mycorrhizal and ectomycorrhizal associations, and many eucalypts and other Australian Myrtaceae are dual-mycorrhizal-capable.[^pagano2008ArbuscularEctomycorrhizalColonization][^adams2006ArbuscularMycorrhizasEctomycorrhizas][^adjoudSadadou2017DualMycorrhizalSymbiosis][^brundrett2008MycorrhizalAssociations] The common pattern is arbuscular mycorrhizal association being more prominent in seedlings and ectomycorrhizal association becoming more important in older trees, but this is a tendency, not a strict switch.[^adams2006ArbuscularMycorrhizasEctomycorrhizas][^ishaq2013SeedlingMycorrhizalType] Arbuscular mycorrhizal association can persist in older eucalypts, and soil moisture, phosphorus, disturbance, season, host species, and canopy condition can shift the balance.[^adams2006ArbuscularMycorrhizasEctomycorrhizas][^ishaq2013SeedlingMycorrhizalType]
+
+Yellow Box is best described as likely dual-capable by eucalypt genus and Australian Myrtaceae evidence, unless a species-level citation is added.[^royalBotanicGardensVictoriaEucalyptusMelliodora][^adjoudSadadou2017DualMycorrhizalSymbiosis][^brundrett2008MycorrhizalAssociations]
+
+## Where Fungal Communities Overlap
+
+The useful account is local overlap. Elm roots, grasses, herbs, and arbuscular-mycorrhizal-active eucalypt roots may share arbuscular mycorrhizal fungal neighbourhoods.[^li2021ImpactsUrbanizationUndermine][^verbeek2025ArbuscularMycorrhizaUrban][^karst2023PositiveCitationBias] Mature eucalypts may also support ectomycorrhizal fungi.[^adjoudSadadou2017DualMycorrhizalSymbiosis][^adams2006ArbuscularMycorrhizasEctomycorrhizas] A dual-mycorrhizal eucalypt, or another dual host, can act as an overlap zone where arbuscular mycorrhizal and ectomycorrhizal communities occur close together.[^teste2020DualMycorrhizalPlants][^findlay2025DualMycorrhizalAssociations][^brundrett2008MycorrhizalAssociations] This is the interesting design space: a mixed fungal habitat where different guilds, hosts, litter types, and disturbance histories meet in the same soil volume.
+
+For persona prose, useful phrases are "overlap zone", "mixed fungal habitat", "compatible host patch", or "interface plant". These keep the emphasis on situated ecological contact: roots, fungal guilds, host plants, litter, water, and disturbance regimes meeting unevenly in the same urban ground.[^parker2025LearningWithOwls][^roudavskiAnimalLedPlantLed]
+
+## Older Parkland
+
+A parkland or boulevard with old trees, open soil, leaf litter, less excavation, and multiple plant layers can plausibly sustain richer or more continuous fungal associations than a hard, isolated street pit. This applies even when the old trees are introduced, because age, root volume, organic inputs, and soil stability all matter.[^layman2016BelowGroundMatters][^mullaney2015ReviewBenefitsChallenges][^hui2017EctomycorrhizalFungalCommunities][^niu2025ArbuscularMycorrhizalCommunity][^vanGeel2019SoilOrganicMatter] These sites can function as refuges for urban soil life and as starting points for more diverse belowground communities, but this should remain a cautious claim unless local fungal sampling is added.[^newbound2012SoilChemicalProperties][^waymouth2022RiparianFungalCommunities]
+
+The strongest mechanisms are living-root continuity over many decades, larger root systems and larger soil volumes, litter and fine-root turnover, deadwood inputs, shade and moisture buffering, fewer complete resets from tree replacement, more opportunities for local inoculum and propagules to persist, and nearby understorey, grasses, herbs, native hosts, and remnant trees.[^nguyen2012StayinAlive][^glassman2016EctomycorrhizalSporeBank][^vanGeel2019SoilOrganicMatter][^hui2017EctomycorrhizalFungalCommunities]
+
+The evidence points toward belowground continuity rather than instant restoration. Old introduced avenues may provide a better platform for rebuilding mixed fungal communities than repeatedly replaced young street trees because they already hold long-lived roots, moderated microclimates, and accumulated organic matter.[^melbourne2012UrbanForestStrategy][^layman2016BelowGroundMatters][^mullaney2015ReviewBenefitsChallenges]
+
+## Australian And Melbourne Evidence
+
+The closest Melbourne fungal evidence is Newbound et al. 2012 on remnant River Red Gum woodlands along a Melbourne urban-rural gradient. Their key result was that fungal community composition related more to soil chemical properties than to urbanisation distance. This supports a soil-condition framing.[^newbound2012SoilChemicalProperties]
+
+The best regional analogue is Waymouth et al. 2022 on south-eastern Australian riparian fungal communities. It found fungal taxonomic and functional composition tracked soil properties and vegetation structure, with arbuscular mycorrhizal fungi higher in restored soils and ectomycorrhizal fungi related to canopy or sub-canopy structure.[^waymouth2022RiparianFungalCommunities]
+
+The strongest Australian urban-remnant analogues come from Perth Banksia woodland studies and quenda fungal dispersal work. These show that urban remnants can hold diverse fungal functional groups, that remnant size and management matter, and that herbicide or invasive-plant treatments can shift fungal communities.[^brace2025HerbicidePrescribedBurningSoilFungi][^brace2025SoilFungalCommunitiesInvasivePlantTreatments][^hopkins2021UrbanRemnantSizeFungalGroups]
+
+## Urban Loss And Design Implications
+
+Urbanisation reduces or redirects fungal continuity through compaction, sealing, trenching, soil replacement, fertiliser, high nutrients, altered pH, salinity, pollutants, small root volumes, heat, drought, litter removal, and frequent tree replacement.[^harden2026DesigningFungalCity][^stevenson2020StateUrbanEcosystems][^layman2016BelowGroundMatters][^mullaney2015ReviewBenefitsChallenges][^croeser2025DefiningAdequateTree][^jim2018ProtectingHeritageTrees] This does not always mean fewer fungi. Some urban studies find changed communities, generalist taxa, or even higher arbuscular mycorrhizal richness under stress.[^li2021ImpactsUrbanizationUndermine][^whitehead2022NonMycorrhizalFungalPresence][^verbeek2025ArbuscularMycorrhizaUrban][^sapsford2020AnthropogenicDisturbanceImpacts] The better claim is that urbanisation filters and redirects fungal communities, and often breaks the physical and biological continuity needed for specialist or mature networks.[^newbound2012SoilChemicalProperties][^waymouth2022RiparianFungalCommunities][^brace2025HerbicidePrescribedBurningSoilFungi]
+
+Design implications should therefore stay material and testable: keep old trees and their root zones as living inoculum and continuity reservoirs; depave and connect soil volumes where possible; protect roots from trenching and compaction; retain litter, mulch, deadwood, and coarse organic matter; reduce high-nutrient regimes where they suppress mycorrhizal dependence; plant compatible host patches to build more robust overlap zones; use dual-mycorrhizal native plants as possible interface hosts; and monitor roots, colonisation, soil organic matter, tree stress, and recruitment before claiming success.[^croeser2025DefiningAdequateTree][^croeser2022FindingSpaceNatureCities][^melbourne2012UrbanForestStrategy][^nature2019LivingMelbourneOur][^layman2016BelowGroundMatters][^mullaney2015ReviewBenefitsChallenges][^le2014TheFutureOf][^harden2026DesigningFungalCity]
+
+The speculative design idea is a connected fungal mosaic. That could include arbuscular mycorrhizal patches around elms, planes, grasses, herbs, and many shrubs, ectomycorrhizal or dual patches around eucalypts and other compatible woody hosts, and soil corridors or depaved strips that allow roots and fungi to move through the city. This should be presented as a testable proposition for Melbourne practice, not as an observed Melbourne condition.[^harden2026DesigningFungalCity][^croeser2022FindingSpaceNatureCities][^mullaney2015ReviewBenefitsChallenges][^brundrett2020ResolvingMycorrhizalStatus][^teste2020DualMycorrhizalPlants]
+
+TODO: add as a useful designing example: 'We estimate that global topsoils contain 1.10 × 1017 ± 0.13 × 1017 SD kilometers of living hyphae, weighing \~300 ± 60 SD megatons, \~4-­ to 6-­ fold the biomass of human' \%'Stewart, Justin D., Corentin Bisot, Rachael I. M. Cargill, et al. “Global Density and Biomass of Arbuscular Mycorrhizal Fungal Networks.” Science 392, no. 6803 (2026): 1171–76. https://doi.org/10.1126/science.adu4373.'
+
+As a more speculative example of ‘innovation’ ie. fungal communication between introduced and precolonial organisms and microbes: Traits of invasive fungal pathogens, such as virulence and host compatibility, have been demonstrated to evolve rapidly in novel environments. Trait evolution in introduced and invading populations of mutualistic fungi have not yet been demonstrated but hypothsised to also happen \cite{hoeksema_ectomycorrhizal_2020}.
+
+
+## Cited Candidate Wording
+
+A young River Red Gum root meets compacted soil and turns away. Another finds a darker seam beneath the grass, where the large roots of an elm have held soil open, fed arbuscular mycorrhizal fungi with carbon, shaded the ground, and returned litter to microbial life for more than a century.[^melbourne2012UrbanForestStrategy][^verbeek2025ArbuscularMycorrhizaUrban][^layman2016BelowGroundMatters][^mullaney2015ReviewBenefitsChallenges][^vanGeel2019SoilOrganicMatter] This is not the rich fungal network of an intact woodland, woven through Yellow Box, River Red Gum, Kangaroo Grass, deadwood, animals, and old soil.[^departmentNaturalResourcesEnvironment2002EvcMapping][^royalBotanicGardensVictoriaEucalyptusMelliodora][^newbound2012SoilChemicalProperties][^brundrett2020ResolvingMycorrhizalStatus] But it allows a first exchange: carbon from the young root for help reaching phosphorus, water, and soil signals.[^xu2023InterplantCarbonNitrogen][^karst2023PositiveCitationBias][^brundrett2020ResolvingMycorrhizalStatus] Later, the tree may need ectomycorrhizal partners to form the longer-lived fungal relations of a mature eucalypt woodland.[^adjoudSadadou2017DualMycorrhizalSymbiosis][^adams2006ArbuscularMycorrhizasEctomycorrhizas][^teste2020DualMycorrhizalPlants][^brundrett2008MycorrhizalAssociations]
+
+## Citation-Key Footnotes
+
+[^authier2022EctomycorrhizalNetworks]: Authier, L., Violle, C. and Richard, F. 2022. "Ectomycorrhizal networks in the Anthropocene: From natural ecosystems to urban planning." *Frontiers in Plant Science* 13:900231. doi:10.3389/fpls.2022.900231. Supports urbanisation, planning, host availability, disturbance, and infrastructure pressures on ectomycorrhizal networks.
+
+[^bainard2011MycorrhizalStatus]: Bainard, L.D., Klironomos, J.N. and Gordon, A.M. 2011. "The mycorrhizal status and colonization of 26 tree species growing in urban and rural environments." *Mycorrhiza* 21:91-96. doi:10.1007/s00572-010-0314-6. Supports reduced or altered mycorrhizal colonisation in urban trees compared with rural trees.
+
+[^brundrett2008MycorrhizalAssociations]: Brundrett, M.C. 2008. "Mycorrhizal Associations: The Web Resource - Section 8: Mycorrhizal associations of Australian plants." https://mycorrhizas.info/ozplants.html. Background source for Australian plant mycorrhizal categories; useful for cautious inference, not a peer-reviewed site-specific study.
+
+[^ecologicalSocietyAustralia2018CanFungiHelp]: Ecological Society of Australia. 2018. "Can fungi help save our rivers and trees?" https://www.ecolsoc.org.au/news/can-fungi-help-save-our-rivers-and-trees/. Supports nearby Melbourne-region restoration work on mycorrhizal communities at Cardinia Creek; use as adjacent evidence, not a boulevard study.
+
+[^melbourne2024PreColonialPlantList]: City of Melbourne / Victorian Government DataVic. 2024. "Pre-colonial plant list." https://discover.data.vic.gov.au/dataset/pre-colonial-plant-list. Supports likely, unlikely, or known pre-1835 plant occurrence within the City of Melbourne municipality, not exact Royal Parade vegetation or fungal composition.
+
+[^nationalTrustsAustralia2015EnglishElm]: National Trusts of Australia. 2015. "English Elm (*Ulmus procera*), Royal Parade, Parkville VIC 3052." Significant Tree Register. https://trusttrees.org.au/tree/VIC/Parkville/Royal_Parade. Supports the Royal Parade elm avenue context and approximate planting age.
+
+[^yan2017SoilMicrobialCommunities]: Yan, Y., Kuramae, E.E., de Hollander, M., Klinkhamer, P.G.L. and van Veen, J.A. 2017. "Soil microbial communities are shaped by vegetation type and park age in cities under cold climate." *Environmental Microbiology* 19(3). doi:10.1111/1462-2920.13660. Supports park age and vegetation type as urban soil microbial community drivers; analogue evidence, not Melbourne evidence.
+
+
+[^adams2006ArbuscularMycorrhizasEctomycorrhizas]: Adams, F., Reddell, P., Webb, M.J. and Shipton, W.A. 2006. "Arbuscular mycorrhizas and ectomycorrhizas on *Eucalyptus grandis* trees and seedlings in native forests of tropical north-eastern Australia." *Australian Journal of Botany* 54:271-281. doi:10.1071/BT05028. Supports age and context shifts between arbuscular and ectomycorrhizal associations in eucalypt trees and seedlings.
+
+[^adjoudSadadou2017DualMycorrhizalSymbiosis]: Adjoud-Sadadou, D. and Halli-Hargas, R. 2017. "Dual mycorrhizal symbiosis: an asset for eucalypts out of Australia?" *Canadian Journal of Forest Research* 47:500-505. doi:10.1139/cjfr-2016-0292. Supports eucalypts as dual-mycorrhizal capable; use as eucalypt evidence, not Melbourne-site evidence.
+
+[^arborealFutures2026MeetingMethods]: Arboreal Futures project team. 2026. "meeting_2026-06-05-methods.md." Local methods meeting note. Supports local project framing and method language.
+
+[^arborealFutures2026PersonaTree]: Arboreal Futures project team. 2026. [persona_tree.md](persona_tree.qmd). Local supplementary working tree persona. Supports Tree persona capabilities and local wording targets.
+
+[^brace2025HerbicidePrescribedBurningSoilFungi]: Brace, A.J., Ruthrof, K.X., Fontaine, J.B., Miller, B.P. and Hopkins, A.J.M. 2025. "Herbicide, not prescribed burning, drives larger shifts in soil fungal communities in a Mediterranean-type urban woodland." *Urban Forestry and Urban Greening* 105:128728. doi:10.1016/j.ufug.2025.128728. Supports management disturbance effects on Australian urban woodland fungi.
+
+[^brace2025SoilFungalCommunitiesInvasivePlantTreatments]: Brace, A.J., Ruthrof, K.X., Fontaine, J.B., Miller, B.P. and Hopkins, A.J.M. 2025. "How soil fungal communities respond to invasive plant species treatments in soil from Banksia woodland, south-western Australia." *Australian Journal of Botany* 73(4):BT24083. doi:10.1071/BT24083. Supports fungal-community shifts under invasive-plant treatments in Australian woodland soils.
+
+[^brundrett2020ResolvingMycorrhizalStatus]: Brundrett, M.C. and Tedersoo, L. 2020. "Resolving the mycorrhizal status of important northern hemisphere trees." *Plant and Soil*. doi:10.1007/s11104-020-04627-9. Supports host mycorrhizal-status distinctions and caution about classifying trees by fungal guild.
+
+[^croeser2022FindingSpaceNatureCities]: Croeser, T. et al. 2022. "Finding space for nature in cities: the considerable potential of redundant car parking." *npj Urban Sustainability* 2:27. doi:10.1038/s42949-022-00073-x. Supports depaving and urban space reallocation as design opportunities.
+
+[^croeser2025DefiningAdequateTree]: Existing key in `cas-refs.bib`. Supports urban tree adequacy, root-zone protection, and practical limits of tree establishment in streets.
+
+[^dahlberg1994SizeDistributionBiomass]: Dahlberg, A. and Stenlid, J. 1994. "Size, distribution and biomass of genets in populations of *Suillus bovinus* revealed by somatic incompatibility." *New Phytologist*. doi:10.1111/j.1469-8137.1994.tb04006.x. Supports long-lived ectomycorrhizal fungal genets; does not show persistence of a whole urban network.
+
+[^departmentNaturalResourcesEnvironment2002EvcMapping]: Department of Natural Resources and Environment. 2002. *EVC Mapping of Port Phillip and Westernport: Extant and pre-1750*. https://vgls.sdp.sirsidynix.net.au/client/search/asset/1010222. Supports local pre-1750 vegetation context, not fungal network composition.
+
+[^ekblad2013ProductionTurnoverExtramatrical]: Ekblad, A. et al. 2013. "The production and turnover of extramatrical mycelium of ectomycorrhizal fungi in forest soils: role in carbon cycling." *Plant and Soil*. doi:10.1007/s11104-013-1630-3. Supports dynamic ectomycorrhizal mycelium production and turnover.
+
+[^findlay2025DualMycorrhizalAssociations]: Findlay, J. et al. 2025. "Dual mycorrhizal associations in tea tree (*Melaleuca alternifolia*) differ between Australian temperate shrublands and subtropical forests." *Plant and Soil* 512:1067-1081. doi:10.1007/s11104-024-06998-5. Supports dual-mycorrhizal associations in Australian Myrtaceae as overlap-zone evidence.
+
+[^glassman2016EctomycorrhizalSporeBank]: Glassman, S.I. et al. 2016. "Ectomycorrhizal fungal spore bank recovery after a severe forest fire: some like it hot." *ISME Journal*. doi:10.1038/ismej.2015.182. Supports ectomycorrhizal spore-bank persistence and post-disturbance recovery.
+
+[^harden2026DesigningFungalCity]: Harden, V. and Moreno-Mateos, D. 2026. "Designing the Fungal City: A Review of Mycorrhizal Networks in the Built Environment." *Ecological Restoration* 44(1):23-34. doi:10.3368/er.44.1.23. Supports fungal-network design framing in built environments.
+
+[^hopkins2021UrbanRemnantSizeFungalGroups]: Hopkins, A.J.M. et al. 2021. "Urban remnant size alters fungal functional groups dispersed by a digging mammal." *Biodiversity and Conservation* 30:3983-4003. doi:10.1007/s10531-021-02283-6. Supports Australian urban-remnant fungal functional groups and animal-mediated dispersal.
+
+[^hui2017EctomycorrhizalFungalCommunities]: Hui, N. et al. 2017. "Ectomycorrhizal fungal communities in urban parks are similar to those in natural forests but shaped by vegetation and park age." *Applied and Environmental Microbiology*. doi:10.1128/AEM.01797-17. Supports park age and vegetation as fungal-community drivers; analogue evidence, not Melbourne evidence.
+
+[^ishaq2013SeedlingMycorrhizalType]: Ishaq, L. et al. 2013. "Seedling mycorrhizal type and soil chemistry are related to canopy condition of *Eucalyptus gomphocephala*." *Mycorrhiza* 23:359-371. doi:10.1007/s00572-012-0476-5. Supports links among eucalypt mycorrhizal type, soil chemistry, and canopy condition.
+
+[^jim2018ProtectingHeritageTrees]: Jim, C.Y. 2018. "Protecting heritage trees in urban and peri-urban environments." *Unasylva* 250, 69(1). Supports heritage-tree protection and urban stress contexts.
+
+[^karst2023PositiveCitationBias]: Karst, J., Jones, M.D. and Hoeksema, J.D. 2023. "Positive citation bias and overinterpreted results lead to misinformation on common mycorrhizal networks in forests." *Nature Ecology and Evolution*. doi:10.1038/s41559-023-01986-1. Supports caution against overstating common mycorrhizal network function or resource transfer.
+
+[^kendal2016CityMelbournesFutureUrban]: Kendal, D. and Baumann, J. 2016. *The City of Melbourne's Future Urban Forest: Identifying Vulnerability to Future Temperatures*. Clean Air and Urban Landscapes Hub / City of Melbourne. Supports Melbourne urban-forest vulnerability context.
+
+[^layman2016BelowGroundMatters]: Layman, R.M., Day, S.D., Mitchell, D.K., Chen, Y., Harris, J.R. and Daniels, W.L. 2016. "Below ground matters: Urban soil rehabilitation increases tree canopy and speeds establishment." *Urban Forestry & Urban Greening* 16:25-35. doi:10.1016/j.ufug.2016.01.004. Supports rootable soil, soil rehabilitation, and belowground conditions for urban tree establishment.
+
+[^le2014TheFutureOf]: Existing key in `cas-refs.bib`. Supports old-tree ecological value and urban tree retention as future-oriented practice.
+
+[^li2021ImpactsUrbanizationUndermine]: Li, L. et al. 2021. "Impacts of urbanization undermine nestedness of the plant-arbuscular mycorrhizal fungal network." *Frontiers in Microbiology*. doi:10.3389/fmicb.2021.626671. Supports urban filtering of plant-arbuscular mycorrhizal fungal networks.
+
+[^melbourne2011UrbanForestDiversity]: City of Melbourne. 2011. *Urban Forest Diversity Guidelines: 2011 Tree Species Selection Strategy for the City of Melbourne*. Prepared by ASPECT Studios and Tree Logic for City of Melbourne. Supports Melbourne urban-forest species and diversity context.
+
+[^melbourne2012UrbanForestStrategy]: Existing key in `cas-refs.bib`. Supports Melbourne's historic urban-forest context, boulevards, elms, and long-term canopy planning.
+
+[^moser-reischl2020ComplexIssueUrbanTrees]: Moser-Reischl, A. et al. 2020. "The complex issue of urban trees: stress factor accumulation and ecological service possibilities." *Forests*. doi:10.3390/f11090932. Supports urban tree stressor accumulation and ecological-service constraints.
+
+[^mullaney2015ReviewBenefitsChallenges]: Mullaney, J., Lucke, T. and Trueman, S.J. 2015. "A review of benefits and challenges in growing street trees in paved urban environments." *Landscape and Urban Planning* 134:157-166. doi:10.1016/j.landurbplan.2014.10.013. Supports paved-street constraints including small soil volumes and compaction.
+
+[^nature2019LivingMelbourneOur]: Existing key in `cas-refs.bib`. Supports metropolitan urban-forest and biodiversity goals.
+
+[^newbound2012SoilChemicalProperties]: Newbound, M., Bennett, L.T., Tibbits, J.F.G. and Kasel, S. 2012. "Soil chemical properties, rather than landscape context, influence woodland fungal communities along an urban-rural gradient." *Austral Ecology* 37:236-247. doi:10.1111/j.1442-9993.2011.02269.x. Supports Melbourne remnant River Red Gum woodland fungal communities and soil-condition framing.
+
+[^nguyen2012StayinAlive]: Nguyen, N.H., Hynson, N.A. and Bruns, T.D. 2012. "Stayin' alive: Survival of mycorrhizal fungal propagules from 6-yr-old forest soil." *Fungal Ecology*. doi:10.1016/j.funeco.2012.05.006. Supports viable mycorrhizal propagules after years in stored forest soil.
+
+[^niu2025ArbuscularMycorrhizalCommunity]: Niu, L. et al. 2025. "Arbuscular mycorrhizal fungal community assembly and network stability across urban green space types in heavy metal-contaminated soils." *Diversity*. doi:10.3390/d17120810. Supports variation in arbuscular mycorrhizal communities across urban green-space types; analogue evidence.
+
+[^pagano2008ArbuscularEctomycorrhizalColonization]: Pagano, M.C. and Scotti, M.R. 2008. "Arbuscular and ectomycorrhizal colonization of two *Eucalyptus* species in semiarid Brazil." *Mycoscience* 49:379-384. doi:10.1007/s10267-008-0435-3. Supports arbuscular and ectomycorrhizal colonisation in eucalypts; non-Melbourne evidence.
+
+[^parker2022InterspeciesCulturesAnd]: Existing key in `cas-refs.bib`. Supports interspecies design and capability-oriented framing.
+
+[^parker2025LearningWithOwls]: Existing key in `cas-refs.bib`. Supports owl/persona framing for material, site-specific nonhuman participation.
+
+[^roudavski2026AreYouBlocking]: Existing key in `cas-refs.bib`. Supports more-than-human design participation and nonhuman-led appraisal/proposal language.
+
+[^roudavskiAnimalLedPlantLed]: Roudavski, S. n.d. "Animal-Led, Plant-Led, Microbe-Led: Letting Other Beings Lead Design." Deep Design Lab, University of Melbourne. Manuscript. Supports local DDL framing of nonhuman-led design relations.
+
+[^roudavskiLadderMorethanhumanParticipation2024]: Existing key in `cas-refs.bib`. Supports more-than-human participation and leadership framing.
+
+[^royalBotanicGardensVictoriaEucalyptusMelliodora]: Royal Botanic Gardens Victoria. "Eucalyptus melliodora." VicFlora taxon page. https://vicflora.rbg.vic.gov.au/flora/taxon/88981ca8-2834-4c0a-a06f-5b82401971c5. Supports Yellow Box taxonomic and regional context, not fungal function.
+
+[^rutten2024PlantsAsDesigners]: Existing key in `cas-refs.bib`. Supports plant agency/design framing.
+
+[^sapsford2020AnthropogenicDisturbanceImpacts]: Sapsford, S.J. et al. 2020. "Anthropogenic disturbance impacts mycorrhizal communities and abiotic soil properties: Implications for an endemic forest disease." *Frontiers in Forests and Global Change*. doi:10.3389/ffgc.2020.593243. Supports disturbance impacts on mycorrhizal communities and abiotic soil properties.
+
+[^staddon2003RapidTurnoverHyphae]: Staddon, P.L. et al. 2003. "Rapid turnover of hyphae of mycorrhizal fungi determined by AMS microanalysis of 14C." *Science*. doi:10.1126/science.1084269. Supports rapid turnover of active mycorrhizal hyphae.
+
+[^stevenson2020StateUrbanEcosystems]: Stevenson, P.C. et al. 2020. "The state of the world's urban ecosystems: What can we learn from trees, fungi, and bees?" *Plants, People, Planet* 2:482-498. doi:10.1002/ppp3.10143. Supports the value of fungi in urban ecosystem thinking.
+
+[^teste2020DualMycorrhizalPlants]: Teste, F.P. et al. 2020. "Dual-mycorrhizal plants: their ecology and relevance." *New Phytologist* 225:1835-1851. doi:10.1111/nph.16190. Supports dual-mycorrhizal plants as ecological overlap zones.
+
+[^tisserant1996RelationshipsLateralRoot]: Tisserant, B., Schellenbaum, L., Gianinazzi-Pearson, V., Gianinazzi, S. and Berta, G. 1996. "Relationships between lateral root order, arbuscular mycorrhiza development, and the physiological state of the symbiotic fungus in *Platanus acerifolia*." *Canadian Journal of Botany* 74:1947-1955. doi:10.1139/b96-233. Supports arbuscular mycorrhiza in London plane roots.
+
+[^vanGeel2019SoilOrganicMatter]: Van Geel, M. et al. 2019. "Soil organic matter rather than ectomycorrhizal diversity is related to urban tree health." *PLOS ONE*. doi:10.1371/journal.pone.0225714. Supports soil organic matter as a better urban tree-health correlate than ectomycorrhizal diversity in that study.
+
+[^verbeek2025ArbuscularMycorrhizaUrban]: Verbeek, C., Gomes, S.I.F. and Merckx, V. 2025. "Arbuscular mycorrhiza in the urban jungle: Glomeromycotina communities of the dominant city tree across Amsterdam." *Plants, People, Planet*. doi:10.1002/ppp3.10634. Supports arbuscular mycorrhizal communities associated with urban Dutch elm; use as elm analogue, not Melbourne evidence.
+
+[^waymouth2022RiparianFungalCommunities]: Waymouth, V., Miller, R.E., Kasel, S., Ede, F., Bissett, A. and Aponte, C. 2022. "Riparian fungal communities respond to land-use mediated changes in soil properties and vegetation structure." *Plant and Soil* 475:491-513. doi:10.1007/s11104-022-05383-8. Supports south-eastern Australian fungal communities tracking soil properties and vegetation structure.
+
+[^whitehead2022NonMycorrhizalFungalPresence]: Whitehead, J., Hempel, S. and Rillig, M.C. 2022. "Non-mycorrhizal fungal presence within roots increases across an urban gradient in Berlin, Germany." *Frontiers in Environmental Science*. doi:10.3389/fenvs.2022.888310. Supports urban gradients changing root-associated fungal communities.
+
+[^xu2023InterplantCarbonNitrogen]: Xu, L. et al. 2023. "Interplant carbon and nitrogen transfers mediated by common arbuscular mycorrhizal networks." *Frontiers in Plant Science* 14:1169310. doi:10.3389/fpls.2023.1169310. Supports possible interplant carbon and nitrogen transfer through common arbuscular mycorrhizal networks; does not by itself support phosphorus, water, or soil-signal wording.

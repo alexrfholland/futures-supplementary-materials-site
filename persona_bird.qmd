@@ -1,0 +1,380 @@
+---
+title: "The Bird Persona (provisional)"
+---
+
+::: {.callout-info appearance="simple"}
+**Provisional background.** This working material supports the persona appendices and may change as the research develops.
+:::
+
+TODO: add mistletoe bird (Dicaeum hirundinaceum)
+
+The birds now encountered in inner Melbourne are not a single woodland-derived group. They are a mixed urban assemblage: introduced generalists such as feral pigeons, house sparrows, common starlings, common mynas, blackbirds, and spotted turtle-doves; native open-country and urban-tolerant birds such as magpies, magpie-larks, ravens, noisy miners, lorikeets, and galahs; waterbirds along lakes, drains, wetlands, and the Yarra/Birrarung corridor; and remnant or returning woodland birds where enough vegetation structure remains. Some sources note that introduced birds are more likely to be seen than native birds in many Melbourne areas, while historical accounts show that woodland birds declined substantially as nineteenth-century clearing and later urbanisation removed woodland habitat.[^35][^36]
+
+This persona therefore does not claim that most birds currently seen in inner Melbourne evolved in eucalypt woodland. It focuses on the native bird capacities that the model can partially represent: bark foraging, perching and communication, hollow nesting, understorey dependence, seed rain, and adaptation to artificial canopy structures. Many of these capacities were shaped in larger and more continuous systems of eucalypt woodland, grassy woodland, riparian forest, wetland, heath, and open country. These birds did not evolve for a city of sealed ground, glass facades, continuous night lighting, clipped lawns, isolated street trees, and rapid removal of dead wood. They evolved with large old trees, seasonal flowering and seeding, hollows that accumulated over centuries, bark fissures, insects, dense shrubs, long grass, standing dead trees, fallen logs, water edges, predators, fire, flood, drought, and the active management of Country.
+
+Many birds have adapted to the altered city. Red-rumped parrots feed on short grass in parks and golf courses; magpies read human routines and defend territories beside roads; lorikeets and galahs use planted trees, roofs, and street corridors; cockatoos learn urban foraging techniques from one another. Other birds struggle or disappear when the city removes understorey, hollows, darkness, quiet, seed sources, invertebrate prey, and safe passage. Small woodland birds can be excluded from apparently green parks if those parks are mostly lawn and canopy. Hollow users can survive as adults while being unable to breed. Nocturnal birds can forage in suburbs while losing nest trees, roosts, and fledglings to disturbance, light, vehicles, and development.
+
+The Bird persona therefore cannot be a generic flying animal. It is a woodland-, wetland-, and open-country-derived, socially intelligent, three-dimensional urban resident whose capacity to persist depends on the fit between old expectations and new conditions.
+
+## Shared characteristics of Melbourne birds
+
+- **Mixed ancestry under urban pressure**: Melbourne's current birdlife includes introduced urban generalists, native open-country birds, wetland and riparian birds, and woodland birds. The native woodland and open-country species represented most strongly by the model are adapted to mosaics with open feeding spaces, shrubs, canopy, old trees, bark, hollows, logs, and water edges. Urbanisation separates these elements and often keeps only a simplified canopy over lawn.[^35][^36]
+- **Flight does not remove dependence on place**: birds cross gaps that stop lizards, but they still use particular routes, heights, cover types, perches, hollows, water points, familiar territories, and social cues. The City of Melbourne connectivity framework treats roads wider than 15 m and buildings over 10 m as barriers for woodland birds and tree-hollow-using birds.[^1]
+- **Three-dimensional habitat users**: birds use ground, shrub, mid-storey, canopy, hollows, building ledges, roof edges, utility poles, water edges, and airspace. A useful bird persona therefore needs vertical structure as well as horizontal corridors.[^2]
+- **Social, vocal, and culturally plastic**: many Australian birds learn socially, develop local vocal traditions, remember places and individuals, and modify behaviour under urban pressure. This plasticity can support adaptation, but it can also lead to ecological traps when attractive urban cues conceal reproductive or mortality risks.[^3][^4][^5]
+- **Perceptual worlds unlike human ones**: bird vision, colour discrimination, hearing, and attention do not match human perception. Design decisions based on human visibility, neatness, or sound comfort can miss the cues that birds actually use.[^6]
+- **Vigilance as a shared condition**: birds are foragers, parents, prey, competitors, and sometimes predators. They scan from perches, alarm-call, mob predators, hide in dense shrubs, avoid open gaps, and adjust behaviour around humans, dogs, cats, vehicles, and other birds.
+- **Different nesting logics within the persona**: some birds nest in dense shrubs or grasses; some nest in hollows; some build exposed or enclosed nests in branches; some use banks, buildings, ledges, mud, reeds, or ground scrapes. A hollow-rich tree helps parrots, owls, ducks, lorikeets, rosellas, and kookaburras, but it does not by itself help a shrub-nesting fairywren.
+- **Old-tree dependence**: large old trees provide hollows, fissured bark, dead limbs, high perches, complex canopies, seeds, nectar, pollen, and invertebrate prey. Many of these structures take decades to centuries to develop and are not replaced by young trees.[^7][^8]
+- **Understorey dependence**: small woodland and insectivorous birds need low and mid-storey vegetation for cover, foraging, nesting, and escape. In Melbourne green spaces, bird richness and insectivorous bird richness increase with low understorey volume.[^9]
+- **Multi-tenure life**: birds move across parks, streets, riparian corridors, rail verges, private gardens, school grounds, golf courses, balconies, roofs, and informal spaces. Public-land habitat alone cannot represent the full living network.[^10]
+- **Ecosystem participation**: birds pollinate flowers, disperse seed, regulate invertebrates, redistribute nutrients, scavenge, prey on other animals, and make biodiversity visible and audible to humans. These contributions are species-specific and behaviour-specific, not generic "ecosystem services."[^11]
+- **Seed rain, endozoochory, and faecal transport**: birds are mobile agents of plant movement and nutrient redistribution. The term for seed movement through an animal's gut is **endozoochory**. A bird eats fruit or seed, moves through the landscape, and later deposits viable seeds in faeces. This process contributes to **seed rain**, the arrival of seeds at a site from surrounding vegetation. Birds can also move seeds externally in mud on feet or feathers,
+
+## Shared use of habitat and resources
+
+Melbourne birds do not use "green space" as a single resource. They use combinations of vegetation structure, food, cover, nesting sites, movement routes, social information, and safe sensory conditions.
+
+**Dense low and mid-storey vegetation.** Shrubs, long grass, reeds, native garden beds, prickly plants, and tangled understorey provide refuge, nesting substrate, and insect foraging habitat. For small birds, the difference between lawn under trees and dense native shrub cover is decisive. Superb fairywrens, scrubwrens, thornbills, silvereyes, finches, and many insectivorous birds need cover close enough to move through without sustained exposure.
+
+**Canopy and large trees.** Canopy provides foraging surfaces, song posts, watch posts, shelter, shade, nectar, seeds, and insects. Large trees provide more complex canopies and more habitat structures than young trees. Lateral branches, dead exposed limbs, fissured bark, and high perches are not interchangeable with simple pole-like structures.[^12]
+
+**Hollows and cavity systems.** Tree hollows are critical for parrots, owls, ducks, kookaburras, lorikeets, rosellas, bats, and other fauna. Australia has no native woodpeckers, so many hollows depend on long tree ageing, decay, fire, limb loss, termite activity, and fungal processes. Hollow formation is therefore a long-horizon urban design problem, not a short installation task.[^7][^8]
+
+**Peeling and fissured bark.** Loose bark, crevices, and rough trunk surfaces concentrate invertebrates and create foraging opportunities for gleaners, treecreepers, parrots, robins, fantails, and other canopy and trunk users. This supports the current model's `Bird.acquire.peeling-bark` indicator, but bark should be understood as part of a wider prey and substrate system.
+
+**Perches and exposed branches.** Perches support resting, scanning, song, social spacing, territorial display, hunting, mobbing, mate attraction, fledgling supervision, and route selection. Horizontally inclined or lateral branches matter because birds select branch geometry, exposure, and comfort, not only canopy volume.[^12]
+
+**Open ground near cover.** Some birds forage in turf, leaf litter, soil, roadsides, or open grass, but many require immediate return cover. Red-rumped parrots, magpies, pigeons, galahs, and ducks can use open lawns; fairywrens and many small insectivores use open ground only when cover is nearby.
+
+**Flowering, seeding, and fruiting sequences.** Nectar, pollen, seeds, fruit, lerps, and insect pulses change through the year. A habitat that works in one month can fail in another if it lacks flowering diversity, seed-bearing grasses, seasonal water, or enough insect prey for chicks.
+
+**Riparian corridors and wet edges.** Rivers, creeks, wetlands, drains, ponds, and irrigated corridors concentrate vegetation, prey, drinking water, and movement routes. For powerful owls in Melbourne, riparian vegetation and high vegetation productivity strongly shape movement and foraging.[^13]
+
+**Private gardens and informal habitat.** Wildlife gardens, backyards, verges, golf courses, cemeteries, and privately managed trees supply habitat patches, stepping stones, and local knowledge. Programs in Melbourne show that private gardens can contribute to corridor and habitat goals when residents plant indigenous vegetation and maintain structure.[^10]
+
+**Dark and quiet refuges.** Artificial light changes dark-light cycles and can alter movement, roosting, and breeding behaviour. Noise can mask communication. For nocturnal and crepuscular birds, lighting and sound are habitat conditions, not external nuisances.[^14][^15]
+
+**Safe airspace and surfaces.** Glass facades, reflective windows, transparent balustrades, moving vehicles, overhead wires, and exposed roads create lethal or stressful passages. Bird movement design must include collision risk and not only vegetation continuity.[^16]
+
+**Birds connect plant generations.** Movement between woodland remnants, gardens, street trees, edges, and old fields can carry seeds across gaps that plants cannot cross alone. Vertebrate-mediated seed rain and artificial perches can help overcome seed-dispersal limitation in restoration settings.[^17]
+
+**Roosts and perches are dispersal infrastructure.** Branches, wires, dead snags, habitat poles, artificial perches, fence lines, and canopy edges are not only resting structures. They are places where birds defecate, concentrate seed rain, and create small nutrient patches. At forest edges, old-field edges, creek edges, and urban revegetation margins, this behaviour can materially affect plant growth. Birds often perch on edge shrubs, fences, remnant trees, wires, and artificial perches, then deposit seeds and nutrients into the lighter, disturbed, and often more germination-ready conditions below. In restoration, this can accelerate succession and edge expansion; in cities, it can also concentrate weeds, droppings, and maintenance conflict in exactly the places where birds repeatedly stop.
+
+**Edges and roadsides can become unintended planting lines.** Recent work on urban faeces deposition shows that canopy cover can influence where birds deposit faeces on paved roads, illustrating how bird movement, perching, shade, and hard surfaces combine to redirect seed and nutrient flows.[^18]
+
+**potential conflicts related to endozoochory** Dropping-mediated seed-rain is not always beneficial. Birds can disperse weeds as well as indigenous plants, and droppings can create human conflict in paved public spaces.
+
+## Evidence-based ways to improve bird habitat in modified ecosystems and cities
+
+The studies below show that urban bird persistence depends on habitat structure, old-tree continuity, understorey volume, connectivity, threat reduction, and locally specific knowledge rather than on generic greening.
+
+1. Retain large old trees and let future old trees form.
+ Actions: protect existing large trees, especially hollow-bearing and rough-barked trees; extend tolerated standing life; allow selected dead limbs and senescent structures to remain where risk can be managed; recruit younger trees into long-term hollow-bearing cohorts.
+ Evidence: large old trees provide hollows, complex canopy, bark, dead branches, and food resources that young trees cannot supply.[^7][^8] In Melbourne green spaces, large native trees support bird breeding activity.[^9]
+
+2. Treat hollows as a century-scale resource.
+ Actions: retain hollow-bearing trees; install artificial hollows only as interim, monitored supports; use designs that match target species, microclimate, entrance size, predator protection, and maintenance needs; plan natural hollow recruitment across generations.
+ Evidence: many hollow resources develop only after long time lags, with large boughs, hollows, and fallen timber requiring at least about a century in revegetation studies.[^8] Nest boxes on small trees do not automatically mimic large hollow-bearing trees for hollow-nesting birds.[^19]
+
+3. Build dense native understorey and mid-storey networks.
+ Actions: replace simple lawn-and-tree landscapes with native shrub beds, long-grass zones, reeds, low vegetation, leaf litter, and logs; cluster cover patches and keep open foraging areas close to shelter.
+ Evidence: Melbourne bird richness and insectivorous bird richness increase with low understorey volume and native plant richness.[^9] Fishermans Bend BSUD recommendations for superb fairywrens emphasised dense native vegetation, green bridges, stepping stones, and corridors.[^20]
+
+4. Connect habitats as guild-specific pathways.
+ Actions: use street trees, mid-storey plantings, green bridges, riparian corridors, pocket parks, verges, rail edges, and private gardens as stepping stones; assess gaps by species or movement guild rather than by map appearance.
+ Evidence: the City of Melbourne framework models woodland birds with mid-storey, tree canopy, turf close to vegetation, 1,500 m interpatch distance, and barriers including roads wider than 15 m and buildings over 10 m. It models tree-hollow-using birds with hollows, nearby canopy and turf, 500 m interpatch distance, and similar barriers.[^1]
+
+5. Use canopy and perching structure, not canopy percentage alone.
+ Actions: retain lateral, dead, exposed, shaded, sheltered, and rough-barked branches where risk allows; design artificial canopies and utility-pole habitats with branch geometry informed by bird observations; monitor bird use and revise.
+ Evidence: bird-branch studies and modelling show birds respond to branch orientation, size, exposure, dead/live status, and comfort. Artificial structures can be assessed against natural old-tree canopies, but simple manufactured poles are not equivalent to living trees.[^12]
+
+6. Design for seed rain and nutrient movement.
+ Actions: pair perches, snags, wires, habitat poles, and artificial perches with soil patches, indigenous planting, weed control, and monitoring; avoid directing droppings only onto paving.
+ Evidence: vertebrate-mediated seed rain and artificial perches can help overcome seed-dispersal limitation in restoration settings, while urban faeces deposition follows spatial patterns shaped by canopy and surface conditions.[^17][^18]
+
+7. Protect riparian and high-productivity corridors.
+ Actions: maintain and restore tree cover, mid-storey, and dark refuges along waterways; reduce lighting, road speed, disturbance, and poisoning risks near roosting and foraging corridors.
+ Evidence: Melbourne powerful owl telemetry links movement states to time of night, distance to riparian vegetation, and vegetation productivity.[^13] Roost habitat in Melbourne is limited and associated with high vegetation productivity and rivers.[^21]
+
+8. Reduce direct mortality from cats, vehicles, and glass.
+ Actions: require cat containment near bird habitat; design bird-safe glass and lighting; slow traffic near corridors; use street layouts, planting, and crossings that reduce road exposure; monitor collision and mortality hotspots.
+ Evidence: cats kill tens of millions of birds annually in Australia, with pet cats alone estimated at about 60.6 million birds per year.[^22] Glass is a major bird collision hazard globally, and vehicle strike is a major recorded mortality source for powerful owls.[^16][^23]
+
+9. Manage light, noise, and disturbance as habitat variables.
+ Actions: create dark corridors, shield lights, reduce blue-rich night lighting, restrict intrusive observation near nests, control dogs, and time works outside breeding and fledging periods.
+ Evidence: artificial light and noise affect wildlife communication, reproduction, habitat use, abundance, and dark-light cycles.[^14] Powerful owl coexistence work records light pollution, intrusive photography, dogs, poorly timed surveys, and roost removal as practical coexistence problems.[^15]
+
+10. Maintain prey and food webs.
+ Actions: reduce insecticide use, retain leaf litter, plant indigenous flowering and seed-producing species, allow bark and dead wood to persist, maintain water points, and avoid feeding practices that create dependency, disease, or dominance by aggressive species.
+ Evidence: native plant richness, understorey volume, large trees, bark, hollows, and canopy structure support invertebrate prey and diverse bird guilds.[^9]
+
+11. Use birds' own behaviour as feedback.
+ Actions: combine field observation, citizen science, acoustic monitoring, nest monitoring, branch-use studies, faecal seedling surveys, and design trials; treat repeated use, avoidance, breeding success, alarm behaviour, recruitment, and mortality as feedback from birds.
+ Evidence: multispecies design work shows how observations of birds using trees and artificial structures can inform modelling, prototyping, and revision of habitat structures.[^12] Powerful owl coexistence work shows that long-term volunteers and neighbours hold knowledge unavailable through one-off surveys.[^15]
+
+12.  Support seed-rain and edge colonisation activities by birds.
+- Put perch structures above soil, mulch, rain gardens, depaved strips, roof soil, or revegetation plots rather than above only paving, cars, or conflict zones.
+- Pair artificial perches with indigenous fruiting and seeding plants, weed control, and monitoring of seedling recruitment.
+- Treat droppings as nutrient and seed movements, not only as mess.
+
+13.  Deploy artificial habitat-structures. Artificial habitat structures are not substitutes for woodland, old trees, hollows, dense shrubs, and ecological time. They are bridging, repair, and experimentation tools. Their value depends on target species, microclimate, social context, material lifecycle, maintenance, monitoring, decommissioning, and the surrounding habitat matrix. The model's "Deploy Structure" proposals should therefore be read as long-term habitat service commitments, not as one-off installations.
+
+| Structure type | What it tries to supply | Likely bird users | Design requirements | Main risks |
+|---|---|---|---|---|
+| Timber nest boxes | Enclosed cavities for nesting or roosting | Small parrots, lorikeets, rosellas, pardalotes, some owls depending on size | Entrance size, internal depth, insulation, predator baffles, drainage, safe mounting, cleaning schedule | Overheating, waterlogging, predator access, invasive occupation, short lifespan, false offset logic |
+| 3D-printed or moulded artificial hollows | More precise cavity geometry, sometimes integrated with poles, trunks, or facades | Hollow-nesting birds where natural hollows are absent | Thermal testing, non-toxic materials, replaceable parts, rough internal surfaces, target-specific entrances, inspection access | Plastic persistence, heat stress, poor uptake, maintenance burden |
+| Mycelium, timber-composite, or biodegradable hollows | Temporary cavities with lower waste and possible ecological afterlife | Experimental support for hollow users; possible small parrots, owls, kookaburras, pardalotes where designs match species | Lifecycle assessment, local substrates, biosecurity controls, moisture management, planned replacement | Premature decay, pathogen or contamination risk, uncertain field performance |
+| Carved, cut-in, or drilled hollows in existing trees | Accelerated cavity formation in living or dead trees | Hollow-dependent birds and mammals | Arboricultural assessment, tree-health limits, species-specific cavity dimensions, drainage and roof integrity, monitoring | Tree damage, low suitability, liability conflict, treating veteranisation as permission to remove other old trees |
+| Prosthetic hollows on trees, snags, poles, and facades | Supplementary nesting or roost cavities where trees are too young or absent | Red-rumped parrots, rosellas, lorikeets, small owls, urban cavity nesters | Strong fixings, shaded orientation, safe access, microclimate testing, replacement plan | Fall risk, heat, human disturbance, predators, competition by aggressive species |
+| Artificial canopies and habitat poles | Perches, route nodes, branch-like structure, future hollow support | Perching, roosting, scanning, and seed-dispersing birds; potentially hollow users if fitted with cavities | Branch geometry based on observed bird use, mixed diameters and orientations, nearby cover, safe footing, distance from glass and roads | Becoming predator posts, exposing small birds, poor resemblance to living canopy, vandalism |
+| Prosthetic bark, crevice panels, and roughened substrates | Bark-like foraging surfaces and invertebrate habitat | Gleaners, parrots, treecreepers, robins, fantails, insectivores | Roughness, moisture refuges, non-toxic surfaces, invertebrate colonisation, attachment that does not girdle trees | Decorative surfaces without prey, maintenance failure, pest harbourage conflicts |
+| Deadwood attachments and suspended logs | Dead limb analogues, foraging substrates, perches, decomposition niches | Kookaburras, magpies, raptors, insectivores, bark foragers | Structural engineering, staged decay, attachment inspections, fall zones, invertebrate monitoring | Falling hazards, removal by risk managers, low ecological value if too dry or isolated |
+| Dense artificial thickets, brush piles, and fenced shrub refuges | Immediate cover while planted shrubs mature | Fairywrens, scrubwrens, thornbills, fledglings, small insectivores | Low entrances, dense internal refuge, cat exclusion, nearby food plants, gradual transition to living vegetation | Fire or maintenance conflict, harbouring cats or rats if poorly designed, public removal |
+| Artificial perches for seed rain | Landing points that concentrate droppings and seed deposition | Fruit-eating and omnivorous birds, passage birds | Place over prepared soil or restoration plots, pair with seed sources, monitor seedlings, remove weeds | Weed dispersal, droppings on conflict surfaces, perches aiding predators |
+| Nesting shelves, platforms, ledges, and rafts | Non-cavity nesting support on buildings, poles, water, or trees | Raptors, waterbirds, swallows, pigeons, some urban adapters | Species-specific dimensions, drainage, shade, disturbance buffers, maintenance access | Encouraging nesting in hazardous places, guano conflict, legal disturbance issues |
+| Building-integrated cavities and facade modules | Cavities, crevices, ledges, and sheltered spaces in dense urban fabric | Urban cavity or ledge users where species accept buildings | Heat and wind testing, predator control, access for inspection, location away from glass strike zones | Ecological traps, conflict with building maintenance, overheating |
+| Water and bathing structures | Drinking, bathing, mud, insects, and wet-edge habitat | Many birds, especially in heat and drought | Shallow gradients, clean water, escape edges, nearby cover, mosquito management, cat-safe placement | Disease spread, dependency, predation points, maintenance burden |
+| Green bridges, vegetated roofs, and stepping-stone planters | Movement routes, foraging patches, and cover between larger habitats | Woodland and shrub birds if vegetation is dense enough; generalists if simplified | Structural soil depth, native understorey, continuity, glass and wind mitigation, long-term irrigation and care | Looking connected to humans while remaining exposed to birds, heat, drought, poor maintenance |
+| Bird-safe glass, screens, and light controls | Safer movement through airspace and night habitat | All moving birds, especially migrants, fast flyers, and nocturnal species | External patterns, low reflectivity, shielded lights, reduced blue-rich night lighting, collision monitoring | Treating mitigation as habitat gain, partial installation leaving collision hotspots |
+
+Design principles:
+
+1. **Start with natural analogues.** A hollow, bark plate, branch, thicket, or wet edge should be based on how birds use real trees, shrubs, water, and ground, not on human visual similarity.
+2. **Specify the target user.** A fairywren refuge, red-rumped parrot hollow, powerful owl nest hollow, and magpie perch are different structures.
+3. **Model lifecycles.** Artificial hollows vary widely in lifespan. A lifecycle approach compares production, supply, maintenance, replacement, and decommissioning across decades, rather than only initial installation.[^24]
+4. **Design for microclimate.** Cavity temperature, humidity, drainage, wind, shade, and orientation determine whether structures support eggs, chicks, and roosting adults.
+5. **Plan ecological afterlife.** Biodegradable hollows, fallen logs, and deadwood attachments can become insect, fungal, plant, and lizard habitat after they cease to function for birds. Persistent plastics and metals require removal or recycling plans.[^24]
+6. **Monitor birds as evaluators.** Uptake is not enough. Repeated use, breeding success, fledgling survival, predation, overheating, avoidance, droppings, seedling recruitment, and conflict should all feed back into redesign.
+7. **Avoid offset shortcuts.** Artificial structures can bridge missing resources, but they do not justify clearing old trees, simplifying understorey, or ignoring cat, vehicle, glass, noise, and light threats.[^19][^24]
+
+### Melbourne applicability
+
+The strongest evidence transfer to Melbourne comes from the City of Melbourne connectivity framework, the Fishermans Bend BSUD case, Melbourne green-space studies, and local powerful owl research. Together, these sources show that birds can be modelled through broad guilds, but practical design still needs species-specific calibration.
+
+#### Applicable in Melbourne
+
+1. Retain and recruit large trees with hollows, bark complexity, dead limbs, lateral branches, flowers, seeds, and canopy prey.
+2. Add dense native understorey and mid-storey rather than relying on canopy-and-lawn landscapes.
+3. Connect parks, waterways, streets, gardens, and remnant patches through stepping stones and corridors.
+4. Use artificial structures as monitored bridges where natural structures are absent or too slow to form.
+5. Direct seed rain and faecal deposition toward soils where germination is wanted.
+6. Reduce cats, glass collisions, road strike, light, noise, nest disturbance, and prey poisoning.
+7. Use citizen observations, bird surveys, acoustic monitoring, nest monitoring, branch-use studies, and seedling surveys as feedback.
+
+These actions align with Melbourne evidence for woodland birds, tree-hollow-using birds, small insectivorous birds, and powerful owls.
+
+#### Transferable with local calibration
+
+1. Artificial hollows and artificial canopies are useful as interim or supplementary structures, but they must be designed for target species, microclimate, maintenance, and monitoring. They do not erase the need for old trees.
+2. Powerful owl evidence is highly valuable for coexistence, old-tree continuity, riparian corridors, and disturbance management, but it cannot stand in for all birds. Owls have large territories, nocturnal movement, apex-predator roles, and hollow requirements that differ from small shrub birds.
+3. Urban bird culture and cognition evidence from magpies, cockatoos, palm cockatoos, bowerbirds, and butcherbirds supports a rich bird persona, but individual design decisions still need local species observations.
+4. Restoration evidence on artificial perches and seed rain transfers best where the project also controls weeds, supplies appropriate seed sources, and provides soil conditions for germination.
+
+#### Melbourne-focused implementation priorities
+
+1. **Parade**: retain ageing elms and eucalypts long enough to provide hollows, perches, bark, dead limbs, shade, invertebrate prey, and seed-rain perches; use bracing, buffers, staged road-space conversion, artificial hollows, prosthetic bark, and artificial perch structures where complete retention is not possible.
+2. **Street**: convert simplified tree-and-lawn verges into layered native vegetation; install monitored artificial hollows, branch structures, thickets, and seed-rain perches on young trees or utility poles while planted trees mature.
+3. **City**: treat roofs, facades, balconies, laneways, ledges, utility poles, and private courtyards as possible bird infrastructure, but include glass, heat, light, noise, droppings, and maintenance risks.
+4. **Waterways and riparian strips**: prioritise continuous, dark, structurally complex vegetation with large trees, mid-storey, prey habitat, water access, seed sources, and reduced vehicle exposure.
+5. **Private realm**: support wildlife gardens, cat containment, indigenous planting, dead-wood retention, bird-safe glass, water-sensitive design, and citizen monitoring as part of the habitat matrix.
+
+## Featured species 1: Superb fairywren (*Malurus cyaneus*)
+
+**Selection rationale:** Superb fairywren is the clearest small woodland/shrub bird for this persona. It is used as the representative woodland bird in the City of Melbourne connectivity framework and as a model species in the Fishermans Bend BSUD case.[^1][^20] It exposes what the current Bird indicators miss: dense low vegetation, cover continuity, social groups, and shrub nesting.
+
+**Size:** about 14 cm long; very light-bodied, roughly 8-13 g. Males in breeding plumage are bright blue and black; females and non-breeding males are brownish with blue tail tones.[^25]
+
+**Evolved conditions:** Superb fairywrens evolved within south-eastern Australian and Tasmanian temperate vegetation mosaics, especially open eucalypt woodland and forest edges with dense understorey.[^29] These were not closed forests, and they were not lawns. They were patchy sclerophyll landscapes with shrubs, grasses, reeds, creekline thickets, low branches, leaf litter, insects, seasonal flowering and seeding, fire histories, drought, predation, and short open gaps. The bird's small body, group vigilance, low foraging, dome nesting, alarm calling, and quick retreat behaviour make sense in this fine-grained cover matrix. It expects retreat cover within a few wingbeats, nesting cover low in vegetation, and enough connected understorey for group members to forage, call, flee, and regroup.
+
+**Urban persistence and adaptive capacity:** fairywrens can persist in cities where dense vegetation remains or is replanted, including parks, gardens, riparian edges, and biodiverse development sites. They can also use some exotic weeds when those weeds provide dense shelter.[^29] They struggle in simplified urban green space because canopy cover alone does not supply safety. Their adaptive capacity is therefore conditional: they can live with humans, but not with constant understorey removal, cat access, and exposed gaps.
+
+**Socialisation and communication:** fairywrens live in social groups, use calls to maintain contact, warn of predators, defend territories, and coordinate movement through cover. Group life makes habitat connectivity social as well as spatial: gaps separate individuals, disrupt vigilance, and increase exposure during movement.[^28]
+
+**Lifespan, range, and movement:** individuals are small and short-lived compared with parrots or magpies, with many dying young, some persisting for several years, and occasional birds surviving long enough for territories and social knowledge to matter across multiple breeding seasons. The species is widespread in south-eastern Australia and Tasmania, including Melbourne. Local movements are short and cover-dependent; the relevant range for design is the territory and neighbourhood patch network, not continental distribution.
+
+**Barriers and threats:** wide roads, buildings, exposed lawns, low shrub loss, cats, dogs, noisy miners, aggressive urban generalists, pesticide-driven prey loss, and frequent maintenance. In the City of Melbourne model, woodland birds can use patches within 1,500 m but roads wider than 15 m and buildings over 10 m count as barriers.[^1]
+
+**Mating and reproduction:** fairywrens nest in dense vegetation rather than hollows, typically in small dome nests low in shrubs or grass. They have complex social and mating systems, including social groups, cooperative care, and extra-pair mating, so reproductive success depends on dense cover, territory quality, mate access, and chick food. The current `Bird.reproduce.hollow` indicator does not represent this species' breeding needs.[^28]
+
+**Artificial habitat structures and design implications:**
+
+- Dense thickets, fenced shrub refuges, brush piles, cat-exclusion plantings, and quick-establishing native understorey are more relevant than nest boxes.
+- Green bridges and stepping stones only help if they carry dense low vegetation, not just trees or turf.
+- Artificial perches should be used cautiously near fairywren habitat because exposed predator posts can harm small birds.
+- The best artificial intervention is often temporary protection around living vegetation until shrubs mature.
+
+## Featured species 2: Red-rumped parrot (*Psephotus haematonotus*)
+
+**Selection rationale:** Red-rumped parrot is the clearest small hollow-using, open-ground-foraging bird for this persona. It is used as the representative tree-hollow-using bird in the City of Melbourne connectivity framework.[^1] It fits the current `Bird.reproduce.hollow` indicator more directly than the fairywren.
+
+**Size:** about 26-28 cm long; males are green with a red rump and blue-green wing tones, females duller green-brown.[^25]
+
+**Evolved conditions:** Red-rumped parrots evolved as south-eastern Australian grass parrots of open woodland, grassy woodland, natural grassy openings, plains, and riverine corridors, with a strong association with open ground, seed-bearing grasses, water, and remnant old trees.[^30][^31] In a Melbourne-region frame, the closest template is open eucalypt grassy woodland and watercourse woodland: River Red Gums and other old eucalypts over grasses, seasonal seed crops, flood and drought pulses, hollow-bearing limbs, and enough open airspace for fast movement between ground feeding and tree shelter. It expects hollows to occur in large old trees and dead limbs near feeding ground, not as isolated boxes in overheated young streets.
+
+**Urban persistence and adaptive capacity:** red-rumped parrots have adapted well to some modified landscapes. Short grass in parks, sports fields, golf courses, roadsides, paddocks, and campuses can supply feeding habitat if mature trees and hollows remain nearby. Some accounts link twentieth-century range expansion to forest clearance and cereal cultivation creating new suitable open habitats.[^31] Their adaptation is limited by hollow scarcity, tree removal, competition, and unsafe movement across roads and glass-heavy streets.
+
+**Socialisation and communication:** they occur in pairs and small flocks, often feeding socially on the ground and moving between trees and open areas. Calls help maintain flock cohesion, contact between pair members, and alertness during exposed feeding.
+
+**Lifespan, range, and movement:** red-rumped parrots are longer-lived than very small passerines and can persist across repeated breeding seasons when hollow and food resources remain stable. They are widespread across south-eastern Australia in open country, woodland edges, agricultural landscapes, and urban parks. They can move farther than fairywrens, but the City of Melbourne model treats tree-hollow-using bird connectivity at a 500 m interpatch distance because nesting, canopy, and feeding resources need close arrangement.[^1][^25]
+
+**Barriers and threats:** loss of hollow-bearing trees, pruning of dead limbs, competition for hollows, cats and dogs at ground feeding sites, vehicle strike, glass strike, heat in artificial cavities, and removal of seed-bearing grasses. Roads wider than 15 m and buildings over 10 m are barriers in the Melbourne model.[^1]
+
+**Mating and reproduction:** the species nests in tree hollows, often breeding in spring and summer when grass seed and other food are available. Pair bonds, a suitable hollow, safe access, appropriate entrance size, internal cavity conditions, and nearby feeding ground all matter. Clutches are larger than in many small passerines, but recruitment still depends on hollow quality and chick food. Hollow volume alone is not enough.[^25]
+
+**Artificial habitat structures and design implications:**
+
+- Artificial hollows can help if they match red-rumped parrot body size, entrance preferences, shade, drainage, predator protection, and nearby grass-foraging habitat.
+- Hollow placement should join canopy, turf or seed-bearing ground, and safe flight routes within the 500 m connectivity logic used by Kirk et al.[^1]
+- Nest boxes and prosthetic hollows must be inspected for overheating, pest occupation, and competition by larger aggressive species.
+- Artificial perches can support scanning and seed rain, but exposed poles in open ground should not increase predation risk for smaller birds.
+
+## Featured species 3: Powerful Owl (*Ninox strenua*)
+
+**Selection rationale:** Powerful owl is the strongest Melbourne coexistence case and the strongest warning against treating "bird" as small, diurnal, and park-bound. It reveals high-stakes design requirements for a nocturnal apex predator with large territories, long pair bonds, large hollow needs, and strong public attention. Its evidence should be used carefully: it does not stand in for all birds.[^13][^15][^26]
+
+**Size:** about 45-65 cm long; large head, powerful talons, barred underparts. Females are generally larger than males.[^25]
+
+**Evolved conditions:** Powerful owls evolved in eastern and south-eastern Australian forest systems, mainly along the eastern side of the Great Dividing Range from south-eastern Queensland to Victoria, including open forests, woodlands, wet forest gullies with dense understorey, and sheltered watercourses.[^32] The species' body size, nocturnal hunting, huge talons, large territory, long pair bonds, dependence on arboreal prey, and need for large nest hollows all point to old, structurally complex eucalypt landscapes. In a Melbourne frame, the relevant evolved conditions are tall and open eucalypt forests, riparian gullies, dark creek corridors, dense daytime roosts, large old hollow-bearing trees, possums and gliders, and enough continuous cover for juveniles to disperse.
+
+**Urban persistence and adaptive capacity:** powerful owls persist in parts of Melbourne because riparian corridors, parks, private gardens, golf courses, and remnant trees can supply prey and movement routes. Earlier ecological accounts treated the species as most typical of dense gullies of tall open forest in hilly or mountainous country, while Melbourne studies show that some owls now use drier, disturbed, and urbanising landscapes.[^33] This persistence is not proof of urban suitability. Urban areas can supply survival habitat while failing to supply breeding habitat, creating ecological-trap risks where owls forage but cannot reproduce safely.[^26]
+
+**Socialisation and communication:** powerful owls live as territorial pairs and communicate with deep calls, roost-site behaviour, prey delivery, juvenile begging, and repeated use of territories. Human observers often learn owl presence through calls, roost fidelity, pellets, prey remains, and seasonal breeding behaviour. Coexistence work shows that community knowledge can be essential because owls exceed the timescale and spatial reach of one-off surveys.[^15]
+
+**Lifespan, range, and movement:** powerful owls can live for decades, sometimes around 25 years, with long generation times and large territories. The species occurs through eastern and south-eastern Australia, including greater Melbourne where enough prey, roosting cover, and large trees remain. Melbourne telemetry shows movement and foraging are associated with time of night, riparian vegetation, and vegetation productivity.[^13] Roost habitat is limited and associated with high NDVI, rivers, and private land.[^21]
+
+**Barriers and threats:** large hollow loss, roost removal, light pollution, road strike, glass and wires, prey poisoning, dogs, intrusive photography, poorly timed surveys, construction disturbance, development pressure, and fragmented riparian cover. Vehicle strike is a major recorded mortality source in Powerful Owl work.[^23]
+
+**Mating and reproduction:** pairs use large tree hollows for nesting and generally raise few young slowly, often only one or two fledglings in successful breeding attempts. Breeding depends on old trees with large cavities, low disturbance through nesting and fledging, prey availability, and juvenile-safe territories. Artificial hollows for this species require unusually careful design, placement, microclimate testing, disturbance buffers, and long-term monitoring.[^15][^26]
+
+**Artificial habitat structures and design implications:**
+
+- Large artificial hollows may help bridge hollow scarcity, but only where roosting cover, prey, dark corridors, and disturbance controls are already in place.
+- Artificial hollows should not draw owls toward roads, high-light areas, conflict-prone sites, or places without fledgling safety.
+- Habitat poles and artificial canopies may provide perches, but they cannot replace large old nest trees or dense roosting vegetation.
+- Parker et al.'s owl coexistence evidence points to social infrastructure as habitat: buffers, respectful observation, dog control, survey timing, neighbourhood knowledge, and development constraints.[^15]
+
+## Featured species 4: Australian Magpie (*Gymnorhina tibicen*)
+
+**Selection rationale:** Australian magpie is a conspicuous, intelligent, territorial, and socially familiar urban bird. It prevents the Bird persona from becoming only a hollow-and-canopy abstraction. Magpies show that birds use human routines, remember individuals, learn local risks, and negotiate cities socially.[^27]
+
+**Size:** about 37-44 cm long; black and white; strong walking and ground-foraging behaviour; powerful voice.[^25]
+
+**Evolved conditions:** Australian magpies evolved across open Australian landscapes where trees and open ground occur together: open woodland, grassy plains, forest edges, riparian clearings, and other habitats with soft ground or grass for foraging and trees for roosting, nesting, watching, and song.[^34] The Australian Museum notes that magpies occur where trees are combined with adjacent open areas and are absent only from the densest forests and arid deserts.[^34] Their evolved template is therefore not "wild forest" in the dense sense. It is a social, territorial, open-woodland world of long sightlines, soil invertebrates, elevated song posts, nest trees, group defence, and repeated daily use of the same ground.
+
+**Urban persistence and adaptive capacity:** magpies are strong urban adapters. Lawns, ovals, verges, parks, campuses, golf courses, and scattered trees can resemble parts of their open-woodland niche. Their persistence comes from behavioural flexibility, omnivory, social learning, memory, and ability to read human and traffic routines. This success should not be confused with general bird success; magpies can thrive in landscapes where more sensitive birds are absent.
+
+**Socialisation and communication:** magpies have complex song, territorial calling, group life, pair bonds, fledgling care, alarm behaviour, and individual recognition. They can remember individual humans and adjust behaviour across repeated encounters. Swooping is best read as situated nest defence, not generic aggression.[^27]
+
+**Lifespan, range, and movement:** magpies are long-lived compared with many small passerines and may live for decades. They occur across most of Australia where open woodland, farmland, parks, and urban lawns provide foraging and nest trees. Local range is territorial: a good design must consider repeated daily use of the same streets, ovals, school grounds, and trees.
+
+**Barriers and threats:** vehicles, persecution during swooping season, poisoning, entanglement, loss of nesting trees, lawn chemical use, heat, and conflict produced by feeding. Magpies are less constrained by understorey gaps than fairywrens, but glass, traffic, and human intolerance still shape survival.
+
+**Mating and reproduction:** magpies build stick nests in trees and defend breeding territories strongly, especially while eggs and chicks are present. Reproduction depends on nest trees, territory stability, food for chicks, and human tolerance during breeding season. Their breeding behaviour makes social governance part of habitat: signage, temporary route changes, education, and non-lethal conflict response can protect both birds and humans.[^25][^27]
+
+**Artificial habitat structures and design implications:**
+
+- Magpies need perch and nest trees more than nest boxes. Retained lateral branches, high song posts, and ground-foraging areas matter.
+- Artificial canopies, habitat poles, and deadwood structures may provide perches if placed away from traffic and conflict zones.
+- Water points and reduced insecticide use support foraging, but feeding by humans can create nutritional and behavioural problems.
+- Because magpies are successful generalists, design should not optimise only for their use; it should prevent generalist dominance from masking declines in understorey and hollow-dependent birds.
+
+## Selected Melbourne bird groups
+
+This list is not a complete Melbourne bird list. It identifies groups useful for keeping the Bird persona internally differentiated.
+
+| Group | Example species | Key resources | Design sensitivity |
+|---|---|---|---|
+| Small woodland and shrub birds | Superb fairywren (*Malurus cyaneus*), White-browed Scrubwren (*Sericornis frontalis*), Brown Thornbill (*Acanthiza pusilla*), Silvereye (*Zosterops lateralis*) | Dense shrubs, long grass, mid-storey, insects, connected cover | Understorey removal, cats, noisy miners, road gaps, simplified lawns |
+| Tree-hollow-using parrots and lorikeets | Red-rumped Parrot (*Psephotus haematonotus*), Eastern Rosella (*Platycercus eximius*), Rainbow Lorikeet (*Trichoglossus moluccanus*), Galah (*Eolophus roseicapilla*) | Hollows, canopy, seeds, nectar, open feeding areas | Hollow scarcity, competition, old-tree removal, poor artificial-hollow design |
+| Old-tree canopy and branch users | Tawny Frogmouth (*Podargus strigoides*), Laughing Kookaburra (*Dacelo novaeguineae*), Willie Wagtail (*Rhipidura leucophrys*), Grey Fantail (*Rhipidura albiscapa*) | Lateral branches, dead limbs, rough bark, prey-rich canopy | Risk-averse pruning, loss of dead branches, low prey base |
+| Nocturnal and raptorial birds | Powerful Owl (*Ninox strenua*), Southern Boobook (*Ninox boobook*), Brown Goshawk (*Accipiter fasciatus*) | Large territories, prey, dense roosts, hollows or nest platforms, dark corridors | Light, disturbance, road strike, prey poisoning, hollow loss |
+| Urban generalists and commensals | Australian Magpie (*Gymnorhina tibicen*), Little Raven (*Corvus mellori*), Noisy Miner (*Manorina melanocephala*), Rock Dove/Feral Pigeon (*Columba livia*) | Open ground, human food, buildings, scattered trees, perches | Can dominate simplified habitats; may benefit from human disturbance that excludes sensitive species |
+| Nectar, pollen, fruit, and seed users | Red Wattlebird (*Anthochaera carunculata*), New Holland Honeyeater (*Phylidonyris novaehollandiae*), Eastern Spinebill (*Acanthorhynchus tenuirostris*), lorikeets, silvereyes | Flowering indigenous plants, fruiting shrubs, canopy, seasonal nectar, seed sources | Poor flowering diversity, weed dispersal, aggressive honeyeater dominance, loss of native plant sequences |
+
+## Current model indicator implications
+
+The current Appendix C and manuscript indicators for Bird are useful but partial.
+
+| Model capability | Current indicator | Strong interpretation | Known limitation |
+|---|---|---|---|
+| `Bird.acquire.peeling-bark` | Peeling bark volume | Canopy and trunk foraging for invertebrates under bark and in crevices | Does not capture nectar, seed, fruit, open-ground foraging, aerial insect capture, water, or shrub insects |
+| `Bird.communicate.perch-branch` | Perchable branch volume in senescing, snag, or artificial canopy | Perching, scanning, song, social spacing, hunting, mobbing, route choice, and seed-rain deposition points | Does not capture acoustic masking, flock structure, social learning, understorey concealment, or species-specific perch preferences |
+| `Bird.reproduce.hollow` | Hollow volume | Cavity nesting for parrots, owls, lorikeets, rosellas, ducks, bats, and other hollow users | Does not capture shrub nests, cup nests, ground nests, mud nests, nest predation, nest microclimate, or breeding disturbance |
+
+Design implication: the model's Bird persona is strongest as a canopy-and-hollow bird persona. To represent Melbourne birds more fully, the text should explain that superb fairywren-like understorey birds are included conceptually but are only partly captured by the current indicators unless understorey, dense-cover, and seed-rain indicators are added.
+
+
+## References
+
+[^1]: Kirk, Holly, Caragh Threlfall, Kylie Soanes, Cristina Ramalho, Kirsten Parris, Marco Amati, Sarah A. Bekessy, and Luis Mata. *Linking Nature in the City: A Framework for Improving Ecological Connectivity across the City of Melbourne*. Melbourne: City of Melbourne, 2018.
+
+[^2]: Gamez, Siria, and Nyeema C. Harris. "Conceptualizing the 3D Niche and Vertical Space Use." *Trends in Ecology & Evolution* 37, no. 11 (2022): 953-62. https://doi.org/10.1016/j.tree.2022.06.012.
+
+[^3]: Kaplan, Gisela. *Bird Minds: Cognition and Behaviour of Australian Native Birds*. Melbourne: CSIRO Publishing, 2015.
+
+[^4]: Aplin, Lucy M. "Culture and Cultural Evolution in Birds: A Review of the Evidence." *Animal Behaviour* 147 (2019): 179-87. https://doi.org/10.1016/j.anbehav.2018.05.001.
+
+[^5]: Klump, Barbara C., John M. Martin, Sonja Wild, Jana Hoersch, Richard E. Major, and Lucy M. Aplin. "Innovation and Geographic Spread of a Complex Foraging Culture in an Urban Parrot." *Science* 373, no. 6553 (2021): 456-60. https://doi.org/10.1126/science.abe7808.
+
+[^6]: Endler, John A., and Patrick W. Mielke Jr. "Comparing Entire Colour Patterns as Birds See Them." *Biological Journal of the Linnean Society* 86, no. 4 (2005): 405-31. https://doi.org/10.1111/j.1095-8312.2005.00540.x.
+
+[^7]: Gibbons, Philip, and David B. Lindenmayer. *Tree Hollows and Wildlife Conservation in Australia*. Collingwood: CSIRO Publishing, 2002.
+
+[^8]: Vesk, Peter A., Rachael Nolan, James R. Thomson, Josh W. Dorrough, and Ralph Mac Nally. "Time Lags in Provision of Habitat Resources through Revegetation." *Biological Conservation* 141, no. 1 (2008): 174-86. https://doi.org/10.1016/j.biocon.2007.09.010.
+
+[^9]: Threlfall, Caragh G., Nicholas S. G. Williams, Amy K. Hahs, and Stephen J. Livesley. "Approaches to Urban Vegetation Management and the Impacts on Urban Bird and Bat Assemblages." *Landscape and Urban Planning* 153 (2016): 28-39. https://doi.org/10.1016/j.landurbplan.2016.04.011.
+
+[^10]: Mumaw, Laura, and Sarah A. Bekessy. "Wildlife Gardening for Collaborative Public-Private Biodiversity Conservation." *Australasian Journal of Environmental Management* 24, no. 3 (2017): 242-60. https://doi.org/10.1080/14486563.2017.1309695.
+
+[^11]: Low, Tim. *Where Song Began: Australia's Birds and How They Changed the World*. Melbourne: Viking, 2014.
+
+[^12]: Holland, Alexander, Philip Gibbons, John Thompson, and Stanislav Roudavski. "Terrestrial Lidar Reveals New Information about Habitats Provided by Large Old Trees." *Biological Conservation* 292 (2024): 110507. https://doi.org/10.1016/j.biocon.2024.110507; Holland, Alexander, Philip Gibbons, and Stanislav Roudavski. "Modelling and Design of Habitat Features: Will Manufactured Poles Replace Living Trees as Perch Sites for Birds?" *Sustainability* 15, no. 9 (2023): 7588. https://doi.org/10.3390/su15097588.
+
+[^13]: Carter, Nicholas, Kylie Soanes, Raylene Cooke, and others. "Joining the Dots: How Does an Apex Predator Move through an Urbanizing Landscape?" *Landscape Ecology* 34 (2019): 1637-51. https://doi.org/10.1007/s10980-019-00842-9.
+
+[^14]: Newport, Jenny, Sarah A. Shorthouse, and Adrian D. Manning. "The Effects of Light and Noise from Urban Development on Biodiversity: Implications for Protected Areas in Australia." *Ecological Management & Restoration* 15, no. 3 (2014): 204-14. https://doi.org/10.1111/emr.12120.
+
+[^15]: Parker, Dan, Kylie Soanes, and Stanislav Roudavski. "Learning with Owls: Human-Wildlife Coexistence as a Guide for Urban Design." *People and Nature* 7, no. 7 (2025): 1619-38. https://doi.org/10.1002/pan3.70067.
+
+[^16]: Klem, Daniel. "Avian Mortality at Windows: The Second Largest Human Source of Bird Mortality on Earth." *Proceedings of the Fourth International Partners in Flight Conference* (2009): 244-51.
+
+[^17]: La Mantia, Tommaso, et al. "Vertebrate-Mediated Seed Rain and Artificial Perches Contribute to Overcome Seed Dispersal Limitation in a Mediterranean Old Field." *Restoration Ecology* 27, no. 6 (2019): 1393-400. https://doi.org/10.1111/rec.13009.
+
+[^18]: Yadav, Harsh, Yuki Iwachido, and Takehiro Sasaki. "Canopy Cover Instigating Feces Deposition on Paved Roads in Urban Areas." *Ecological Research* 40, no. 5 (2025): e70009. https://doi.org/10.1111/1440-1703.70009.
+
+[^19]: Le Roux, Darren S., Karen Ikin, David B. Lindenmayer, Gideon Bistricer, Adrian D. Manning, and Philip Gibbons. "Enriching Small Trees with Artificial Nest Boxes Cannot Mimic the Value of Large Trees for Hollow-Nesting Birds." *Restoration Ecology* 24, no. 2 (2016): 252-58. https://doi.org/10.1111/rec.12303.
+
+[^20]: Kirk, Holly, Georgia E. Garrard, Thami Croeser, Anna Backstrom, Katherine Berthon, Casey Furlong, Joe Hurley, Freya Thomas, Anissa Webb, and Sarah A. Bekessy. "Building Biodiversity into the Urban Fabric: A Case Study in Applying Biodiversity Sensitive Urban Design (BSUD)." *Urban Forestry & Urban Greening* 62 (2021): 127176. https://doi.org/10.1016/j.ufug.2021.127176.
+
+[^21]: Bradsworth, Nathan, Kylie Soanes, Raylene Cooke, and John G. White. "Where to Sleep in the City? How Urbanisation Impacts Roosting Habitat Availability for an Apex Predator." *Global Ecology and Conservation* 26 (2021): e01432. https://doi.org/10.1016/j.gecco.2021.e01432.
+
+[^22]: Woinarski, John C. Z., Sarah M. Legge, Chris R. Dickman, et al. "How Many Birds Are Killed by Cats in Australia?" *Biological Conservation* 214 (2017): 76-87. https://doi.org/10.1016/j.biocon.2017.08.006.
+
+[^23]: Bain, Danielle, Mark Webb, and others. *The Powerful Owl Project*. BirdLife Australia, 2014.
+
+[^24]: Parker, Dan, Stanislav Roudavski, Chiara Bettega, Luigi Marchesi, Paolo Pedrini, Mattia Brambilla, and Kylie Soanes. "Which Design Is Better? A Lifecycle Approach to the Sustainable Management of Artificial Habitat-Structures." *Conservation Science and Practice* 7, no. 8 (2025): e70084. https://doi.org/10.1111/csp2.70084.
+
+[^25]: Menkhorst, Peter, Danny Rogers, Rohan Clarke, Jeff Davies, Peter Marsack, and Kim Franklin. *The Australian Bird Guide*. Clayton South: CSIRO Publishing, 2017.
+
+[^26]: Isaac, B., R. Cooke, D. Ierodiaconou, and J. White. "Does Urbanization Have the Potential to Create an Ecological Trap for Powerful Owls (*Ninox strenua*)?" *Biological Conservation* 176 (2014): 1-11. https://doi.org/10.1016/j.biocon.2014.05.007.
+
+[^27]: Kaplan, Gisela. *Australian Magpie: Biology and Behaviour of an Unusual Songbird*. Melbourne: CSIRO Publishing, 2019.
+
+[^28]: Rowley, Ian, and Eleanor Russell. *Fairy-Wrens and Grasswrens: Maluridae*. Oxford: Oxford University Press, 1997.
+
+[^29]: Australian Museum. "Superb Fairy-wren." Updated 25 July 2024. https://australian.museum/learn/animals/birds/superb-fairy-wren/.
+
+[^30]: Ecolinc. "Red-rumped Parrot." *Biodiversity of the Western Volcanic Plains*. https://www.bwvp.ecolinc.vic.edu.au/fieldguide/fauna/red-rumped-parrot.
+
+[^31]: World Parrot Trust. "Red-rumped Parrot (*Psephotus haematonotus*)." https://parrots.org/encyclopedia/red-rumped-parrot/.
+
+[^32]: Australian Museum. "Powerful Owl." Updated 6 March 2023. https://australian.museum/learn/animals/birds/powerful-owl/.
+
+[^33]: Cooke, Raylene, R. Wallis, and A. Webster. "Urbanisation and the Ecology of Powerful Owls *Ninox strenua* in Outer Melbourne, Victoria." Deakin University. https://dro.deakin.edu.au/articles/chapter/Urbanisation_and_the_ecology_of_powerful_owls_ninox_strenua_in_outer_Melbourne_Victoria/20527086.
+
+[^34]: Australian Museum. "Australian Magpie." Updated 12 July 2024. https://australian.museum/learn/animals/birds/australian-magpie/.
+
+[^35]: "Birds." *eMelbourne: The Encyclopedia of Melbourne Online*. https://www.emelbourne.net.au/biogs/EM00194b.htm.
+
+[^36]: Tzaros, Chris L. "The Bird Fauna of Melbourne: Changes over a Century of Urban Growth and Climate Change, Using a Benchmark from Keartland (1900)." *The Victorian Naturalist* 127, no. 3 (2010): 102-11.

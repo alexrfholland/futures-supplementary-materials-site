@@ -1,0 +1,818 @@
+---
+title: "The Tree Persona (provisional)"
+---
+
+::: {.callout-info appearance="simple"}
+**Provisional background.** This working material supports the persona appendices and may change as the research develops.
+:::
+
+The Melbourne tree persona should be plural. It should not speak as "the tree" in general, because the evidence splits trees by origin, age, body structure, hydrology, recruitment, fungal relations, governance status, and public conflict.
+
+The strongest working division is:
+
+- **Introduced civic elders**: English elms, London planes, oaks, poplars, ashes, figs and other planted exotics. They provide canopy, heritage, shade, cavities, and sometimes habitat platforms, but carry pest, disease, monoculture, suckering, root, risk, allergy/litter, and replacement tensions.
+- **Indigenous eucalypt/wattle systems**: River Red Gum, Yellow Box, Grey Box, Yellow Gum, Manna Gum, Swamp Gum, Blackwood and other wattles. They are not simply "native replacements"; they are hydrological, woodland, bark, nectar, hollow, deadwood, soil, and recruitment systems.
+- **Non-local Australian native allies**: Corymbia, Lophostemon, Tristaniopsis, Melaleuca, Ficus, Grevillea, Brachychiton, Flindersia, Casuarina and others. They may be climate-adapted or useful for birds and shade, but should not be equated with local indigenous restoration.
+- **Large old trees as a cross-cutting class**: provenance matters, but age/size/decay also matters. Mature trees produce disproportionate canopy, hollows, dead branches, deadwood, bark, roosts, shade, memory, and public attachment.
+- **Constrained juveniles**: young street trees in pits, medians, car-park conversions and narrow verges. These are future canopy only if soil, water, protection, and maintenance persist long enough.
+- **Spontaneous and unwanted vegetation**: suckers, weeds, vacant-lot trees, verge plants, and emergent urban forests. These are not automatically good or bad. They are latent ecological capacity, management burden, aesthetic conflict, and sometimes genuine habitat.
+
+## Shared characteristics of Melbourne's trees
+
+- **Extreme longevity and slow time-horizons**: a large tree experiences the world across centuries, far beyond the span of any human project that manages it. River Red Gum (*Eucalyptus camaldulensis*) and Yellow Box (*Eucalyptus melliodora*) on Melbourne's volcanic plains persist for many hundreds of years and hold the memory of fires, droughts, and floods that predate the city.[^banks1997][^sillett2015]
+- **Modular bodies**: trees live through bodies that are modular rather than singular. A tree can lose a branch, hollow, resprout, compartmentalise decay, and remain alive. For old trees, damage is not only injury; it can become cavity, bark complexity, deadwood, moisture pocket, fungal substrate, perch, roost, nest site, or litter source. Branches die, dormant and adventitious buds activate, and an old trunk can become hollow while the living cambial skin remains functional.[^thomas2014]
+- **Sessility and lifelong site-fidelity**: a tree cannot move, so it commits to one place for life and shapes that place rather than leaving it. It must reach every resource it needs, water, light, nutrients, and partners, by growing, which makes soil volume, compaction, and the surrounding community decisive.[^roudavski2021][^stokes2002]
+- **Decay generates habitat**: the features that make an old tree valuable to other beings appear only as it ages and partly dies. Hollows, rot holes, cracks, coarse deadwood, and loose bark are products of decay, and cavity occurrence is far higher in large decaying and dead trees than in young healthy ones.[^ibarra2020] Humans read this ageing as disease and remove the snags, logs, and litter that follow, which strips the habitat.[^roudavski2021]. Hollows form through branch breakage, pruning, fungal decay, insects, termites, fire, and time. For fauna they are shelter; for trees they are also internal reorganisation. Hollow elms and other temperate trees can grow adventitious roots into decaying internal wood, effectively recycling nutrients from their own hollow centres.[^thomas2014]
+- **Keystone structures**: large trees supply resources, shelter, and structure for many other species. In Canberra parks, large native trees showed a strong positive relationship with five measures of bird diversity, an effect that increased as the trees grew larger and that continued for years after a tree's own death.[^stagoll2012][^lindenmayer2012]
+- **Below-ground sociality**: trees acquire nutrients and water through mycorrhizal exchange,  but also live with decay fungi, vascular pathogens, and root rot. Some fungal networks can link neighbouring plants and transfer carbon, nutrients, water, or defence signals. An old tree lives inside a web of fungal threads that link it to neighbours and exchange carbon, nutrients, and defence signals.
+- **Hollows take centuries**: in eucalypts, hollows typically begin to form between 120 and 220 years of age, and cavities enlarge with trunk diameter, so the biggest oldest stems carry the most.[^bennett1994][^leroux2014] About 15 per cent of Australia's terrestrial vertebrates, including 114 bird species and 83 mammal species, depend on hollows.[^adkins2006]
+- **A mixed native and introduced cohort**: Melbourne's large-tree population is unusually split between indigenous eucalypts and imported European trees. In the City of Melbourne, *Eucalyptus* makes up about 24 per cent of trees, *Ulmus* 13 per cent, and *Platanus* 12 per cent, and elms and planes each make up roughly 10 per cent of the whole.[^melbourne2011diversity] The avenue of about 400 English elms (*Ulmus procera*) along Royal Parade, planted in 1913 and heritage-listed since 2009, is the iconic example.[^roudavski2021]
+- **Reproduction tied to disturbance, and easily blocked**: woodland eucalypts cast huge seed crops and recruit into loamy gaps and ash beds opened by fire or flood.[^deccw2011] On sealed, compacted urban ground this recruitment fails, so many street trees cannot replace themselves and depend on humans to plant their successors.[^leroux2014][^roudavski2021]
+- **Water is a capability condition**: canopy cooling, photosynthesis, nutrient uptake, hydraulic safety, and survival all depend on water access. Melbourne's drought and water restrictions triggered irreversible decline in many trees, including significant elms.[^melbourne2012strategy]
+
+## How  trees live in the city now
+
+- **Sealed, compacted soil**: pavement seals the ground so rain cannot infiltrate, and compaction collapses the pore spaces root tips need. Restricted root-penetrable soil volume becomes a main limit on long-term access to water and nutrients.[^mullaney2015][^jim2023]
+- **Short urban lives**: street trees average about 13 years in highly urban cores against about 37 years one street back in residential areas, and planted cohorts show annual mortality of roughly 4 to 7 per cent, highest in the first five years.[^mullaney2015][^hilbert2019]
+- **Simplified and removed before ageing**: intensive maintenance keeps trees small and simplifies their structure, and managers remove most trees long before the hollows and deadwood of old age can form.[^grossmann2020][^hilbert2019]
+- **Urban old growth exists but is interrupted**: old-growth conditions genuinely occur in cities, redefined relative to the most recent regional forest-resetting event. Loeb documents examples across 28 countries and 62 metropolitan areas, including Australian entries, but notes that many urban old-growth forests can no longer reproduce because human modification breaks historical continuity.[^loeb2011]
+- **Composition is set by supply as much as ecology**: nurseries and homeowners choose much of what grows, so urban forests often concentrate around a small set of genera and ornamental preferences rather than local ecosystem processes.[^avolio2018]
+- **Sapling counts can hide old-tree loss**: mature tree loss above about 1 per cent per year makes canopy targets difficult to achieve, and around or above 3 per cent per year generally performs poorly. A young tree cannot speak as a replacement for an old tree without acknowledging the decades of missing canopy, hollows, deadwood, and relationships.[^croeser2025]
+- **Regeneration pathways.** Tree reproduction in cities ranges from seedling recruitment to clonal suckering, epicormic shoots, coppicing, nursery propagation and direct planting. English elm rarely sets seed and is highly effective in vegetative propagation; River Red Gum recruits through see
+- **Deadwood and fallen limbs.** Deadwood is a tree-derived resource island, not just waste. Larger and older coarse woody debris supports stronger increases in microbial, invertebrate, plant, nutrient and soil-function responses than smaller or younger debris. Fallen branches and coarse woody debris are also part of senescent eucalypt woodland function, not simply failures of maintenance.[^killey2010][^mallen2026] Retaining natural deadwood matters because introduced or artificially created deadwood can support life but may follow different fungal and nutrient trajectories from naturally aged wood.[^wetherbee2022][^pyne2024][^lasota2018]
+- **Severed or mismatched fungal connections**. [^gorzelak2015] In old-growth stands the largest oldest trees act as the most connected hubs, and young saplings establish within their network.[^beiler2010] Sealing and sterilising urban soil severs these partnerships.[^stevenson2020]. The fungal networks can differ between trees. For example, elms are associated with arbuscular mycorrhizal families, while eucalypts can form both ectomycorrhizal and arbuscular associations.[^thomas2014][^stevenson2020][^gorzelak2015] .This means not every urban tree can simply plug into the same network.[^thomas2014][^stevenson2020][^gorzelak2015][^beiler2010][^teste2020]
+
+## Tree life spans
+
+### Table 10. Life cycle phase definitions
+
+| Life cycle phase | Precolonial value | Introduced value | Evidence |
+|---|---|---|---|
+| Sprout | `<40 cm` trunk diameter at breast height (DBH) | `<40 cm DBH` | Standard classification for eucalyptus growth phases.[^1] |
+| Mid-phase | `40-80 cm DBH` | `40-80 cm DBH` | Standard classification for eucalyptus growth phases.[^1] |
+| Large | `>80 cm DBH` | `>80 cm DBH` | Standard classification for eucalyptus growth phases.[^1] |
+| Large, old |  | We follow the same approach outlined by Croeser et al. (2025), who use allometric equations provided by the US Forestry Database (McPherson et al., 2016) and treat the maximum age of these equations as the point of "likely senescence". We use the allometric equation for *Ulmus americana* in the Pacific Northwest, USA, a related species of elm in a similar climate to Melbourne. | Croeser et al., 2025; McPherson et al., 2016 |
+| Standing snag | Up to 50 years | Up to 50 years | Le Roux et al. (2014) conservatively estimate that dead trees could remain standing for at least 50 years after initial mortality, based on observations of the standing life of dead trees in *Eucalyptus* forests. |
+| Fallen | `50-100 years` | `50-100 years` | Woldendorp and Keenan note that “CWD can persist for longer than these general estimates” and that decomposition depends on “wood durability, size”.[^2] `95%` decomposition for Australian eucalypt wood ranges from `7 years` for *E. regnans* to `375 years` for *E. camaldulensis* and *E. tereticornis*.[^2] Researchers note that decomposition can take several hundred years.[^3] Matthew J. Pringle et al. model a slow pathway and estimate `68 years` for `95%` of CWD to disappear.[^4] We therefore define whole fallen trees as lasting `50-100 years` and smaller decayed pieces as lasting `50-100 years`. |
+| Decomposed | `50-100 years` | `50-100 years` | As above. |
+
+[^1]: Holland, 2024.
+[^2]: Woldendorp, G., and Keenan, R. J. (2005). Coarse woody debris in Australian forest ecosystems: A review. *Austral Ecology*, 30(8), 834-843.
+[^3]: Killey, P., Manning, A. D., Gibbons, P., Lindenmayer, D. B., and Fischer, J. (2010). Modelling fallen branch volumes in a temperate eucalypt woodland: implications for large senescent trees and benchmark loads of coarse woody debris. *Austral Ecology*, 35(8), 956-967.
+[^4]: Pringle, M. J., Bray, S. G., and Carter, J. O. (2021). Modelling the disappearance of coarse woody debris, following a land clearing event. *Carbon Balance and Management*, 16, 36.
+
+## Shared use of place and resources
+
+All of Melbourne's large trees, native and introduced alike, build their lives and the lives of dependent beings out of the same set of structures, which a single tree generates in sequence as it grows, ages, and decays. Each structure supports particular tree capabilities, Acquire Resources, Communicate, and Reproduce, and many become the exact habitat the Bird and Lizard personas need.
+
+**Root zone and soil volume.** For a tree, the ground is not a flat surface but a volume of possible root life. Roots require space, oxygen, water, mineral nutrients, fungal partners, and tolerable bulk density. Sealed pavements reduce water infiltration and gas exchange; compacted soils restrict root growth; restricted root volumes create water stress and predispose trees to pest and disease problems.[^melbourne2011diversity][^mullaney2015][^jim2023]
+
+**Water pathways.** Trees use rainfall, stormwater, irrigation, shallow soil moisture, groundwater, and sometimes flood recession. City design changes whether water runs past a tree into drains or enters the root zone. In Melbourne, water sensitive urban design, porous paving, structural soil, suspended pavement, kerb inlets, parking-lane conversions and stormwater capture are not only human infrastructure; they are tree habitat.[^melbourne2012strategy][^page2015][^tirpak2019][^croeser2022]
+
+**Light and canopy room.** Trees acquire energy through leaves, so canopy exposure, shading by buildings, pruning clearances, powerline corridors, street width, and competition with other trees directly condition their life. Large deciduous elms and planes were historically valued because they provided summer shade while allowing winter light.[^royal-parade][^melbourne2011diversity]
+
+**Fungal and microbial partners.** Mycorrhizal fungi extend the effective resource-gathering capacity of roots, trading soil nutrients and water for plant carbon. Physical fungal networks can link multiple trees, and some studies show possible nutrient or defence-signal transfer.[^beiler2010][^gorzelak2015][^karst2023][^henriksson2023] Fungi also return tree bodies to soil through saprotrophic decomposition. Urban disturbance, imported soil, compaction, pollution, trenching, sealed pavement and low organic matter can simplify or redirect these relations.[^thomas2014][^stevenson2020][^dighton2016][^grassi2023][^barber2013]
+
+**Chemical signalling and defence.** Trees respond to injury, drought, herbivory, pathogens, and neighbouring organisms through internal signalling, defensive compounds, tyloses, gums, compartmentalisation, root exudates, and volatile compounds. In elms, ring-porous wood and Dutch elm disease make water-conducting vessels a critical vulnerability: the pathogen blocks the vascular system, while the tree's own defensive blockage can also interrupt water movement.[^thomas2014]
+
+**Regeneration pathways.** Tree reproduction in cities ranges from seedling recruitment to clonal suckering, epicormic shoots, coppicing, nursery propagation and direct planting. English elm rarely sets seed and is highly effective in vegetative propagation; River Red Gum recruits through seed, floodwater dispersal, moist seedbeds, and survival of seedlings until roots reach deeper water.[^gil2004][^distefano2002]
+
+**Wounds, hollows and internal decay.** Hollows form through branch breakage, pruning, fungal decay, insects, termites, fire, and time. For fauna they are shelter; for trees they are also internal reorganisation. Hollow elms and other temperate trees can grow adventitious roots into decaying internal wood, effectively recycling nutrients from their own hollow centres.[^thomas2014]
+
+**Deadwood and fallen limbs.** Deadwood is a tree-derived resource island, not just waste. Larger and older coarse woody debris supports stronger increases in microbial, invertebrate, plant, nutrient and soil-function responses than smaller or younger debris. Fallen branches and coarse woody debris are also part of senescent eucalypt woodland function, not simply failures of maintenance.[^killey2010][^mallen2026] Retaining natural deadwood matters because introduced or artificially created deadwood can support life but may follow different fungal and nutrient trajectories from naturally aged wood.[^wetherbee2022][^pyne2024][^lasota2018],
+
+**Bark, leaf litter and epiphytes.** Bark texture, peeling bark, fissures, retained litter, moss, lichens, epiphytes, mistletoe and canopy humus create surfaces and nutrient cycles. In Melbourne streetscapes, epiphytes can be rare but possible: one study found an epiphytic moss in fissured bark of a non-native oak, indicating that bark structure can matter even on introduced street trees.[^floyed2012]
+
+**Mistletoe and aerial parasitism.** For the host tree, mistletoe is a water and carbon relation that can be stressful at high loads. For urban biodiversity, it can add nectar, fruit, dense foliage, litter nutrients, insect habitat and canopy microclimate. Melbourne's mistletoe reintroduction on London planes shows a direct way to make exotic trees host native aerial plant relations.[^watson2023]
+
+**Human maintenance as habitat pressure.** Pruning, risk works, removal, mowing, herbicide, pavement repair, drain works, possum management, pest treatment and public complaints determine whether branches, hollows, suckers, deadwood and seedlings persist. Maintenance does not only "manage" habitat; it often is the dominant disturbance regime. In veteran-tree management, the crucial design move is often to manage targets, access and expectations around an old tree, rather than to make the tree young, clean or structurally simple again.[^read2000][^lonsdale2013][^fay2002][^ntsg2024][^klein2019]
+
+**The recruitment niche, loamy gaps, and seedfall.** A tree expresses Reproduce by casting seed into ground where seedlings can establish. Woodland eucalypts recruit into loamy gaps and ash beds after fire, so bare, friable, open soil is the limiting resource for the next generation.[^deccw2011] Decaying old trees return nutrients to that soil and nurse the saplings around them, so saplings and dead trees coexist rather than compete.[^roudavski2021] Where management seals the ground, this capability collapses, and the scarcity of saplings beneath large hollow-bearing trees already threatens the supply of future habitat trees.[^leroux2014]
+
+**Spontaneous vegetation and vacant land.** Spontaneous vegetation is plants colonising without planting; the same capacity that crosses a continent can occupy a pavement crack.[^robinson2012] When Blois banned herbicide, plants self-recruited to up to full cover, with 307 species across 48 km and sandy or permeable pavements carrying far more cover than asphalt.[^bonthoux2019] The binding constraint was bare-soil availability and management, not seed supply; weeding frequency had only marginal effect on cover.[^bonthoux2019] In Halifax, spontaneous vegetation patches had higher plant species density than lawns or semi-natural forest and carried pollinator guilds that the other sampled habitats did not.[^robinson2012] Vacant lots are also an underexplored ecological and social resource, and New York City's vacant parcels are often omitted from green-space surveys despite their potential.[^anderson2017] Calling species "weeds" can render self-organising habitats invisible and erasable, and redevelopment of "wastelands" into manicured landscapes can cut existing services.[^pinedapinto2023][^filibeck2016]
+
+## Relationships
+
+**With fungi and soil biota.** Fungi are both partnership and threat.
+
+
+Fungi are both partnership and threat.
+
+**Beneficial or generative roles:**
+
+- mycorrhizal fungi extend root access to nutrients and water;
+- fungal hyphae help bind soil particles and shape soil structure;
+- mycorrhizal networks can link plants where continuous soil allows, although strong network evidence is mostly non-urban and should not be overextended to sealed Melbourne streets;
+- deadwood fungi decompose lignocellulose, drive decay succession, and help create hollows and saproxylic habitat.
+
+**Risk roles:**
+
+- Dutch elm disease and elm bark beetle vector systems threaten elm avenues;
+- Phytophthora-type risks, plane diseases, and other pathogens appear in local tree-management sources;
+- taxonomic concentration can magnify pest/pathogen effects.
+
+Which fungi a tree can recruit depends on its mycorrhizal type, and the two main guilds rarely interconnect: elms and most broadleaved exotics are arbuscular (AM), while eucalypts, oaks, willows and poplars are ectomycorrhizal (EM) or dual, so a Melbourne elm and a neighbouring gum partner different fungi and cannot share one network.[^teste2020][^bainard2011][^stevenson2020]
+
+- Much of the eucalypts' EM diversity is hypogeous, fruiting underground as truffles that cannot travel on the wind and depending on digging mammals such as potoroos and bettongs, whose foraging spikes after fire, to spread viable spores, a loop largely absent from the city.[^maser2008][^johnson1995]
+
+- Introduced trees still build networks, though impoverished ones, and planted eucalypts overseas partner mostly novel local fungi rather than co-introduced Australian species, so an exotic can recruit a regional fungal community even where its own is missing.[^authier2022]. [is there anythign on elm trees building fungal networks in cities, and in melbourne or other places where they are nonnative>?] [^santolamazza2019] Sealed surfaces, compaction, salt and low organic matter thin all of this, while large old trees stay the best-connected hubs and the most plausible local inoculum.[^gorzelak2015][^beiler2010] Shared mycelium can carry carbon, nutrients and defence signals, but claims of ubiquitous networks, reliable seedling benefit and offspring-feeding mother trees are unsupported or contested, so state the relation as exchange and association, not intentional communication.[^karst2023]
+
+**Species nuance:**
+
+- *Ulmus* evidence supports AM association at the family level, but local elm mycorrhizal surveys were not found.
+- *Eucalyptus* can form ectomycorrhizal associations and may have dual or sequential EM/AM modes.
+- *Acacia* nitrogen fixation is bacterial root-nodule work, not fungal, but belongs in the broader soil-partner frame.
+
+**Further risk:**  stevenson-2020:75: "non-native plants in urban landscapes can harbor non-native fungi that may replace native species, causing imbalances in urban ecosystems" (Lothamer et al. 2014; Nuñez & Dickie 2014).
+
+**with Common Mycorrhizal Networks (CMNs)**
+
+The Common Mycorrhizal Networks (CMNs) has been questioned (Karst et al. 2023 — your [^karst2023]), but counters with studies showing benefits (Klein et al. 2023, "facts not fantasy"; Ullah et al. 2024).
+
+What a CMN is claimed to do (the functional definition the paper uses): "facilitate the transfer of water, nutrients and signals between plants," with specific cited benefits — carbon transfer between trees (Klein et al. 2023) and positive effects on plant growth, survival, and community structure (Ullah et al. 2024). Its evidential basis is Beiler et al. 2009, where Rhizopogon fungi were shown to "link multiple Douglas-fir cohorts."
+
+Design implication: protect and repair soil continuity through decompaction, larger rootable volumes, mulch/litter return, stormwater infiltration, construction controls, and deadwood retention.
+
+**Design implication.** Protect and repair soil continuity through decompaction, larger rootable volumes, mulch and litter return, stormwater infiltration, construction controls, and deadwood retention.
+
+**With animals.** Large old trees are keystone structures, with bird richness, abundance and breeding all rising with trunk diameter.[^stagoll2012] Introduced trees contribute when structurally complex, though hollow evidence is strongest for large old trees in general rather than elms in particular. Native mistletoe is a key canopy relation, with an inner-Melbourne *Muellerina eucalyptoides* trial established on London planes and *Ulmus* a plausible host, though Melbourne elm trials were not found.[^watson2023]
+
+**With humans.** Relations are multiple and conflicting: arborists prune, cable, remove, retain and defend; residents complain about roots, litter, risk and views yet also write to trees, mourn them and water them through droughts; developers damage trees through access and trenching; councils count canopy and set diversity targets; and heritage protection preserves form and memory, sometimes against ecological transition.
+
+- **Contested affection**: the premise that everyone loves trees is unstable. When Poland briefly liberalised private tree-felling rules in 2017, landowners removed about 8,000 trees, most on private land, forcing the law to be tightened again.[^kronenberg2021]
+- **Risk perception and assessment**: death by tree in public space is rare, but assessors' ratings can shift with assumptions about occupancy and financial loss. Risk work is therefore also a social and institutional practice, not only a property of the tree.[^klein2019]
+- **Private-land pressure**: Melbourne professionals report that private landholders often exaggerate tree risk, that education is a key retention lever, and that local protections are weakened by exemptions, enforcement gaps, and low penalties.[^clark2020]
+- **Development pressure**: the City of Melbourne removed 19,739 council trees between 2008 and 2017; about 2,000 public street trees were lost within 10 m of major private developments, with removals peaking before completion during groundworks.[^croeser2020]
+- **Canopy maths**: mature-tree removal rate correlates strongly and negatively with canopy gain. Targets need removal held near 1 per cent per year and become very difficult above 3 per cent, while observed rates can run higher.[^croeser2025]
+- **Care and attachment**: in Fairfield, Melbourne, residents described love for trees, planted memorial trees, and sometimes watered neighbours' trees during drought so council would not remove them.[^pearce2015]
+- **Public preferences are selective**: park visitors rated trees that block city views as less important than shade, long lifespan, and wildlife habitat, which shows that tree value is negotiated through particular benefits, inconveniences, and settings.[^jennings2016]
+
+- **Deadwood and property price**: in Kraków, coarse woody debris occurred on 46 per cent of plots but mostly as dead branches in living crowns. Standing dead trees were rare and fallen logs absent, which Fröhlich and Ciach interpret as a management signal: logs and dead trees are usually removed for safety, access, tidiness, and aesthetics.[^frohlich2020]
+- **Deadwood and maintenance intensity**: coarse woody debris probability declined as property prices increased, especially in forest remnants and private gardens, probably because wealthier owners or districts can spend more on pruning and deadwood removal. Forest remnants had the most coarse woody debris; urban parks and small green patches were more actively groomed.[^frohlich2020]
+- **Veteran-tree microhabitats**: a veteran tree's decaying trunk, loose bark, sap runs, cavities, fungal bodies, and dead branches shelter insects, fungi, lichens, and epiphytes. Habitat features generally appear only after long ageing, often 100 to 200 years or more, so habitat value is a function of time as much as species.[^jim2023][^jonsell2004]
+- **Old park trees as biodiversity refuges**: a baroque park built around a 1684 small-leaved lime (*Tilia cordata*) avenue held 18 red-listed beetle species, only slightly fewer than a nearby old-oak forest, including species dependent on a lime-associated fungus.[^jonsell2004]
+- **Urban woodpecker and dead-branch habitat**: in Kraków, eight woodpecker species occurred across the city and standing dead branches on living crowns predicted woodpecker richness; gardens and remnants were more important than groomed municipal greenery.[^frohlich2020]
+- **Epiphytes on introduced bark**: a survey of 88 Victorian industrial streetscapes found 36 bryophyte species, with the only epiphytic moss growing on a single exotic white oak (*Quercus alba*), indicating that stable bark structure can matter even on introduced street trees.[^floyed2012]
+
+## Native and introduced
+
+- **The heritage paradox**: the city keeps climatically mismatched exotic trees on its grandest avenues while clearing indigenous trees from the country where they belong, and Melbourne's elm stock survives only because the Dutch elm disease that erased it elsewhere never crossed quarantine.[^caudullo2016][^yau1982]
+- **Time asymmetry**: an English oak (*Quercus robur*) bears hollows only at 200 to 300 years and under 1 per cent do so before 100, so an exotic tree on a removal schedule cannot be replaced on a human timetable.[^ranius2009]
+- **Removal has a real cost**: a radio-tracked Powerful Owl (*Ninox strenua*) in Melbourne day-roosted in exotic trees on all but one occasion, 66.7 per cent of the time, so fast wide clearing of weed trees strips habitat that wildlife actively uses, and removal should be staged.[^mcnabb2011]
+- **The exotic-heavy mix is demand-driven**: nurseries and homeowners set composition, not ecology, so the city's reliance on a handful of European genera is a supply choice that can be changed.[^avolio2018][^yarra2017]
+
+## Evidence-based ways to improve tree habitat in modified ecosystems and cities
+
+The studies below show that the habitat value of large trees in cities depends on letting trees grow, age, decay, and collapse across full lifecycles, on retaining the dead wood and cavities that take centuries to form, and on managing human risk through spatial design rather than removal. Each theme runs as an ambition gradient from current best practice toward letting nonhuman trees, fungi, and animals lead.[^roudavskiled]
+
+1. **Retain coarse woody debris, fallen logs, and leaf litter where they fall, and favour larger and more decayed pieces.**
+   - **Actions**: leave fallen branches, logs, bark, and litter in situ; halt clearing, chipping, and tidying; favour large-diameter, advanced-decay pieces and a mix of sizes. This supports the Tree capability to Communicate and the model's Decay proposal.
+   - **Evidence**: large trees are disproportionate suppliers of debris and litter that younger trees cannot provide, and coarse woody debris stores nutrients and organic carbon, traps mobilised soil particles and organic litter, provides microsites for seedling establishment, and supports stronger biodiversity and soil-function responses when pieces are larger, older, and more decayed.[^leroux2014][^frohlich2020][^killey2010][^mallencooper2026]
+
+2. **Let dead wood accumulate passively in retained patches.**
+   - **Actions**: define patches where managers add no debris but remove none either, and let fallen and cut trees form dead wood on site over years. This supports the Decay proposal and the Buffer intervention.
+   - **Evidence**: in Helsinki's urban forests, dead-wood volumes track how long a patch has been left alone, from a median of 10.1 cubic metres per hectare in random urban forest to 115.6 in semi-natural forest. In Kraków, coarse woody debris declines as property prices rise, because wealthier districts tidy fallen and dead wood away, so its absence in groomed areas is a management signal,
+   - Further details:
+     - In woodland, scattered trees concentrate nutrients and litter beneath their canopies and shelter the seedbed, doubling as nurse sites for the next cohort (Prober & Thiele 2005; Manning, Fischer & Lindenmayer 2006).
+     - Coarse woody debris holds a large reserve of nutrients and organic carbon and releases it slowly as it decays, so it sustains site productivity and soil organic carbon rather than letting nutrients leach away (Killey, McElhinny, Rayner & Wood 2010).
+     - Decaying wood intercepts mobilised soil particles and organic litter, reducing erosion and the loss of resources from a site (Killey et al. 2010)
+     - Soil beside coarse woody debris in degraded eucalypt woodland is significantly higher in carbon, nitrogen, phosphorus, and nitrate, so a fallen log builds a fertile patch around itself (Goldin & Hutchinson 2013); in semi-arid mulga, contour-stacked branch piles trapped soil, water, and litter and raised soil nitrogen, carbon, infiltration, respiration, and fauna from bare ground (Tongway & Ludwig 1996)
+     - Woody debris also buffers temperature and moisture extremes and captures seed, generating distinct plant communities around it, and acts as a nursery for litter accumulation and fungal growth a cleared stand loses for decades (Mallen-Cooper et al. 2026; Manning, Cunningham & Lindenmayer 2013).
+     - Decay releases staggered pulses: nitrogen availability rises as lignin breaks down and nitrogen-fixing bacteria colonise the wood, and calcium rises, while potassium leaches early, so a log feeds the soil different nutrients at different stages (Mallen-Cooper et al. 2026; Laiho & Prescott 2004).
+     - Larger and older pieces do more: diversity rose ~15 per cent and abundance ~15 per cent per extra 10 cm of debris diameter and abundance ~14 per cent per decade on the ground, because large pieces hold distinct bark, sapwood, and heartwood substrates and pass through a long decomposer succession (Mallen-Cooper et al. 2026).
+     - Large senescing trees supply most of the wood: a 100 cm diameter tree is ~10 times more likely to produce fallen debris than a 50 cm tree and produces ~10 times the volume, a Yellow Box can take over 200 years to reach that size, and one fallen bole 1 m across and 10 m long holds ~10 m3 of coarse woody debris (Killey et al. 2010).
+     - Raking away a tree's own leaf litter cut soil decomposition 17 per cent and soil carbon up to 24 per cent, a legacy effect that re-retaining leaves did not reverse in 1-2 years (Ferlauto, Schmitt & Burghardt 2024); a large eucalypt drops ~10 times more litter under its crown than adjacent grass (12.5 vs 1.27 t/ha), building a fertile nutrient island around its own trunk (McElhinny et al. 2009).ot a baseline.[^korhonen2020][^frohlich2020]
+
+3. **Let trees age, senesce, die, and decompose in place, and manage human risk with understorey and buffer zones instead of removal.**
+   - **Actions**: permit trees to progress through ageing, snag, fallen, and decomposed stages on site; plant dense understorey and define drop zones beneath ageing crowns; reserve removal for hazards no spatial measure can manage; where removal of non-native stands is unavoidable, stage it slowly in patches over five to ten years and leave standing dead trees as transitional habitat. This supports the Decay proposal and the Buffer intervention.
+   - **Evidence**: useful-life metrics can treat trees as amenities, whereas decay and collapse produce the hollows, dead wood, and litter many lifeforms rely on. Ginninderry shows mature-tree retention at the peri-urban fringe: retained remnant-tree proportions were far higher than a cited Canberra average, and restoration treatments under old hollow-bearing red gum and yellow box trees used native tussock boundaries, reduced mowing, timber, mulch, native grasses, forbs, acacias, and fallen timber retention.[^roudavski2021][^epsdd2023]
+
+4. **Reduce or eliminate canopy pruning so crowns can spread.**
+   - **Actions**: scale routine pruning to a minimum, and remove canopy pruning entirely where clearances allow, so trees develop large limbs, peeling bark, and dead branches. This supports the Tree capability to Acquire Resources and the Release Control proposal.
+   - **Evidence**: large trees provide structural elements such as large limbs, peeling bark, and dead branches that younger or repeatedly pruned trees do not offer. Intensive pruning around infrastructure removes large branches, keeps trees small, and simplifies their structure; felling or heavily pruning trees before they reach full biological potential reduces their value to wildlife.[^leroux2014][^grossmann2020][^stagoll2012]
+
+5. **Retain and reuse non-native trees and prosthetic habitat.**
+   - **Actions**: keep introduced trees as roosts, perches, bark substrates, and epiphyte substrates rather than removing them by default; pair retained trees with artificial hollows, bark sleeves, installed mistletoe, and standing dead non-native stems where appropriate. This supports the Deploy Structure proposal and the Host service.
+   - **Evidence**: Powerful Owls use non-native trees as roosts, so removing them can remove regular roost habitat. Non-native trees can carry epiphytes, lichens, and invertebrate-rich bark; erected dead trees and utility poles enriched with hollows and perches can raise native bird richness where mature trees have been cleared, though these structures support fewer species than living mature trees. Mistletoe reintroduction also shows how existing urban trees can become host structures.[^bradsworth2021][^grossmann2020][^hannan2019][^watson2023]
+
+6. **Protect soil, mycorrhizal networks, and root space from compaction and severance.**
+   - **Actions**: keep soil under and around trees uncompacted and unsealed; avoid trenching and root severance; retain litter and decomposing wood that feed soil biota. This protects the Tree capability to Communicate.
+   - **Evidence**: city trees depend on mycorrhizal interactions that increase soil porosity, water retention, and structure, yet urban habitats show reduced mycorrhizal colonisation.[^stevenson2020] Roudavski and Davis identify compacted, impermeable surfaces and insufficient root space as conditions that confine urban trees.[^roudavski2021] Rebuilt soil shows the size of the loss, since de-compacted, deep-composted ground grew up to 84 per cent more canopy over six years at constrained sites.[^layman2016]
+
+7. **Reallocate road and parking space beneath ageing trees into collapse and habitat zones.**
+   - **Actions**: convert parking bays, lane sections, and other sealed surfaces beneath ageing crowns into depaved habitat islands where trees can fall and decompose, and link these islands as nearby trees collapse. This gives the Buffer intervention the space it needs.
+   - permit trees to progress through ageing, snag, fallen, and decomposed stages on site; plant dense understorey and define drop zones beneath ageing crowns; reserve removal for hazards no spatial measure can manage; where removal of non-native stands is unavoidable, stage it slowly in patches over five to ten years and leave standing dead trees as transitional habitat. This supports the Decay proposal and the Buffer intervention.
+
+   - **Evidence**: Roudavski and Davis propose that street planting expand understorey and reallocate space as the spatial influence of cars decreases.
+   - Redundant car parking: Modelling in Melbourne shows that streets are 26% of central Melbourne land, on-street parking 21% of that; up to half could fit existing garages within 200 m, freeing ~50 ha, growing 31-59 ha of canopy and de-paving 6.6-24.5 ha, ~a third of the 40%-by-2040 target (Croeser et al. 2022).
+   - The Ginninderry development on the peri-urban fringe  as an example of retaining mature trees, showing the increasing interest in developments at the peri urban fringe [^epsdd2023].  Ginninderry retained far more remnant trees than typical ACT greenfield development: 78%, 92%, and 86% retention across stages, compared with a cited Canberra average of 37.3%.
+     > Ginninderry also trialled treatments under remnant trees: traditional mowing, mulch/mass planting, and ecological restoration. The latter two leave fallen branches, introduce logs, and plant Eucalyptus seedlings as future cohorts. Fowles Street Park restored five 200-300-year-old hollow-bearing red gum/yellow box trees using native tussock boundaries, reduced mowing, timber, mulch, native grasses/forbs/acacias, and fallen timber retention.
+
+8. **Sustain multi-aged, structurally diverse cohorts rather than even-aged replacement plantings.**
+   - **Actions**: plant and retain trees across a spread of ages, species, and genera; keep senescent stems standing alongside young recruits; avoid removing and replacing whole even-aged avenues at once. This sustains Tree capabilities across generations.
+   - **Evidence**: scattered trees are keystone structures whose loss can trigger regime shifts, so landscapes must balance recruitment and mortality across ages. Large trees support distinct wildlife, including raptors and threatened parrots that occur almost exclusively at large trees. The City of Melbourne's diversity guidelines recommend no more than 5 per cent of any species, 10 per cent of any genus, and 20 per cent of any family by 2040, reducing the chance that a single pest or pathogen removes a large share of canopy at once.[^manning2006][^leroux2018][^melbourne2011diversity][^stevenson2020]
+
+## Experimental ways to improve tree habitat in modified ecosystems and cities
+The next four supports are promising but thinly evidenced
+
+1. **Engineer ageing trees to stay standing and habitat-bearing.**
+   - **Actions**: beyond allowing decay, use the veteran-tree toolkit: phased retrenchment pruning to mimic natural crown dieback, coronet cuts that leave fractured ends rather than flat saw faces, propping and dynamic slack cable-bracing that preserve movement, and monolithing a tree otherwise felled into a stabilised standing trunk. On introduced clones such as the elm, bring hollows forward by sub-lethal veteranisation, ring-barking, or pollarding. This supports the Buffer intervention and the Deploy Structure proposal.
+   - **Evidence**: phased retrenchment and coronet cutting keep top-heavy veterans from collapse while retaining features of age, and pollarding accelerates hollow formation; erected dead trees and hollow-enriched poles raise bird richness where mature trees were cleared, though they carry fewer species than living old trees. No Melbourne or eucalypt-specific trials of these techniques were found.[^fay2002][^sebek2013][^hannan2019]
+
+2. **Build Common Mycorrhizal Networks (CMNs).**
+   Common Mycorrhizal Networks (CMNs) are shared fungal mycelial networks that can connect the roots of compatible plants and create pathways for water, nutrients, carbon, and chemical signals to move through soil. In built environments this remains an exploratory design aim rather than a settled intervention: Harden and Moreno-Mateos describe the relevant supports as soil permeability, structured soils, cautious inoculation, soil conduits, and planting schemes that align mycorrhizal types.[^harden2026]
+   Evidence for CMNs is mixed: Harden and Moreno-Mateos note that their relevance has been questioned, while other studies report carbon transfer and positive effects on plant growth, survival, and community structure, with urban applications still underexplored.[^harden2026]
+
+   - Permeable surfaces: help water/oxygen, but block organic litter reaching soil — a trade-off for decomposer fungi.
+   - Structured soils: stone-matrix/sandy-loam mixes that bear load while allowing root growth.
+   - Mycorrhizal inoculation: this is the most caveated section. Inoculation can aid drought tolerance and disease resistance, but: success depends on species pairing and the existing indigenous inoculum potential; fertilizers may act antagonistically (Yuan 2025); a meta-analysis found commercial inoculants ineffective vs. soil from a rural forest (Maltz & Treseder 2015 — your [^sommerville2020]/inoculant point); and inoculation can backfire by introducing invasive AM isolates or pathogens, or outcompeting resident fungi (Schwartz 2006, Antunes 2009).
+   - Increasing soil connectivity — soil conduits: open-air trenches (≥15 cm wide, ~30 cm soil depth + crushed-stone drainage, mulch top, metal grate) connecting street trees to each other and to parks/groves. Modeled on wildlife overpasses and pollinator corridors. Explicitly a prototype: "remains at a prototype stage and requires systematic testing." Open questions they list: how many conduits for functional connectivity, optimal length/diameter, same or different mycorrhizal types. Suggested first test: whether connected soils have higher inoculum potential than unconnected.
+   - Build unified networks of multiple fungi type connected through ‘bridging plants’ that associate with both types of fungus). Planting schemes: build CMNs by grouping same-mycorrhizal-type plants (e.g. AM overstory Acer/Pyrus + AM shrubs Rubus/Digitalis); use "dual-mycorrhizal bridge" species (Acacia, Alnus, Eucalyptus, Fraxinus, Populus, Salix, Shorea, Uapaca; Teste 2019) to link AM and ECM patches into one network. Rests on Beiler et al. 2009 (the Douglas-fir "wood-wide web" Rhizopogon study).
+
+3. **Enable natural recruitment and rewild larger ground patches.**
+   - **Actions**: open moist, low-nutrient, weed-free seedbeds beneath and downwind of seed trees, restore the flood or disturbance cue, cut mowing and trampling, and protect the seedlings that appear. This supports the Tree capability to Reproduce and the Recruit proposal.
+   - **Evidence**: scattered trees act as recruitment nuclei and fertility islands, so the challenge is to balance recruitment and mortality in the right spatial pattern.[^manning2006]
+   - eucalypts self-seed within the drip-line and River Red Gum keys recruitment to receding floods, yet Canberra greenspace held 25 seedlings per hectare against 315 in reserves, a thirteenfold deficit that is a management artefact, not an inability. Berlin contains 337 hectares of forest nobody planted, with no shortage of native tree regeneration, and Blois shows how bare, permeable ground can recruit species once herbicide pressure stops.[^leroux2014][^distefano2002][^kowarik2019][^bonthoux2019]
+
+4. **Explore Miyawaki and micro-forests.**
+   - **Actions**: use dense multi-layered native plantings for soil preparation, learning, and small patches, and prefer applied nucleation, planted islands that let birds and bats import the rest, where the aim is self-extending woodland. This supports the Recruit proposal at small scale.
+   - **Evidence**: a systematic review found the Miyawaki method's rapid-growth, succession, self-sustainability, biodiversity, and carbon claims weak to null and its maturity claim unevidenced, whereas applied nucleation matched full plantation recovery at a third of the cost over fifteen years; neither substitutes for the century-scale processes of old canopy, hollows, deadwood, and animal-dispersed fungi.[^morales2026][^holl2020]
+
+## Melbourne Applicability
+
+The strongest evidence transfer to Melbourne comes from temperate-Australian studies of large trees, hollows, and coarse woody debris, and from Melbourne's own strategies, which already treat the urban forest as habitat. *Living Melbourne* defines that forest in the broadest sense, as all the trees, shrubs, grasses, soil, and water on public and private land, and notes that large trees are disproportionate providers of the hollows and coarse woody debris many fauna need.[^livingmelbourne2019] Metropolitan canopy is only about 15 per cent and ranges from 4 per cent in the west to 25 per cent in the east, residential land holds 58 per cent of it, and half the city runs 5°C above its non-urban baseline.[^livingmelbourne2019] Lorimer records that clearing reduced the region's native vegetation by the turn of the twentieth century, so today's forests are overwhelmingly young, dense regrowth, and the large old trees that supply hollows are scarce by history, not only by management.[^lorimer2011]
+
+- Metropolitan Melbourne canopy is just 15%, from 25% (east) to 4% (west); half the city runs 5C above its non-urban baseline, hot spots under 3% canopy with no tall trees (Living Melbourne 2019).
+- City of Melbourne core: 11% canopy across public and private (89% without natural shade); almost 43% of trees are one family (Myrtaceae); plane trees alone are 75% of the central-city forest (City of Melbourne 2012).
+- Retention is decisive: mature-removal rate vs canopy gain r < -0.83; ambitious targets need ~1%/yr mature removal, slip out of reach above 3%; real rates run 2.28-7% (Croeser et al. 2025). Large trees give ~75% more environmental benefit than small ones (City of Melbourne 2012).
+
+Urban trees usually live under combined stress:
+
+- sealed surfaces that block rainfall infiltration and gas exchange;
+- compacted soils and small rootable volumes;
+- heat, drought, water restrictions, and warmer futures;
+- pollution, salts, heavy metals, and traffic stress;
+- trenching, utilities, root severance, construction access and vehicle damage;
+- overhead-wire and tram-clearance pruning;
+- vandalism and young-tree establishment failure;
+- risk assessment, public fear, liability, and useful-life accounting.
+
+### Applicable in Melbourne
+
+1. **Retain deadwood and litter**: keep coarse woody debris, fallen logs, leaf litter, and standing dead stems in parks, boulevards, and reserves, and favour larger and more decayed pieces.
+2. **Let ageing trees complete more of their life cycle**: allow trees to senesce, die, and decompose in place, and manage human risk through understorey planting and drop zones rather than default removal.
+3. **Reduce canopy pruning where possible**: where clearances allow, let crowns spread and develop hollows, dead branches, and peeling bark.
+4. **Retain non-native habitat trees**: keep non-native trees as owl roosts, epiphyte substrates, and bark habitat, and stage any removal slowly in patches.
+5. **Protect root zones and soil continuity**: protect soil and root zones from compaction, severance, and sealing, and retain the litter and decomposing wood that sustain mycorrhizal networks.
+6. **Sustain multi-aged cohorts**: keep multi-aged, multi-species cohorts under the existing diversity targets, with senescent stems alongside young recruits.
+
+These actions match the ecology of Melbourne's large trees, including River Red Gum and other eucalypts whose hollows take well over a century to form, and the introduced English elm that dominates the inner city's ageing canopy. They also match stated policy, since *Living Melbourne* and the Urban Forest Strategy 2012–2032 commit Melbourne to a connected, habitat-bearing forest and to roughly doubling municipal canopy by 2040.[^livingmelbourne2019][^melbourne2012strategy] Retention is the binding constraint, because mature-tree removal correlates strongly and negatively with canopy gain, ambitious targets need removal held near 1 per cent a year, and real rates run 2.28 to 7 per cent.[^croeser2025] Biodiversity-sensitive urban design supplies the framework that turns canopy targets into onsite habitat through its five principles of maintaining and introducing habitat, facilitating dispersal, minimising threats, facilitating natural ecological processes, and improving human-nature interactions.[^garrard2018]
+
+### Transferrable with local calibration
+
+1. **Artificial hollows and veteranisation**: these transfer to Melbourne, but managers should calibrate cavity dimensions, wound placement, and materials to local hollow-using fauna and to eucalypt and elm wood, and treat prosthetic dead-tree or habitat-pole structures as a complement to retained living trees, not a replacement.[^hannan2019][^ibarra2020]
+2. **Recruitment and rewilding patches**: these transfer, but practitioners should match seedling density, species mix, and soil preparation to Melbourne's drier climate, flashy runoff, and impervious surfaces.[^leroux2014]
+3. **Passive deadwood accumulation**: this transfers, but volumes will build slowly from a low base and must overcome the same property-driven tidying that suppresses deadwood elsewhere.[^korhonen2020][^frohlich2020]
+4. **Mature-tree retention at growth fronts**: the Ginninderry model transfers to Melbourne's growth fronts, but the inner city must pair retention with depaving and prosthetic habitat rather than open setbacks.[^epsdd2023]
+5. **Road and parking reallocation**: this transfers, but its scale and timing should track local kerbside demand and heritage constraints, building on evidence that up to half of Melbourne's on-street parking could move into nearby garages and free 31 to 59 hectares of canopy.[^roudavski2021][^croeser2022]
+** fungal connections and eucalyptus ** post-fire, Tasmanian bettong digging for underground truffles jumped up to tenfold within a month, pulse-dispersing the ectomycorrhizal fungi eucalypts regenerate with, a tight animal-fungus-fire-tree loop almost entirely missing from city soils (Johnson 1995). [to do: check to see melbourne contexts]
+
+### Melbourne-Focused Implementation Priorities
+
+1. **Parade (an ageing-elm boulevard)**: retain the senescent elms through their transition into snags and fallen wood rather than replacing whole even-aged sections; convert parking bays and lane edges beneath the crowns into depaved drop zones planted with understorey, so trees collapse safely and link into connected grassland that supports recruitment of a mixed-age successor canopy.
+2. **Street (young native street trees)**: reduce risk-averse pruning and debris clearing so young eucalypts develop habitat structure; fit artificial hollows and erect habitat poles to bridge the century-long gap before natural cavities form; convert parking beneath trees into buffer zones where crowns grow unpruned and nurse logs accumulate.
+3. **City (infrastructure-dominated surfaces)**: protect and depave root zones to relieve compaction; translocate fallen stems onto load-bearing surfaces as elevated habitat; reallocate fragments of roof, facade, and ground into continuous habitat through bio-envelopes.
+4. **Procurement and maintenance**: write the retention of senescent stems, coarse woody debris, and drop zones into routine maintenance specifications, and procure long-term habitat services that fund biological, hybrid, and artificial structures over decades rather than one-off installations.
+5. **Useful-life assessment and governance**: revise useful-life assessment so decay, hollow formation, and collapse count as contributions rather than failures, and reconcile the plan to remove around 55 per cent of elms within a decade and retain only about 4 per cent of eucalypts beyond 60 years with the timescales over which hollows and dead wood develop.[^melbourne2012strategy][^leroux2014] Mature removal must stay near 1 per cent a year for any canopy target to hold.[^croeser2025]
+
+## Featured species 1: English Elm (*Ulmus procera*)
+
+The most prominent large tree along Melbourne's heritage boulevards and the being that anchors the 'Parade' place. About 400 trees, mostly English elm with a small admixture of Dutch elm (*Ulmus* x *hollandica*), stand in four rows along Royal Parade in Parkville, planted in 1913 and protected on the Victorian Heritage Register since 2009.[^nationaltrustelm][^melbourne2015parkville]. These are the largest English-elm stand on Earth, alive only because the disease that erased it elsewhere never crossed quarantine (Yau 1982; Croeser et al. 2020). They live as a managed cohort of near-identical clones: people graft, plant, water, prune, and assess them, and the same heritage status that keeps the avenue standing frames each tree as an amenity whose decline triggers removal.
+
+**Size**: 25 to 35 m tall at maturity, with a broad arching crown spreading 15 to 20 m and a single massive bole over a metre in diameter. A large old elm carries an order of magnitude more bark, branch, and canopy surface than a young replacement, and an inner-Melbourne specimen of this size approaches 1,000 kg of standing biomass.[^disney2018]
+
+**Origin**: Molecular work identifies English elm as a single, ancient clone linked to Roman propagation, probably transported as root suckers, with efficient vegetative reproduction and rare seed set. In direct terms, the English elm persists by cloning itself sideways through suckers rather than by reliable seed production.[^gil2004] The closest ecological comparator is therefore small-leaved European field elm lineages, often associated with fertile, moist, riparian, floodplain, edge and human-managed landscapes rather than a single untouched woodland habitat.[^armstrong1996][^elm-notes]
+
+**Mobility**: Elms throw up root suckers that creep outward from the parent and can colonise unmanaged soil as clonal thickets. Across Victoria, English elm is naturalised largely through suckering from nearby parent trees rather than from seed; in managed urban settings this can be treated as a maintenance or weed risk as well as a persistence strategy.[^vicfloraulmus]
+
+**Evolved conditions**: Wild European elms are trees of cool, moist, mixed broadleaved forest on fertile soils, clustering along rivers, streams, and floodplains, and *U. minor*, the lineage closest to *U. procera*, is the most riparian and edge-associated of them.[^caudullo2016] A cool-climate floodplain tree now stands on hot, dry, sealed urban ground.
+
+**Adaptability**: It is a tree that can tolerate pruning and damage up to a point because dormant and adventitious buds can produce shoots; Thomas specifically notes exuberant basal shoots in English elm.[^thomas2014] Melbourne's heavy clay loam and impervious clay-pan can suit shallow-rooted elms better than deeper-rooted species in some street situations, but sealed surfaces, high water tables, trenching, gas leaks and heat still make the street an unstable root habitat.[^yau1982]
+
+It is far less able to meet a hotter, drier climate, and Melbourne's tree-vulnerability assessment places *U. procera* and *U.* x *hollandica* in its highest future-temperature risk category.[^kendal2016][^vicgov2024].
+
+- **Projected removals and vulnerability**: around 55 per cent of City of Melbourne elms are projected for removal within a decade, with diversity caps of 5 per cent species, 10 per cent genus, and 20 per cent family by 2040 deliberately retreating from exotic monocultures. Climate is expected to become the most severe threat to native species within a decade.[^melbourne2011diversity][^lorimer2011]
+
+As a single genetic clone it is also acutely exposed to pests and disease, from elm leaf beetle to the elm bark beetle that vectors Dutch elm disease, the epidemic that erased elm avenues across the Northern Hemisphere but has not reached Australia.[^gil2004]
+
+**Lifespan**: the elm's biological ceiling and its Melbourne working life are very different numbers, and the gap between them is the room design has to work in. In cool European woodland the closest wild comparator, the *U. minor* lineage, reaches about 300 to 400 years.[^sabatini2021] In Melbourne, well-maintained urban elms are benchmarked at roughly 100 to 150 years, and Arthur's Elms at the Royal Botanic Gardens, the oldest in Australia, are about 170.[^johnpatrick2022][^heritagevictoria2023][^edwards2012] Under ordinary boulevard care the cohort's useful life is shorter still, about 105 to 125 years against a 1913 planting, but that is the threshold at which an amenity-and-risk assessment calls for removal, not the age at which the tree would die.[^treelogic2022][^melbourne2015parkville] An elm that is irrigated, pest-managed, and left standing rather than removed when hazardous could persist well beyond that, to roughly 180 to 240 years; it would not reach the full European ceiling, because Melbourne's heat and drought, and an added risk of sudden heat-stress collapse, pull the span back toward 165 to 220 years under future climate.[^leroux2014][^kendal2016][^vicgov2024]
+
+| State | Age (years) | Basis |
+|---|---|---|
+| European biological ceiling | 300–400 | Forest maxima for the *U. minor* lineage and *U. glabra* under optimum European conditions.[^sabatini2021] |
+| Melbourne documented maximum | 150–200 (Arthur's Elms ~170) | Australian benchmarks for well-maintained elms, anchored to Arthur's Elms.[^johnpatrick2022][^heritagevictoria2023][^edwards2012] |
+| Useful life expectancy | 105–125 | Removal threshold under boulevard care for the 1913 Royal Parade cohort, not a death age.[^treelogic2022][^melbourne2015parkville] |
+| Age-in-place | 180–240 | Documented maximum plus a recovered fraction of the European gap, with trees left standing.[^leroux2014] |
+| Climate-adjusted age-in-place | 165–220 | Age-in-place reduced per Melbourne's tree-vulnerability study and the 2024 climate projections.[^kendal2016][^vicgov2024] |
+
+**Life cycle**: the elm grows fast when young, then slows and ages into a senescing crown that hollows and sheds limbs gradually. As it ages it develops the structures other beings need, deadwood in the upper canopy, shedding and furrowed bark, broken and hollowing limbs, basal cavities, and a steady fall of branches and leaves, features that take decades to a century to form and that young replacement trees do not supply.[^leroux2014]
+
+**Habitat provided**: Melbourne's ageing elms are real habitat. At University Square 47 of 53 elms bore hollows, 255 in all, many large enough for Common Brushtail Possums, found mostly in and below the elms.[^melbourneunisquares] Powerful Owls also roost in non-native trees and their bark carries epiphytes, so removing non-indigenous trees deprives owls of regular roosts and argues for slowing the pace of removal.[^bradsworth2021]
+
+**Communication**: like other large trees the elm signals and shares through root exudates and mycorrhizal fungi, but as an arbuscular-mycorrhizal tree it draws on a different fungal guild from the ectomycorrhizal eucalypts and cannot plug into their networks, and Melbourne's compacted, sealed boulevard soil reduces that colonisation while the avenue's isolation limits how far it connects at all.[^stevenson2020][^teste2020][^bainard2011]
+
+**Reproduction**: the elm reproduces in two ways, and only one of them works in Melbourne. It produces pollen normally, but as a single roughly 2,000-year-old Roman clone it rarely sets viable seed, so sexual reproduction effectively fails.[^gil2004] It reproduces vigorously by vegetative root suckers instead, which is why it naturalises across Victoria, most populations forming by suckering from parent trees rather than from seed.[^vicfloraulmus] In the managed avenue, people suppress those suckers and raise replacements by grafting and planting, so genetic renewal and avenue recruitment depend on humans even though the tree itself is far from unable to reproduce.[^gil2004][^vicfloraulmus]
+
+**Design Implications**:
+*Useful-life assessment and governance*: revise useful-life assessment so decay, hollow formation, and collapse count as contributions rather than failures, and reconcile the plan to remove around 55 per cent of elms within a decade and retain only about 4 per cent of eucalypts beyond 60 years with the timescales over which hollows and dead wood develop.[^melbourne2012strategy][^leroux2014] Mature removal must stay near 1 per cent a year for any canopy target to hold.[^croeser2025]
+
+*Already tried or planned.*
+
+- A Powerful Owl roosts in and forages from non-native trees, so removing elms strips habitat it actively uses.[^bradsworth2021] An ageing elm also offers a substrate for epiphytes and lichens, so retaining elms rather than felling them on schedule is a near-term habitat decision, not only a heritage one.[^grossmann2020]
+- Intensive pruning to keep limbs clear of wires removes the wounded, decaying, deadwood-bearing parts of the crown, so a pruning-release that frees the canopy lets the elm both grow and supply habitat.[^grossmann2020]
+- An elm left to age is one of few near-term sources of slowly forming hollows, because Australian trees carry no excavating animal such as a woodpecker and form cavities only through decades of limb-death and decay.[^penton2021] Birds, reptiles, and declining mammals share these same cavities, which grow more abundant as a tree enlarges, so a large decaying elm is a keystone resource while the planted native cohort is still a century from bearing hollows.[^penton2021][^ibarra2020]
+- The avenue's renewal is a human act, because the clone sets no viable seed and its only self-recruitment is the suckering that management suppresses, so the model's reproduction indicator for this being is met by human propagation rather than seedfall.[^gil2004][^vicfloraulmus]
+
+*Speculative or more ambitious.*
+
+- Removing a whole even-aged cohort opens a gap in habitat structure that lasts as long as those structures take to reform, a century or more, so the simultaneous removal of the Parade elms is the loss of an entire habitat stratum at once for the Bird and Lizard personas.[^melbourne2012strategy][^leroux2014]
+- Fitting artificial hollows, bracing senescing limbs to fail safely, and applying sub-lethal veteranisation such as ring-barking can bring forward, on existing elms, the cavities and deadwood that decay would otherwise take decades to produce.[^hannan2019][^leroux2014] Because the elm is an introduced clone rather than a remnant native, intervening on the wood itself is defensible here.
+- Native mistletoe can be added to the elm as living canopy habitat. A City of Melbourne trial established native creeping mistletoe (*Muellerina eucalyptoides*) on London plane trees, and *Ulmus* is among its known exotic hosts, so a healthy long-retention elm is a credible host scaffold for a monitored trial that adds nectar, fruit, dense roosting foliage, and enriched litter to an introduced crown.[^watson2023]
+- The elm's suckering weediness is the same vigour that keeps this disease-free clone alive as one of the world's most significant mature elm populations, since Dutch elm disease bypassed Australia.[^gil2004][^vicfloraulmus] Managing sucker spread at sensitive boundaries while recruiting a mixed-age, mixed-species successor canopy keeps the heritage being and its habitat without licensing escape or denying decline.[^kendal2016][^vicgov2024]
+
+## Featured species 2: River Red Gum (*Eucalyptus camaldulensis*)
+
+The largest and longest-lived native tree of Melbourne's watercourses and floodplains, the defining canopy tree of the River Red Gum Woodland that lined the Birrarung (Yarra) and the volcanic-plains creeks before colonisation, and the most widely distributed eucalypt on the continent.[^wikicamaldulensis][^moore2019] It is the representative tree in this paper's model, so featuring it keeps the evidence base consistent with the 180-year maturation horizon the simulation adopts.[^rutten2024][^leroux2014] Where the elm depends on people, the River Red Gum depends on water.
+
+**Size**: typically 20 m tall but reaching 45 m, with a broad spreading crown and a trunk that thickens for centuries.[^wikicamaldulensis][^leroux2014] Bark is smooth and white, cream, or grey, shedding in slabs and ribbons to expose patches of yellow, pink, and brown, with rough flaky bark persisting near the base.[^wikicamaldulensis]
+
+**Mobility**: the tree stays where it germinates, but unlike the human-planted elm it disperses itself by water. Its buoyant seed rafts on receding floodwaters, floats for about 36 hours, and travels kilometres downstream to seed even-aged strips along the flood line.[^wikicamaldulensis][^distefano2002]
+
+**Evolved conditions**: the River Red Gum expects water process. It belongs to floodplains, creek lines, billabong margins, and wetland soils, stood co-dominant with Yellow Box across Melbourne's precolonial grassy woodlands, and keys its whole life to flooding, recession, and groundwater.[^wikicamaldulensis][^presland2005] It tolerates immersion for many months and recruits only when floods recede and leave bare moist soil, the opposite of the elm's dry, sealed boulevard.[^distefano2002]
+
+**Adaptability**: the tree survives scars, drought, fire, and limb loss, resprouting from epicormic buds and a lignotuber, so its plasticity is biological rather than the elm's reliance on human care.[^moore2019] Its vulnerability is hydrological, not bureaucratic, because where river regulation removes the flood pulse, adult condition and recruitment both decline and stands become non-recruiting relics.[^distefano2002]
+
+**Lifespan**: it lives 400 to 1,000 years, so the trees Melbourne calls ancient began before the city, and it carries habitat far longer than the elm's 100 to 240 year urban span.[^moore2019] It grows fast, so it bears fewer hollows per unit of diameter than the boxes, yet reaches such size that it dominates riverine hollows, which begin to form only after about 120 to 180 years.[^moore2019][^leroux2014]
+
+**Life cycle**: it grows fast when young then slowly thickens for centuries, ageing into broad limbs, scars, dead branches, loose and rough bark, and hollows, and stands as a dead tree for decades afterward.[^wikicamaldulensis][^lindenmayer2017small] Hollow abundance rises steeply with diameter: across the northern Victorian plains fewer than 1 per cent of trees 10 to 30 cm across bore hollows, 13 per cent of trees 30 to 70 cm did, and 68 per cent of trees over 70 cm did, so only a large old tree fully supplies cavities for the Bird and Lizard personas.[^bennett1994]
+
+**Communication**: the River Red Gum signals and shares above and below ground. Summer flowers carry so much nectar and pollen that a tree in flower hums with bees, feeding insects, birds, and small mammals.[^wikicamaldulensis] Below ground it partners ectomycorrhizal fungi, many of them hypogeous truffles that fruit underground and cannot travel on the wind, so they depend on digging mammals such as potoroos and bettongs to eat and spread their spores, a fungus, mammal, and fire loop largely missing from the city.[^maser2008][^johnson1995]
+
+**Reproduction**: the River Red Gum recruits itself, but only on water's terms. Seed stored in woody capsules falls to bare wet ground as floods recede, germinates in pulses, and survives where seedlings reach subsoil water before summer, an episodic event that historically occurred only a handful of times a century.[^distefano2002] Sealed and channelised urban surfaces suppress this, so reproduction at the stand scale depends on opening soil and restoring inundation rather than on planting, the reverse of the elm's human-propagated renewal.[^distefano2002][^leroux2014]
+
+**Design Implications**:
+
+- Large eucalypts act as keystone structures in urban parks, with bird richness, abundance, and breeding all rising with diameter, and adding trees over 100 cm raised woodland-bird richness by about 300 per cent in Canberra parks, so no young replacement on sealed ground substitutes for a large old River Red Gum.[^stagoll2012][^leroux2014]
+- Scattered large trees carry exceptional value, supporting raptors, the threatened Superb Parrot, hollow-nesters, and nectarivores that smaller trees do not, so even a single retained River Red Gum acts as a node and stepping stone for the Bird persona.[^leroux2018]
+- Recruitment is the hidden bottleneck, so the design lever is hydrological: depave and open moist ground, restore seasonal inundation, and protect flood-cued seedlings from mowing and trampling rather than relying on planting alone.[^distefano2002][^leroux2014]
+- Standing dead River Red Gums and fallen logs keep providing hollows, perches, bark, and ground refuge for decades after death and store large amounts of carbon, so letting these trees decompose in place is itself a design act, and a felled 200-year-old tree is an effectively irreplaceable loss.[^lindenmayer2017small][^rutten2024]
+
+## Featured species 3: Yellow Box (*Eucalyptus melliodora*)
+
+The honey-scented keystone of the critically endangered Box-Gum Grassy Woodland, the community that once covered the fertile plains north of Melbourne and was cleared first, so under 5 per cent remains.[^rawlings2010][^dsewpc2012] Where the River Red Gum holds the wettest ground, Yellow Box holds the fertile dry plains that farming wanted most.
+
+**Size**: 15 to 30 m tall, with a variable crown and short, often crooked bole; persists for many hundreds of years.[^banks1997] Bark ranges from yellowish-brown and flaky on the lower trunk to smooth above.
+
+**Preferred habitat**: fertile, well-drained loams of the inland plains and lower slopes, in grassy woodland alongside White Box and Blakely's Red Gum.[^dsewpc2012] Because these soils were the first ploughed, the tree now survives mostly as scattered paddock veterans and roadside remnants.[^deccw2011]
+
+**Basic lifestyle**: a premier nectar tree, Yellow Box flowers irregularly, often only every second year, a feast-or-famine resource that mobile honeyeaters and lorikeets track across the landscape.[^rawlings2010][^bennett1994] It is a slower-growing box than the River Red Gum, so it forms more hollows per unit of diameter, and its slow-decaying timber holds those hollows for long periods.[^rawlings2010][^bennett1994]
+
+**Design Implications**:
+
+- Slow box growth means more hollows per diameter, so a Yellow Box of modest size can already carry cavities a faster-grown gum of the same girth would not, which makes retaining mid-sized paddock veterans a direct hollow-supply decision for the Bird and Lizard personas.[^bennett1994]
+- Irregular feast-or-famine flowering ties nectarivores to whole networks of trees rather than single sites, so isolated Yellow Box veterans are worth retaining as stepping stones in the wider nectar landscape.[^rawlings2010]
+- Box-Gum Grassy Woodland was cleared first and earliest, so the few large Yellow Box that remain are disproportionately old and irreplaceable, and recruitment on fertile, now-farmed or now-sealed plains is the limiting step for the next cohort.[^dsewpc2012][^leroux2014]
+
+## Complete species list
+
+### Native large trees of the Melbourne region
+
+| Species | Common name | Origin | Mature height and typical lifespan | Role in Melbourne and notable habitat value |
+|---|---|---|---|---|
+| *Eucalyptus camaldulensis* | River Red Gum | Native (floodplains and waterways) | 20–45 m; commonly 400–1,000 years[^lindenmayer2017small][^leroux2014] | Defining floodplain tree of the Maribyrnong, Yarra, and volcanic plains; forms abundant hollows in old age and is a keystone hollow and perch provider for birds, mammals, and reptiles[^bennett1994][^stagoll2012] |
+| *Eucalyptus melliodora* | Yellow Box | Native (grassy woodland) | 15–30 m; many hundreds of years[^banks1997] | Honey-scented keystone of the critically endangered Box-Gum Grassy Woodland north of Melbourne; slow-grown trunks form more hollows per diameter, and irregular flowering feeds mobile honeyeaters[^rawlings2010][^bennett1994] |
+| *Eucalyptus viminalis* | Manna Gum | Native (valleys and foothills) | 20–40 m; several centuries | Ribbon-bark riparian and foothill tree; named for the sugary manna that feeds gliders, honeyeaters, and pardalotes, and prime koala browse[^bok2025][^rutten2024] |
+| *Eucalyptus ovata* | Swamp Gum (Black Gum) | Native (poorly drained flats) | 15–30 m; several centuries | Wet-ground woodland tree whose nectar and pollen feed nectarivorous birds, including the endangered Swift Parrot (*Lathamus discolor*)[^hingston2011] |
+| *Eucalyptus leucoxylon* | Yellow Gum | Native (plains woodland) | 10–30 m; several centuries | One of Melbourne's most-planted eucalypt street trees; a winter nectar source that feeds honeyeaters and lorikeets in the cold season, and old stems form hollows[^stagoll2012] |
+| *Corymbia maculata* | Spotted Gum | Native (south-eastern Australia, widely planted) | 25–40 m; several centuries | A *Corymbia* reaching Victoria naturally only in far East Gippsland, so in Melbourne it lives entirely as a planted, out-of-range tree; provides nectar, perches, and, when old, hollows[^stagoll2012] |
+| *Allocasuarina cunninghamiana* (formerly *Casuarina*) | River She-oak | Native (riverbanks) | 15–35 m; commonly 100–200+ years | Riparian tree of the Yarra and tributaries; seed cones feed black cockatoos and the dense canopy offers roosting cover[^stagoll2012] |
+| *Acacia melanoxylon* | Blackwood | Native (gullies and damp forest) | 15–30 m; commonly 100+ years | Long-lived wattle of moist gullies; flowers feed insects and birds, and old trunks develop hollows and bark habitat[^rutten2024] |
+
+### Introduced large trees of Melbourne's streets and parks
+
+| Species | Common name | Origin | Mature height and typical lifespan | Role in Melbourne and notable habitat value |
+|---|---|---|---|---|
+| *Ulmus procera* | English Elm | Introduced (Europe; a 2,000-year-old weed clone) | 25–35 m; commonly 100–150 years | A single vegetatively propagated clone unable to set seed, the dominant heritage avenue tree; about 400 line Royal Parade, and roughly 55 per cent of the city's elms are assessed as near the end of useful life[^gil2004][^roudavski2021][^melbourne2012strategy] |
+| *Ulmus* x *hollandica* | Dutch Elm | Introduced (Europe, hybrid) | 25–35 m; commonly 100–150 years | Common hybrid avenue and park elm; offers large shading crowns yet is vulnerable to Dutch elm disease, carried by the elm bark beetle[^melbourne2012strategy] |
+| *Ulmus glabra* | Wych Elm (incl. 'Lutescens', Golden Elm) | Introduced (Europe) | 20–30 m; commonly 100–150 years | Heritage park and garden elm; broad crowns provide perches and shade, with peeling bark and deadwood developing in old age[^grossmann2020] |
+| *Platanus* x *acerifolia* | London Plane | Introduced (hybrid) | 20–35 m; commonly 150–250 years | With elms, dominates CBD streets and makes up about 10 per cent of the municipal stock; very tolerant of compaction and pollution, planted to replace St Kilda Road's poplars in the 1960s; flaking bark and large limbs furnish perches and invertebrate habitat[^melbourne2012strategy][^yarra2017] |
+| *Quercus suber* | Cork Oak | Introduced (Mediterranean) | 15–25 m; commonly 150–250 years | Drought- and fire-hardy park and avenue oak well matched to Melbourne summers; at Collingwood Children's Farm a fallen individual continues to grow and provides play and habitat[^roudavski2021][^yarra2017] |
+| *Quercus robur* | English Oak | Introduced (Europe) | 20–35 m; commonly 200–400+ years | Long-lived heritage park oak supporting 400+ insect species; in old age it lowers and props its limbs and develops hollows, though about half bear hollows only at 200 to 300 years[^roudavski2021][^ranius2009] |
+| *Platanus orientalis* | Oriental Plane | Introduced (south-eastern Europe and western Asia) | 20–30 m; commonly 150–250+ years | Heritage avenue and garden tree; like the London plane it sheds bark in plates and forms broad, perch-rich crowns[^grossmann2020] |
+| *Ficus macrophylla* | Moreton Bay Fig | Introduced to Melbourne (native to coastal eastern Australia) | 15–30 m; commonly 100–150+ years | Massive buttressed park trees; dense evergreen crowns and figs provide year-round roosting cover and food for birds and flying-foxes[^stagoll2012] |
+
+## Examples
+
+- Melbourne gave its trees email addresses for maintenance reports and received thousands of love letters instead, and staff began replying on a tree's behalf.[^phillips2018][^straughan2022]
+- A firefighter broke a city elm's branch fighting a fire, then could not sleep and emailed an apology, writing that a building shelters only a person but a tree creates habitat for the whole world.[^straughan2022]
+- Manna is real sugar a person can pick off a Manna Gum leaf, mostly raffinose and sucrose, and it feeds sugar gliders, honeyeaters, and the endangered forty-spotted pardalote.[^bok2025]
+- A radio-tracked Powerful Owl spent the day in an exotic Monterey pine clutching a ringtail possum, and roosted in exotic trees on all but one occasion, so weed-tree removal must be staged.[^mcnabb2011]
+- A baroque park built round a small-leaved lime (*Tilia cordata*) avenue planted in 1684 held 18 red-listed beetle species, three of them dependent on a fungus that grows only on old limes.[^jonsell2004]
+- A Fairfield couple secretly fed bath and shower water to a neighbour's tree through the drought so the council would not remove it.[^pearce2015]
+- When Blois stopped using herbicide, plants self-recruited to nearly full cover, 307 species across 48 km, about a fifth of the regional flora, and the binding constraint was bare soil, not seed supply.[^bonthoux2019]
+- Hollows are made of time, not beaks: with no excavating animal in Australia, a eucalypt forms its first cavities only after 120 to 220 years of limb-death and decay.[^gibbons2002][^lindenmayer1993]
+
+## Further Details on Specific Interventions and Processes
+
+In no particular order...
+
+### Age-in-place engineering toolkit: keeping ageing or declining trees standing safely.
+
+- **Cabling and bracing, dynamic vs static**: static systems fix a defect under tension; dynamic systems install with slack, act preventively, and preserve branch movement. Static cabling "can disturb or stop the natural aging process... which often includes a natural retrenchment process and branch breakage" (VetCert 2019). Cabling is explicitly a retention tool used instead of heavy pruning that would expose non-durable heartwood. Evidence status: established.
+- **Dead-end stop terminations**: Smiley's dead-end stop method threads the cable through a cable-width hole, removing two weak points; double-swage stops failed near the cable's own breaking strength (7.6 kN), but the flexible dead-end abraded its hole open in 39 per cent of cases over five years. Cobra dynamic synthetic-rope bracing is non-invasive and has an approximately 12-year life, but product efficacy data are thin. Evidence status: emerging.[^smiley2011]
+- **Propping / exoskeletons**: rigid ground-anchored props support over-leveraged limbs/leaning trunks; iconic cases the Angel Oak and the 11th-century Crouch Oak (three bespoke props). Practitioner evidence (ATF/Lonsdale 2013).
+- **Retrenchment pruning**: Fay's method mimics natural peripheral dieback, phased over 12 to 30 years in 3 to 5 year cycles, with a first stage of 10 to 20 per cent, to stop a top-heavy veteran collapsing while retaining habitat features associated with ageing. Evidence status: established in veteran-tree practice.[^fay2002]
+- **Coronet cuts** ("natural fracture pruning"): shape a cut to resemble a storm-shattered end, seeding fungal/invertebrate microhabitat instead of an "unnatural flat plane-surface... not found in nature" (Fay 2003).
+- **Monolithing**: retain a tree that would normally be felled as a reduced, stabilised standing trunk (usually 4-6 m) of deadwood habitat; founding case Ashtead Common (after a fire killed ~10% of 2,000+ veteran oaks, hundreds kept as coronet-cut hulks, "well received by the public") (Alexander, Green & Key 1993; Fay 2003). Extending dead-wood techniques to living trees = **veteranisation**; pollarding accelerates hollow formation (Sebek et al. 2013).
+- **Risk-managed retention** (QTRA, TRAQ, VALID): reframe "safe/unsafe" to tolerable risk (QTRA thresholds 1/1,000,000 broadly acceptable, 1/10,000 tolerable), giving managers permission to keep high-value trees. BUT no method is more reproducible than another, and "the assessor has just as much influence as the method"; QTRA training itself cut removal recommendations (Klein et al. 2023; Koeser & Smiley 2017).
+
+
+### Repurposing urban space for trees
+
+- **Reallocating road/parking**: consolidating half of Melbourne's 23,500 on-street bays into nearby garages could depave 6.6 to 24.5 ha and grow 31 to 59 ha of canopy, roughly a third of the 40-per-cent-by-2040 target. Policy precedents include Amsterdam removing about 1,500 bays per year, Paris pledging to remove half of 140,000, and New York City greening more than 600 ha from 2010 to 2020. Evidence status: established modelling and policy precedent.[^croeser2022]
+- **Suspended pavement / soil cells**: a 10-year trial of elm under concrete found supported-pavement trees significantly larger in caliper than structural soils or compacted controls, with more and deeper roots (Smiley, Urban & Fite 2019). Structural cells beat structural soil and open ground over six years in Singapore, with 27.2 cm DBH compared with 24.2 and 22.3 cm (Ow & Ghosh 2017). Evidence status: established.
+- **Structural soil**: over 17 years in Brooklyn, oaks under a load-bearing sidewalk matched open-tree-lawn oaks with higher survival, with roots colonising soil under pavement (Grabosky & Bassuk 2016). Evidence status: established.
+- **Stockholm biochar planting beds**: the Embren method uses angular stone plus about 5 to 10 per cent biochar and compost. Stockholm adopted it after a 2001 survey found two-thirds of new trees dead or dying; mortality reportedly collapsed and six-year trees reached five times the size of 30-year trees in old pits. Evidence status: emerging practitioner reports, with biochar porosity established.
+- **Permeable paving and passive irrigation**: porous pavement grew planes 29 to 51 per cent larger in stem diameter with deeper roots, while kerb-inlet raingarden tree pits both irrigate the tree and cut runoff; Melbourne has more than 200 such pits. Evidence status: established and deployed.[^mullaney2015][^croeser2022]
+- **Soil volume is the master variable** (~0.6 m3 rootable soil per m2 of mature canopy; Lindsey & Bassuk): rebuilding compacted soil (subsoil + compost to 60 cm) grew 77% more trunk in one year and up to 84% more canopy over six (Layman et al. 2016); tightly kerbed pits (<10 m2) cut canopy 64-75% vs open ground (Grabosky & Gilman 2004), so enlarging openings and diverting kerbs/paths directly buys canopy and longer life.
+- **Best examples**: the Melbourne redundant-parking model; the Bartlett 10-year suspended-pavement trial; the Brooklyn 17-year structural-soil street; the Stockholm city-wide retrofit.
+- **Gap**: road-diet evidence is mostly mobility/stormwater, not tree growth; "room to fall and age" is absent from surface-design literature; Stockholm figures are practitioner reports.
+
+**References**: Croeser et al. 2022 (npj Urban Sustainability 2:27); Smiley, Urban & Fite 2019 (A&UF 45:303); Ow & Ghosh 2017 (J Urban Ecology 3:jux017); Grabosky & Bassuk 2016 (UFUG 16:103); Grabosky & Gilman 2004 (J Arboriculture 30:154); Layman et al. 2016 (UFUG 16:25); Mullaney, Lucke & Trueman 2015 (LUP 134:157); Morgenroth 2011 (A&UF 37); Armson, Stringer & Ennos 2013 (UFUG 12:282); Allatt, Turner & Tarjomi 2013 (NZTA, road-space reallocation); City of Stockholm 2022 (planting-bed handbook, via TDAG).
+
+### Autonomous recruitment + deadwood for the trees themselves
+
+Two linked capacities: trees recruiting their own successors, and trees feeding their own soil and seedbeds through deadwood and litter. The mechanisms are the species' own designs; the human role is mostly to remove what blocks them. (The anchor citation is Killey, McElhinny, Rayner & Wood 2010, not the "Killey, Manning, Gibbons, Lindenmayer & Fischer" form.)
+
+#### How eucalypts recruit their own successors
+
+- Eucalypts store seed in woody capsules in the canopy and shed it within the drip-line, so recruitment concentrates beneath and downwind of the parent (Rawlings, Freudenberger & Carr 2010).
+- Germination needs contact with moist, weed-free mineral soil, so a receptive seedbed (bare, burnt, disturbed, or grazed ground) is a precondition, and rank tussock or exotic sward leaves no niche (Rawlings et al. 2010).
+- River Red Gum keys recruitment to receding winter and spring floodwaters and fails when floods recede too late into summer; its seed floats up to 36 hours and rafts kilometres, seeding even-aged strips along the flood line (Di Stefano 2002).
+- Seedbed quality drives establishment, not just germination: Red Gum seedlings reached ~60 cm at 8-10 months on ashbed or cultivated soil versus ~10 cm on hard bare earth, because fast early growth reaches subsoil water before drought (Di Stefano 2002).
+- Natural recruitment is episodic: extensive regeneration occurred only six times in Barmah forest between 1900 and 1965, set by the rare coincidence of seed, flood recession, seedbed, and summer rain, formalised as Dexter's eight interacting controls (Di Stefano 2002).
+- In box-gum woodland, above-average summer rainfall is the strong germination trigger, and seed dormancy plus smoke cues let soil-stored seed wait for the right season (Rawlings et al. 2010).
+
+#### The recruitment bottleneck, and what releases it
+
+- Continuous grazing and superphosphate suppress regeneration across an 800,000 ha endangered ecoregion: seedling presence fell as soil nitrogen rose, and no paddock site with five or fewer trees had regenerated in 60 years (Fischer et al. 2009).
+- Phosphorus enrichment shifts ground cover from native perennials to exotic annuals that then outcompete tree seedlings for the establishment-window moisture (Fischer et al. 2009; Rawlings et al. 2010).
+- Releasing the bottleneck is mechanistic: fast-rotational grazing gave ~4-fold higher regeneration than continuous grazing by creating germination disturbance while sparing established seedlings (Fischer et al. 2009), and fencing raised recruits to 59 per cent of sites versus 13 per cent unfenced over 7-9 years (Spooner & Briggs 2008).
+- Fencing alone is not enough where exotic annuals, elevated nutrients, and compaction remain, so reducing the autumn nitrate peak through spring burns and carbon supplements (~0.5 kg/m2 sugar or sawdust) is a direct lever back toward native seedbeds (Rawlings et al. 2010; Prober & Thiele 2005).
+- In Victorian agricultural landscapes only 27 per cent of sites carried any eucalypt regeneration, contingent on a nearby seed source, soil moisture, low seed predation, and a suitable seedbed (Dorrough & Moxham 2005).
+
+#### Self-replacing, uneven-aged stands
+
+- Self-recruiting woodland is multi-aged (right-skewed diameter distributions, many young stems); scattered paddock trees show symmetrical distributions with no recruits, the diagnostic of a non-replacing population (Fischer et al. 2009).
+- Self-replacement has hard demographic requirements: keeping scattered trees needs adult mortality below ~0.5 per cent a year, recruits exceeding existing tree numbers, and recruitment events spaced at ~15 per cent of maximum lifespan, or the landscape loses its trees within 90-180 years (Gibbons et al. 2008).
+- Increasing recruitment alone cannot reverse decline if adult mortality stays high, so protecting the old trees matters as much as recruiting young ones (Gibbons et al. 2008).
+- Even-aged Red Gum stands are the natural product of flood-cued recruitment, so silviculture that mimics the disturbance regime (larger gaps in frequently flooded forest, retained habitat trees) keeps the stand structurally true (Di Stefano 2002).
+
+#### Nurse effects, facilitation, applied nucleation
+
+- Residual and isolated trees are recruitment foci: 671 seedlings of 48 canopy species established almost entirely under residual trees, not open grass, because the crowns perch frugivorous birds and bats and import seed; the effect is structural, rising with tree height and crown area rather than fruit reward, and clumped trees recruited more species than single ones (Toh, Gillespie & Lamb 1999).
+- Beneath-crown microsites also suppress competition (herbaceous biomass significantly lower under crowns) and re-establish mycorrhizal partners, so planting a few tall perch trees or clumps accelerates recovery far more cheaply than blanket planting (Toh et al. 1999).
+- In woodland, scattered trees concentrate nutrients and litter beneath their canopies and shelter the seedbed, doubling as nurse sites for the next cohort (Prober & Thiele 2005; Manning, Fischer & Lindenmayer 2006).
+
+#### Deadwood feeding the trees: nutrient cycling and soil building
+
+- Coarse woody debris holds a large reserve of nutrients and organic carbon and releases it slowly as it decays, so it sustains site productivity and soil organic carbon rather than letting nutrients leach away (Killey, McElhinny, Rayner & Wood 2010).
+- Decaying wood intercepts mobilised soil particles and organic litter, reducing erosion and the loss of resources from a site (Killey et al. 2010).
+- Across 66 studies (5,234 observations) adding woody debris raised soil function ~31 per cent, biota abundance ~156 per cent, and diversity ~106 per cent over debris-free soil, driven by the nutrient pulse of decay (Mallen-Cooper et al. 2026).
+- Decay releases staggered pulses: nitrogen availability rises as lignin breaks down and nitrogen-fixing bacteria colonise the wood, and calcium rises, while potassium leaches early, so a log feeds the soil different nutrients at different stages (Mallen-Cooper et al. 2026; Laiho & Prescott 2004).
+- Soil beside coarse woody debris in degraded eucalypt woodland is significantly higher in carbon, nitrogen, phosphorus, and nitrate, so a fallen log builds a fertile patch around itself (Goldin & Hutchinson 2013); in semi-arid mulga, contour-stacked branch piles trapped soil, water, and litter and raised soil nitrogen, carbon, infiltration, respiration, and fauna from bare ground (Tongway & Ludwig 1996).
+
+#### Deadwood as seedbed and nurse log
+
+- Seedlings establish and survive better on fallen wood than on bare, compacted, or erosion-prone ground: tree seedlings were significantly denser on fallen logs than adjacent soil in Tasmanian forest, with reduced litter cover, more moss, and lower bulk density the likely drivers (McKenny & Kirkpatrick 1999; Killey et al. 2010).
+- Decaying wood holds moisture: surface soil beside coarse woody debris in cleared eucalypt woodland dried about 40 per cent more slowly than away from it, buffering the dry microsites where seedlings otherwise fail (Goldin & Hutchinson 2014).
+- Woody debris also buffers temperature and moisture extremes and captures seed, generating distinct plant communities around it, and acts as a nursery for litter accumulation and fungal growth a cleared stand loses for decades (Mallen-Cooper et al. 2026; Manning, Cunningham & Lindenmayer 2013).
+
+#### Size, decay class, and benchmark loads
+
+- Larger and older pieces do more: diversity rose ~15 per cent and abundance ~15 per cent per extra 10 cm of debris diameter and abundance ~14 per cent per decade on the ground, because large pieces hold distinct bark, sapwood, and heartwood substrates and pass through a long decomposer succession (Mallen-Cooper et al. 2026).
+- Large senescing trees supply most of the wood: a 100 cm diameter tree is ~10 times more likely to produce fallen debris than a 50 cm tree and produces ~10 times the volume, a Yellow Box can take over 200 years to reach that size, and one fallen bole 1 m across and 10 m long holds ~10 m3 of coarse woody debris (Killey et al. 2010).
+- Benchmark fallen-branch loads for temperate Yellow Box and Red Gum woodland modelled at ~7.0 to 11.9 m3/ha, driven by large senescing trees (Killey et al. 2010); Australian forest-floor CWD ranges ~19 t/ha in woodland to ~134 t/ha in tall eucalypt forest, and eucalypt wood decays slowly (95 per cent decomposition takes ~7 years for *E. regnans* but up to ~375 years for *E. camaldulensis*), so large logs persist and feed the soil for centuries (Woldendorp & Keenan 2005).
+- On south-eastern Australian River Red Gum floodplains current CWD averages ~19 t/ha, only ~15 per cent of an estimated pre-European ~125 t/ha, and full restoration would need the fallen-wood equivalent of ~3.3 to 3.4 million large River Red Gums (Mac Nally et al. 2002).
+
+#### Urban deadwood retention and translocation
+
+- Lightly managed urban stands can be deadwood refugia: random urban forest held a median ~10.1 m3/ha dead wood and high-value urban stands ~88.2 m3/ha (approaching semi-natural forest), so the practical lever is simply to leave more fallen or cut trees in place (Korhonen et al. 2020).
+- Retaining natural deadwood is the priority because added debris does not fully reproduce natural wood fall, and managers should favour the large pieces that persist, since deadwood is routinely lost to firewood, access, and perceived fire risk (Mallen-Cooper et al. 2026).
+- Where stands cannot yet supply their own wood, translocation and accelerated formation bridge the centuries-long gap: 2,000 tonnes of coarse woody debris sourced from removed Canberra street-tree eucalypts raised reptile abundance within four years, using large logs to mimic the slowest-forming debris (Manning, Cunningham & Lindenmayer 2013); translocating large deadwood to a compensation site rebuilt loads to ~20 m3/ha, the threshold for high saproxylic richness, a principle the authors extend to urban and infrastructure development (Tranberg et al. 2024).
+- Translocation adds deadwood without felling living trees, so those trees mature and supply higher-quality wood later, and where old trees cannot be moved, veteranisation such as bark stripping accelerates deadwood and microhabitat formation in place (Tranberg et al. 2024).
+
+#### Litter and self-mulching (the tree feeding its own root zone)
+
+- Raking away a tree's own leaf litter cut soil decomposition 17 per cent and soil carbon up to 24 per cent, a legacy effect that re-retaining leaves did not reverse in 1-2 years (Ferlauto, Schmitt & Burghardt 2024); a large eucalypt drops ~10 times more litter under its crown than adjacent grass (12.5 vs 1.27 t/ha), building a fertile nutrient island around its own trunk (McElhinny et al. 2009).
+
+#### Best examples
+
+- The "living dead" woodland that self-recruits once we stop fertilising it: across 800,000 ha, removing superphosphate and switching to fast-rotational grazing lifted regeneration ~4-fold, best on poor soils (Fischer et al. 2009).
+- River Red Gum seeding even-aged strips along a receding flood, then needing flooding roughly every three years to persist, so delivering environmental water is itself the recruitment intervention (Di Stefano 2002; Catelotti et al. 2015).
+- A felled Canberra street-tree's afterlife: 2,000 t of its eucalypt wood, laid down as logs, raised reptile abundance within four years where decay alone would have taken a century (Manning, Cunningham & Lindenmayer 2013).
+- The floodplain's missing forest of fallen wood: today's ~19 t/ha is ~15 per cent of the pre-European ~125 t/ha, a deficit equal to the fallen wood of ~3.3 million large River Red Gums (Mac Nally et al. 2002).
+
+#### References (section E)
+
+Killey, P., McElhinny, C., Rayner, I. & Wood, J. 2010. Modelling fallen branch volumes in a temperate eucalypt woodland: implications for large senescent trees and benchmark loads of coarse woody debris. *Austral Ecology* 35(8): 956-968. · Mallen-Cooper, M., Vernon, M. & Eldridge, D.J. 2026. Plant and soil function increase with larger and older coarse woody debris. *Global Ecology and Biogeography* 35(3): e70222. · Laiho, R. & Prescott, C.E. 2004. Decay and nutrient dynamics of coarse woody debris in northern coniferous forests: a synthesis. *Canadian Journal of Forest Research* 34(4): 763-777. · Goldin, S.R. & Hutchinson, M.F. 2013. Coarse woody debris modifies surface soils of degraded temperate eucalypt woodlands. *Plant and Soil* 370: 461-477. · Goldin, S.R. & Hutchinson, M.F. 2014. Coarse woody debris reduces the rate of moisture loss from surface soils of cleared temperate Australian woodlands. *Soil Research* 52(7): 637-644. · Tongway, D.J. & Ludwig, J.A. 1996. Rehabilitation of semiarid landscapes in Australia. I. Restoring productive soil patches. *Restoration Ecology* 4(4): 388-397. · McKenny, H.J.A. & Kirkpatrick, J.B. 1999. The role of fallen logs in the regeneration of tree species in Tasmanian mixed forest. *Australian Journal of Botany* 47(5): 745-753. · Manning, A.D., Cunningham, R.B. & Lindenmayer, D.B. 2013. Bringing forward the benefits of coarse woody debris in ecosystem recovery under different levels of grazing and vegetation density. *Biological Conservation* 157: 204-214. · Tranberg, O., et al. 2024. Translocation of deadwood in ecological compensation. *Ambio* 53: 482-496. · Korhonen, A., et al. 2020. Stand characteristics and dead wood in urban forests. *Landscape and Urban Planning* 201: 103855. · Woldendorp, G. & Keenan, R.J. 2005. Coarse woody debris in Australian forest ecosystems: a review. *Austral Ecology* 30(8): 834-843. · Mac Nally, R., Parkinson, A., Horrocks, G. & Young, M. 2002. Current loads of coarse woody debris on southeastern Australian floodplains. *Restoration Ecology* 10(4): 627-635. · Rawlings, K., Freudenberger, D. & Carr, D. 2010. *A Guide to Managing Box Gum Grassy Woodlands.* DEWHA, Canberra. · Di Stefano, J. 2002. River red gum (*Eucalyptus camaldulensis*): a review of ecosystem processes, seedling regeneration and silvicultural practice. *Australian Forestry* 65(1): 14-22. · Fischer, J., et al. 2009. Reversing a tree regeneration crisis in an endangered ecoregion. *PNAS* 106(25): 10386-10391. · Spooner, P. & Briggs, S.V. 2008. Woodlands on farms in southern NSW: vegetation changes after fencing. *Ecological Management & Restoration* 9(1): 33-41. · Prober, S.M. & Thiele, K.R. 2005. Restoring Australia's temperate grasslands and grassy woodlands. *Ecological Management & Restoration* 6(1): 16-27. · Dorrough, J. & Moxham, C. 2005. Eucalypt establishment in agricultural landscapes. *Biological Conservation* 123: 55-66. · Gibbons, P., et al. 2008. The future of scattered trees in agricultural landscapes. *Conservation Biology* 22(5): 1309-1319. · Toh, I., Gillespie, M. & Lamb, D. 1999. The role of isolated trees in facilitating tree seedling recruitment at a degraded sub-tropical rainforest site. *Restoration Ecology* 7(3): 288-297. · Manning, A.D., Fischer, J. & Lindenmayer, D.B. 2006. Scattered trees are keystone structures. *Biological Conservation* 132: 311-321. · Catelotti, K., et al. 2015. Inundation requirements for persistence and recovery of river red gums. *Biological Conservation* 184: 346-356. · Ferlauto, M., Schmitt, L. & Burghardt, K. 2024. Legacy effects of long-term autumn leaf litter removal. *Plants, People, Planet* 6(4): 875-884. · McElhinny, C., et al. 2009. Variation in litter under individual tree crowns. *Austral Ecology*.
+
+---
+
+## Non-native tree value + non-native fungal connections in cities
+
+
+### Mycorrhizal networks and soil biology in cities
+
+- **What networks do**: shared fungal mycelium links trees and carries carbon, water, nitrogen, phosphorus, and defence signals along source-sink gradients; in old-growth Douglas-fir, single *Rhizopogon* genets linked up to 19 trees, with the largest and oldest trees the most-connected hubs.[^gorzelak2015][^beiler2010] Mycorrhizal fungi are up to a third of soil microbial biomass and supply up to 80 per cent of a tree's nitrogen.[^stevenson2020] Evidence status: transfer occurs, magnitude contested.
+- **Inoculation is unreliable**: applying inoculum has not always led to significant differences; soil-injected *Pisolithus* on established street trees gave no growth benefit without fertiliser, and across 28 commercial inoculants on three continents, 84 per cent produced no colonisation in sterile soil and benefit appeared in just 1 of 25 non-sterile treatments. Urban soils are often already colonised by competitive native fungi, so inoculum is rarely the limiting factor. Evidence status: emerging and largely negative.
+- **What does work**: keep legacy and veteran trees and their soil as living inoculum; clearcutting cut ectomycorrhizal refuge cover from 80 to 5 per cent in a year, and seedling colonisation was highest within 5 m of a retained tree. Soil decompaction, woodchip mulch, biochar and compost can rebuild fungal habitat; in Melbourne, biochar and compost each improved soil properties and *Corymbia maculata* growth, with no combined synergy.[^sommerville2020] Evidence status: established.
+- **The critique to cite carefully**: Karst, Jones and Hoeksema reviewed 26 field studies and found three popular claims overstated: that networks are widespread, that resource transfer boosts seedling performance, and that mother trees preferentially feed offspring. They do not deny that networks exist. Carbon transfer is real but usually small relative to a tree's own photosynthesis. Use cautious, non-anthropomorphic framing.[^karst2023][^henriksson2023]
+- **Urban conditions suppress the connections**: sealing, compaction, salt, and pollution reduce mycorrhizal colonisation, so urban trees host networks at lower levels than rural ones (Stevenson et al. 2020; UFUG 2023).
+- **Best examples**: the 19-tree *Rhizopogon* map; "keep the elders, keep the network" (80 per cent to 5 per cent); rebuild soil to gain up to 84 per cent more canopy; buyer-beware evidence on bottled fungi (84 per cent failure).
+- **Gap**: few field trials on broadleaf street trees; almost none measure network re-formation after urban soil rehab.
+
+**References**: Gorzelak et al. 2015 (AoB Plants 7:plv050); Beiler et al. 2010 (New Phytologist 185:543); Karst, Jones & Hoeksema 2023 (Nat Ecol Evol 7:501); Klein et al. 2024 (response); Koziol et al. 2025 (New Phytologist); Smith / A&UF 2003 (29:107); Simard et al. 2020 (Frontiers Forests & Global Change 3:620436); Sommerville, Farrell, May & Livesley 2020 (Sci Total Environ 706:135736); Layman et al. 2016; Stevenson et al. 2020; Jim 2023 (Urban Ecosystems, rootability/soil husbandry).
+
+### Value of exotics (and where natives still win)
+
+- **The case for value**: non-natives can hold conservation value as habitat/food for rare species, functional substitutes, and ecosystem-function providers, and may gain value under future climate (Schlaepfer, Sax & Olden 2011; Schlaepfer 2018). Novel urban ecosystems can be better adapted to novel conditions, and introduced species are often "passengers rather than drivers" of native decline (Kowarik 2011). Reconciliation ecology: conserve biodiversity in altered habitats, not only reserves (Rosenzweig 2003; Lundholm & Richardson 2010).
+- **Food and habitat resources**: exotic urban trees supply heavy floral resources (a single *Acer rubrum* ~1,350 flowers/m3, *Tilia* up to 2,400/m2) (Somme et al. 2016), and exotic oak/sycamore sustained native birds year-round (Gray & Van Heezik 2016). Sheffield's exotic-dominated gardens held >900 native invertebrate species/ha (Hitchmough 2011).
+- **Honest counter-evidence (natives outperform for native fauna)**: UK native oak supported up to 286 insect species, non-native plane just 1 (Southwood 1961); a 70% native-biomass threshold was needed to sustain the insectivorous Carolina chickadee (Narango, Tallamy & Marra 2018); +30% native street trees gave +11% bird species in Canberra (Ikin et al. 2013); introduced hedgerows held 96% less caterpillar biomass (Richard, Tallamy & Mitchell 2019). The doc's existing line (natives are the better default, exotics still worth retaining) is well supported.
+
+### Non-native fungal connections in cities
+
+- **Urban ECM networks**: exotic ectomycorrhizal trees do form networks in cities, but urban ECM diversity is impoverished (sealing blocks dispersal, salt, low organic matter, buried pipes "in spatial conflict" with ECM networks); colonisation rates can still match forests (Authier, Violle & Richard 2022). Their design brief is "soil corridors for underground cities": interconnected planted pits and native-fungus inoculation, favouring high-connectivity hub hosts (oaks, beeches). Evidence status: emerging.
+- **Pine co-invasion**: introduced pines are usually incompatible with local fungi and rely on co-introduced suilloids (*Suillus*, *Rhizopogon*); a single ECM fungus can enable a pine invasion, and lack of mutualists stalls it (Hayward et al. 2015; Nuñez, Horton & Simberloff 2009). Co-introduced communities are depauperate (often <20, sometimes 1-4 species, vs 100+ at home).
+- **Eucalypts plug into native fungi**: planted *Eucalyptus globulus* in NW Spain associated with 26 ECM taxa, only 3 co-introduced Australian aliens, the majority novel partnerships with local fungi, with highest colonisation inside native oak forest (Santolamazza-Carbone et al. 2019) — but the co-introduced *Descolea maculata* then colonised native plants (a fungal co-invasion risk).
+- **Best examples**: Californian urban butterflies now dependent on exotic larval plants (Shapiro 2002); the oak that is both fungal hub and faunal champion (286 insects vs the plane's 1); the pine paradox (invades only with its suilloid entourage); "soil corridors" written from the fungi's needs.
+- **Gap**: native-fauna-use-of-exotic-street-trees data are thin for Melbourne specifically; no study measures functional ECM networks of exotic urban trees in Australian soils.
+
+**References**: Schlaepfer, Sax & Olden 2011 (Conservation Biology 25:428); Schlaepfer 2018 (PLoS Biology 16:e2005046); Kowarik 2011 (Environmental Pollution 159:1974); Rosenzweig 2003; Lundholm & Richardson 2010 (J Applied Ecology 47:966); Somme et al. 2016 (Urban Ecosystems 19:1149); Gray & Van Heezik 2016 (Urban Ecosystems 19:315); Hitchmough 2011 (LUP 100:380); Liu & Slik 2022 (LUP 218:104304); Southwood 1961; Narango, Tallamy & Marra 2018 (PNAS 115:11549); Ikin et al. 2013; Richard, Tallamy & Mitchell 2019; Authier, Violle & Richard 2022 (Frontiers Plant Science 13:900231); Hayward et al. 2015 (Ecology 96:1438); Nuñez, Horton & Simberloff 2009 (Ecology 90:2352); Dickie et al. 2017 (AoB Plants 9:plw084); Santolamazza-Carbone, Durán-Otero & Calviño-Cancela 2019 (Scientific Reports 9:5868).
+
+
+## Interventions to create a unified fungal network in urban conditions
+
+**On the named article**: Harden and Moreno-Mateos do not show that a unified urban Common Mycorrhizal Network already exists. They propose an urban design hypothesis: if cities redesign soil, paving, planting composition, and underground infrastructure, then street trees, tree pits, planters, parks, and groves may become connected fungal habitat rather than isolated planting cells.[^harden2026] In this section, "unified fungal network" should therefore mean a designed, testable mosaic of connected fungal conditions, not a single seamless "wood-wide web" across the city.
+
+### What a unified network can and cannot mean
+
+- **Network transfer is possible, but contested in scale**: mycorrhizal mycelia can link plants and carry nutrients, water, carbon, defence signals, and allelochemicals, but the strength, ubiquity, and ecological importance of these transfers remain debated (Gorzelak et al. 2015; Klein et al. 2023; Karst, Jones & Hoeksema 2023).
+- **Carbon transfer is not the whole story**: plants may route a large share of fixed carbon to fungal partners, and inter-tree carbon transfer has been measured, but Klein et al. frame the effect as real and modest, not a substitute for a tree's own photosynthesis.
+- **Urban CMNs are less proven than forest CMNs**: Harden and Moreno-Mateos repeatedly frame urban mycorrhizal connectivity as underexplored. The design claim is therefore not "networks will communicate for us", but "soil, plants, and infrastructure can be arranged so fungal connection has a chance to form and can be measured."
+- **AM and ECM fungi do not automatically merge**: arbuscular mycorrhizal (AM) and ectomycorrhizal (ECM) fungi are mostly distinct guilds. A unified urban system must work through compatible patches and interface species, not by assuming every tree can plug into every other tree (Stevenson et al. 2020; Teste, Jones & Dickie 2020; Harden and Moreno-Mateos 2026).
+
+### 1. Create fungal-ready ground before adding fungi
+
+- **Soil volume and rootable space first**: suspended pavements, structural cells, root paths, trenches, and structured soils create the physical space for roots. Harden and Moreno-Mateos treat root expansion as the precondition for mycelial colonisation and tree-to-tree connectivity.[^harden2026]
+- **Permeability plus organic matter**: permeable asphalt, concrete grids, and pavers can deliver water and oxygen to the root-fungal zone, but they can also stop leaf litter and plant debris from reaching detritivorous fungi. The intervention is therefore permeability plus mulch, litter return, compost, deadwood, or other organic inputs, not permeability alone.[^harden2026]
+- **Soil chemistry and stress filters**: salinity, heavy metals, altered pH, low organic matter, and compaction can suppress colonisation or shift fungal communities. Fungal-network design therefore belongs with decompaction, stormwater infiltration, organic-matter return, and contamination management, not only with planting layout (Stevenson et al. 2020; Harden and Moreno-Mateos 2026).
+
+### 2. Link isolated planting cells with soil conduits
+
+- **Infrastructure as underground crossing**: Harden and Moreno-Mateos explicitly model soil conduits on wildlife overpasses and pollinator corridors. The conduit is an urban infrastructure device that lets roots and mycelium cross the hard city matrix between tree pits, street trees, planters, parks, and groves.[^harden2026]
+- **Material form**: the proposed conduit is an open-air trench or root-path system with horticultural soil, organic mulch, a grate for air and pedestrian passage, drainage material below, and enough depth and width to support roots and fungal growth. The review's prototype details include about 30 cm of mulch-covered soil, crushed-stone drainage, and a narrow linear path sized to fit between street trees.[^harden2026]
+- **Design questions**: the conduit is not yet a proven technology. Open questions include how many conduits are needed, how long and wide they must be, whether they should carry the same or different mycorrhizal types as adjacent plants, and whether connected soils actually develop higher inoculum potential than unconnected soils.[^harden2026]
+
+### 3. Organise plantings by mycorrhizal compatibility
+
+- **Same-guild patches**: AM-associated trees and understorey plants can be grouped to reinforce AM networks; ECM-associated trees and shrubs can be grouped to reinforce ECM networks. Harden and Moreno-Mateos give AM overstorey-understorey examples and separate ECM configurations, then link patches through conduits.[^harden2026]
+- **Species selection as fungal infrastructure**: tree choice is not only canopy, shade, drought tolerance, or heritage. It also decides which fungal guild can plausibly form belowground. Eucalypts, oaks, pines, willows, and poplars are ECM or dual; many other urban trees are AM (Teste, Jones & Dickie 2020; Shi et al. 2023).
+- **Avoid false universality**: an AM avenue, an ECM grove, and a mixed urban park may each support fungal life, but they are not automatically one compatible network. The planting plan has to specify where same-guild reinforcement is intended and where cross-guild interfaces are being tested.
+
+### 4. Bridge incompatible fungal types with dual-mycorrhizal plants
+
+- **Bridge plants, not magic converters**: the "converter" idea is useful if framed as an interface. Dual-mycorrhizal plants can associate with both AM and ECM fungi, so they may help expand or connect fungal-network patches that would otherwise remain guild-specific.[^harden2026]
+- **Candidate bridge genera**: Harden and Moreno-Mateos, drawing on Teste et al., list *Acacia*, *Alnus*, *Eucalyptus*, *Fraxinus*, *Populus*, *Salix*, *Shorea*, and *Uapaca* as dual-mycorrhizal plant groups. For Melbourne, *Eucalyptus* and *Acacia* are especially important because they can be both indigenous habitat trees and possible fungal interface plants.[^harden2026]
+- **Unified network as mosaic**: the practical target is a linked mosaic: AM patches, ECM patches, dual-mycorrhizal interface plants, and soil conduits that physically join them. This is stronger than isolated tree pits, but still more honest than claiming one universal fungal web.
+
+### 5. Use inoculation as a monitored support, not a shortcut
+
+- **Compatibility controls success**: inoculation may improve drought tolerance, disease resistance, and plant physiology, but successful inoculation depends on matching host plant, fungal species, soil conditions, and existing indigenous inoculum potential.[^harden2026]
+- **Commercial inoculants are risky evidence**: the review notes little-to-no effect, antagonism with fertiliser, ineffective commercial products compared with rural forest soil, and possible harms from invasive isolates, pathogens, or competition with resident fungi.[^harden2026]
+- **Melbourne eucalypt complication**: much of the ECM diversity supporting eucalypts is hypogeous and animal-dispersed. Potoroos and bettongs disperse viable spores through digging and dung; Tasmanian bettong digging rose up to ten-fold after fire; and ECM has been raised on Eucalyptus roots from potoroo dung (Maser, Claridge & Trappe 2008; Claridge 1994; Johnson 1995). In the urban matrix, those animal-fungal pathways are largely absent, so inoculation or donor-soil work may be replacing a missing animal relation, not simply adding a product.
+
+### Design implications for keeping urban trees fungally connected
+
+- Retain legacy and large old trees as living fungal reservoirs and the most plausible local inoculum source for nearby plantings (Beiler et al. 2010; Stevenson et al. 2020).
+- Rehabilitate soil rather than sterilise it: decompaction plus organic matter raised canopy and sped establishment over six years (Layman et al. 2016).
+- Preserve soil continuity, avoid wholesale soil stripping at planting, feed soil biota with mulch, compost, biochar, litter, and deadwood, and design belowground conduits rather than isolated pits (Robertson 2020; Turner et al. 2025; Harden and Moreno-Mateos 2026).
+- Pair material continuity with biological compatibility: plant AM and ECM patches deliberately, then use dual-mycorrhizal species as possible bridge plants where fungal guilds meet (Teste et al. 2020; Harden and Moreno-Mateos 2026).
+- Treat fungal-network infrastructure as a trial: compare connected and unconnected soils for inoculum potential, fungal colonisation, tree stress, water status, soil organic matter, pathogen risk, and evidence of functional plant-fungal exchange.[^harden2026]
+- **Caveat for the paper**: donor-soil, inoculation, bridge-planting, and soil-conduit interventions are biologically reasonable but the urban evidence base is thin and outcomes inconsistent, so present them as promising and testable, not proven (Stevenson et al. 2020; Harden and Moreno-Mateos 2026). Evidence status: emerging/speculative.
+
+### Best examples
+
+- Soil conduits as underground wildlife crossings: street-tree pits become less like pots and more like patches joined by belowground corridors, a direct translation of animal bridge logic into fungal infrastructure (Harden and Moreno-Mateos 2026).
+- Bridge planting as fungal interface: *Eucalyptus* and *Acacia* can be read as possible AM/ECM interface plants, not just as canopy or understorey species, because they may help connect otherwise incompatible fungal guilds (Teste et al. 2020; Harden and Moreno-Mateos 2026).
+- A bettong's nose as a forester's tool: post-fire, Tasmanian bettong digging for underground truffles jumped up to tenfold within a month, pulse-dispersing the ectomycorrhizal fungi eucalypts regenerate with, a tight animal-fungus-fire-tree loop almost entirely missing from city soils (Johnson 1995).
+- Inoculation by faeces: ectomycorrhizas have been raised on Eucalyptus roots directly from long-nosed potoroo dung, the clearest sign that a marsupial's gut is part of the eucalypt's root system (Maser, Claridge & Trappe 2008).
+- Mycorrhiza as feminist figure: an interview frames María Lugones's anti-purity relational philosophy through mycelial networks, exactly the porous, connected-being move the persona paper can lean on (Veronelli & Zurn 2025).
+
+**References**: Harden and Moreno-Mateos 2026 (Ecological Restoration 44:23); Gorzelak et al. 2015 (AoB Plants 7:plv050); Klein, Rog, Livne-Luzon, van der Heijden & Körner 2023 (Open Research Europe 3:168); Karst, Jones & Hoeksema 2023 (Nature Ecology & Evolution 7:501); Henriksson et al. 2023 (New Phytologist 239:19); Stevenson et al. 2020 (Plants People Planet 2:482); Teste, Jones & Dickie 2020 (New Phytologist 225:1835); Shi, Wang & Wang 2023 (Annual Review of Plant Biology 74); Maser, Claridge & Trappe 2008 (*Trees, Truffles, and Beasts*, Rutgers UP); Claridge et al. 1994 (Australian Journal of Ecology 19); Johnson 1995 (Oecologia 104:467); Beiler et al. 2010 (New Phytologist 185:543); Sheldrake 2020 (*Entangled Life*); Tsing 2011 (Australian Humanities Review 50 / MUSE 407437) & 2015 (*The Mushroom at the End of the World*); Barnett 2023 (Journal of Ecohumanism 2:1); DeFalco 2024 (*Palgrave Handbook of Literature and Aging*); Veronelli & Zurn 2025 (philoSOPHIA 15:61); Cavanagh 2020 (The Conversation); Pouliot 2018 (*The Allure of Fungi*, CSIRO); Robertson 2020 (Australian Geographer 51:4); Turner, Hill & Abramovic 2025 (Local Environment 30); Layman et al. 2016 (UFUG 16:25).
+
+**Gap**: Harden and Moreno-Mateos frame soil conduits and bridge-planting as design hypotheses requiring systematic testing; no Melbourne-specific study of urban-eucalypt mycorrhizal status, conduit performance, or inoculation outcome exists, so the urban-disconnection claim is a reasoned inference.
+
+### References
+
+[^banks1997]: Banks, John C. G. "Tree Ages and Ageing in Yellow Box." In *The Coming of Age: Forest Age and Heritage Values*, edited by John Dargavel, 17–28. Canberra: Environment Australia, 1997.
+
+[^sillett2015]: Sillett, Stephen C., Robert Van Pelt, Allyson L. Carroll, Russell D. Kramer, Anthony R. Ambrose, and D'Arcy Trask. "Biomass and Growth Potential of *Eucalyptus regnans* up to 100 m Tall." *Forest Ecology and Management* 348 (2015): 78–91. https://doi.org/10.1016/j.foreco.2015.03.046.
+
+[^roudavski2021]: Roudavski, Stanislav, and Ashley Davis. "Respect for Old Age and Dignity in Death: The Case of Urban Trees." In *Proceedings of the Society of Architectural Historians Australia and New Zealand 37: What If? What Next? Speculations on History's Futures*, edited by Kate Hislop and Hannah Lewi, 638–652. Perth: SAHANZ, 2021. https://doi.org/10/k9gh.
+
+[^stokes2002]: Stokes, Alexia, Thierry Fourcaud, Jan Hruska, Jan Cermak, Nadezhda Nadyezhdina, Valentin Nadyezhdin, and Luc Praus. "An Evaluation of Different Methods to Investigate Root System Architecture of Urban Trees in Situ: I. Ground-Penetrating Radar." *Journal of Arboriculture* 28, no. 1 (2002): 2–10.
+
+[^ibarra2020]: Ibarra, José Tomás, Fernando J. Novoa, Hélène Jaillard, and Tomás A. Altamirano. "Large Trees and Decay: Suppliers of a Keystone Resource for Cavity-Using Wildlife in Old-Growth and Secondary Andean Temperate Forests." *Austral Ecology* 45, no. 8 (2020): 1135–1144. https://doi.org/10.1111/aec.12943.
+
+[^stagoll2012]: Stagoll, Karen, David B. Lindenmayer, Emma Knight, Joern Fischer, and Adrian D. Manning. "Large Trees Are Keystone Structures in Urban Parks." *Conservation Letters* 5, no. 2 (2012): 115–122. https://doi.org/10.1111/j.1755-263X.2011.00216.x.
+
+[^lindenmayer2012]: Lindenmayer, David B., William F. Laurance, and Jerry F. Franklin. "Global Decline in Large Old Trees." *Science* 338, no. 6112 (2012): 1305–1306. https://doi.org/10.1126/science.1231070.
+
+[^gorzelak2015]: Gorzelak, Monika A., Amanda K. Asay, Brian J. Pickles, and Suzanne W. Simard. "Inter-Plant Communication through Mycorrhizal Networks Mediates Complex Adaptive Behaviour in Plant Communities." *AoB Plants* 7 (2015): plv050. https://doi.org/10.1093/aobpla/plv050.
+
+[^beiler2010]: Beiler, Kevin J., Daniel M. Durall, Suzanne W. Simard, Sheri A. Maxwell, and Annette M. Kretzer. "Architecture of the Wood-Wide Web: *Rhizopogon* spp. Genets Link Multiple Douglas-Fir Cohorts." *New Phytologist* 185, no. 2 (2010): 543–553. https://doi.org/10.1111/j.1469-8137.2009.03069.x.
+
+[^stevenson2020]: Stevenson, Philip C., Martin I. Bidartondo, Robert Blackhall-Miles, Timothy R. Cavagnaro, Amanda Cooper, Benoît Geslin, Hauke Koch, et al. "The State of the World's Urban Ecosystems: What Can We Learn from Trees, Fungi, and Bees?" *Plants, People, Planet* 2, no. 5 (2020): 482–498. https://doi.org/10.1002/ppp3.10143.
+
+[^bennett1994]: Bennett, Andrew F., Lindy F. Lumsden, and Angie O. Nicholls. "Tree Hollows as a Resource for Wildlife in Remnant Woodlands: Spatial and Temporal Patterns across the Northern Plains of Victoria, Australia." *Pacific Conservation Biology* 1, no. 3 (1994): 222–235. https://doi.org/10.1071/PC940222.
+
+[^leroux2014]: Le Roux, Darren S., Karen Ikin, David B. Lindenmayer, Adrian D. Manning, and Philip Gibbons. "The Future of Large Old Trees in Urban Landscapes." *PLOS ONE* 9, no. 6 (2014): e99403. https://doi.org/10.1371/journal.pone.0099403.
+
+[^adkins2006]: Adkins, Matthew F. "A Burning Issue: Using Fire to Accelerate Tree Hollow Formation in *Eucalyptus* Species." *Australian Forestry* 69, no. 2 (2006): 107–113. https://doi.org/10.1080/00049158.2006.10676236.
+
+[^melbourne2011diversity]: City of Melbourne. *Urban Forest Diversity Guidelines: 2011 Tree Species Selection Strategy for the City of Melbourne*. Melbourne: City of Melbourne, 2011.
+
+[^deccw2011]: Department of Environment, Climate Change and Water NSW. *National Recovery Plan for White Box–Yellow Box–Blakely's Red Gum Grassy Woodland and Derived Native Grassland: A Critically Endangered Ecological Community*. Sydney: Department of Environment, Climate Change and Water New South Wales, 2011.
+
+[^mullaney2015]: Mullaney, Jennifer, Terry Lucke, and Stephen J. Trueman. "A Review of Benefits and Challenges in Growing Street Trees in Paved Urban Environments." *Landscape and Urban Planning* 134 (2015): 157–166. https://doi.org/10.1016/j.landurbplan.2014.10.013. [Verify author initials and pagination against the source.]
+
+[^hilbert2019]: Hilbert, Deborah R., Lara A. Roman, Andrew K. Koeser, Jess Vogt, and Natalie S. van Doorn. "Urban Tree Mortality: A Literature Review." *Arboriculture & Urban Forestry* 45, no. 5 (2019): 167–200. https://doi.org/10.48044/jauf.2019.015. [Verify author list and pagination against the source.]
+
+[^roman2021]: Roman, Lara A., et al. "The Cost of Urban Trees: Carbon, Establishment, and the Time to Net Benefit." *Ambio* 50, no. 3 (2021): 615–630. [Verify author list, title, pagination, and DOI against the source; the agent pack lists Roman et al. 2021, Ambio 50(3).]
+
+[^grossmann2020]: Großmann, J., et al. "The Benefits of Tree Wounds: Microhabitat Development in Urban Trees as Affected by Intensive Tree Maintenance." *Urban Forestry & Urban Greening* 55 (2020): 126817. https://doi.org/10.1016/j.ufug.2020.126817. [Author list to verify against the source.]
+
+[^avolio2018]: Avolio, Meghan L., et al. "Urban Plant Diversity Is Driven by Nurseries and Homeowner Choice More than Ecology." *Ecological Monographs* 88, no. 2 (2018): 259–276. [Verify author list, title, pagination, and DOI against the source; the agent pack lists Avolio et al. 2018, Ecological Monographs 88(2).]
+
+[^livingmelbourne2019]: The Nature Conservancy and Resilient Melbourne. *Living Melbourne: Our Metropolitan Urban Forest*. Melbourne: The Nature Conservancy and Resilient Melbourne, 2019.
+
+[^healy2022]: Healy, Mark, et al. "Long-Term Urban Tree Canopy Change Tracks Boom and Bust Economic Cycles." *Environmental Management* 70, no. 1 (2022). [Verify author list, title, article number, and DOI against the source; the agent pack lists Healy et al. 2022, Environmental Management 70(1).]
+
+[^rutten2024]: Rutten, Julian, Alexander Holland, and Stanislav Roudavski. "Plants as Designers of Better Futures: Can Humans Let Them Lead?" *Plant Perspectives* 2, no. 1 (2024): 92–139. https://doi.org/10.3197/whppp.63845494909729.
+
+[^lindenmayer2017large]: Lindenmayer, David B., and William F. Laurance. "The Ecology, Distribution, Conservation and Management of Large Old Trees." *Biological Reviews* 92, no. 3 (2017): 1434–1458. https://doi.org/10.1111/brv.12290.
+
+[^leroux2018]: Le Roux, Darren S., Karen Ikin, David B. Lindenmayer, Adrian D. Manning, and Philip Gibbons. "The Value of Scattered Trees for Wildlife: Contrasting Effects of Landscape Context and Tree Size." *Diversity and Distributions* 24, no. 1 (2018): 69–81. https://doi.org/10.1111/ddi.12658.
+
+[^caudullo2016]: Caudullo, Giovanni, and Daniele de Rigo. "*Ulmus* – Elms in Europe: Distribution, Habitat, Usage and Threats." In *European Atlas of Forest Tree Species*, edited by Jesús San-Miguel-Ayanz et al. Luxembourg: Publications Office of the European Union, 2016. https://forest.jrc.ec.europa.eu/media/atlas/Ulmus_spp.pdf.
+
+[^lorimer2011]: Lorimer, Graeme S. "Melbourne's Plant Life, Past and Present." *The Victorian Naturalist* 128, no. 5 (2011): 175–181.
+
+[^yau1982]: Yau, S. "Elms in Australia." *Arboricultural Journal* 6, no. 2 (1982): 89–96. [Verify author, exact title, and pagination against the source; the agent pack lists Yau 1982, Arboricultural Journal 6(2).]
+
+[^melbourne2012strategy]: City of Melbourne. *Urban Forest Strategy 2012–2032: Making a Great City Greener*. Melbourne: City of Melbourne, 2012.
+
+[^ranius2009]: Ranius, Thomas, Mats Niklasson, and Niclas Berg. "Development of Tree Hollows in Pedunculate Oak (*Quercus robur*)." *Forest Ecology and Management* 257, no. 1 (2009): 303–310. https://doi.org/10.1016/j.foreco.2008.09.007.
+
+[^mcnabb2011]: McNabb, Ed G., and June K. McNabb. "Day Roosts of a Powerful Owl *Ninox strenua* in Suburban Melbourne." *Australian Field Ornithology* 28, no. 1 (2011): 9–19. [Verify exact title and pagination against the source; the agent pack lists McNabb & McNabb 2011, Australian Field Ornithology 28(1).]
+
+[^yarra2017]: City of Yarra. *Urban Forest Strategy 2017–2027*. Melbourne: City of Yarra, 2017.
+
+[^roudavskiled]: Roudavski, Stanislav. "Animal-Led, Plant-Led, Microbe-Led: Letting Other Beings Lead Design." Deep Design Lab, University of Melbourne. Manuscript. [Update with final publication details.]
+
+[^frohlich2020]: Fröhlich, Arkadiusz, and Michał Ciach. "Dead Wood Resources Vary Across Different Types of Urban Green Spaces and Depend on Property Prices." *Landscape and Urban Planning* 197 (2020): 103747. https://doi.org/10.1016/j.landurbplan.2020.103747.
+
+[^mallencooper2026]: Mallen-Cooper, Max, et al. "Plant and Soil Function Increase with Larger and Older Coarse Woody Debris." *Global Ecology and Biogeography* 35 (2026): e70222. https://doi.org/10.1111/geb.70222.
+
+[^korhonen2020]: Korhonen, Aku, Juha Siitonen, D. Johan Kotze, Auli Immonen, and Leena Hamberg. "Stand Characteristics and Dead Wood in Urban Forests: Potential Biodiversity Hotspots in Managed Boreal Landscapes." *Landscape and Urban Planning* 201 (2020): 103855. https://doi.org/10.1016/j.landurbplan.2020.103855.
+
+[^bradsworth2021]: Bradsworth, Nick, John G. White, Anthony R. Rendall, Nicholas Carter, and Raylene Cooke. "Where to Sleep in the City? How Urbanisation Impacts Roosting Habitat Availability for an Apex Predator." *Global Ecology and Conservation* 27 (2021): e01494. https://doi.org/10.1016/j.gecco.2021.e01494. [Used here for the claim that powerful owls roost in indigenous, non-indigenous native, and exotic trees; the elm-notes attribution to "O'Leary et al. 2021" could not be verified and should be reconciled.]
+
+[^hannan2019]: Hannan, Lucy, Darren S. Le Roux, Richard N. C. Milner, and Philip Gibbons. "Erecting Dead Trees and Utility Poles to Offset the Loss of Mature Trees." *Biological Conservation* 236 (2019): 340–346. https://doi.org/10.1016/j.biocon.2019.06.001.
+
+[^watson2023]: Watson, David M., Melinda Cook, Rodney van der Ree, and Lee Harrison. "Returning Mistletoe to an Urban Forest: A Restoration Success Story." *Botany* (2023). https://doi.org/10/gtmdd9.
+
+[^manning2006]: Manning, Adrian D., Joern Fischer, and David B. Lindenmayer. "Scattered Trees Are Keystone Structures – Implications for Conservation." *Biological Conservation* 132, no. 3 (2006): 311–321. https://doi.org/10.1016/j.biocon.2006.04.023.
+
+[^epsdd2023]: Environment, Planning and Sustainable Development Directorate. *Nature Conservation (Loss of Mature Native Trees Key Threatening Process) Action Plan 2023*, Disallowable Instrument DI2023-230. Canberra: ACT Government, 2023.
+
+[^layman2016]: Layman, Rachel M., Susan D. Day, Daniel K. Mitchell, Yujuan Chen, J. Roger Harris, and W. Lee Daniels. "Below Ground Matters: Urban Soil Rehabilitation Increases Tree Canopy and Speeds Establishment." *Urban Forestry & Urban Greening* 16 (2016): 25–35. https://doi.org/10.1016/j.ufug.2016.01.004.
+
+[^croeser2022]: Croeser, Thami, Georgia E. Garrard, Casey Visintin, Holly Kirk, Andrew Butt, Elizabeth Taylor, and Sarah A. Bekessy. "Finding Space for Nature in Cities: The Considerable Potential of Redundant Car Parking." *npj Urban Sustainability* 2, no. 1 (2022): 27. https://doi.org/10.1038/s42949-022-00073-x. [Verify volume and DOI against Zotero.]
+
+[^ikin2015]: Ikin, Karen, Darren S. Le Roux, Laura Rayner, Nélida R. Villaseñor, Kathy Eyles, Philip Gibbons, Adrian D. Manning, and David B. Lindenmayer. "Key Lessons for Achieving Biodiversity-Sensitive Cities and Towns." *Ecological Management & Restoration* 16, no. 3 (2015): 206–214. https://doi.org/10.1111/emr.12180.
+
+[^smiley2011]: Smiley, E. Thomas. "Dead-End Stop Terminated Tree Support Cable Systems." *Arboriculture & Urban Forestry* 37, no. 2 (2011): 67–73. https://doi.org/10/grsjn2.
+
+[^parker2022]: Parker, Dan, Stanislav Roudavski, Therésa M. Jones, Nick Bradsworth, Bronwyn Isaac, Martin T. Lockett, and Kylie Soanes. "A Framework for Computer-Aided Design and Manufacturing of Habitat Structures for Cavity-Dependent Animals." *Methods in Ecology and Evolution* 13, no. 4 (2022): 826–841. https://doi.org/10/gpggfj.
+
+[^holland2024]: Holland, Alexander, and Stanislav Roudavski. "Participatory Design for Multispecies Cohabitation: By Trees, for Birds, with Humans." In *Designing More-than-Human Smart Cities: Beyond Sustainability, Towards Cohabitation*, edited by Sara Heitlinger, Marcus Foth, and Rachel Clarke, 93–128. Oxford: Oxford University Press, 2024.
+
+[^tranberg2024]: Tranberg, Olov, Anne-Maarit Hekkala, Ola Lindroos, Therese Löfroth, Mari Jönsson, Jörgen Sjögren, and Joakim Hjältén. "Translocation of Deadwood in Ecological Compensation: A Novel Way to Compensate for Habitat Loss." *Ambio* 53, no. 3 (2024): 482–496. https://doi.org/10/gthvp6.
+
+[^melbournelaneway]: City of Melbourne. *Greening Your Laneway*. Melbourne: City of Melbourne. Accessed 9 June 2026.
+
+[^canepa2022]: Canepa, Maria, Francesca Mosca, Shany Barath, Alexandre Changenet, Thomas E. Hauck, Ferdinand Ludwig, Enrica Roccotiello, Marta Pianta, Surayyn Uthaya Selvan, Verena Vogler, and Katia Perini. "Ecolopes, beyond Greening: A Multi-Species Approach for Urban Design." *AGATHÓN* 11 (2022): 238–245. https://doi.org/10.19229/2464-9309/11212022.
+
+[^croeser2025]: Croeser, Thami, Wolfgang W. Weisser, Joe Hurley, et al. "Mature Tree Removal Undermines Urban Canopy Targets." *Landscape and Urban Planning* 264 (2025). [Verify author list, exact title, article number, and DOI against the source; the agent pack lists Croeser et al. 2025, Landscape and Urban Planning 264.]
+
+[^garrard2018]: Garrard, Georgia E., Nicholas S. G. Williams, Luis Mata, Jordan Thomas, and Sarah A. Bekessy. "Biodiversity Sensitive Urban Design." *Conservation Letters* 11, no. 2 (2018): e12411. https://doi.org/10.1111/conl.12411.
+
+[^nationaltrustelm]: National Trust of Australia (Victoria). "English Elm (*Ulmus procera*), Royal Parade." Trust Trees. Accessed 9 June 2026. https://trusttrees.org.au/tree/VIC/Parkville/Royal_Parade.
+
+[^melbourne2015parkville]: City of Melbourne. *Parkville Urban Forest Precinct Plan 2015–2025*. Melbourne: City of Melbourne, 2015.
+
+[^disney2018]: Disney, Mathias I., Mateus Boni Vicari, Andrew Burt, Kim Calders, Simon L. Lewis, Pasi Raumonen, and Phil Wilkes. "Weighing Trees with Lasers: Advances, Challenges and Opportunities." *Interface Focus* 8, no. 2 (2018): 20170048. https://doi.org/10.1098/rsfs.2017.0048.
+
+[^gil2004]: Gil, Luis, Pablo Fuentes-Utrilla, Álvaro Soto, M. Teresa Cervera, and Carmen Collada. "English Elm Is a 2,000-Year-Old Roman Clone." *Nature* 431, no. 7012 (2004): 1053. https://doi.org/10.1038/4311053a.
+
+[^vicfloraulmus]: Royal Botanic Gardens Victoria. "*Ulmus procera* Salisb." *VicFlora: Flora of Victoria*. Melbourne: Royal Botanic Gardens Victoria. Accessed 9 June 2026. https://vicflora.rbg.vic.gov.au/.
+
+[^sabatini2021]: Sabatini, Francesco Maria, et al. *Old-Growth Forests in Europe: A Survey of Their Distribution, Type and Status*. Joensuu: European Forest Institute, 2021. https://efi.int/. [Table 4 gives forest maximum ages of 300 years for *Ulmus minor*, 250 for *U. laevis*, and 400 for *U. glabra*.]
+
+[^johnpatrick2022]: John Patrick Landscape Architects. *Landscape Heritage Assessment, Heritage Impact Statement: Bunbury Street, Footscray*. Prepared for Maribyrnong City Council, 2022.
+
+[^heritagevictoria2023]: Heritage Victoria and Moorabool Shire Council. *The Bacchus Marsh Avenue of Honour Management Strategy*. 2023. [States that two of Arthur's Elms at the Royal Botanic Gardens Melbourne, thought to be the oldest in Australia, are about 170 years old.]
+
+[^edwards2012]: Edwards, M. "History Lives in Old Survivor." 2012. https://communityhistoryoz.wordpress.com/.
+
+[^treelogic2022]: Tree Logic. *Tree Management Plan: Kingston Avenue of Honour*. 2022.
+
+[^kendal2016]: Kendal, Dave, and Jess Baumann. *The City of Melbourne's Future Urban Forest: Identifying the Vulnerability of the City's Forest to Climate Change*. Melbourne: Clean Air and Urban Landscapes Hub and City of Melbourne, 2016. [Rates *Ulmus procera* and *U. x hollandica* in the highest future-temperature risk category.]
+
+[^vicgov2024]: Victorian Government. *Greater Melbourne Climate Projections 2024*. Melbourne: Victorian Government, 2024.
+
+[^penton2021]: Penton, Cara E., Ian J. Radford, Leigh-Ann Woolley, Brenton von Takach, and Brett P. Murphy. "Unexpected Overlapping Use of Tree Hollows by Birds, Reptiles and Declining Mammals in an Australian Tropical Savanna." *Biodiversity and Conservation* 30, no. 10 (2021): 2977–3002. https://doi.org/10.1007/s10531-021-02231-6.
+
+[^wikicamaldulensis]: "*Eucalyptus camaldulensis*." Wikipedia. Accessed 9 June 2026. https://en.wikipedia.org/wiki/Eucalyptus_camaldulensis. [Tertiary source, corroborated against the primary references here; upgrade to a primary flora source such as VicFlora or EUCLID before submission.]
+
+[^moore2019]: Moore, Gregory M. "The River Red Gum Is an Icon of the Driest Continent." *The Conversation*, 12 July 2019. https://theconversation.com/the-river-red-gum-is-an-icon-of-the-driest-continent-118839.
+
+[^distefano2002]: Di Stefano, Julian. "River Red Gum (*Eucalyptus camaldulensis*): A Review of Ecosystem Processes, Seedling Regeneration and Silvicultural Practice." *Australian Forestry* 65, no. 1 (2002): 14–22. https://doi.org/10.1080/00049158.2002.10674848. [Verify pagination and DOI against the source; the agent pack lists Di Stefano 2002, Australian Forestry 65(1).]
+
+[^lindenmayer2017small]: Lindenmayer, David B. "Conserving Large Old Trees as Small Natural Features." *Biological Conservation* 211, part B (2017): 51–59. https://doi.org/10.1016/j.biocon.2016.11.012.
+
+[^rawlings2010]: Rawlings, Kim, David Freudenberger, and David Carr. *A Guide to Managing Box Gum Grassy Woodlands*. Canberra: Department of Sustainability, Environment, Water, Population and Communities, 2010. [Verify author given names and publisher against the source; the agent pack lists Rawlings, Freudenberger & Carr 2010.]
+
+[^dsewpc2012]: Department of Sustainability, Environment, Water, Population and Communities. *Box Gum Grassy Woodland and Derived Native Grassland: A Nationally Threatened Ecological Community*. Canberra: Australian Government, 2012. [Verify exact title and series against the source; the agent pack lists DSEWPC for the Box-Gum community guide.]
+
+[^bok2025]: Bok, Maxime, et al. "Manna and Its Role as a Wildlife Sugar Resource in *Eucalyptus*." *Plants* 14 (2025). [Verify author list, exact title, issue, article number, and DOI against the source; the agent pack lists Bok et al. 2025, Plants 14.]
+
+[^hingston2011]: Hingston, Andrew B., and Magdalena Piech. "Parrots, People and Plants: Urban Tree Removal and Habitat Loss for the Endangered Swift Parrot, *Lathamus discolor*." *Papers and Proceedings of the Royal Society of Tasmania* 145 (2011): 1–4. https://doi.org/10.26749/rstpp.145.1.
+
+[^phillips2018]: Phillips, Catherine, and Jennifer Atchison. "Seeing the Trees for the (Urban) Forest: More-than-Human Geographies and Urban Greening." *Australian Geographer* (2018). [Verify volume, issue, year, pagination, and DOI against the source; the agent pack lists Phillips & Atchison 2018, Australian Geographer.]
+
+[^straughan2022]: Straughan, Elizabeth R., Catherine Phillips, and Jennifer Atchison. "Living with Trees: Conviviality and the More-than-Human City." *Cultural Geographies* (2022). [Verify volume, issue, year, pagination, and DOI against the source; the agent pack lists Straughan, Phillips & Atchison 2022, Cultural Geographies.]
+
+[^jonsell2004]: Jonsell, Mats. "Old Park Trees: A Highly Valuable Resource for Both History and Biodiversity." *Arboriculture & Urban Forestry* 30, no. 4 (2004): 238–244.
+
+[^pearce2015]: Pearce, Lacey M., Aidan Davison, and Jamie B. Kirkpatrick. "Personal Encounters with Trees: The Lived Significance of the Private Urban Forest." *Urban Forestry & Urban Greening* 14, no. 1 (2015): 1–7. https://doi.org/10.1016/j.ufug.2014.11.005. [Verify pagination and DOI against the source; the agent pack lists Pearce, Davison & Kirkpatrick 2015, UFUG 14(1).]
+
+[^bonthoux2019]: Bonthoux, Sébastien, Romain Voisin, Sabine Bouché-Pillon, and Sébastien Chollet. "More than Weeds: Spontaneous Vegetation in Streets as a Neglected Element of Urban Biodiversity." *Landscape and Urban Planning* 185 (2019): 163–172. [Verify pagination and DOI against the source; the agent pack lists Bonthoux et al. 2019, Landscape and Urban Planning 185.]
+
+[^gibbons2002]: Gibbons, Philip, and David Lindenmayer. *Tree Hollows and Wildlife Conservation in Australia*. Collingwood: CSIRO Publishing, 2002.
+
+[^lindenmayer1993]: Lindenmayer, David B., Ross B. Cunningham, M. T. Tanton, A. P. Smith, and H. A. Nix. "The Abundance and Development of Cavities in *Eucalyptus* Trees: A Case Study in the Montane Forests of Victoria, Southeastern Australia." *Forest Ecology and Management* 60, no. 1–2 (1993): 77–104. https://doi.org/10.1016/0378-1127(93)90024-H.
+
+[^melbourneunisquares]: City of Melbourne. *University and Lincoln Squares Biodiversity Impact Assessment*. Melbourne: City of Melbourne. [Recorded hollows in 47 of 53 English elms, 255 hollows in total, many large enough for Common Brushtail Possums, which were detected mostly in and below the elms. Confirm full title, author, and date against the source PDF.]
+
+[^maser2008]: Maser, Chris, Andrew W. Claridge, and James M. Trappe. *Trees, Truffles, and Beasts: How Forests Function*. New Brunswick: Rutgers University Press, 2008.
+
+[^johnson1995]: Johnson, Christopher N. "Interactions between Fire, Mycophagous Mammals, and Dispersal of Ectomycorrhizal Fungi in *Eucalyptus* Forests." *Oecologia* 104, no. 4 (1995): 467–475. https://doi.org/10.1007/BF00341344.
+
+[^presland2005]: Presland, Gary. *The Natural History of Melbourne: A Reconstruction*. Melbourne, 2005. [Reconstructs Melbourne's precolonial grassy woodlands as co-dominated by River Red Gum and Yellow Box along floodplains and creek lines; verify full publication details.]
+
+[^teste2020]: Teste, François P., Mark D. Jones, and Ian A. Dickie. "Dual-Mycorrhizal Plants: Their Ecology and Relevance." *New Phytologist* 225, no. 5 (2020): 1835–1851. https://doi.org/10.1111/nph.16190.
+
+[^bainard2011]: Bainard, Luke D., John N. Klironomos, and Andrew M. Gordon. "The Mycorrhizal Status and Colonization of 26 Tree Species Growing in Urban and Rural Environments." *Mycorrhiza* 21, no. 2 (2011): 91–96. https://doi.org/10.1007/s00572-010-0314-6. [Verified second-hand via Harden 2026; confirm against the source.]
+
+[^authier2022]: Authier, Louise, Cyrille Violle, and Franck Richard. "Ectomycorrhizal Networks in the Anthropocene: From Natural Ecosystems to Urban Planning." *Frontiers in Plant Science* 13 (2022): 900231. https://doi.org/10.3389/fpls.2022.900231.
+
+[^santolamazza2019]: Santolamazza-Carbone, Serena, Laura Durán-Otero, and María Calviño-Cancela. "Context Dependency, Co-Introductions, Novel Mutualisms, and Host Shifts Shaped the Ectomycorrhizal Fungal Communities of the Alien Tree *Eucalyptus globulus*." *Scientific Reports* 9 (2019): 5868. https://doi.org/10.1038/s41598-019-42258-y.
+
+[^karst2023]: Karst, Justine, Melanie D. Jones, and Jason D. Hoeksema. "Positive Citation Bias and Overinterpreted Results Lead to Misinformation on Common Mycorrhizal Networks in Forests." *Nature Ecology & Evolution* 7, no. 4 (2023): 501–511. https://doi.org/10.1038/s41559-023-01986-1.
+
+[^harden2026]: Harden, Vanessa, and David Moreno-Mateos. "Designing the Fungal City: A Review of Mycorrhizal Networks in the Built Environment." *Ecological Restoration* 44, no. 1 (2026): 23–34. https://doi.org/10.3368/er.44.1.23. [Title, pagination, and DOI proposed by the research agent from the source note; verify against the published record.]
+
+[^fay2002]: Fay, Neville. "Environmental Arboriculture, Tree Ecology and Veteran Tree Management." *Arboricultural Journal* 26, no. 3 (2002): 213–238. https://doi.org/10.1080/03071375.2002.9747336.
+
+[^sebek2013]: Šebek, Pavel, Jan Altman, Michal Plátek, and Lukáš Čížek. "Is Active Management the Key to the Conservation of Saproxylic Biodiversity? Pollarding Promotes the Formation of Tree Hollows." *PLOS ONE* 8, no. 3 (2013): e60456. https://doi.org/10.1371/journal.pone.0060456.
+
+[^sommerville2020]: Sommerville, Kingsley E., Mark Farrell, Peter B. May, and Stephen J. Livesley. "Biochar and Compost Soil Amendments Affect Soil Properties and Growth of *Corymbia maculata*." *Science of the Total Environment* 706 (2020): 135736. https://doi.org/10.1016/j.scitotenv.2019.135736. [Verify exact title and author initials against the source.]
+
+[^kowarik2019]: Kowarik, Ingo, et al. "Emerging Urban Forests: Opportunities for Promoting the Wild Side of the Urban Green Infrastructure." *Sustainability* 11, no. 22 (2019): 6318. https://doi.org/10.3390/su11226318. [Verify author list, volume, and article number against the source.]
+
+[^morales2026]: Morales San Martín, N., et al. "Tiny Forests, Huge Claims: The Evidence Gap behind the Miyawaki Method for Forest Restoration." *Journal of Applied Ecology* 63 (2026): e70242. https://doi.org/10.1111/1365-2664.70242. [Verify author list against the source; the agent pack lists Morales, Fernández, Durán & Craven 2026.]
+
+[^holl2020]: Holl, Karen D., J. Leighton Reid, Rebecca J. Cole, Federico Oviedo-Brenes, Juan Abel Rosales, and Rakan A. Zahawi. "Applied Nucleation Facilitates Tropical Forest Recovery: Lessons Learned from a 15-Year Study." *Journal of Applied Ecology* 57, no. 12 (2020): 2316–2328. https://doi.org/10.1111/1365-2664.13684. [Verify exact title against the source.]

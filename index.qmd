@@ -1,24 +1,93 @@
 ---
 title: "Supplementary materials"
-subtitle: "Evidence-based modelling for nonhuman leadership"
+subtitle: "Evidence-based modelling for nonhuman leadership: can trees, birds, and lizards shape pathways to better futures?"
 ---
 
-These appendices accompany the study *Evidence-based modelling for nonhuman leadership: can trees, birds, and lizards shape pathways to better futures?* They document the concepts, places, personas, habitat data, resistance measures and pathway simulation used in the study.
+*Authors: Alexander Holland, Stanislav Roudavski, Jason Thompson and Philip Gibbons*
 
-## Appendices
+These Supplementary Materials provide additional evidence and methodological details supporting the modelling approach described in the main text. These comprise:
 
-| Appendix | Subject |
-|:--|:--|
-| [A. Glossary](appendix_A_glossary.qmd) | Terms used in the study |
-| [B. Places](appendix_B_places.qmd) | Case places and their urban context |
-| [C. Personas, capabilities and relational indicators](appendix_C_personas_capabilities_and_relational_indicators.qmd) | Persona characteristics and capability measures |
-| [D. Habitat features](appendix_D_habitat_features.qmd) | Feature origins, calibration and workflow |
-| [E. Habitat volumes](appendix_E_habitat_volumes.qmd) | Spatial representation and processing |
-| [F. Resistance](appendix_F_resistance.qmd) | Resistance measures and connectivity |
-| [G. Pathway simulation](appendix_G_pathway_simulation.qmd) | Proposals, interventions and model operation |
-| [G.1 Tree growth](appendix_G_pathway_simulation_growth-submodule.qmd) | Growth model details |
-| [G.2 Tree lifecycle phase](appendix_G_pathway_simulation_lifecycle-submodule.qmd) | Lifecycle categories and evidence |
-| [G.3 Recruit and mortality dynamics](appendix_G_pathway_simulation_recruit-mortality-submodule.qmd) | Recruitment and mortality parameters |
-| [H. Baseline woodlands](appendix_H_baseline_woodlands.qmd) | Woodland baseline categories and estimates |
+## Table of Contents
 
-Use the contents panel to move between appendices. Each page includes a page contents list for navigation within longer sections.
+### [Appendix A: Glossary](appendix_A_glossary.qmd)
+
+- [Processes](appendix_A_glossary.qmd#processes)
+- [States](appendix_A_glossary.qmd#states)
+- [Leadership](appendix_A_glossary.qmd#leadership)
+- [Inclusion](appendix_A_glossary.qmd#inclusion)
+
+### [Appendix B: Places](appendix_B_places.qmd)
+
+- [Place description](appendix_B_places.qmd#place-description)
+- [Places in context](appendix_B_places.qmd#places-in-context)
+
+### [Appendix C: Personas, capabilities and relational indicators](appendix_C_personas_capabilities_and_relational_indicators.qmd)
+
+The persona background files below are **provisional working material** and remain subject to revision.
+
+TODO: Update to integrate the working background files for each persona, which are located here:
+
+- [The Bird Persona (provisional)](persona_bird.qmd)
+- [The Tree Persona (provisional)](persona_tree.qmd)
+  - [Tree fungal research (provisional)](persona_tree_fungal-research.qmd)
+- [The Lizard Persona (provisional)](persona_lizard.qmd)
+
+Old appendix:
+
+- [Overview of personas](appendix_C_personas_capabilities_and_relational_indicators.qmd#overview-of-personas)
+- [Overview of capabilities](appendix_C_personas_capabilities_and_relational_indicators.qmd#overview-of-capabilities)
+- [Relational indicators](appendix_C_personas_capabilities_and_relational_indicators.qmd#relational-indicators)
+- [Indicator walkthrough](appendix_C_personas_capabilities_and_relational_indicators.qmd#indicator-walkthrough)
+
+### [Appendix D: Habitat features](appendix_D_habitat_features.qmd)
+
+- [Sampled habitat opportunities](appendix_D_habitat_features.qmd#sampled-habitat-opportunities)
+- [Calibration](appendix_D_habitat_features.qmd#calibration)
+  - [Rules for eucalyptus habitat features](appendix_D_habitat_features.qmd#rules-for-eucalyptus-habitat-features)
+  - [Rules for elm habitat features](appendix_D_habitat_features.qmd#rules-for-elm-habitat-features)
+  - [Rules for hybrid and artificial habitat features](appendix_D_habitat_features.qmd#rules-for-hybrid-and-artificial-habitat-features)
+- [Workflow](appendix_D_habitat_features.qmd#workflow)
+  - [Generate initial habitat features](appendix_D_habitat_features.qmd#generate-initial-habitat-features)
+  - [Calibrate features](appendix_D_habitat_features.qmd#calibrate-features)
+  - [Simulate temporal changes](appendix_D_habitat_features.qmd#simulate-temporal-changes)
+  - [Standardise features for comparison](appendix_D_habitat_features.qmd#standardise-features-for-comparison)
+
+### [Appendix E: Habitat volumes](appendix_E_habitat_volumes.qmd)
+
+- [Workflow for initialising habitat volume](appendix_E_habitat_volumes.qmd#workflow-for-initialising-habitat-volume)
+- [Further processing of habitat volume](appendix_E_habitat_volumes.qmd#further-processing-of-habitat-volume)
+- [Output attributes](appendix_E_habitat_volumes.qmd#output-attributes)
+
+### [Appendix F: Resistance](appendix_F_resistance.qmd)
+
+- [Resistance parameters](appendix_F_resistance.qmd#resistance-parameters)
+- [Connectivity resistance](appendix_F_resistance.qmd#connectivity-resistance)
+
+### [Appendix G: Pathway simulation](appendix_G_pathway_simulation.qmd)
+
+- [Summary](appendix_G_pathway_simulation.qmd#summary)
+  - [Regions modified by proposals](appendix_G_pathway_simulation.qmd#regions-modified-by-proposals)
+  - [Proposals](appendix_G_pathway_simulation.qmd#proposals)
+  - [Interventions](appendix_G_pathway_simulation.qmd#interventions)
+- [Overall model](appendix_G_pathway_simulation.qmd#overall-model)
+  - [Possibility-space layer](appendix_G_pathway_simulation.qmd#possibility-space-layer)
+  - [Node layer](appendix_G_pathway_simulation.qmd#node-layer)
+- [Proposals and interventions](appendix_G_pathway_simulation.qmd#proposals-and-interventions)
+  - [Propositional community](appendix_G_pathway_simulation.qmd#propositional-community)
+  - [Evaluative community](appendix_G_pathway_simulation.qmd#evaluative-community)
+- [Simulated state](appendix_G_pathway_simulation.qmd#simulated-state)
+  - [Tree size categories](appendix_G_pathway_simulation.qmd#tree-size-categories)
+  - [Pulse-based execution](appendix_G_pathway_simulation.qmd#pulse-based-execution)
+  - [Growth model](appendix_G_pathway_simulation.qmd#growth-model)
+  - [Mortality](appendix_G_pathway_simulation.qmd#mortality)
+- Submodules:
+  - [Pathway simulation submodule A: Tree Growth](appendix_G_pathway_simulation_growth-submodule.qmd)
+  - [Pathway simulation submodule B: Tree lifecycle phase](appendix_G_pathway_simulation_lifecycle-submodule.qmd)
+  - [Pathway simulation submodule C: Recruit and mortality dynamics](appendix_G_pathway_simulation_recruit-mortality-submodule.qmd)
+
+### [Appendix H: Baseline woodlands](appendix_H_baseline_woodlands.qmd)
+
+- [Overview](appendix_H_baseline_woodlands.qmd#overview)
+- [Small, medium and large](appendix_H_baseline_woodlands.qmd#small-medium-and-large)
+- [Senescing and snag](appendix_H_baseline_woodlands.qmd#senescing-and-snag)
+- [Fallen and decayed](appendix_H_baseline_woodlands.qmd#fallen-and-decayed)

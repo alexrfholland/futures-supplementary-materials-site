@@ -17,7 +17,7 @@ quarto render .
 python3 check-tables.py
 ```
 
-Quarto writes the website to `_site/`. The table check compares each source pipe table with its rendered HTML row and column structure, including the homepage and all 11 appendices.
+Quarto writes the 16-page website to `_site/`: the homepage, 11 appendices and four provisional persona background pages. The table check compares each source pipe table with its rendered HTML row and column structure across all 16 pages.
 
 ## Deploy
 

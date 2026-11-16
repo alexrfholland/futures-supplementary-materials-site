@@ -51,23 +51,28 @@ Communities can fully or partially support proposals through Interventions. Inte
 The interventions we model are (broken down by their proposal family):
 
 `Decay`
+
 - `brace-feature` provides partial support by retaining tree features through `senescing` and `snag`, but not collapse.
 - `buffer-feature` provides full support by modifying `under canopy` and `surrounding region` to support progression through `fallen` and `decayed`.
 
 `Release Control`
+
 - `reduce-canopy-pruning` provides partial support by modifying `under canopy` to support progression towards a `moderated` variant.
 - `eliminate-canopy-pruning` provides full support by modifying the `surrounding region` to support progression towards an `unmanaged` variant.
 
 `Colonise`
+
 - `roughen-envelope` provides partial support by converting facades in `expanded space` into `biofacades`, and rooftops into `brown roofs`.
 - `enrich-ground` provides full support by converting ground in `expanded space` into `habitat ground`.
 - `enrich-envelope` provides full support by converting load-bearing roofs in `expanded space` into `green-roofs`.
 
 `Recruit`
+
 - `rewild-smaller-patch` provides partial support by inserting saplings in `under canopy` zones.
 - `rewild-larger-patch` provides full support by inserting saplings in `under canopy linked`, `surrounding region`, or `expanded space`.
 
 `Deploy-Structure`
+
 - `translocate-log` provides full support by inserting `fallen`, or `fallen` and `decayed`, features.
 - `adapt-utility-pole` provides full support by inserting an `artificial canopy` feature.
 - `upgrade-feature` provides full support by converting an `introduced` tree to its `hybrid` variant.
@@ -94,6 +99,7 @@ The interventions we model are (broken down by their proposal family):
 
 ## Overall Model
 The simulation has:
+
 - the `node layer` stores habitat features and carries state forward from pulse to pulse.
 - the `possibility-space` layer stores the site as a voxel grid and evaluates current spatial opportunity.
 - a library of  `habitat features` that define possible conditions of trees, logs and artificia; canopies.
@@ -283,8 +289,10 @@ The senescing values are:
 
 - precolonial trees:
   `triangular(10, 90, 200)`
+
 - non-precolonial trees: `@TODO` link to royal-parade-elm-lifespan-appendix.md and briefly explain the elm useful-life framing
   `triangular(10, 70, 110)`
+
 - and for non-precolonial trees, 30% also get a sudden-death track:
   `triangular(0, 25, 40)`
 
@@ -298,6 +306,7 @@ Then the support split is:
 - Partial support
   - stops at `snag`
   - when snag duration ends, the engine replaces the tree through `brace-collapse`, using the same replacement path as a rejected `Decay` proposal
+
 - Full support
   - can continue to `fallen`
   - fallen to decayed:
@@ -324,6 +333,7 @@ Otherwise it rejects the proposal.
 The engine leaves the tree in its `risk-averse` variant <`control = street-tree`>.
 
 It:
+
 - sets `proposal-release-control_intervention` to `none`
 - resets `proposal-release-control_years` to `0`
 
@@ -341,6 +351,7 @@ Once `Release Control` is accepted, every pulse, the engine adds `step_years` (t
 - when `proposal-release-control_years = 40`, under `eliminate-canopy-pruning` only, the tree becomes its `unmanaged` variant <`control = reserve-tree / improved-tree`>
 
 Trees in `senescing`, `snag`, `fallen`, or `decayed` are always under the `unmanaged` variant <`control = improved-tree`>.
+
 #### 3. Proposal-Colonise
 
 Determines where the model classifies `expanded space` as available for ground and envelope colonisation.
@@ -364,6 +375,7 @@ The engine does nothing.
 **3.4 State change**
 
 `Colonise` changes attributes of voxels and triggers `Recruit`, `Release Control`, and `Deploy` proposals.
+
 #### 4. Proposal-Recruit
 Determines where the model inserts new sapling habitat features.
 
@@ -462,6 +474,7 @@ Once `Deploy-Structure` is accepted, the model either enables an existing struct
 Accepted logs and poles remain as enabled structures.
 
 Accepted ground deadwood enters the model as new `fallen` or `decayed` habitat features.
+
 ## References
 
 [^recruit-density]: The live model uses `plantingDensity = 50 trees/ha` as a pulse-scaled establishment value. This sits within the broader density range discussed in Munro and Lindenmayer, *Planting for Wildlife*; Rawlings et al. (2010), *A Guide to Managing Box Gum Grassy Woodlands*; Gibbons et al. (2008), *The Future of Scattered Trees in Agricultural Landscapes*; and Le Roux et al. (2014), *The Future of Large Old Trees in Urban Landscapes*. See also [recruit and mortality notes](appendix_G_pathway_simulation_recruit-mortality-submodule.qmd).

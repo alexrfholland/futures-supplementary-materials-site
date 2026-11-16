@@ -52,11 +52,15 @@ jobs:
           appendix_G_pathway_simulation_recruit-mortality-submodule.html
           appendix_H_baseline_woodlands.html
           index.html
+          persona_bird.html
+          persona_lizard.html
+          persona_tree.html
+          persona_tree_fungal-research.html
           HTML
           )
           actual_html=$(find _site -type f -name '*.html' -printf '%P\n' | sort)
           if [ "$actual_html" != "$expected_html" ]; then
-            echo 'Rendered HTML files do not match the 12-page site allowlist.' >&2
+            echo 'Rendered HTML files do not match the 16-page site allowlist.' >&2
             printf 'Expected:\n%s\nActual:\n%s\n' "$expected_html" "$actual_html" >&2
             exit 1
           fi

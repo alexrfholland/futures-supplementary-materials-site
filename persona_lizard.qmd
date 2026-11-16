@@ -1,0 +1,244 @@
+---
+title: "The Lizard Persona (provisional)"
+---
+
+::: {.callout-info appearance="simple"}
+**Provisional background.** This working material supports the persona appendices and may change as the research develops.
+:::
+
+## Shared characteristics of Melbourne lizards
+
+- **Ectothermic**: body temperature is determined by the environment, not internal metabolism. Every daily activity is structured around finding, using, and moving between heat sources. Sun angle, surface material, shadow, and wind are primary experiential facts.
+- **Microhabitat specialists**: each species uses a specific combination of surfaces and structures: rocks, bark, leaf litter, logs, concrete paths, corrugated iron sheets, stone walls, dense ground-cover. The arrangement and thermal properties of these elements matter at centimetre scale.
+- **Diurnal and weather-dependent**: most Melbourne lizards are active during daylight in warm conditions. Activity largely ceases in cold or overcast weather. Seasonal rhythms are pronounced; winter is spent in shelter with minimal movement.
+- **Vigilance as a continuous state**: lizards are prey as well as predators. They alternate between basking exposure and retreat, constantly weighing thermal gain against predation risk. Cats and dogs are the dominant urban threat; birds of prey and snakes are others.
+- **Autotomy**: most species can voluntarily shed the tail as a distraction to predators. The tail regrows, but the replacement is cartilage, not bone.
+- **Sit-and-wait or active foraging**: skinks and dragons may actively hunt; some species wait for prey to come within range. Both strategies require stable, well-known territories.
+- **Largely solitary**: non-social outside mating. Home ranges are small and well-memorised.
+- **Long-lived relative to size**: most Melbourne skinks live 5–15 years; blue-tongues can reach 30 years.
+- **Insectivorous or omnivorous**: feeding on garden invertebrates (slugs, snails, beetles, earwigs, ants, spiders) makes them significant informal pest controllers.
+- **Tactile and thermal relationship with surfaces**: a sun-warmed rock, concrete path, or sheet of corrugated iron is not background but primary infrastructure. Surface texture, thermal mass, and exposure are directly navigated.
+
+## Shared Use of Habitat and Resources
+
+All Melbourne lizard species, regardless of size, organise their daily lives around the same basic set of landscape elements. These elements function simultaneously as thermal infrastructure, foraging ground, and refuge. The key resources are as follows.
+
+**Ground level and near-ground zone.** The great majority of Melbourne lizards are strictly ground-dwelling or operate within a few centimetres of the surface. Even climbing species (water dragons, lace monitors, geckos) spend most of their time at or near ground level. The ground surface itself is navigated constantly: its texture, warmth, and mosaic of open and sheltered patches all carry information.
+
+**Low-growing and dense vegetation.** Tussock grasses (*Poa*, *Themeda*), low shrubs, groundcovers, and rank grass provide two essential services: cover for retreat from predators, and a slightly buffered microclimate. Many skinks live almost entirely within or at the edges of dense tussocks. Even species that bask in the open will position themselves within a body-length of such cover.
+
+**Woody debris: logs, fallen branches, and bark.** Decaying logs and fallen timber are among the most intensively used microhabitats across all Melbourne lizard species. They provide: basking surfaces that warm quickly and retain heat; hollow interiors and undersurfaces for shelter; foraging sites where invertebrate prey concentrate; and egg-laying sites for oviparous species. A single large log can simultaneously serve as basking platform, refuge entrance, and nest site.
+
+**Rock and stone.** Rocks function as thermal batteries: they absorb solar radiation and radiate it slowly. Flat rocks are preferred basking sites; crevices between rocks are critical refugia for species such as White's Skink and the Southern Marbled Gecko. In urban settings, brick walls, concrete rubble, retaining walls, stepping stones, and paved edges substitute directly for natural rock outcrops.
+
+**Leaf litter and loose organic matter.** A layer of leaf litter serves as both foraging habitat (invertebrate prey aggregate beneath it) and concealment. Small skinks such as the Common Garden Skink and Delicate Skink spend much of their time moving through litter rather than across open surfaces.
+
+**Subsurface and semi-subterranean refugia.** Many species over-winter and shelter from extreme heat in subsurface spaces: beneath logs, under flat rocks, inside root tangles, in the loose soil beneath groundcovers, and under sheets of corrugated iron or timber in gardens. These sites maintain more stable temperatures than exposed surfaces and are critical for survival through cold or hot extremes.
+
+**Buildings and artificial structures.** Several species use human structures routinely. The Southern Marbled Gecko inhabits walls, ceilings, and cavities in buildings, exploiting vertical surfaces and gaps that replicate rock crevices. Blue-tongued lizards shelter under houses, decking, and garden sheds. Corrugated iron, timber offcuts, and stacked roofing materials in gardens are used as refuge by multiple species and are sometimes deliberately placed as lizard habitat.
+
+**Climbing.** Most skinks do not climb. However, water dragons rest and escape into trees over water; lace monitors forage and escape predators by climbing large trees; geckos climb vertical surfaces including glass; and jacky dragons perch on low branches, stumps, and fence posts for display and thermoregulation. The capacity to move vertically is present in a minority of species but is ecologically significant for those that have it.
+
+**The edge condition.** Across all species, the most productive and intensively used location is the edge between open sun and dense cover or shelter, at a scale of centimetres to metres. Lizards position themselves precisely at this threshold: body in sun, refuge within an instant's reach. Design implications follow directly from this: isolated basking surfaces with no adjacent cover are unused; isolated cover with no adjacent basking surface is similarly unused. The two must be proximate.
+
+## Evidence-based ways to improve lizard habitat in modified ecosystems and cities
+
+The studies below show that urban lizard persistence depends more on habitat structure, thermal opportunities, refuge quality, and predator management than on simple vegetation cover targets.
+
+1. Keep and add structural complexity at ground level.
+ Actions: retain logs, fallen branches, coarse woody debris, stones, leaf litter, and small rubble piles; avoid over-tidying. Place elements as clusters rather than isolated pieces.
+ Evidence: urban studies in Australia found that habitat structure predicted reptile occurrence better than vegetation composition, and that local vegetation and environmental variables explained communities better than fragmentation metrics alone.[^1][^2]
+
+2. Build sun-refuge mosaics at very short distances.
+ Actions: create repeated micro-patches where open basking surfaces sit beside immediate shelter (for example, flat stone plus dense tussock or log edge within one to two body lengths).
+ Evidence: urban lizards track microhabitat opportunities at fine scales, and species coexistence often depends on this fine-scale segregation.[^3][^4]
+
+3. Use habitat analogues in dense urban fabric.
+ Actions: design rail edges, cemeteries, brownfields, retaining walls, and rubble gardens as intentional lizard habitat; include cavities, crevices, and warm surfaces with nearby cover.
+ Evidence: metropolitan studies report that endangered lizards can occupy urban habitat analogues when structural conditions match key niche requirements.[^3]
+
+4. Protect and design species-specific vertical structure where relevant.
+ Actions: retain mature trees with bark complexity and hollows for climbing species, and maintain connected tree-refuge pathways near water for water dragons and monitors.
+ Evidence: arboreal urban lizards select specific tree features rather than using trees at random.[^5]
+
+5. Restore riparian and floodplain habitat as lizard infrastructure.
+ Actions: restore native riparian vegetation, maintain naturalistic banks, reduce hard channelisation, and preserve debris and refuge heterogeneity along waterways.
+ Evidence: long-term monitoring in a Sonoran Desert city showed that floodplain restoration and management altered lizard communities over time, which supports long-horizon urban restoration for reptiles.[^6]
+
+6. Control domestic and invasive predators, especially cats.
+ Actions: implement cat containment in biodiversity-sensitive suburbs and reserves, combine this with habitat enhancement, and monitor outcomes over multiple years.
+ Evidence: Australian estimates show very high reptile mortality from cats, and urban lizard work in New Zealand found improved lizard capture rates after predator control, with strongest outcomes when habitat enhancement accompanied control.[^7]
+
+7. Reduce pesticide pressure and retain invertebrate prey base.
+ Actions: avoid broad-spectrum insecticides and slug baits in lizard areas; favour targeted or non-toxic pest control; maintain litter and native understorey that support invertebrates.
+ Evidence: urban lizards depend on local prey productivity, and management that strips invertebrate-rich microhabitat reduces carrying capacity even when shelter remains.
+
+8. Manage connectivity at neighbourhood scale.
+ Actions: link parks, creek corridors, rail verges, and gardens with continuous or stepping-stone habitat; reduce hostile gaps such as wide bare paving.
+ Evidence: urban gradient and fragment studies show that occupation patterns respond to both local habitat quality and landscape context, so city design should combine site-level refuge quality with cross-site connectivity.[^8][^9]
+
+9. Monitor as adaptive management, not one-off installation.
+ Actions: set baseline surveys, repeat seasonal monitoring, track occupancy and reproduction, and revise designs when use remains low.
+ Evidence: multiple restoration and urban ecology studies emphasise that fauna responses are often delayed and context dependent, which makes long-term monitoring essential.[^10][^6]
+
+## Melbourne Applicability
+
+The strongest evidence transfer to Melbourne comes from temperate-city studies in Australia and from urban reptile studies that target habitat structure and refuge resources.
+
+#### Applicable in Melbourne
+
+1. Increase structural complexity at ground level (logs, branches, rocks, litter, tussock edges).
+2. Build repeated sun-plus-refuge mosaics at fine scales.
+3. Reduce cat predation pressure, especially near remnant grassland, creek corridors, and bushland edges.
+4. Avoid broad-spectrum pesticides and slug baits in lizard-use zones.
+5. Retain and connect habitat patches across parks, rail verges, creek lines, and private gardens.
+
+These actions align with known ecology of Melbourne species, including Common Garden Skink, Blue-tongued Lizard, Southern Marbled Gecko, and grassland specialists such as Striped Legless Lizard.
+
+### Transferrable with local calibration
+
+1. Habitat analogues in dense urban fabric (brownfields, retaining walls, rubble gardens, cemetery edges) are likely useful in Melbourne, but should be calibrated to local substrate, moisture regime, and weed management.
+2. Riparian restoration is transferable, but Melbourne programs should account for cooler winters, flashy urban runoff, and maintenance pressures from flood control works.
+3. Arboreal structure recommendations transfer mainly to water dragon and monitor contexts near waterways and larger remnant patches, not to most small skink taxa.
+
+### Melbourne-Focused Implementation Priorities
+
+1. **Backyards and streetscapes**: keep leaf litter islands, log clusters, flat basking stones, dense low cover, and safe refuges under decking or shrub edges.
+2. **Parks and reserves**: retain coarse woody debris, avoid over-neatening, stage mowing to preserve refuge continuity, and design edge habitat rather than hard lawn-woodland boundaries.
+3. **Grassland remnants and urban fringe**: protect native tussock structure and reduce disturbance from slashing, soil compaction, and uncontrolled pets.
+4. **Creek corridors**: combine native revegetation with physical refuge elements (stone, logs, root complexity) and maintain connected terrestrial movement routes.
+5. **Governance and maintenance**: write lizard habitat requirements into routine asset and landscape maintenance specifications, so habitat persists after project completion.
+
+In short, Melbourne can apply most recommendations immediately when they are translated into fine-scale structure, refuge continuity, and predator-safe habitat networks rather than broad vegetation-only greening.
+
+### Featured species 1: Common Garden Skink (*Lampropholis guichenoti*)
+
+The most frequently encountered lizard in Melbourne gardens and parks, present in almost every vegetated urban yard.
+
+**Size**: 8–14 cm total length (body alone ~5–7 cm). Weighs only a few grams. Brown or bronze-grey above, cream to grey below; a dark lateral stripe runs from snout to tail.
+
+**Preferred habitat and habitat structures**: suburban gardens, parks, school grounds, bushland edges. Requires a combination of: (1) open sunny spots for basking: bare soil, flat rocks, timber, concrete; (2) dense cover for retreat: logs, rocks, leaf litter, bark, dense groundcover plants, compost heaps, stacked timber, the underside of pot plants. The edge between sun and shelter, at centimetre scale, is the essential spatial unit of its daily life.
+
+**Basic lifestyle**: diurnal and insectivorous; feeds on small invertebrates: ants, beetles, earwigs, slaters, small spiders, caterpillars. Lays small white eggs in summer, typically in loose soil or decaying wood. Oviparous (egg-laying), unlike the blue-tongue. Drops tail when grasped; regrows in weeks to months.
+
+**Design Implications From Habitat Use**:
+
+- A single well-placed element, such as a decaying log or damp compost pocket, can serve simultaneously as a communal egg-laying site, a daytime refuge, and a foraging patch: clustering elements rather than dispersing them multiplies value per square metre.
+- The essential spatial unit is the edge between open sun and immediate cover at centimetre scale; thermal diversity at this resolution matters more than total area. Activity levels are temperature dependent, so thermal quality of individual surfaces is a direct design variable.[^15]
+- It detects prey entirely by movement; maintaining invertebrate-rich leaf litter and loose organic matter around basking structures preserves the foraging substrate, not just the shelter.[^12]
+- Reproduction and offspring quality depend on incubation temperature and moisture: stable, moist organic substrates beneath logs or in shaded soil retain conditions suitable for egg sites across the dry season.[^13][^14]
+- Can cross small water bodies but does not prefer to; continuous terrestrial corridors of litter, rock, or groundcover between patches reduce barrier effects in fragmented gardens.
+- Its responses to urbanisation, including changes in behaviour, performance, and morphology, make it a useful monitoring species: its presence and condition in a design over time indicate whether the habitat is functional.[^11]
+
+### Featured species 2: Eastern Blue-tongued Lizard (*Tiliqua scincoides scincoides*)
+
+The most visually prominent lizard in Melbourne suburbs; much larger and slower than the garden skink.
+
+**Size**: up to 60 cm total length; 300 g–1 kg. Stout-bodied with short legs and a blunt head.
+
+**Preferred habitat and structures**: open gardens, parks, heathland, and dry woodland. Uses rock piles, dense groundcovers (e.g., *Lomandra*, *Poa*), logs, garden debris, under houses and decking, and thick shrubs as shelter. Requires access to open areas for basking.
+
+**Basic lifestyle**: diurnal; omnivorous; eats snails, slugs, beetles, caterpillars, berries, soft fruit, carrion, and occasionally small vertebrates. Viviparous: gives birth to live young (5–25 per litter). Slow-moving and relatively docile. Solitary; home ranges may overlap.
+
+**Design Implications From Habitat Use**:
+
+- Radio-tracked individuals in Sydney suburbs used 2–7 core shelter sites and moved between them through dense-vegetation corridors, actively avoiding roads.[^17] A functional garden or park must therefore provide several stable refuges connected by groundcover, not a single isolated element; hard-sealed gaps between patches act as barriers even at short distances.
+- A single log or flat timber serves simultaneously as a basking platform and a hiding place: captive studies confirmed lizards spend more time hiding inside a log when it is available, and more time basking on it when temperatures are high.[^18] Placing multi-use elements at sun-to-shade transitions maximises habitat value per square metre.
+- The species readily uses artificial structures, including under-house cavities, decking, and timber piles, as true shelter.[^17] The lizard accepts designed cavities beneath raised elements or stacked timber without modification.
+- It navigates primarily by tongue-sampling surfaces and scent trails via the vomeronasal organ.[^19][^20] Spatial familiarity matters: maintaining stable surface arrangements after establishment reduces recolonisation effort following disturbance.
+- Lifespan can exceed 30 years in captivity.[^17] Once established, populations persist for decades; long-term design stability and maintenance continuity of shelter structures matter more than initial planting density.
+- Spring governs reproduction: spermatogenesis peaks in early spring.[^21] Maintenance interventions, including clearing, construction, and major replanting, should avoid disturbing shelter sites between August and November.
+
+## Complete species list
+
+#### Skinks (Scincidae)
+
+| Species | Common name | Size (total length) | Life expectancy | Habitat |
+|---|---|---|---|---|
+| *Lampropholis guichenoti* | Common Garden Skink | 8–14 cm | 2–5 years | Gardens, parks, leaf litter, rock piles |
+| *Lampropholis delicata* | Delicate Skink | 7–10 cm | 2–4 years | Moist leaf litter, garden debris, coastal scrub |
+| *Tiliqua scincoides scincoides* | Eastern Blue-tongued Lizard | 45–60 cm | 15–30 years | Gardens, heath, dry woodland |
+| *Tiliqua nigrolutea* | Blotched Blue-tongue | 40–55 cm | 15–25 years | Outer suburbs, ranges, woodland |
+| *Eulamprus tympanum* | Southern Water Skink | 25–35 cm | 8–15 years | Stream banks, wetland edges, moist grassland |
+| *Liopholis whitii* | White's Skink | 20–28 cm | 10–20 years | Rocky outcrops, dry sclerophyll forest |
+| *Pseudemoia entrecasteauxii* | Woodland Skink | 12–17 cm | 5–10 years | Dry woodland, tussock grassland |
+| *Pseudemoia pagenstecheri* | Tussock Skink | 10–14 cm | 5–8 years | Native tussock grassland (threatened habitat) |
+| *Pseudemoia spenceri* | Spencer's Skink | 10–14 cm | 5–8 years | Rocky and grassy woodland |
+| *Acritoscincus duperreyi* | Eastern Three-lined Skink | 12–17 cm | 5–10 years | Woodland, heath, grassy sites |
+| *Niveoscincus metallicus* | Metallic Skink | 10–14 cm | 4–8 years | Moist woodland, rocky slopes, logs |
+
+#### Geckos (Gekkonidae)
+
+| Species | Common name | Size (total length) | Life expectancy | Habitat |
+|---|---|---|---|---|
+| *Christinus marmoratus* | Southern Marbled Gecko | 10–15 cm | 7–15 years | Under bark, rocks, walls, ceilings; common in urban buildings |
+
+#### Legless Lizards (Pygopodidae)
+
+| Species | Common name | Size (total length) | Life expectancy | Habitat |
+|---|---|---|---|---|
+| *Delma impar* | Striped Legless Lizard | 25–35 cm | 10–15 years | Native grassland; threatened; urban fringe remnants only |
+| *Delma inornata* | Olive Legless Lizard | 20–30 cm | 8–12 years | Grassy woodland, heath |
+| *Pygopus lepidopodus* | Common Scaly-foot | 35–60 cm | 10–15 years | Heath, dry scrub, grassy areas |
+
+#### Dragons (Agamidae)
+
+| Species | Common name | Size (total length) | Life expectancy | Habitat |
+|---|---|---|---|---|
+| *Intellagama lesueurii howittii* | Gippsland Water Dragon | 60–90 cm | 15–20 years | Waterways, parks with streams, riparian trees |
+| *Amphibolurus muricatus* | Jacky Dragon | 25–35 cm | 5–10 years | Heath, dry open woodland, sandy soils |
+
+#### Monitor Lizards (Varanidae)
+
+| Species | Common name | Size (total length) | Life expectancy | Habitat |
+|---|---|---|---|---|
+| *Varanus rosenbergi* | Heath Monitor | 100–150 cm | 15–25 years | Heath, dry sclerophyll; outer suburbs and bushland |
+| *Varanus varius* | Lace Monitor | 150–200 cm | 20–40 years | Open forest, bushland; occasionally outer suburban areas |
+
+## References
+
+Bourke, Gaye, Alison Matthews, and Damian R. Michael. “Can Protective Attributes of Artificial Refuges Offset Predation Risk in Lizards?” _Austral Ecology_ 42, no. 4 (2017): 497–507. [https://doi.org/10.1111/aec.12469](https://doi.org/10.1111/aec.12469).
+
+Stanford, Hugh Robertson, and Holly Louise Kirk. “Re-Imagining Urban Infrastructure for Biodiversity: Can Railway and Utility Easements Enhance Ecological Connectivity in Cities?” Preprint, EcoEvoRxiv, 2026.
+
+[^1]: Garden, Jenni G., Clive A. Mcalpine, Hugh P. Possingham, and Darryl N. Jones. “Habitat Structure Is More Important than Vegetation Composition for Local-Level Management of Native Terrestrial Reptile and Small Mammal Species Living in Urban Remnants: A Case Study from Brisbane, Australia.” *Austral Ecology* 32, no. 6 (2007): 669–85. [https://doi.org/10.1111/j.1442-9993.2007.01750.x](https://doi.org/10.1111/j.1442-9993.2007.01750.x).
+
+[^2]: Jellinek, Sacha, Don A. Driscoll, and James B. Kirkpatrick. “Environmental and Vegetation Variables Have a Greater Influence than Habitat Fragmentation in Structuring Lizard Communities in Remnant Urban Bushland.” *Austral Ecology* 29, no. 3 (2004): 294–304. [https://doi.org/10.1111/j.1442-9993.2004.01366.x](https://doi.org/10.1111/j.1442-9993.2004.01366.x).
+
+[^3]: Becker, Marina, and Sascha Buchholz. “The Sand Lizard Moves Downtown: Habitat Analogues for an Endangered Species in a Metropolitan Area.” *Urban Ecosystems* 19, no. 1 (2016): 361–72. [https://doi.org/10.1007/s11252-015-0497-x](https://doi.org/10.1007/s11252-015-0497-x).
+
+[^4]: Heltai, Botond, Péter Sály, Dániel Kovács, and István Kiss. “Niche Segregation of Sand Lizard (*Lacerta Agilis*) and Green Lizard (*Lacerta Viridis*) in an Urban Semi-Natural Habitat.” *Amphibia-Reptilia* 36, no. 4 (2015): 389–99. [https://doi.org/10.1163/15685381-00003018](https://doi.org/10.1163/15685381-00003018).
+
+[^5]: Taylor, Danaë, Christopher B. Daniels, and Greg Johnston. “Habitat Selection by an Arboreal Lizard in an Urban Parkland: Not Just Any Tree Will Do.” *Urban Ecosystems* 19, no. 1 (2016): 243–55. [https://doi.org/10.1007/s11252-015-0480-6](https://doi.org/10.1007/s11252-015-0480-6).
+
+[^6]: Wyman, Jules T., Aaron D. Flesch, Jennifer L. Becker, and Philip C. Rosen. “Long-Term Impacts of Urban Floodplain Management and Habitat Restoration on Lizard Communities in a Sonoran Desert City.” _Ecological Engineering_ 197 (2023): 107121. [https://doi.org/10.1016/j.ecoleng.2023.107121](https://doi.org/10.1016/j.ecoleng.2023.107121).
+
+[^7]: Woinarski, John C. Z., Brett P. Murphy, Russell Palmer, Sarah M. Legge, Chris R. Dickman, Tim S. Doherty, Glenn Edwards, Alex W. Nankivell, John L. Read, and Danielle Stokeld. “How Many Reptiles Are Killed by Cats in Australia?” _Wildlife Research_ 45, no. 3 (2018): 247–66. [https://doi.org/10.1071/WR17160](https://doi.org/10.1071/WR17160).
+
+[^8]: Germaine, Stephen S., and Brian F. Wakeling. “Lizard Species Distributions and Habitat Occupation along an Urban Gradient in Tucson, Arizona, USA.” *Biological Conservation* 97, no. 2 (2001): 229–37. [https://doi.org/10.1016/S0006-3207(00)00115-4](https://doi.org/10.1016/S0006-3207\(00\)00115-4).
+
+[^9]: Vignoli, Leonardo, I. Mocaer, Luca Luiselli, and Marco A. Bologna. “Can a Large Metropolis Sustain Complex Herpetofauna Communities? An Analysis of the Suitability of Green Space Fragments in Rome.” _Animal Conservation_ 12, no. 5 (2009): 456–66. [https://doi.org/10.1111/j.1469-1795.2009.00273.x](https://doi.org/10.1111/j.1469-1795.2009.00273.x).
+
+[^10]: White, Easton R. “Minimum Time Required to Detect Population Trends: The Need for Long-Term Monitoring Programs.” *BioScience* 69, no. 1 (2019): 40–46. [https://doi.org/10.1093/biosci/biy144](https://doi.org/10.1093/biosci/biy144).
+
+[^11]: Prosser, Christine, Simon Hudson, and Michael B. Thompson. “Effects of Urbanization on Behavior, Performance, and Morphology of the Garden Skink, *Lampropholis Guichenoti*.” _Journal of Herpetology_ 40, no. 2 (2006): 151–59. [https://doi.org/10.1670/38-05A.1](https://doi.org/10.1670/38-05A.1).
+
+[^12]: Lunney, Daniel, E. Ashby, J. Grigg, and Michael Oconnell. “Diets of Scincid Lizards Lampropholis Guichenoti (Dumeril and Bibron) and L. Delicata (De Vis) in Mumbulla State Forest on the South Coast of New South Wales.” _Wildlife Research_ 16, no. 3 (1989): 307–12. [https://doi.org/10.1071/WR9890307](https://doi.org/10.1071/WR9890307).
+
+[^13]: Joss, Jean M. P., and J. A. Minard. “On the Reproductive Cycles of *Lampropholis Guichenoti* and *L. Delicata* (Squamata: Scincidae) in the Sydney Region.” _Australian Journal of Zoology_ 33, no. 5 (1985): 699–704. [https://doi.org/10.1071/ZO9850699](https://doi.org/10.1071/ZO9850699).
+
+[^14]: Du, Wei-Guo, and Richard Shine. “The Influence of Hydric Environments during Egg Incubation on Embryonic Heart Rates and Offspring Phenotypes in a Scincid Lizard (*Lampropholis Guichenoti*).” _Comparative Biochemistry and Physiology Part A: Molecular & Integrative Physiology_ 151, no. 1 (2008): 102–7. [https://doi.org/10.1016/j.cbpa.2008.06.005](https://doi.org/10.1016/j.cbpa.2008.06.005).
+
+[^15]: Torr, Geordie A., and Richard Shine. “Experimental Analysis of Thermally Dependent Behavior Patterns in the Scincid Lizard Lampropholis Guichenoti.” _Copeia_ 1993, no. 3 (1993): 850–54. [https://doi.org/10.2307/1447250](https://doi.org/10.2307/1447250).
+
+[^16]: Dissanayake, Duminda, and Nick Clemann. “A Common Garden Skink (*Lampropholis Guichenoti*) with a Bifurcated Tail.” _Reptiles & Amphibians_ 29, no. 1 (2022): 139–40. https://doi.org/10.17161/randa.v29i1.16365.
+
+[^17]: Koenig, Jennifer, Richard Shine, and Glenn Shea. “The Ecology of an Australian Reptile Icon: How Do Blue-Tongued Lizards (_Tiliqua Scincoides_) Survive in Suburbia?” _Wildlife Research_ 28, no. 3 (2001): 214–27. [https://doi.org/10.1071/WR00068](https://doi.org/10.1071/WR00068).
+
+[^18]: Phillips, Clive J. C., Alex Z. Jiang, A. J. Hatton, Andrew T. Tribe, Morgane Le Bouar, Maud Guerlin, and Peter J. Murray. “Environmental Enrichment for Captive Eastern Blue-Tongue Lizards (_Tiliqua Scincoides_).” _Animal Welfare_ 20, no. 3 (2011): 377–84. [https://doi.org/10.1017/S0962728600002931](https://doi.org/10.1017/S0962728600002931).
+
+[^19]: Graves, Brent M., and Mimi Halpern. “Discrimination of Self from Conspecific Chemical Cues in _Tiliqua Scincoides_ (Sauria: Scincidae).” _Journal of Herpetology_ 25, no. 1 (1991): 125–26. [https://doi.org/10.2307/1564814](https://doi.org/10.2307/1564814).
+
+[^20]: Kratzing, Jean E. “The Fine Structure of the Olfactory and Vomeronasal Organs of a Lizard (_Tiliqua Scincoides Scincoides_).” _Cell and Tissue Research_ 156, no. 2 (1975): 239–52. [https://doi.org/10.1007/BF00221807](https://doi.org/10.1007/BF00221807).
+
+[^21]: Shea, Glenn M. “The Male Reproductive Cycle of the Eastern Blue-Tongued Lizard <i>Tiliqua Scincoides Scincoides (Squamata: Scincidae).” In _Herpetology in Australia: A Diverse Discipline_, edited by Daniel Lunney and Danielle Ayers, 397–403. Sydney: Royal Zoological Society of New South Wales, 1993. [https://doi.org/10.7882/RZSNSW.1993.063](https://doi.org/10.7882/RZSNSW.1993.063).

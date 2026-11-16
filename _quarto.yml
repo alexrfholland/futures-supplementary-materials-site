@@ -16,6 +16,10 @@ project:
     - appendix_G_pathway_simulation_lifecycle-submodule.qmd
     - appendix_G_pathway_simulation_recruit-mortality-submodule.qmd
     - appendix_H_baseline_woodlands.qmd
+    - persona_bird.qmd
+    - persona_tree.qmd
+    - persona_tree_fungal-research.qmd
+    - persona_lizard.qmd
   resources:
     - media/**
 
@@ -41,6 +45,16 @@ website:
           - appendix_A_glossary.qmd
           - appendix_B_places.qmd
           - appendix_C_personas_capabilities_and_relational_indicators.qmd
+          - section: "Provisional persona backgrounds"
+            contents:
+              - text: "Bird (provisional)"
+                href: persona_bird.qmd
+              - text: "Tree (provisional)"
+                href: persona_tree.qmd
+              - text: "Tree fungal research (provisional)"
+                href: persona_tree_fungal-research.qmd
+              - text: "Lizard (provisional)"
+                href: persona_lizard.qmd
           - appendix_D_habitat_features.qmd
           - appendix_E_habitat_volumes.qmd
           - appendix_F_resistance.qmd
