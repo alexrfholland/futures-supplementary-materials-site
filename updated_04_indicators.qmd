@@ -55,11 +55,9 @@ These capabilities demonstrate how lizards, birds, and trees participate in mult
 | Release | Release pollen and seed | Provide food source | Lack of pollinators, seed dispersers |  |  |
 | Propagate\* | Recruit new trees across suitable ground | Renew canopy services across time[^11] | Propagate\* | Affiliation | Multiple generations |
 
-## Capability groups
+## Indicators
 
 We sample from these lists. To make the sampled capabilities comparable across personas, we aggregate them into three groups: Communicate, Acquire Resource and Reproduce.
-
-## Comparable indicators
 
 Indicators select measurable environmental effects through which personas can express capabilities. They neither exhaust the requirements of a persona nor predict population responses. Instead, they translate evidence about nonhuman behaviours and resources into spatial quantities that allow the effects of alternative pathways to be compared. By measuring how opportunities are distributed, rather than treating species favoured by current conditions as representative of birds generally, indicators can reveal discriminatory effects hidden by aggregate measures.
 
