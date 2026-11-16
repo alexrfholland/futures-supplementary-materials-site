@@ -12,11 +12,11 @@ The main text uses the capabilities approach to construct personas. This appendi
 
 Personas represent birds, lizards, and urban trees. Table 1 provides further information about each persona. The table describes example species while demonstrating how personas cover distinct lifespans, body sizes, and forms of social life.
 
-‘Birds’ persona includes woodland birds, including Australian Magpie (*Gymnorhina tibicen*), Superb Fairy-wren (*Malurus cyaneus*), Red-rumped Parrot (*Psephotus haematonotus*) and Mistletoebird (*Dicaeum hirundinaceum*), represent social, intelligent canopy dwellers. Their urban colonisation demonstrates behavioural plasticity through social learning that evolves into persistent cultures.
+The Bird persona gathers the Australian Magpie, Superb Fairy-wren, Red-rumped Parrot and Mistletoebird. These social, intelligent birds show behavioural plasticity, with social learning that develops into persistent cultures.
 
-‘Lizards’ persona includes ground-dwelling lizards, such as Common Garden Skink (*Lampropholis guichenoti*), Southern Marbled Gecko (*Christinus marmoratus*), Eastern Blue-tongued Lizard (*Tiliqua scincoides scincoides*) and Lace Monitor (*Varanus varius*), indicate movement patterns. Lizards require interconnected ground-level habitat mosaics. In Melbourne, roadways and buildings significantly constrain their movement.
+The Lizard persona gathers the Common Garden Skink, Southern Marbled Gecko, Eastern Blue-tongued Lizard and Lace Monitor. Their movement depends on connected habitat, from ground-level mosaics to climbable trunks and walls. In Melbourne, roadways and buildings constrain much of this movement.
 
-‘Trees’ persona includes large old trees, including English Elm (*Ulmus procera*), River Red Gum (*Eucalyptus camaldulensis*) and Yellow Box (*Eucalyptus melliodora*), represent a particular life stage. Evidence increasingly shows their problem-solving strategies and social function. In urban contexts, humans aggressively prune these trees and deprive them of their tree- fungi connections.
+The Tree persona gathers the English Elm, River Red Gum and Yellow Box, with a focus on large old trees. Evidence increasingly shows their problem-solving strategies and social functions. In the city, humans prune these trees heavily and sever their connections with fungi.
 
 **Table 1. Persona overview**
 

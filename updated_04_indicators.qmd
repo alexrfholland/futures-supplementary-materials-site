@@ -1,10 +1,65 @@
 ---
-pagetitle: "Indicators"
+pagetitle: "Capabilities and indicators"
 bibliography: [references/site_references.bib]
 link-citations: true
 ---
 
-# Indicators
+# Capabilities and indicators
+
+## Overview of capabilities
+
+We next sample capabilities across birds, lizards, and trees. The tables below show capabilities for birds, lizards, and trees respectively. Capabilities marked with an asterisk (\*) indicate the subset we model using relational indicators.
+
+We organise capability choices across two domains. The first domain covers scale: individual life, collective interaction, and multiple generations. The second domain uses Schlosberg's framework of health, autonomy, and affiliation [^13]. This framework extends the capabilities approach from individuals to communities and ecosystems.
+
+These capabilities demonstrate how lizards, birds, and trees participate in multispecies communities, hold knowledge, innovate, and contribute to urban living. We understand these contributions as 'design', which we define as the collective creation of conditions that support life in response to novel circumstances [^14]. To illustrate this concept, we include columns showing how capabilities create services for each persona as well as for others.
+
+**Table 2. Sample bird capabilities**
+
+| Capability | Service to Self | Service to Others | Threats | Domain | Scale |
+|----|----|----|----|----|----|
+| Forage\* | Forage on invertebrates and nectar | Support pollination[^15] and pest control | Young and non-native trees lack insect-attracting branches | Health | Individual life |
+| Bathe | Bathe and drink in freshwater sources , maintain feather condition, hydration | Seed dispersal via mud on feet | Water pollution, lack of water sources | Health | Individual life |
+| Move | Avoid predators, access resources | Provide seed rain that accelerates forest succession[^16] | Collisions with buildings, wind turbines | Health | Individual life |
+| Explore | Establish own home range | Regulate gene flow in populations | Habitat fragmentation, barriers | Autonomy | Individual life |
+| Defend | Defend territory from threats | Maintain ecosystem balance | Invasive species, human disturbance | Autonomy | Collective interaction |
+| Socialise\* | Rest in communal roosting sites | Provide droppings that can enrich soil[^17], combat fragmentation at forest edges through endozoochory[^18] | Pruning for safety removes suitable roosts | Affiliation | Collective interaction |
+| Learn | Develop and express local dialects | Indicate ecosystem health to humans | Noise pollution, population isolation | Affiliation | Collective interaction |
+| Procreate\* | Access nesting sites for breeding | Create structures used by other species | Natural hollows take centuries to form | Affiliation | Multiple generations |
+
+**Table 3. Sample lizard capabilities**
+
+| Capability | Service to Self | Service to Others | Threats | Domain | Scale |
+|----|----|----|----|----|----|
+| Thermoregulate | Use warm and cool spots to stabilise body | Create nutrient patches through droppings at bask sites | Lack of diverse thermal environments | Health | Individual life |
+| Forage\* | Secure food in low vegetation and canopy debris | Regulate insect populations[^10] | Pesticide use, lack of prey | Health | Individual life |
+| Drink | Maintain bodily functions | Contribute to small-scale water cycles | Water pollution, lack of water sources | Health | Individual life |
+| Shelter\* | Use logs and fallen trees for cover and nesting | Build micro‑refugia used by others | Ground debris cleared by management regimes | Health | Multiple generations |
+| Move | Access various resources | Seed dispersal, nutrient distribution | Habitat fragmentation, roads | Autonomy | Collective interaction |
+| Defend | Defend territories and secure resources | Maintain population distribution | Habitat loss, invasive species | Autonomy | Collective interaction |
+| Seek shelter from threats | Avoid predation, harsh conditions | Create burrows used by other species | Removal of ground cover, debris | Autonomy | Collective interaction |
+| Socialise | Establish hierarchies | Indicate ecosystem health to researchers | Isolation of populations | Affiliation: | Collective interaction |
+| Explore\* | Traverse routes to reach mates | Maintain gene flow | Inbreeding due to isolation | Affiliation | Collective interaction |
+
+**Table 4. Sample Tree capabilities**
+
+| Capability | Service to Self | Service to Others | Threats | Domain | Scale |
+|----|----|----|----|----|----|
+| Perform photosynthesis | Produce energy for growth | Produce oxygen, sequester carbon | Air pollution, shading from buildings | Health | Individual life |
+| Access water and nutrients | Sustain growth and functions | Soil water retention, nutrient cycling | Soil compaction, drought | Health | Individual life |
+| Decay\* | Grow structure that provides substrates for leaf, flowers and other organs. | Provide hollows, dead wood, and bark for arboreal dwellers to use as habitat[^17] | Pruning, restricted growing space | Health | Individual life |
+| Grow | Adapt to local environment | Cast shade, intercept rain, and alter microclimates[^19] | Uniform planting practices | Autonomy | Collective interaction |
+| Resist | Develop structures that can resist change | Create microrefugia in modified landscapes such as cities[^20] and paddocks[^21] | Removal of branches deemed hazardous by humans | Autonomy | Collective interaction |
+| Signal\* | Exchange resources through fungal networks in soil | Build resilience to shocks in arboreal communitiess[^8] | Soil sterilization, fungicide use | Affiliation: | Collective interaction |
+| Host | Offer surfaces for symbiotes such as epiphytes and lichens | Create three dimensional variation in niches[^22], | Simplification of tree structure | Affiliation: | Collective interaction |
+| Release | Release pollen and seed | Provide food source | Lack of pollinators, seed dispersers |  |  |
+| Propagate\* | Recruit new trees across suitable ground | Renew canopy services across time[^11] | Propagate\* | Affiliation | Multiple generations |
+
+## Capability groups
+
+To make these capabilities comparable across personas, we aggregate them into three groups: Communicate, Acquire Resource and Reproduce.
+
+## Comparable indicators
 
 Indicators select measurable environmental effects through which personas can express capabilities. They neither exhaust the requirements of a persona nor predict population responses. Instead, they translate evidence about nonhuman behaviours and resources into spatial quantities that allow the effects of alternative pathways to be compared. By measuring how opportunities are distributed, rather than treating species favoured by current conditions as representative of birds generally, indicators can reveal discriminatory effects hidden by aggregate measures.
 
@@ -28,3 +83,29 @@ Potential writeup:
 
 
 See also the model indicator table: [Appendix C, Table 4. Indicators](appendix_C_personas_capabilities_and_relational_indicators.qmd#relational-indicators).
+
+[^8]: José Tomás Ibarra, Kristina Cockle, Tomás Altamirano, Yntze Hoek, Suzanne Simard, Cristián Bonacic, and Kathy Martin. (2020). Nurturing Resilient Forest Biodiversity: Nest Webs as Complex Adaptive Systems. Ecology and Society 25(2). https://doi.org/10/gnb4g8
+
+[^10]: Holly Kirk, Caragh Threlfall, Kylie Soanes, Cristina Ramalho, Kirsten Parris, Marco Amati, Sarah A. Bekessy, and Luis Mata. (2018). Linking nature in the city: a framework for improving ecological connectivity across the City of Melbourne. Melbourne, City of Melbourne.
+
+[^11]: Department of Environment, Climate Change and Water NSW. (2011). National Recovery Plan for White Box—Yellow Box—Blakely’s Red Gum Grassy Woodland and Derived Native Grassland: A Critically Endangered Ecological Community. Sydney, Department of Environment, Climate Change and Water New South Wales.
+
+[^13]: David Schlosberg. (2014). Ecological Justice for the Anthropocene. In Political Animals and Animal Politics, edited by Marcel Wissenburg and David Schlosberg, 75-89. Houndmills, Palgrave Macmillan.
+
+[^14]: Stanislav Roudavski. (2022). Design for all life: editorial. Architect Victoria 3, 32-37. https://doi.org/10/gr3r7f; Julian Rutten, Alexander Holland, and Stanislav Roudavski. (2024). Plants as designers of better futures: can humans let them lead?. Plant Perspectives 2(1), 92-139. https://doi.org/10.3197/whppp.63845494909729
+
+[^15]: Tim Low. (2014). Where Song Began: Australia's Birds and How They Changed the World. Melbourne, AU, Viking.
+
+[^16]: Tommaso La Mantia et al., “Vertebrate-Mediated Seed Rain and Artificial Perches Contribute to Overcome Seed Dispersal Limitation in a Mediterranean Old Field,” Restoration Ecology 27, no. 6 (2019): 1393–400, https://doi.org/10/gr2jn6.
+
+[^17]: David B. Lindenmayer and William F. Laurance. (2016). The ecology, distribution, conservation and management of large old trees. Biological Reviews 92(132), 1434–1458. https://doi.org/10.1111/brv.12290
+
+[^18]: Harsh Yadav, Yuki Iwachido, and Takehiro Sasaki. (2025). Canopy cover instigating feces deposition on paved roads in urban areas. Ecological Research 40(5), e70009. https://doi.org/10/g93n9z
+
+[^19]: David B. Lindenmayer. (2017). Conserving Large Old Trees as Small Natural Features. Biological Conservation 211(B), 51–59. https://doi.org/10.1016/j.biocon.2016.11.012
+
+[^20]: Karen Stagoll, David B. Lindenmayer, Emma Knight, Joern Fischer, and Adrian D. Manning. (2012). Large Trees are Keystone Structures in Urban Parks. Conservation Letters 5(2), 115–122. https://doi.org/10/f35x6j
+
+[^21]: Darren S. Le Roux, Karen Ikin, David B. Lindenmayer, Adrian D. Manning, and Philip Gibbons. (2018). The value of scattered trees for wildlife: contrasting effects of landscape context and tree size. Diversity and Distributions 24(1), 69-81. https://doi.org/10.1111/ddi.12658
+
+[^22]: Siria Gámez and Nyeema C. Harris. (2022). Conceptualizing the 3D Niche and Vertical Space Use. Trends in Ecology & Evolution 37(11), 953–962. https://doi.org/10.1016/j.tree.2022.06.012
