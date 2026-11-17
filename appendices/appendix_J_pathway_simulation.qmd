@@ -9,7 +9,7 @@ The pathway simulation supports the article’s argument about nonhuman leadersh
 **Contents**
 
 - **Overview:** [1. Purpose](#purpose); [2. Entities and state](#entities-and-state); [3. Time and spatial scales](#time-and-spatial-scales); [4. Process scheduling](#process-scheduling).
-- **Model rules and interpretation:** [5. Levels of proposal representation](#proposals-negotiation-and-interventions); [6. Effort thresholds and pathway settings](#effort-thresholds-and-pathway-settings); [7. Exploratory use and run design](#exploratory-use-and-run-design).
+- **Model rules and interpretation:** [5. Levels of proposal representation](#proposals-negotiation-and-interventions); [6. Intervention support along pathways](#effort-thresholds-and-pathway-settings); [7. Exploratory use and run design](#exploratory-use-and-run-design).
 - **Initialisation and implementation:** [8. Initialisation](#initialisation); [9. Execution and outputs](#execution-and-outputs); [10. Submodels](#submodels); [11. Code and data](#code-and-data).
 
 ## Overview
@@ -203,7 +203,7 @@ Each proposal has a temporal trigger and a spatial region of request. The model 
 | `release-control` | every pulse | habitat feature, under canopy | a living tree in a small, medium, or large phase can receive reduced or eliminated pruning, subject to canopy resistance | feature progresses towards moderated or unmanaged variants after sufficient time under the intervention | feature maintains risk-averse human-management variant |
 | `recruit` | every pulse | under canopy, surrounding region, and in space already under consideration for `colonise` | the engine recomputes recruitment zones and tests available space in each pulse of at most 10 years | model inserts sapling features | model takes no action |
 | `colonise` | support refreshes within each pulse; envelope interventions apply when generating a saved state | expanded space | the engine checks potential zones of expansion against connectivity thresholds | model opens recruitment space and converts voxels | model takes no action |
-| `deploy-structure` | ground deadwood within pulses; logs and poles after the final pulse leading to a saved state; `upgrade-feature` during VTK generation | habitat feature and potential habitat features now already under `colonise` | the engine checks compatible locations and the conditions specific to each deployment path | model enables logs or poles, inserts fallen or decayed features, or converts introduced voxels to hybrid | model takes no action |
+| `deploy-structure` | ground deadwood within pulses; logs and poles after the final pulse leading to a saved state; `upgrade-feature` during VTK generation | candidate habitat features, eligible ground, and VTK points | the engine checks compatible locations and the conditions specific to each deployment path | model enables logs or poles, inserts fallen or decayed features, or labels qualifying VTK points with `upgrade-feature` | model takes no action |
 
 : Table 2. Proposal families, triggers, and outcomes.
 
@@ -213,7 +213,7 @@ Each proposal has a temporal trigger and a spatial region of request. The model 
 
 Whether an intervention proceeds depends on the relevant comparison between resistance and effort. The model applies the threshold tests specified for each proposal in Section 10, including their strict or inclusive bounds.
 
-Interventions use feature or connectivity resistance according to whether they target individual habitat features or connections. When multiple interventions fit, the model selects the highest-effort option. Tables 3 and 4 describe these choices in terms of the evaluative community, whose authority the thresholds represent. Some interventions also require the average-resistance threshold described in Section 6.
+Interventions use feature or connectivity resistance according to whether they target individual habitat features or connections. When multiple interventions fit, the model selects the highest-effort option. Tables 3 and 4 summarise the resistance comparisons and permitted responses. Section 6 specifies their support settings and additional conditions.
 
 ::: {.table-block}
 
@@ -222,7 +222,7 @@ Interventions use feature or connectivity resistance according to whether they t
 | Feature resistance | `CanopyResistance` | Aggregates values beneath habitat features using aerial canopy footprint data | `habitat_feature_tables` | `minimal-tree-support-threshold`, `moderate-tree-support-threshold`, `maximum-tree-support-threshold` |
 | Connectivity resistance | `sim_Turns` | Records the expansion turns needed to reach a voxel in the prepared cellular automata connectivity model | `habitat_volume_grid` | `sim_TurnsThreshold` |
 
-: Table 3. Resistance groupings and effort thresholds used by the evaluative community.
+: Table 3. Resistance groupings and corresponding effort thresholds.
 
 :::
 
@@ -234,62 +234,136 @@ Interventions use feature or connectivity resistance according to whether they t
 | `colonise` | Spread-effort threshold | `larger-patches-rewild` / `enrich-envelope` | `roughen-envelope` |
 | `release-control` | Individual tree support thresholds | `eliminate-canopy-pruning` | `reduce-canopy-pruning` |
 | `recruit` | `under canopy` and `surrounding region` from `Decay` and `Release Control`, and `expanded space` from `Colonise` | `rewild-larger-patch` | `rewild-smaller-patch` |
-| `deploy-structure` | `Colonise` | `adapt-utility-pole` / `translocate-log` / `upgrade-feature` | None |
+| `deploy-structure` | Path-specific requirements in Section 6 | `adapt-utility-pole` / `translocate-log` / `upgrade-feature` | None |
 
-: Table 4. How the evaluative community responds to proposals.
+: Table 4. Proposal responses implemented by the model.
 
 :::
 
 Intervention names follow the code. The ground intervention under `colonise` is `larger-patches-rewild`, and `deploy-structure` also includes `translocate-deadwood` for ground deadwood.
 
-### 6. Effort thresholds and pathway settings {#effort-thresholds-and-pathway-settings}
+### 6. Intervention support along pathways {#effort-thresholds-and-pathway-settings}
 
-[TODO]{.badge .bg-warning .text-dark} Alex to streamline this section to distinguish settings that differ between human-led and nonhuman-led pathways, settings the user can change, and settings fixed for this study.
+[TODO]{.badge .bg-warning .text-dark} Alex to streamline the distinction between settings that vary along pathways, settings users can change, and settings fixed for this study.
 
-The Methods section compares leadership by varying authority over the conversion of proposals into interventions. The simulation implements this comparison through pathway settings that determine how much resistance the collective can overcome and how it supports the resulting changes. These settings affect which proposals receive support, moderation, or refusal and therefore how the trajectory develops.
+Before simulation, a human user specifies intervention effort thresholds over the pathway's modelled time. The model uses this configuration to assess proposals, apply permitted responses, and carry the resulting changes into subsequent states.
 
-The two pathways share the same places, inputs, habitat feature library, growth and mortality settings, lifecycle durations, planting density, pruning timings, and random draws. They differ in the settings of Table 5. The code calls the nonhuman-led pathway `positive` and the human-led pathway `trending`.
-
-#### Resistance quantities
-
-Negotiation uses three quantities held in the feature records or grid.
-
-- **`CanopyResistance`** measures resistance associated with a tree's canopy footprint. At initialisation, the model calculates it as the mean of `analysis_combined_resistanceNOCANOPY` over the tree's `node_CanopyID` voxels. A tree without a canopy footprint takes the value at its own voxel. The tree-support thresholds compare this quantity with the limits for each intervention.
-- **`sim_Turns`** records how many cellular automata expansion turns were needed to reach a voxel in the prepared [connectivity model](appendix_H_resistance.qmd#connectivity-resistance). The prepared model measures potential connectivity from all starting habitat features and candidate `Deploy-Structure` locations in its inputs, including utility poles and suitable roof positions for translocated logs. The turn count expresses spatial difficulty. These turns are distinct from the years and pulses of the pathway simulation. The pathway simulation reads the prepared field and compares it with the effort threshold for the current year.
-- **`sim_averageResistance`** supplies an additional resistance condition for envelope `Colonise`, candidate roof logs, and utility poles. The model compares the saved field value with a separate pathway threshold, also named `sim_averageResistance` in the parameter file. The [Resistance](appendix_H_resistance.qmd) page describes the resistance and connectivity preparation.
-
-#### Effort thresholds
-
-Users set thresholds for each place and pathway in `params_v3.py`. The three tree-support thresholds remain constant throughout a run and bound the interventions as follows.
-
-- **`minimal-tree-support-threshold`** is the strict upper bound for accepting `Decay`. Resistance below this threshold but above `moderate-tree-support-threshold` permits `brace-feature`.
-- **`moderate-tree-support-threshold`** is the inclusive upper bound for `buffer-feature` under `Decay` and for accepting `Release Control`. Resistance above `maximum-tree-support-threshold` and at or below this value permits `reduce-canopy-pruning` under `Release Control`. In both proposal families, the corresponding supported change opens the `under canopy` region.
-- **`maximum-tree-support-threshold`** is the inclusive upper bound for opening the wider `surrounding region` under `buffer-feature` or `eliminate-canopy-pruning`. The words minimal, moderate, and maximum refer to the extent of support. Accordingly, the maximum-support intervention has the lowest resistance limit.
-
-The two connectivity thresholds follow year-keyed schedules, interpolated between the years in Table 5. Each pulse uses the value at its end year.
-
-- **`sim_TurnsThreshold`** sets the permitted number of expansion turns. A voxel passes this test when `0 <= sim_Turns <= sim_TurnsThreshold`. This gate supplies the `expanded space` available to `Colonise` and recruitment. It also forms part of the test for enabling roof logs.
-- **The `sim_averageResistance` threshold** sets the additional resistance limit for envelope `Colonise`, logs, and poles. Envelope voxels and roof logs pass when their stored value is at or below the threshold; utility poles require a value below it. Section 10 gives the proposal-specific combinations of these conditions.
-
-Table 5 specifies each pathway's constant thresholds and schedules. Under the human-led pathway at Parade, `sim_TurnsThreshold` stays at zero, so `Colonise` opens no expanded space there. Parade has no `sim_averageResistance` schedule, so the engine uses zero in both pathways: envelope changes are confined to voxels with average resistance at or below zero, and no poles are deployed.
-
-#### Other pathway settings
-
-The recruitment multipliers and ground-deadwood switch in Table 5 also differ between pathways. **`recruit_multiplier_full`** and **`recruit_multiplier_partial`** scale the sapling quota in recruitment zones receiving the corresponding support. **`deployGroundDeadwood`** enables ground-deadwood placement, which operates only under the nonhuman-led pathway at Street. These parameters govern the amount or availability of an intervention after its spatial conditions have been assessed.
+For example, `brace_support_limit` [`minimal-tree-support-threshold`] sets the resistance limit for allocating `brace-feature` to tree features that propose `Decay`. The assessment rules distinguish this response from more extensive buffering, which takes precedence where its requirements also qualify. At Parade, the configured values are as follows.
 
 ::: {.table-block}
 
-| Setting | Parade | City | Street | What it does |
-|---|---|---|---|---|
-| `minimal-tree-support-threshold` | 70 / 4 | 70 / 4 | 90 / 4 | The engine accepts `Decay` below this value, which also bounds the `brace-feature` band |
-| `moderate-tree-support-threshold` | 50 / 3 | 50 / 3 | 70 / 3 | Up to this value, `under canopy` becomes `footprint-depaved` under `buffer-feature` or `reduce-canopy-pruning` |
-| `maximum-tree-support-threshold` | 15 / 1 | 15 / 1 | 20 / 1 | Up to this value, `surrounding region` becomes `node-rewilded` under `buffer-feature` or `eliminate-canopy-pruning` |
-| `sim_TurnsThreshold` at years 0, 10, 30, 60, 180 | 0, 0, 3000, 4500, 5000 / 0 throughout | 0, 300, 1250, 4000, 5000 / 0, 20, 50, 100, 200 | 0, 300, 3000, 4500, 5000 / 0, 20, 50, 100, 200 | A voxel counts as colonisable when `0 <= sim_Turns <= this` |
-| `sim_averageResistance` threshold at years 0, 10, 30, 60, 180 | not set, so 0 in both pathways | 0, 50, 50, 67.9, 96 / 0, 10, 20, 30, 50 | 0, 50, 50, 67.9, 80 / 0 throughout | Second gate on envelope `colonise`, logs, and poles |
-| `recruit_multiplier_full` / `recruit_multiplier_partial` | 1.6, 1.2 / 1.0, 1.0 | 1.6, 1.2 / 1.0, 1.0 | 1.6, 1.2 / 1.0, 1.0 | Multiplies the `recruit` quota |
-| `deployGroundDeadwood` | off / off | off / off | on / off | Enables `translocate-deadwood` |
+| Pathway | Year 0 | Year 10 | Year 30 | Year 60 | Year 180 |
+|---|---|---|---|---|---|
+| Human-led `brace_support_limit` | 4 | 4 | 4 | 4 | 4 |
+| Nonhuman-led `brace_support_limit` | 70 | 70 | 70 | 70 | 70 |
 
-: **Table 5. Settings that differ between pathways, as nonhuman-led / human-led.**
+: Table. Configured values of `brace_support_limit` along the two Parade pathways.
+
+:::
+
+#### Assess proposals against resistance
+
+The resistance assessment in [Appendix H](appendix_H_resistance.qmd) provides the spatial data for the three quantities below. An intervention's applicable resistance quantity must fall below or, where permitted, equal its effort threshold.
+
+::: {.table-block}
+
+| Resistance quantity | Meaning and corresponding setting |
+|---|---|
+| `CanopyResistance` | Resistance associated with a tree's canopy footprint, aggregated from the prepared resistance field |
+| `sim_Turns` | Number of expansion turns needed to reach a voxel in the prepared [connectivity model](appendix_H_resistance.qmd#connectivity-resistance). This quantity measures spatial difficulty and is distinct from elapsed pathway years. `colonisation_support_limit` [`sim_TurnsThreshold`] sets the permitted turn count |
+| `sim_averageResistance` | Saved spatial resistance quantity used in assessments of surface conversion, roof logs, and utility poles. `average_resistance_limit` [`sim_averageResistance` in the parameter file] sets the permitted value |
+
+: Table. Resistance quantities used in intervention assessment.
+
+:::
+
+::: {.table-block}
+
+| Assessment fields | Representation and meaning |
+|---|---|
+| `absolute_year`, `step_years` | Current pulse-end simulation year and pulse duration, respectively |
+| `under-node-treatment` | Feature-record attribute identifying the treatment of the feature's associated recruitment zone |
+| `scenario_rewildGroundRecruitZone` | Runtime voxel field holding `absolute_year` on eligible standalone-ground voxels and `-1` elsewhere. These voxels satisfy `0 <= sim_Turns <= colonisation_support_limit`, have a surface category `site_building_element` other than `'facade'` or `'roof'`, and exclude voxels already assigned to feature-linked recruitment zones |
+| `forest_precolonial`, `indicator_Bird_self_peeling` | Boolean attributes of VTK points indicating precolonial status and the presence of the peeling-bark indicator, respectively |
+| `proposal_deploy_structure`, `proposal_deploy_structure_intervention` | Assessment and intervention labels on VTK points, respectively |
+
+: Table. Fields used to assess placement and upgrade interventions.
+
+:::
+
+[Section 10](#submodels) gives the proposal triggers and detailed state changes.
+
+::: {.table-block}
+
+| Proposal | Current setting and comparison | Permitted response |
+|---|---|---|
+| `Decay` | `CanopyResistance` at or below `surrounding_buffer_support_limit` [`maximum-tree-support-threshold`] | `buffer-feature` opens the wider `surrounding region` and permits full decay in place |
+| `Decay` | `CanopyResistance` above `surrounding_buffer_support_limit` and at or below `canopy_buffer_support_limit` [`moderate-tree-support-threshold`] | `buffer-feature` opens the `under canopy` region and permits full decay in place |
+| `Decay` | `canopy_buffer_support_limit < CanopyResistance < brace_support_limit` | `brace-feature` retains the tree through senescing and snag phases, followed by replacement when the snag phase ends |
+| `Decay` | `CanopyResistance >= brace_support_limit` | Refusal replaces the tree with a sapling |
+| `Release Control` | `CanopyResistance <= surrounding_buffer_support_limit` | `eliminate-canopy-pruning` opens the wider `surrounding region` and allows progression towards unmanaged conditions |
+| `Release Control` | `surrounding_buffer_support_limit < CanopyResistance <= canopy_buffer_support_limit` | `reduce-canopy-pruning` opens the `under canopy` region and allows progression towards moderated management |
+| `Release Control` | `CanopyResistance > canopy_buffer_support_limit` | Refusal maintains risk-averse management and resets accumulated time under support |
+| `Colonise` | `0 <= sim_Turns <= colonisation_support_limit`. Output-stage assessment of roofs, façades, and other ground also requires `sim_averageResistance <= average_resistance_limit` | Qualifying ground receives `larger-patches-rewild`, potential green roofs receive `enrich-envelope`, and potential brown roofs or façades receive `roughen-envelope`. Failed comparisons produce no intervention. Recruitment zones use the `sim_Turns` comparison alone |
+| `Recruit`, partial support in feature-linked zones | `under-node-treatment` equals `'footprint-depaved'` | `recruit_multiplier_partial` scales the quota for `rewild-smaller-patch`, subject to occupancy and spacing |
+| `Recruit`, full support in feature-linked zones | `under-node-treatment` equals `'node-rewilded'` or `'footprint-depaved-connected'` | `recruit_multiplier_full` scales the quota for `rewild-larger-patch`, subject to occupancy and spacing |
+| `Recruit`, full support on standalone ground | `scenario_rewildGroundRecruitZone == absolute_year` | `recruit_multiplier_full` scales the quota for `rewild-larger-patch`, subject to occupancy and spacing |
+| `Deploy-Structure`, roof logs | `sim_Turns <= colonisation_support_limit` and `sim_averageResistance <= average_resistance_limit` | `translocate-log` enables a candidate roof log |
+| `Deploy-Structure`, utility poles | `sim_averageResistance < average_resistance_limit` | `adapt-utility-pole` enables an artificial canopy |
+| `Deploy-Structure`, ground deadwood | `scenario_rewildGroundRecruitZone == absolute_year`, `deployGroundDeadwood['enabled'] == True`, and `step_years > 0` | `translocate-deadwood` inserts fallen and decayed features within the pulse's volume budget |
+| `Deploy-Structure`, feature upgrades at VTK points | `proposal_deploy_structure == 'not-assessed'`, `forest_precolonial == False`, and `indicator_Bird_self_peeling == True` | Sets `proposal_deploy_structure = 'proposal-deploy-structure_accepted'` and `proposal_deploy_structure_intervention = 'upgrade-feature'` |
+| `Recruit` or `Deploy-Structure` | No qualifying space, placement, or feature meets the applicable requirements | No insertion, deployment, or upgrade labelling occurs |
+
+: Table. Proposal requirements and permitted intervention responses.
+
+:::
+
+#### Apply responses and carry changes forward
+
+The permitted responses update habitat features or surfaces. These changes enter the next state and affect subsequent proposal opportunities. The following walkthroughs use illustrative local inputs with the study's configured thresholds.
+
+##### Decay at Parade
+
+- Proposal at year 10. A tree reaches the `Decay` trigger with `CanopyResistance = 60`.
+- Human-led assessment. `brace_support_limit = 4`. Because `60 >= 4`, refusal replaces the tree with a sapling.
+- Nonhuman-led assessment. `brace_support_limit = 70` and `canopy_buffer_support_limit = 50`. Because `50 < 60 < 70`, the model applies `brace-feature`.
+- State change. The braced tree can enter senescence and subsequently become a snag. Replacement follows when the snag duration ends; bracing does not permit collapse in place.
+
+##### Colonise at City
+
+- Input location. A potential green-roof voxel has `sim_Turns = 1000` and `sim_averageResistance = 40`.
+- Nonhuman-led assessment at saved year 10. `colonisation_support_limit = 300` and `average_resistance_limit = 50`. The comparison `40 <= 50` passes, but `1000 > 300`, so the roof remains unconverted.
+- Nonhuman-led assessment at saved year 30. `colonisation_support_limit = 1250` and `average_resistance_limit = 50`. Both comparisons pass, so the output-stage assessment applies `enrich-envelope`.
+- Human-led comparison. At year 10, `colonisation_support_limit = 20` and `average_resistance_limit = 10`. At year 30, their values are 50 and 20, respectively. Both comparisons fail at both times, so the roof remains unconverted.
+
+#### Configuration used in the study
+
+Table 5 records the configured settings for the article's runs. Both pathways share the same spatial inputs, habitat feature library, growth and mortality rules, lifecycle durations, planting density, and pruning timings. The code names the human-led pathway `trending` and the nonhuman-led pathway `positive`.
+
+The schedules for `colonisation_support_limit` and `average_resistance_limit` specify values at years 0, 10, 30, 60, and 180. The model interpolates between these years and uses the values for each internal pulse's end year. The other settings retain their listed values throughout the run. Selected saved states record the trajectory, with additional assessments during output generation according to [Section 4](#process-scheduling).
+
+::: {.table-block}
+
+| Setting | Pathway | Parade | City | Street |
+|---|---|---|---|---|
+| `brace_support_limit` | Human-led | 4 | 4 | 4 |
+| `brace_support_limit` | Nonhuman-led | 70 | 70 | 90 |
+| `canopy_buffer_support_limit` | Human-led | 3 | 3 | 3 |
+| `canopy_buffer_support_limit` | Nonhuman-led | 50 | 50 | 70 |
+| `surrounding_buffer_support_limit` | Human-led | 1 | 1 | 1 |
+| `surrounding_buffer_support_limit` | Nonhuman-led | 15 | 15 | 20 |
+| `colonisation_support_limit` at years 0, 10, 30, 60, 180 | Human-led | 0 throughout | 0, 20, 50, 100, 200 | 0, 20, 50, 100, 200 |
+| `colonisation_support_limit` at years 0, 10, 30, 60, 180 | Nonhuman-led | 0, 0, 3000, 4500, 5000 | 0, 300, 1250, 4000, 5000 | 0, 300, 3000, 4500, 5000 |
+| `average_resistance_limit` at years 0, 10, 30, 60, 180 | Human-led | Unset, so 0 throughout | 0, 10, 20, 30, 50 | 0 throughout |
+| `average_resistance_limit` at years 0, 10, 30, 60, 180 | Nonhuman-led | Unset, so 0 throughout | 0, 50, 50, 67.9, 96 | 0, 50, 50, 67.9, 80 |
+| `recruit_multiplier_full` | Human-led | 1.0 | 1.0 | 1.0 |
+| `recruit_multiplier_full` | Nonhuman-led | 1.6 | 1.6 | 1.6 |
+| `recruit_multiplier_partial` | Human-led | 1.0 | 1.0 | 1.0 |
+| `recruit_multiplier_partial` | Nonhuman-led | 1.2 | 1.2 | 1.2 |
+| `deployGroundDeadwood['enabled']` | Human-led | Off | Off | Off |
+| `deployGroundDeadwood['enabled']` | Nonhuman-led | Off | Off | On |
+
+: **Table 5. Intervention-support settings along the human-led and nonhuman-led pathways.**
 
 :::
 
@@ -321,7 +395,7 @@ The settings and indicator definitions also shape particular comparisons. Parade
 
 Initialisation loads the selected place's [`habitat_volume_grid`](#habitat-volume-grid), [`habitat_feature_tables`](#habitat-feature-tables), and [habitat feature library](#feature-template-library). Section 2 describes these entities and links to their preparation workflows. The pathway simulation uses the prepared spatial inputs without recomputing the resistance field or cellular automata expansion.
 
-The engine initialises `CanopyResistance` as defined in Section 6 and seeds missing `presenscent_duration_years` as described in Section 10.1. These values establish the initial conditions for assessing tree proposals.
+At initialisation, the model calculates `CanopyResistance` as the mean of `analysis_combined_resistanceNOCANOPY` over the tree's `node_CanopyID` voxels. A tree without a canopy footprint takes the value at its own voxel. The engine also seeds missing `presenscent_duration_years` as described in Section 10.1. These values establish the initial conditions for assessing tree proposals.
 
 ### 9. Execution and outputs {#execution-and-outputs}
 
@@ -565,7 +639,7 @@ Each accepted placement appends a new precolonial sapling. It
 
 #### 10.5 Proposal-Deploy-Structure
 
-The engine proposes `Deploy-Structure` where a location has been reached by `Colonise` within the current thresholds, and a specific feature is present at that location, or there is potential for one.
+The engine assesses `Deploy-Structure` through candidate logs and poles, eligible ground, and VTK-point attributes. The requirements differ between the four paths below.
 
 ##### Proposal trigger and assessment
 
@@ -585,7 +659,7 @@ The model enables existing `utility poles` as `artificial canopies` where `sim_a
 
 ###### `upgrade-feature`
 
-The model applies `upgrade-feature` per voxel during VTK generation. It marks a voxel for conversion from `origin = introduced` to `origin = hybrid` where the tree is not precolonial and the voxel carries the peeling-bark indicator. It leaves voxels already occupied by poles or logs untouched.
+During VTK generation, the model applies `upgrade-feature` to points where `proposal_deploy_structure == 'not-assessed'`, `forest_precolonial == False`, and `indicator_Bird_self_peeling == True`. It sets `proposal_deploy_structure` to `'proposal-deploy-structure_accepted'` and `proposal_deploy_structure_intervention` to `'upgrade-feature'`. These labels represent support for the hybrid upgrade.
 
 ##### Rejected outcome
 
@@ -599,7 +673,7 @@ The engine does nothing.
 |---|---|---|
 | `translocate-log` | full | inserts a `fallen` feature on roofs, or inserts `fallen` and `decayed` features on colonised ground |
 | `adapt-utility-pole` | full | inserts an `artificial canopy` feature |
-| `upgrade-feature` | full | converts an existing `introduced` tree to its `hybrid` variant |
+| `upgrade-feature` | full | labels qualifying VTK points as accepted `upgrade-feature` interventions |
 | `translocate-deadwood` | full | inserts `fallen` and `decayed` features on colonised ground to a volume budget |
 
 : Table. Deploy Structure interventions and supported outcomes.
@@ -608,9 +682,7 @@ The engine does nothing.
 
 ##### State change
 
-Once the engine accepts `Deploy-Structure`, it either enables an existing structure or inserts a new deadwood feature.
-
-Accepted logs and poles remain as enabled structures. Accepted ground deadwood enters the model as new `fallen` or `decayed` habitat features.
+`Deploy-Structure` enables candidate structures, inserts new deadwood features, or labels qualifying VTK points with `upgrade-feature`. Accepted logs and poles remain enabled, while new ground deadwood enters the `habitat_feature_tables` as `fallen` or `decayed` features.
 
 #### 10.6 Growth
 
