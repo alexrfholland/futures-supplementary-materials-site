@@ -59,7 +59,7 @@ Definitions for the current implementation:
 
 Urban cohorts, anchored to `0.06`
 
-::: {.column-screen-inset}
+::: {.table-block}
 
 | DBH cohort | Raw mortality | Shaped mortality | `s` over 8 years | Annual mortality |
 | --- | ---: | ---: | ---: | ---: |
@@ -76,7 +76,7 @@ Urban cohorts, anchored to `0.06`
 
 Nature-reserve cohorts, anchored to `0.03`
 
-::: {.column-screen-inset}
+::: {.table-block}
 
 | DBH cohort | Raw mortality | Shaped mortality | `s` over 8 years | Annual mortality |
 | --- | ---: | ---: | ---: | ---: |

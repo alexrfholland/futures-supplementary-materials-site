@@ -9,11 +9,6 @@ format:
       - cosmo
       - ../styles.scss
       - personas-layout.scss
-    grid:
-      body-width: 1100px
-      sidebar-width: 230px
-      margin-width: 200px
-      gutter-width: 1.25rem
 ---
 
 The main text uses the capabilities approach to construct personas. This appendix documents the example species, relationships and sampled capabilities that inform each persona. The following [Capability groups and indicators](appendix_E_capability_groups_and_indicators.qmd) page explains how we select environmental measures from this evidence.
@@ -30,9 +25,7 @@ The Lizard persona gathers the Common Garden Skink, Southern Marbled Gecko, East
 
 The Tree persona gathers the English Elm, River Red Gum and Yellow Box, with a focus on large old trees. Their growth, renewal and fungal relationships connect individual trees with wider ecological processes. Urban pruning and soil disturbance constrain these relationships.
 
-::: {.personas-table}
-
-**Table 1. Persona overview**
+::: {.table-block}
 
 | Persona | Name | Body | Lifespan | Reason for inclusion |
 |---|---|---|---|---|
@@ -48,6 +41,8 @@ The Tree persona gathers the English Elm, River Red Gum and Yellow Box, with a f
 | Lizard | Eastern Blue-tongued Lizard (*Tiliqua scincoides scincoides*) | 45 to 60 cm overall. | More than 30 years in captivity [@koenigEcologyAustralianReptile2001]. | A long-lived, ground-dependent garden resident that avoids roads and reuses familiar shelters. |
 | Lizard | Lace Monitor (*Varanus varius*) | Up to 2.1 m overall. | 15 to 20 years [Victorian species assessment](https://bio-prd-naturekit-public-data.s3.ap-southeast-2.amazonaws.com/species_assessments/Varanus_varius_12283.pdf). | A large, long-lived and wide-ranging predator that climbs trees but currently avoids the city. |
 
+: **Table 1. Persona overview**
+
 :::
 
 ## Overview of capabilities
@@ -58,9 +53,7 @@ We organise capability choices across two domains. The first domain covers scale
 
 These capabilities demonstrate how lizards, birds, and trees participate in multispecies communities, hold knowledge, innovate, and contribute to urban living. We understand these contributions as 'design', which we define as the collective creation of conditions that support life in response to novel circumstances [^14]. To illustrate this concept, we include columns showing how capabilities create services for each persona as well as for others.
 
-::: {.personas-table}
-
-**Table 2. Sample bird capabilities**
+::: {.table-block}
 
 | Capability | Service to Self | Service to Others | Threats | Domain | Scale |
 |----|----|----|----|----|----|
@@ -73,11 +66,11 @@ These capabilities demonstrate how lizards, birds, and trees participate in mult
 | Learn | Develop and express local dialects | Indicate ecosystem health to humans | Noise pollution, population isolation | Affiliation | Collective interaction |
 | Procreate\* | Access nesting sites for breeding | Create structures used by other species | Natural hollows take centuries to form | Affiliation | Multiple generations |
 
+: **Table 2. Sample bird capabilities**
+
 :::
 
-::: {.personas-table}
-
-**Table 3. Sample lizard capabilities**
+::: {.table-block}
 
 | Capability | Service to Self | Service to Others | Threats | Domain | Scale |
 |----|----|----|----|----|----|
@@ -91,11 +84,11 @@ These capabilities demonstrate how lizards, birds, and trees participate in mult
 | Socialise | Establish hierarchies | Indicate ecosystem health to researchers | Isolation of populations | Affiliation | Collective interaction |
 | Explore\* | Traverse routes to reach mates | Maintain gene flow | Inbreeding due to isolation | Affiliation | Collective interaction |
 
+: **Table 3. Sample lizard capabilities**
+
 :::
 
-::: {.personas-table}
-
-**Table 4. Sample tree capabilities**
+::: {.table-block}
 
 | Capability | Service to Self | Service to Others | Threats | Domain | Scale |
 |----|----|----|----|----|----|
@@ -108,6 +101,8 @@ These capabilities demonstrate how lizards, birds, and trees participate in mult
 | Host | Offer surfaces for symbiotes such as epiphytes and lichens | Create three dimensional variation in niches[^22], | Simplification of tree structure | Affiliation | Collective interaction |
 | Release | Release pollen and seed | Provide food source | Lack of pollinators, seed dispersers |  |  |
 | Propagate\* | Recruit new trees across suitable ground | Renew canopy services across time[^11] | Propagate\* | Affiliation | Multiple generations |
+
+: **Table 4. Sample tree capabilities**
 
 :::
 
@@ -161,7 +156,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Evolved habitat and Melbourne presence
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Evolved habitat | Melbourne status and history | Threats | Place-based cultures, innovations and adaptations | Use of artificial structures | Scale of redirection from current trends | Supporting evidence for this placement |
 |---|---|---|---|---|---|---|---|
@@ -174,7 +169,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Movement and refuge
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Vertical range | Horizontal range | Refuge or anchorage |
 |---|---|---|---|
@@ -187,7 +182,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Resource acquisition and renewal
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Key dependency | How it is obtained | How access is renewed or reshaped |
 |---|---|---|---|
@@ -200,7 +195,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Cyclical patterns and lifecycle
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Within a day | Across seasons | Across years |
 |---|---|---|---|
@@ -213,7 +208,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Relations and communication
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Reproduction | Same-species relations | Multispecies relations | Human relations | Communication and response |
 |---|---|---|---|---|---|
@@ -233,7 +228,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Evolved habitat and Melbourne presence
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Evolved habitat | Melbourne status and history | Threats | Place-based cultures, innovations and adaptations | Use of artificial structures | Scale of redirection from current trends | Supporting evidence for this placement |
 |---|---|---|---|---|---|---|---|
@@ -253,7 +248,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Resource acquisition and renewal
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Key dependency | How it is obtained | How access is renewed or reshaped |
 |---|---|---|---|
@@ -265,7 +260,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Cyclical patterns and lifecycle
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Within a day | Across seasons | Across years |
 |---|---|---|---|
@@ -277,7 +272,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Relations and communication
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Reproduction | Same-species relations | Multispecies relations | Human relations | Communication and response |
 |---|---|---|---|---|---|
@@ -302,7 +297,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Evolved habitat and Melbourne presence
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Evolved habitat | Melbourne status and history | Threats | Place-based cultures, innovations and adaptations | Use of artificial structures | Scale of redirection from current trends | Supporting evidence for this placement |
 |---|---|---|---|---|---|---|---|
@@ -315,7 +310,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Movement and refuge
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Vertical range | Horizontal range | Refuge or anchorage |
 |---|---|---|---|
@@ -328,7 +323,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Resource acquisition and renewal
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Key dependency | How it is obtained | How access is renewed or reshaped |
 |---|---|---|---|
@@ -341,7 +336,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Cyclical patterns and lifecycle
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Within a day | Across seasons | Across years |
 |---|---|---|---|
@@ -354,7 +349,7 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 ### Relations and communication
 
-::: {.personas-table}
+::: {.table-block}
 
 | Name | Reproduction | Same-species relations | Multispecies relations | Human relations | Communication and response |
 |---|---|---|---|---|---|

@@ -5,9 +5,7 @@ title: "Appendix G: Habitat volumes"
 The main text locates [habitat features](appendix_F_habitat_features.qmd) within three-dimensional habitat volumes. This appendix describes the spatial datasets and workflow used to construct the voxel grid and its attributes. Attributes can be integers, floats, Booleans and strings. The input table lists the data sources used to construct the initial volume.
 
 
-::: {.column-screen-inset}
-
-**Table. Inputs**
+::: {.table-block}
 
 | Input | Source | Format | Attributes used in voxels | Role in volume |
 | --- | --- | --- | --- | --- |
@@ -24,6 +22,8 @@ The main text locates [habitat features](appendix_F_habitat_features.qmd) within
 | Roof assesment | City of Melbourne | Polygons | Green roof compatiability (score of 1-5); Brown roof compatibility (score 1 – 5) | Define roof type voxel property |
 | Utility poles | City of Melbourne and Victorian Government | Points | poletype, isArtificial | Define locations for artificial canopies |
 
+: **Table. Inputs**
+
 :::
 
 
@@ -32,9 +32,7 @@ The main text locates [habitat features](appendix_F_habitat_features.qmd) within
 The following table sets out the workflow for preparing the initial habitat volume.
 
 
-::: {.column-screen-inset}
-
-**Table. Steps to initialise the habitat volume**
+::: {.table-block}
 
 |  | **Step** | **Inputs** | **Operation** | **Output** | **Attributes added** |
 | --- | --- | --- | --- | --- | --- |
@@ -50,6 +48,8 @@ The following table sets out the workflow for preparing the initial habitat volu
 | **10** | **Group voxels under canopies** | Tree canopies | Clip to bounds, rasterise onto voxels | Site voxels | Tree_footprint_ID |
 | **11** | **Define urban forest properties** | Urban forest points and terrain | Trim to bounds, keep species and measures, project to terrain elevation, assign tree numbers | Tree table and canopy footprints | urbanForest_*, tree_number |
 | **12** | **Place tree features** | Urban forest table | Match trees location to features and place features in the grid | Tree voxels | Resource attributes per feature |
+
+: **Table. Steps to initialise the habitat volume**
 
 :::
 
@@ -108,9 +108,7 @@ The process:
 The following table details the allocation of fallen trees to rooftops.
 
 
-::: {.column-screen-inset}
-
-**Table. Fallen tree allocation process for roof surfaces**
+::: {.table-block}
 
 | Step | Action | Details |
 | --- | --- | --- |
@@ -122,6 +120,8 @@ The following table details the allocation of fallen trees to rooftops.
 | 6 | Place logs | Loop that randomly selects voxels within a roof as potential locations for fallen trees/logs until roof capacity exhausted |
 | 7 | Assign voxel attribute | Assign selected voxels the property 'potential_log_host', as well as the log ID and its size |
 
+: **Table. Fallen tree allocation process for roof surfaces**
+
 :::
 
 
@@ -130,9 +130,7 @@ The following table details the allocation of fallen trees to rooftops.
 These steps produce habitat volumes whose voxel attributes describe structures, surfaces, resources and spatial groupings. The table below lists the resulting attributes. They provide the common spatial basis for calculating [resistance](appendix_H_resistance.qmd), simulating [pathways](appendix_J_pathway_simulation.qmd) and reading [relational indicators](appendix_E_capability_groups_and_indicators.qmd).
 
 
-::: {.column-screen-inset}
-
-**Table. Habitat volume attributes**
+::: {.table-block}
 
 | Type | Attribute | Description |
 | --- | --- | --- |
@@ -141,6 +139,8 @@ These steps produce habitat volumes whose voxel attributes describe structures, 
 | Urban forest data (for biological habitat features) | Scientific name / Genus; Diameter at breast height; Age; Useful life expectancy; Management condition | Distinguishes “elm” and “eucalyptus” feature varients; Allows model to asses feature age when simulating pathways; Age of biological habitat features; Number of years until humans will remove feature; Unmanaged, moderated, risk-adverse |
 | Urban elements | Roadway; Busy roadway; Façade; Green roof; Brown roof; Open space; Parking; Existing conversion; Utility pole (node); Possible node | Standard vehicle carriageways; Major arterial roads; Vertical building surface; Possible intensive planting roofs; Possible extensive planting roofs; Permeable ground surfaces; On site parking, median strips, and other readily convertible road space; Locations earmarked for existing conversion; Possible location for artificial canopies; Possible location for translocated snag or fallen tree |
 | Grouping | Habitat feature; Canopy footprint; Patch group | Voxels aggregated into habitat features; Voxels on ground surface beneath a habitat feature; Voxels grouped as patches |
+
+: **Table. Habitat volume attributes**
 
 :::
 

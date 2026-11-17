@@ -10,6 +10,8 @@ Edit `appendices/` in this main checkout. Treat proposal worktrees and preview c
 
 `_superseded/` retains the original appendices, persona background pages and earlier updated drafts. These files are excluded from the published site, navigation and search. Shared media and references remain in `media/` and `references/`.
 
+Keep tables in the document body, using `.table-block` for grouped blocks. Wide tables scroll inside `.table-scroll`; screen-spanning layout classes would extend them into the navigation areas. Use native Markdown captions (`: Table 1. Title`) to retain existing labels and numbering.
+
 ## Preview and check
 
 Use Quarto 1.10.19:

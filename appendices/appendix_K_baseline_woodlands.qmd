@@ -38,7 +38,7 @@ The `Flat` values are treated as densities per 0.1 ha and scaled to the site are
 
 These DBH rows are grouped into the model size classes as follows:
 
-::: {.column-screen-inset}
+::: {.table-block}
 
 | model category | model definition | DBH rows included | density per 0.1 ha | density per ha |
 |---|---|---|---:|---:|
@@ -80,7 +80,7 @@ We estimate ground-deadwood biovolume from the literature, allocate it between `
 
 The evidence base for the ground-deadwood target and split is:
 
-::: {.column-screen-inset}
+::: {.table-block}
 
 | measure | quantity | type of estimate | ref | note |
 |---|---|---|---|---|
@@ -113,7 +113,7 @@ fallen trunks = total fallen deadwood - smaller fallen branch debris
 
 This gives:
 
-::: {.column-screen-inset}
+::: {.table-block}
 
 | case | total fallen deadwood | smaller fallen branch debris | calculated fallen trunks | fallen trunk share | smaller debris share |
 |---|---:|---:|---:|---:|---:|

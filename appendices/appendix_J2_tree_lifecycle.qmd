@@ -6,7 +6,7 @@ The main text follows trees through growth, senescence, death and decomposition.
 
 TODO: update
 
-::: {.column-screen-inset}
+::: {.table-block}
 
 | Life cycle phase | Precolonial value | Introduced value | Evidence |
 |---|---|---|---|

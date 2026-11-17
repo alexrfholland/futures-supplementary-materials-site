@@ -1,7 +1,7 @@
 /*-- scss:rules --*/
 /* Keep the personas tables in Quarto's body column, between the menus. */
 body.personas-and-capabilities main.content,
-body.personas-and-capabilities .personas-table,
+body.personas-and-capabilities .table-block,
 body.personas-and-capabilities .table-scroll {
   min-width: 0;
 }

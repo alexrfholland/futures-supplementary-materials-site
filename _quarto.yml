@@ -83,6 +83,11 @@ format:
       - cosmo
       - styles.scss
     toc: true
+    grid:
+      body-width: 1100px
+      sidebar-width: 230px
+      margin-width: 200px
+      gutter-width: 1.25rem
     toc-depth: 3
     code-copy: true
     anchor-sections: true

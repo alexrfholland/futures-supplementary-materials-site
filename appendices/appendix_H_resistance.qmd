@@ -8,8 +8,6 @@ The main text uses resistance to represent the relative difficulty of changing a
 
 Table 1 records the parameterisation of the resistance grid. It retains the source's signed values and unresolved entries, marked [?]. The relationship between these signed scores and the glossary's 0–100 resistance scale remains to be confirmed.
 
-**Table 1. Resistance parameterisation**
-
 | **Category** | **Urban feature** | **Resistance value** |
 |----|----|----|
 | ***Roadways*** | Major arterial road | -100 |
@@ -28,6 +26,8 @@ Table 1 records the parameterisation of the resistance grid. It retains the sour
 | ***Existing green space*** | Public open space | 80 |
 |  | Existing tree canopies | +30 |
 |  | Unassigned areas | 60 |
+
+: **Table 1. Resistance parameterisation**
 
 
 ## Connectivity resistance
@@ -50,9 +50,7 @@ For each site, the connectivity simulation:
 
 Table 2 shows how the expansion algorithm operates from each node.
 
-::: {.column-screen-inset}
-
-**Table 2. Steps for generating patches**
+::: {.table-block}
 
 | Step | Action | Details |
 | --- | --- | --- |
@@ -61,6 +59,8 @@ Table 2 shows how the expansion algorithm operates from each node.
 | 3 | Assign energy cost | Urban elements create resistance that costs energy:; Low resistance areas (<50): No energy loss, fast expansion; Medium resistance areas (50-80): Moderate energy loss, occasional termination; High resistance areas (>80): Significant energy loss, high termination probability |
 | 4 | Grow patches | Each expansion step increments the turn counter; Voxels expanding have a chance to terminate (stopping their growth) and split (growing into two regions).; Voxels growing on façades have a weighting to grow downwards to link starting nodes on roofs with the ground.; Maximum turns set to 5000 (representing long-term potential); The turn value for each voxel indicates how quickly it can be rewilded |
 | 5 | Assign voxel attributes | Based on the results, assign the following attributes to voxels:; sim_Nodes: Groups voxels into patches; Sim_Turns: Record how many turns it took to reach the voxel |
+
+: **Table 2. Steps for generating patches**
 
 :::
 

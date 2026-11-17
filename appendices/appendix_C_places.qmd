@@ -16,13 +16,13 @@ Figure 1 and Table 1 describe the sampled areas. Each rectangular boundary defin
 
 **Figure 1. Sampled places.** City appears at the top, Street in the middle and Parade at the bottom. The original figure labels Parade as Boulevard. All three are novel ecologies with high degrees of human control. Left images from Nearmap; right images by the authors.
 
-**Table 1. Locations, rectangular boundaries and modelling relevance.** Coordinates give the two boundary corners as latitude south and longitude east.
-
 | Place and location | Rectangle boundary coordinates (°S, °E) | Composition and human control | Challenge and opportunity |
 |---|---|---|---|
 | **City:** Melbourne CBD, within the Hoddle Grid | 37.807625, 144.969310; 37.812841, 144.972270 | Extremely novel; fully managed | Minimal ground space constrains planned greening. Building surfaces offer space for habitat and connections across roofs and façades. |
 | **Street:** Carlton and Parkville around the University of Melbourne | 37.785801, 144.957592; 37.791017, 144.960550 | Highly novel; fully managed | Young native street trees lack senescent features. Artificial canopies can provide habitat while trees grow and age. |
 | **Parade:** Royal Parade beside Royal Park, Parkville | 37.797253, 144.962603; 37.802469, 144.965563 | Highly novel; highly managed | Senescent introduced elms face removal. Retaining and upgrading their canopies requires space for ageing, branch fall and eventual collapse. |
+
+: **Table 1. Locations, rectangular boundaries and modelling relevance.** Coordinates give the two boundary corners as latitude south and longitude east.
 
 These contrasts shape the [proposals](appendix_I_proposals_and_interventions.qmd) and [pathways](appendix_J_pathway_simulation.qmd) examined by the model: adapting built surfaces at City, supporting a developing canopy at Street, and retaining ageing trees at Parade.
 

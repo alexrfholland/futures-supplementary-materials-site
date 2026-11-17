@@ -10,9 +10,7 @@ The main text assesses opportunities for thriving through persona-specific envir
 
 To make the sampled capabilities comparable across personas, we aggregate them into three groups: Communicate, Acquire Resource and Reproduce. We then use relational indicators to quantify selected environmental conditions that support these capability groups. The indicators translate evidence about nonhuman behaviours and resources into spatial quantities through which we compare pathways. Table 1 explains their ecological basis and identifies further conditions that influence actual behaviour, interactions and population responses.
 
-::: {.column-screen-inset}
-
-**Table 1. Ecological examples informing indicator selection**
+::: {.table-block}
 
 | Persona | Capability group | Behaviour expressing the capability | Example property of physical environment supporting this behaviour | Indicator | Unit | Omission |
 |---|---|---|---|---|---|---|
@@ -26,6 +24,8 @@ To make the sampled capabilities comparable across personas, we aggregate them i
 |  | **Acquire Resource** | English Elms extend broad, leaf-bearing branches into canopy gaps to capture sunlight. | In streets and parks, perceived branch-fall risk and infrastructure clearances drive heavy pruning [@saeboSelectionPlantMaterials2005; @lerouxFutureLargeOld2014]. | Unpruned canopy | Volume | It does not measure leaf area, actual light interception, photosynthesis, water stress or pruning history. |
 |  | **Reproduce** | Yellow Box seeds germinate in open loamy gaps and establish as saplings that can replace ageing trees. | Nutritious soil built by decades of retained litter and fallen biomass provides a seedbed in which Yellow Box saplings can mature [@banksTreeAgesAgeing1997; @mallen-cooperPlantSoilFunction2026]. | Nutritious soil | Area | It does not measure seed arrival, germination, seedling survival or later recruitment. |
 
+: **Table 1. Ecological examples informing indicator selection**
+
 :::
 
 ## Indicators in the model
@@ -34,9 +34,7 @@ Table 2 documents the reporting schema used to read selected conditions from sav
 
 The two tables serve complementary purposes. Table 1 explains the ecological reasoning behind indicator selection; Table 2 records the queries, retained sub-indicators and shares used in reporting. The saved-state calculations are described further in [Pathways](appendix_J_pathway_simulation.qmd).
 
-::: {.column-screen-inset}
-
-**Table 2. Indicators in the model**
+::: {.table-block}
 
 | Indicator | What it measures | Raw VTK query | Raw schema row | Reporting status | Stream share |
 |---|---|---|---|---|---|
@@ -61,6 +59,8 @@ The two tables serve complementary purposes. Table 1 explains the ecological rea
 | `Tree.reproduce.smaller-patches-rewild` | Partial recruit intervention | `proposal_recruit_intervention == rewild-smaller-patch` | sub-indicator | dropped | excluded from stream graph |
 | `Tree.reproduce.larger-patches-rewild` | Full recruit intervention | `proposal_recruit_intervention == rewild-larger-patch` | sub-indicator | kept | 100% of `Tree.reproduce` after exclusions |
 | `Tree.reproduce` | Combined reproduce habitat | union of `smaller-patches-rewild` and `larger-patches-rewild` | composite union | dropped | rebuilt from retained sub-indicators |
+
+: **Table 2. Indicators in the model**
 
 :::
 

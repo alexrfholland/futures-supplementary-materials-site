@@ -118,7 +118,7 @@ Not a growth curve itself but a routing mode that applies different allometric m
 
 All values in cm/yr of DBH increase.
 
-::: {.column-screen-inset}
+::: {.table-block}
 
 | DBH (cm) | `constant` | `fischer` | `sideroxylon` | `banks` | `ulmus` |
 |----------:|-----------:|----------:|--------------:|--------:|--------:|
