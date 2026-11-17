@@ -54,10 +54,16 @@ class RenderedTables(HTMLParser):
         self.tables = []
         self.current = None
         self.row = None
+        self.zero_width_columns = 0
 
     def handle_starttag(self, tag, attributes):
         if tag == "table":
             self.current = []
+        elif tag == "col" and re.search(
+            r"(?:^|;)\s*width\s*:\s*0(?:\.0+)?%\s*(?:;|$)",
+            dict(attributes).get("style", ""),
+        ):
+            self.zero_width_columns += 1
         elif tag == "tr" and self.current is not None:
             self.row = 0
         elif tag in {"th", "td"} and self.row is not None:
@@ -126,6 +132,11 @@ for source in sources:
     rendered = RenderedTables()
     html = rendered_path.read_text(encoding="utf-8")
     rendered.feed(html)
+    if rendered.zero_width_columns:
+        raise SystemExit(
+            f"Zero-width table columns in {source.name}: {rendered.zero_width_columns}. "
+            "Unset automatic column widths instead of emitting width: 0%."
+        )
     if expected != rendered.tables:
         raise SystemExit(
             f"Table rendering differs in {source.name}:\n"

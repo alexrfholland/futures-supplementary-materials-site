@@ -14,7 +14,7 @@ function Table(table)
 
     if uniform_widths then
       for i, colspec in ipairs(table.colspecs) do
-        table.colspecs[i] = {colspec[1], 0}
+        table.colspecs[i] = {colspec[1], nil}
       end
     end
 
