@@ -9,7 +9,7 @@ The pathway simulation supports the article’s argument about nonhuman leadersh
 **Contents**
 
 - **Overview:** [1. Purpose](#purpose); [2. Entities and state](#entities-and-state); [3. Time and spatial scales](#time-and-spatial-scales); [4. Process scheduling](#process-scheduling).
-- **Design concepts and run design:** [5. Proposals, negotiation, and interventions](#proposals-negotiation-and-interventions); [6. Effort thresholds and pathway settings](#effort-thresholds-and-pathway-settings); [7. Exploratory use and run design](#exploratory-use-and-run-design).
+- **Model rules and interpretation:** [5. Levels of proposal representation](#proposals-negotiation-and-interventions); [6. Effort thresholds and pathway settings](#effort-thresholds-and-pathway-settings); [7. Exploratory use and run design](#exploratory-use-and-run-design).
 - **Initialisation and implementation:** [8. Initialisation](#initialisation); [9. Execution and outputs](#execution-and-outputs); [10. Submodels](#submodels); [11. Code and data](#code-and-data).
 
 ## Overview
@@ -24,9 +24,9 @@ The simulation compares human-led and nonhuman-led pathways at three Melbourne p
 
 The simulation has three parts:
 
-- `habitat_volume_grid` [`possibility_space_ds`] represents the place as a [voxel grid](appendix_G_habitat_volumes.qmd#workflow-for-initialising-habitat-volume) for assessing spatial opportunities.
-- `habitat_feature_tables` [`tree_df`, `log_df`, `pole_df`] record [trees, logs, and poles](appendix_G_habitat_volumes.qmd#workflow-for-initialising-habitat-volume) and carry their changing state forward through time.
-- A [feature-template library](appendix_F_habitat_features.qmd#sampled-habitat-opportunities) defines possible conditions of trees, logs, and artificial canopies.
+- The `habitat_volume_grid` [`possibility_space_ds`] represents the place as a voxel grid for assessing spatial opportunities. It combines the grid produced by the workflow in [Appendix G: Habitat volumes](appendix_G_habitat_volumes.qmd#workflow-for-initialising-habitat-volume) with resistance and connectivity fields prepared in [Appendix H: Resistance](appendix_H_resistance.qmd).
+- The `habitat_feature_tables` [`tree_df`, `log_df`, `pole_df`] record trees, logs, and poles and carry their changing state and intervention history across pulses. They are initialised from the tree and pole records and candidate roof-log inputs prepared in [Appendix G: Habitat volumes](appendix_G_habitat_volumes.qmd).
+- The habitat feature library contains reusable templates produced by the workflow in [Appendix F: Habitat features](appendix_F_habitat_features.qmd#workflow). These templates represent the possible conditions of trees, logs, and artificial canopies used when constructing spatial outputs.
 
 #### States, trajectories, and pathways
 
@@ -36,36 +36,30 @@ Three concepts organise the simulation.
 2. Trajectories. A trajectory is an ordered sequence of states through time. The model generates this sequence through repeated updates, and the saved outputs record selected points along it.
 3. Pathways. A pathway is a human-readable account of how leadership interactions connect the present to a future along a trajectory. The model represents these interactions through the authority to support, moderate, or refuse proposals and select interventions. Human-led and nonhuman-led pathway settings give different levels of support to nonhuman proposals, so the same starting state can develop along different trajectories.
 
-#### Updating the state
+#### Generating trajectories under pathway settings {#generating-trajectories-under-pathway-settings}
 
-Each internal time step, called a pulse, starts from the state left by the preceding update. The model connects that state to the next through the following operations.
+Each internal time step, called a pulse, inherits the preceding state. A **proposal** is a locally expressed direction of change that the model identifies from the current state and brings into negotiation.
 
-1. Apply ongoing processes. Growth, ageing, and mortality change the current conditions. These processes run in each pulse without requiring a new proposal.
-2. Detect proposal opportunities. The model detects opportunities in the resulting conditions and those inherited from earlier updates. Ongoing processes can therefore generate proposals, as can the consequences of earlier interventions.
-3. Negotiate responses. The model assesses proposals against resistance, using the effort thresholds set for the pathway. These comparisons determine support, moderation, or refusal, so the same proposal can lead to different interventions under human-led and nonhuman-led settings.
-4. Apply interventions. The selected interventions change habitat features or surfaces within the place. Their consequences enter the changed state and shape the opportunities available in subsequent updates.
+1. **Apply ongoing processes.** Growth, ageing, and mortality change the current conditions. These processes run in each pulse without requiring a new proposal.
+2. **Detect proposal opportunities.** The model detects opportunities in the resulting conditions and those inherited from earlier updates. Ongoing processes can therefore generate proposals, as can the consequences of earlier interventions.
+3. **Negotiate responses.** The model assesses proposals against resistance, using the effort thresholds set for the pathway. These comparisons determine support, moderation, or refusal, so the same proposal can lead to different interventions under human-led and nonhuman-led settings.
+4. **Apply interventions.** The selected interventions change habitat features or surfaces within the place. Their consequences enter the changed state and shape the opportunities available in subsequent updates.
 
-The detailed pulse schedule interleaves proposal assessment and interventions, allowing one change to enable another within the same pulse or in later pulses. For example, an intervention supporting `Colonise` can open space in which the model subsequently assesses `Recruit`.
+The `habitat_feature_tables` carry persistent feature states and decisions forward; the `habitat_volume_grid` supports updated spatial opportunities and saved outputs. Repetition generates the trajectory, with pathway authority shaping its interventions.
 
-Repeated updates generate the trajectory. A local proposal affects a distant future through the intervening responses and states, and the pathway describes how leadership shapes this developing sequence.
+The [detailed schedule](#process-scheduling) interleaves proposal assessment and interventions within each pulse and specifies additional operations when saving a state.
 
-#### Representing the state
+#### Habitat volume grid {#habitat-volume-grid}
 
-During the simulation, the engine updates the feature records and uses their relationship with the grid to determine where further change can occur. When generating spatial outputs, it projects the recorded feature states and intervention decisions into the habitat volume.
+The `habitat_volume_grid` represents ground, buildings, and other surfaces through voxels with sides of 1 m. Its resistance fields and connectivity attributes are outputs of the workflow in [Appendix H: Resistance](appendix_H_resistance.qmd), added before the pathway simulation begins. The [connectivity model](appendix_H_resistance.qmd#connectivity-resistance) uses cellular automata to expand patches from existing habitat features through a resistance field. Its prepared outputs identify connected regions through `sim_Nodes` and the number of expansion turns needed to reach each voxel through `sim_Turns`.
 
-#### `habitat_volume_grid` {#habitat-volume-grid}
+The prepared spatial inputs in the `habitat_volume_grid` provide the reference for each pulse. The engine resets a working grid for each pulse and updates temporary fields when computing spatial opportunities such as recruitment zones. At VTK generation time, it also projects feature-level decisions onto voxels. The fixed spatial reference therefore supports changes in the grid's working and output attributes.
 
-The `habitat_volume_grid` represents ground, buildings, and other surfaces through voxels with sides of 1 m. The preparation workflows described in [Habitat volumes](appendix_G_habitat_volumes.qmd) and [Resistance](appendix_H_resistance.qmd) assign urban attributes, resistance values, and connectivity information to this grid before the pathway simulation begins. The [connectivity model](appendix_H_resistance.qmd#connectivity-resistance) uses cellular automata to expand patches from existing habitat features through a resistance field. Its prepared outputs identify connected regions through `sim_Nodes` and the number of expansion turns needed to reach each voxel through `sim_Turns`.
-
-The prepared spatial inputs in `habitat_volume_grid` provide the reference for each pulse. The engine resets a working grid for each pulse and updates temporary fields when computing spatial opportunities such as recruitment zones. At VTK generation time, it also projects feature-level decisions onto voxels. The fixed spatial reference therefore supports changes in the grid's working and output attributes.
-
-Its key fields are `analysis_combined_resistance`, `analysis_combined_resistanceNOCANOPY`, `node_CanopyID`, `sim_Nodes`, `sim_Turns`, and `sim_averageResistance`.
-
-#### `habitat_feature_tables` {#habitat-feature-tables}
+#### Habitat feature tables {#habitat-feature-tables}
 
 The `habitat_feature_tables` hold one row per physical feature and record the information that persists across pulses. Their properties describe each feature's current condition, while records of interventions and time under support carry the consequences of earlier decisions into subsequent updates.
 
-These tables store trees from the urban forest survey, candidate logs on suitable roofs, and existing utility poles separately, with identifiers linking each feature to `habitat_volume_grid`. The [Place](appendix_C_places.qmd) and [Habitat volumes](appendix_G_habitat_volumes.qmd) pages describe the place data and their spatial preparation.
+The spatial inputs include urban forest records and canopy footprints, existing utility-pole locations, and candidate roof-log placements. The simulation stores these features separately and updates their properties and intervention records through time, with identifiers linking each feature to the `habitat_volume_grid`.
 
 ::: {.table-block}
 
@@ -99,27 +93,27 @@ Feature identifiers link each record to its position and associated regions in t
 | `sim_Nodes` | Ground voxels to the nearest node via growth simulation | xarray, including trees, logs, and poles |
 | `sim_Turns` | How many growth turns to reach each voxel | xarray, providing a proxy for spatial difficulty |
 
-: Table. Identifiers linking habitat features to `habitat_volume_grid`.
+: Table. Identifiers linking habitat features to the `habitat_volume_grid`.
 
 :::
 
-#### Feature-template library {#feature-template-library}
+#### Habitat feature library {#feature-template-library}
 
-The library defines possible conditions of trees, logs, and artificial canopies. As the feature tables change, the model selects the corresponding variants when constructing spatial outputs. [Habitat features](appendix_F_habitat_features.qmd) documents their construction and properties, and [Habitat volumes](appendix_G_habitat_volumes.qmd) documents their spatial representation.
+As the feature tables change, the model selects the corresponding library variants when constructing spatial outputs. The templates provide the spatial representation of each feature's current condition.
 
 #### Personas and indicators
 
-The [personas](appendix_D_personas_and_capabilities.qmd#persona-overview) make particular ways of living visible in the construction and assessment of the model. Evidence about [their capabilities](appendix_D_personas_and_capabilities.qmd#overview-of-capabilities) informs the proposal families and indicators, while the engine represents the resulting choices through feature states, spatial conditions, and intervention rules. It does not simulate personas acting as separate agents.
+The personas developed in [Appendix D: Personas and capabilities](appendix_D_personas_and_capabilities.qmd#persona-overview) make particular ways of living visible in the construction and assessment of the model. Evidence about [their capabilities](appendix_D_personas_and_capabilities.qmd#overview-of-capabilities) informs the proposal families and indicators, while the engine represents the resulting choices through feature states, spatial conditions, and intervention rules. It does not simulate personas acting as separate agents.
 
 During a run, the engine assesses spatial support by comparing `CanopyResistance`, `sim_Turns`, and `sim_averageResistance` with thresholds. These comparisons assign no weighting to a persona, species, or capability. The proposal-specific rules in Section 10 determine the resulting changes.
 
-After the run, the [indicators](appendix_E_capability_groups_and_indicators.qmd#indicators-in-the-model) read each saved state through voxel counts based on its habitat statistics, lifecycle states, decision columns, and surface classes. Any voxel changed by a `Colonise`, `Decay`, or `Release Control` intervention takes the surface class `low-vegetation`, including façades and roofs.
+After the run, the indicators defined in [Appendix E: Capability groups and indicators](appendix_E_capability_groups_and_indicators.qmd#indicators-in-the-model) read each saved state through voxel counts based on its habitat statistics, lifecycle states, decision columns, and surface classes. Any voxel changed by a `Colonise`, `Decay`, or `Release Control` intervention takes the surface class `low-vegetation`, including façades and roofs.
 
-The indicators compare these opportunities with a reference woodland, described in [Baseline woodlands](appendix_K_baseline_woodlands.qmd).
+The indicators compare these opportunities with a reference woodland, described in [Appendix K: Baseline woodlands](appendix_K_baseline_woodlands.qmd).
 
 ### 3. Time and spatial scales {#time-and-spatial-scales}
 
-The spatial model covers three places, Parade, City, and Street, named `trimmed-parade`, `city`, and `uni` in the code. It represents each place through voxels with sides of 1 m.
+The spatial model covers the three places described in [Appendix C: Places](appendix_C_places.qmd): Parade, City, and Street, named `trimmed-parade`, `city`, and `uni` in the code. It represents each place through voxels with sides of 1 m.
 
 The simulation spans 180 years, from 2025 to 2205. Users select the years at which it saves states through the `--years` input described in Section 9. The defaults are years 0, 1, 10, 30, 60, 90, 120, 150, and 180, giving nine saved states.
 
@@ -127,7 +121,7 @@ Between successive saved-state years, the model divides the elapsed time into pu
 
 ### 4. Process scheduling {#process-scheduling}
 
-The sequence below implements the repeated state update described in Section 2. It shows how the engine interleaves ongoing processes, proposal assessment, and interventions within each pulse. Section 10 gives the trigger, assessment, and state-change rules for each proposal.
+The following schedule specifies the order of operations for [generating trajectories](#generating-trajectories-under-pathway-settings). Section 10 gives the trigger, assessment, and state-change rules for each proposal.
 
 #### Operations within each pulse
 
@@ -149,19 +143,26 @@ Each pulse runs the following steps in order.
 
 #### Operations when saving a state
 
-After the final pulse leading to a saved state, the engine assesses whether logs and poles meet the thresholds for `Deploy-Structure`. During VTK generation, it then assigns envelope `Colonise` interventions and `upgrade-feature` changes to individual voxels. These operations complement the `Colonise` support updates and ground-deadwood placement within each pulse.
+After the final pulse leading to a selected saved-state year, the engine continues with these additional steps:
 
-## Design concepts and run design
+14. **Assess logs and poles.** Apply the current `Deploy-Structure` thresholds to the candidate log and pole records.
+15. **Generate and save the spatial representation.** During VTK generation, map current feature states and intervention decisions from the `habitat_feature_tables` into the habitat volume, using the library templates corresponding to each feature's condition. This output stage also assigns envelope `Colonise` interventions and `upgrade-feature` changes to individual voxels.
 
-### 5. Proposals, negotiation, and interventions {#proposals-negotiation-and-interventions}
+The saved outputs include tree, log and pole tables and VTK point clouds for subsequent indicator analysis and visualisation.
 
-A **proposal** is a directed bid for local action that a tree or population expresses through its state. For example, a tree proposes `Decay` when its remaining pre-senescence duration reaches zero, as specified in Section 10.1.
+## Model rules and interpretation
 
-**Negotiation** compares resistance at the voxels associated with a proposal with an effort threshold and returns full support, partial support, or refusal. The thresholds stand for the authority of whoever decides under each pathway.
+The state carried into each pulse reflects earlier interventions and ongoing biological changes. The model repeatedly applies growth, lifecycle, recruitment and mortality rules to eligible feature states and zones, with earlier interventions affecting whether lifecycle progression or recruitment can proceed. The model identifies proposal opportunities in these changed and inherited conditions. We selected the proposal families to explore directions of change that could improve opportunities for beings represented by the personas, as explained in [Appendix I: Proposals and interventions](appendix_I_proposals_and_interventions.qmd). The following rules distinguish opportunity identification from negotiation over the response.
 
-An **intervention** is the selected act that changes attributes of a habitat feature, one voxel, or a group of voxels in response. Section 2 explains how these changes enter the repeated state update and affect later proposal opportunities.
+### 5. Levels of proposal representation {#proposals-negotiation-and-interventions}
 
-The [Proposals](appendix_I_proposals_and_interventions.qmd) page defines the five proposal families, `Decay`, `Release Control`, `Colonise`, `Recruit`, and `Deploy-Structure`, and their interventions in conceptual terms. The following account explains where and when these proposals enter negotiation, and Section 10 gives their detailed rules.
+Proposal families use different forms of representation within the model:
+
+- **Feature-specific representation.** `Decay` and `Release Control` assess individual tree-feature records, using their current conditions and canopy resistance to determine the response.
+- **Spatial and aggregate representation.** `Colonise` assesses connected space through voxel-level connectivity tests. `Recruit` calculates sapling quotas for the available recruitment zones, with occupancy and spacing constraining placement.
+- **Mixed representation.** `Deploy-Structure` combines assessments of candidate logs and poles, spatial volume budgets for ground deadwood, and changes to individual voxels under `upgrade-feature`.
+
+The sections below specify their spatial regions, triggers and intervention choices; Section 10 provides the detailed rules.
 
 #### Regions modified by proposals
 
@@ -243,6 +244,8 @@ Intervention names follow the code. The ground intervention under `colonise` is 
 
 ### 6. Effort thresholds and pathway settings {#effort-thresholds-and-pathway-settings}
 
+[TODO]{.badge .bg-warning .text-dark} Alex to streamline this section to distinguish settings that differ between human-led and nonhuman-led pathways, settings the user can change, and settings fixed for this study.
+
 The Methods section compares leadership by varying authority over the conversion of proposals into interventions. The simulation implements this comparison through pathway settings that determine how much resistance the collective can overcome and how it supports the resulting changes. These settings affect which proposals receive support, moderation, or refusal and therefore how the trajectory develops.
 
 The two pathways share the same places, inputs, habitat feature library, growth and mortality settings, lifecycle durations, planting density, pruning timings, and random draws. They differ in the settings of Table 5. The code calls the nonhuman-led pathway `positive` and the human-led pathway `trending`.
@@ -252,7 +255,7 @@ The two pathways share the same places, inputs, habitat feature library, growth 
 Negotiation uses three quantities held in the feature records or grid.
 
 - **`CanopyResistance`** measures resistance associated with a tree's canopy footprint. At initialisation, the model calculates it as the mean of `analysis_combined_resistanceNOCANOPY` over the tree's `node_CanopyID` voxels. A tree without a canopy footprint takes the value at its own voxel. The tree-support thresholds compare this quantity with the limits for each intervention.
-- **`sim_Turns`** records how many cellular automata expansion turns were needed to reach a voxel in the prepared [connectivity model](appendix_H_resistance.qmd#connectivity-resistance). It measures spatial difficulty in expansion turns. These turns are distinct from the years and pulses of the pathway simulation. The pathway simulation reads the prepared field and compares it with the effort threshold for the current year.
+- **`sim_Turns`** records how many cellular automata expansion turns were needed to reach a voxel in the prepared [connectivity model](appendix_H_resistance.qmd#connectivity-resistance). The prepared model measures potential connectivity from all starting habitat features and candidate `Deploy-Structure` locations in its inputs, including utility poles and suitable roof positions for translocated logs. The turn count expresses spatial difficulty. These turns are distinct from the years and pulses of the pathway simulation. The pathway simulation reads the prepared field and compares it with the effort threshold for the current year.
 - **`sim_averageResistance`** supplies an additional resistance condition for envelope `Colonise`, candidate roof logs, and utility poles. The model compares the saved field value with a separate pathway threshold, also named `sim_averageResistance` in the parameter file. The [Resistance](appendix_H_resistance.qmd) page describes the resistance and connectivity preparation.
 
 #### Effort thresholds
@@ -316,7 +319,7 @@ The settings and indicator definitions also shape particular comparisons. Parade
 
 ### 8. Initialisation {#initialisation}
 
-Initialisation loads the selected place's [`habitat_volume_grid`](#habitat-volume-grid), [`habitat_feature_tables`](#habitat-feature-tables), and [feature-template library](#feature-template-library). Section 2 describes these entities and links to their preparation workflows. The pathway simulation uses the prepared spatial inputs without recomputing the resistance field or cellular automata expansion.
+Initialisation loads the selected place's [`habitat_volume_grid`](#habitat-volume-grid), [`habitat_feature_tables`](#habitat-feature-tables), and [habitat feature library](#feature-template-library). Section 2 describes these entities and links to their preparation workflows. The pathway simulation uses the prepared spatial inputs without recomputing the resistance field or cellular automata expansion.
 
 The engine initialises `CanopyResistance` as defined in Section 6 and seeds missing `presenscent_duration_years` as described in Section 10.1. These values establish the initial conditions for assessing tree proposals.
 
@@ -349,6 +352,26 @@ The model returns the following outputs for examining states, interventions, and
 - baseline woodland states for comparison
 - indicator tables at year 180 and across all years, and summaries of the `habitat_feature_tables`
 - compiled statistics and stream graphs
+
+#### Tracking proposals and interventions at each state {#tracking-proposals-and-interventions}
+
+Saved-state pie charts track proposal responses and resulting changes using tree records or voxel attributes. Each family counts the unit listed below.
+
+::: {.table-block}
+
+| Proposal | Data source | Unit | What the pie-chart family measures |
+|---|---|---|---|
+| `Decay` | `nodeDF` | Trees | Tree nodes supported to age in place through buffering or bracing, versus replacement |
+| `Release Control` | VTK point data | Voxels | Living canopy voxels shifted to reduced or eliminated pruning, versus remaining under standard pruning |
+| `Recruit` | `nodeDF` + VTK lookup | Trees | Accepted recruit tree nodes grouped by the urban context of their voxel |
+| `Colonise` | VTK point data | Voxels | Accepted colonise voxels grouped by ground, roof or façade context |
+| `Deploy-Structure` | VTK point data | Voxels | Accepted deploy-structure voxels grouped by pole, log or upgrade type |
+
+: Table. Tracking proposals and interventions at each state.
+
+:::
+
+For `Colonise`, the human-led refusal count is derived from the nonhuman-led accepted voxel total minus the human-led total at the same place and year, with negative differences set to zero. The nonhuman-led refusal count is zero.
 
 ### 10. Submodels {#submodels}
 
