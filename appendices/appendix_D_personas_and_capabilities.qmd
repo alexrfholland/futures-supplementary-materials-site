@@ -45,67 +45,6 @@ The Tree persona gathers the English Elm, River Red Gum and Yellow Box, with a f
 
 :::
 
-## Overview of capabilities
-
-We sample capabilities across birds, lizards and trees. Tables 2–4 describe these opportunities and the relationships they support. An asterisk (\*) marks capabilities selected for representation through relational indicators.
-
-We organise capability choices across two domains. The first domain covers scale: individual life, collective interaction, and multiple generations. The second domain uses Schlosberg's framework of health, autonomy, and affiliation [^13]. This framework extends the capabilities approach from individuals to communities and ecosystems.
-
-These capabilities demonstrate how lizards, birds, and trees participate in multispecies communities, hold knowledge, innovate, and contribute to urban living. We understand these contributions as 'design', which we define as the collective creation of conditions that support life in response to novel circumstances [^14]. To illustrate this concept, we include columns showing how capabilities create services for each persona as well as for others.
-
-::: {.table-block}
-
-| Capability | Service to Self | Service to Others | Threats | Domain | Scale |
-|----|----|----|----|----|----|
-| Forage\* | Forage on invertebrates and nectar | Support pollination[^15] and pest control | Young and non-native trees lack insect-attracting branches | Health | Individual life |
-| Bathe | Bathe and drink in freshwater sources, maintain feather condition, hydration | Seed dispersal via mud on feet | Water pollution, lack of water sources | Health | Individual life |
-| Move | Avoid predators, access resources | Provide seed rain that accelerates forest succession[^16] | Collisions with buildings, wind turbines | Health | Individual life |
-| Explore | Establish own home range | Regulate gene flow in populations | Habitat fragmentation, barriers | Autonomy | Individual life |
-| Defend | Defend territory from threats | Maintain ecosystem balance | Invasive species, human disturbance | Autonomy | Collective interaction |
-| Socialise\* | Rest in communal roosting sites | Provide droppings that can enrich soil[^17], combat fragmentation at forest edges through endozoochory[^18] | Pruning for safety removes suitable roosts | Affiliation | Collective interaction |
-| Learn | Develop and express local dialects | Indicate ecosystem health to humans | Noise pollution, population isolation | Affiliation | Collective interaction |
-| Procreate\* | Access nesting sites for breeding | Create structures used by other species | Natural hollows take centuries to form | Affiliation | Multiple generations |
-
-: **Table 2. Sample bird capabilities**
-
-:::
-
-::: {.table-block}
-
-| Capability | Service to Self | Service to Others | Threats | Domain | Scale |
-|----|----|----|----|----|----|
-| Thermoregulate | Use warm and cool spots to stabilise body | Create nutrient patches through droppings at basking sites | Lack of diverse thermal environments | Health | Individual life |
-| Forage\* | Secure food in low vegetation and canopy debris | Regulate insect populations[^10] | Pesticide use, lack of prey | Health | Individual life |
-| Drink | Maintain bodily functions | Contribute to small-scale water cycles | Water pollution, lack of water sources | Health | Individual life |
-| Shelter\* | Use logs and fallen trees for cover and nesting | Build micro‑refugia used by others | Ground debris cleared by management regimes | Health | Multiple generations |
-| Move | Access various resources | Seed dispersal, nutrient distribution | Habitat fragmentation, roads | Autonomy | Collective interaction |
-| Defend | Defend territories and secure resources | Maintain population distribution | Habitat loss, invasive species | Autonomy | Collective interaction |
-| Seek shelter from threats | Avoid predation, harsh conditions | Create burrows used by other species | Removal of ground cover, debris | Autonomy | Collective interaction |
-| Socialise | Establish hierarchies | Indicate ecosystem health to researchers | Isolation of populations | Affiliation | Collective interaction |
-| Explore\* | Traverse routes to reach mates | Maintain gene flow | Inbreeding due to isolation | Affiliation | Collective interaction |
-
-: **Table 3. Sample lizard capabilities**
-
-:::
-
-::: {.table-block}
-
-| Capability | Service to Self | Service to Others | Threats | Domain | Scale |
-|----|----|----|----|----|----|
-| Perform photosynthesis | Produce energy for growth | Produce oxygen, sequester carbon | Air pollution, shading from buildings | Health | Individual life |
-| Access water and nutrients | Sustain growth and functions | Soil water retention, nutrient cycling | Soil compaction, drought | Health | Individual life |
-| Decay\* | Grow structure that provides substrates for leaf, flowers and other organs. | Provide hollows, dead wood, and bark for arboreal dwellers to use as habitat[^17] | Pruning, restricted growing space | Health | Individual life |
-| Grow | Adapt to local environment | Cast shade, intercept rain, and alter microclimates[^19] | Uniform planting practices | Autonomy | Collective interaction |
-| Resist | Develop structures that can resist change | Create microrefugia in modified landscapes such as cities[^20] and paddocks[^21] | Removal of branches deemed hazardous by humans | Autonomy | Collective interaction |
-| Signal\* | Exchange resources through fungal networks in soil | Build resilience to shocks in arboreal communities[^8] | Soil sterilisation, fungicide use | Affiliation | Collective interaction |
-| Host | Offer surfaces for symbiotes such as epiphytes and lichens | Create three dimensional variation in niches[^22], | Simplification of tree structure | Affiliation | Collective interaction |
-| Release | Release pollen and seed | Provide food source | Lack of pollinators, seed dispersers |  |  |
-| Propagate\* | Recruit new trees across suitable ground | Renew canopy services across time[^11] | Propagate\* | Affiliation | Multiple generations |
-
-: **Table 4. Sample tree capabilities**
-
-:::
-
 ## Relating personas in Melbourne to the need for transformation
 
 We use the personas to compare how far existing conditions support different ways of living and how much change fuller support might require. The following examples distinguish current footholds, local improvements and changes that depend on sustained transformation.
@@ -371,6 +310,67 @@ At year 180, these ways of life would depend on spatial and ecological changes a
 
 - The capacity to move vertically is present in a minority of species of reptiles, but is significant for those that have it. This includes even large reptiles such as Lace Monitors, which are semi-arboreal and climb trees for movement, refuge, and escape [Museums Victoria](https://collections.museumsvictoria.com.au/species/8384); [Jones and Metcalfe 2013](https://varanidae.org/Vol7_No2.pdf).
 - Several lizards included in the persona use human structures. Southern Marbled Geckos inhabit walls, ceilings, and cavities in buildings, while Blue-tongued Lizards shelter in drainage pipes, backyard sheds, concrete crevices, and timber piles. Lace Monitors, by contrast, depend on much larger ranges, well-developed trophic cascades, and mature woodland structures and so avoid most urban areas [@museumsvictoriaMarbledGecko2026; @koenigEcologyAustralianReptile2001]; [Guarino 2002](https://doi.org/10.1017/S0952836902001607).
+
+## Overview of capabilities
+
+We sample capabilities across birds, lizards and trees. Tables 2–4 describe these opportunities and the relationships they support. An asterisk (\*) marks capabilities selected for representation through relational indicators.
+
+We organise capability choices across two domains. The first domain covers scale: individual life, collective interaction, and multiple generations. The second domain uses Schlosberg's framework of health, autonomy, and affiliation [^13]. This framework extends the capabilities approach from individuals to communities and ecosystems.
+
+These capabilities demonstrate how lizards, birds, and trees participate in multispecies communities, hold knowledge, innovate, and contribute to urban living. We understand these contributions as 'design', which we define as the collective creation of conditions that support life in response to novel circumstances [^14]. To illustrate this concept, we include columns showing how capabilities create services for each persona as well as for others.
+
+::: {.table-block}
+
+| Capability | Service to Self | Service to Others | Threats | Domain | Scale |
+|----|----|----|----|----|----|
+| Forage\* | Forage on invertebrates and nectar | Support pollination[^15] and pest control | Young and non-native trees lack insect-attracting branches | Health | Individual life |
+| Bathe | Bathe and drink in freshwater sources, maintain feather condition, hydration | Seed dispersal via mud on feet | Water pollution, lack of water sources | Health | Individual life |
+| Move | Avoid predators, access resources | Provide seed rain that accelerates forest succession[^16] | Collisions with buildings, wind turbines | Health | Individual life |
+| Explore | Establish own home range | Regulate gene flow in populations | Habitat fragmentation, barriers | Autonomy | Individual life |
+| Defend | Defend territory from threats | Maintain ecosystem balance | Invasive species, human disturbance | Autonomy | Collective interaction |
+| Socialise\* | Rest in communal roosting sites | Provide droppings that can enrich soil[^17], combat fragmentation at forest edges through endozoochory[^18] | Pruning for safety removes suitable roosts | Affiliation | Collective interaction |
+| Learn | Develop and express local dialects | Indicate ecosystem health to humans | Noise pollution, population isolation | Affiliation | Collective interaction |
+| Procreate\* | Access nesting sites for breeding | Create structures used by other species | Natural hollows take centuries to form | Affiliation | Multiple generations |
+
+: **Table 2. Sample bird capabilities**
+
+:::
+
+::: {.table-block}
+
+| Capability | Service to Self | Service to Others | Threats | Domain | Scale |
+|----|----|----|----|----|----|
+| Thermoregulate | Use warm and cool spots to stabilise body | Create nutrient patches through droppings at basking sites | Lack of diverse thermal environments | Health | Individual life |
+| Forage\* | Secure food in low vegetation and canopy debris | Regulate insect populations[^10] | Pesticide use, lack of prey | Health | Individual life |
+| Drink | Maintain bodily functions | Contribute to small-scale water cycles | Water pollution, lack of water sources | Health | Individual life |
+| Shelter\* | Use logs and fallen trees for cover and nesting | Build micro‑refugia used by others | Ground debris cleared by management regimes | Health | Multiple generations |
+| Move | Access various resources | Seed dispersal, nutrient distribution | Habitat fragmentation, roads | Autonomy | Collective interaction |
+| Defend | Defend territories and secure resources | Maintain population distribution | Habitat loss, invasive species | Autonomy | Collective interaction |
+| Seek shelter from threats | Avoid predation, harsh conditions | Create burrows used by other species | Removal of ground cover, debris | Autonomy | Collective interaction |
+| Socialise | Establish hierarchies | Indicate ecosystem health to researchers | Isolation of populations | Affiliation | Collective interaction |
+| Explore\* | Traverse routes to reach mates | Maintain gene flow | Inbreeding due to isolation | Affiliation | Collective interaction |
+
+: **Table 3. Sample lizard capabilities**
+
+:::
+
+::: {.table-block}
+
+| Capability | Service to Self | Service to Others | Threats | Domain | Scale |
+|----|----|----|----|----|----|
+| Perform photosynthesis | Produce energy for growth | Produce oxygen, sequester carbon | Air pollution, shading from buildings | Health | Individual life |
+| Access water and nutrients | Sustain growth and functions | Soil water retention, nutrient cycling | Soil compaction, drought | Health | Individual life |
+| Decay\* | Grow structure that provides substrates for leaf, flowers and other organs. | Provide hollows, dead wood, and bark for arboreal dwellers to use as habitat[^17] | Pruning, restricted growing space | Health | Individual life |
+| Grow | Adapt to local environment | Cast shade, intercept rain, and alter microclimates[^19] | Uniform planting practices | Autonomy | Collective interaction |
+| Resist | Develop structures that can resist change | Create microrefugia in modified landscapes such as cities[^20] and paddocks[^21] | Removal of branches deemed hazardous by humans | Autonomy | Collective interaction |
+| Signal\* | Exchange resources through fungal networks in soil | Build resilience to shocks in arboreal communities[^8] | Soil sterilisation, fungicide use | Affiliation | Collective interaction |
+| Host | Offer surfaces for symbiotes such as epiphytes and lichens | Create three dimensional variation in niches[^22], | Simplification of tree structure | Affiliation | Collective interaction |
+| Release | Release pollen and seed | Provide food source | Lack of pollinators, seed dispersers |  |  |
+| Propagate\* | Recruit new trees across suitable ground | Renew canopy services across time[^11] | Propagate\* | Affiliation | Multiple generations |
+
+: **Table 4. Sample tree capabilities**
+
+:::
 
 [^8]: José Tomás Ibarra, Kristina Cockle, Tomás Altamirano, Yntze Hoek, Suzanne Simard, Cristián Bonacic, and Kathy Martin. (2020). Nurturing Resilient Forest Biodiversity: Nest Webs as Complex Adaptive Systems. Ecology and Society 25(2). https://doi.org/10/gnb4g8
 
